@@ -1,0 +1,103 @@
+name: JADX APK Decompilation
+
+on:
+  workflow_dispatch:
+    inputs:
+      apk_url:
+        description: 'URL to APK file or version'
+        required: true
+        type: string
+  push:
+    paths:
+      - 'apks/**/*.apk'  # Trigger when new APK is added
+
+jobs:
+  decompile:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+      
+      - name: Download JADX
+        run: |
+          JADX_VERSION="1.5.0"
+          wget https://github.com/skylot/jadx/releases/download/v${JADX_VERSION}/jadx-${JADX_VERSION}.zip
+          unzip jadx-${JADX_VERSION}.zip -d jadx
+          chmod +x jadx/bin/jadx
+      
+      - name: Download APK (if URL provided)
+        if: github.event.inputs.apk_url != 'https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=10105129&key=e00937e7ce05de2bb2d042a323ff610f454dbb2f&forcebaseapk=true'
+        run: |
+          mkdir -p apks
+          wget -O apks/snapchat.apk ${{ github.event.inputs.apk_url }}
+      
+      - name: Decompile APK
+        run: |
+          APK_FILE=$(find apks -name "*.apk" | head -n 1)
+          echo "Decompiling: $APK_FILE"
+          
+          # Decompile to Java code
+          ./jadx/bin/jadx \
+            --output-dir decompiled \
+            --show-bad-code \
+            --no-res \
+            --threads-count 4 \
+            "$APK_FILE"
+      
+      - name: Extract metadata
+        run: |
+          # Get APK info
+          APK_FILE=$(find apks -name "*.apk" | head -n 1)
+          
+          # Extract version info from decompiled code
+          VERSION=$(grep -r "versionName" decompiled | head -n 1 || echo "unknown")
+          echo "Snapchat Version: $VERSION" > decompiled/VERSION.txt
+          
+          # Count classes
+          CLASS_COUNT=$(find decompiled -name "*.java" | wc -l)
+          echo "Total Classes: $CLASS_COUNT" >> decompiled/VERSION.txt
+      
+      - name: Generate analysis report
+        run: |
+          cat > decompiled/ANALYSIS_REPORT.md << 'EOF'
+          # Snapchat Decompilation Report
+          
+          **Date:** $(date)
+          **Workflow Run:** ${{ github.run_id }}
+          
+          ## Statistics
+          $(cat decompiled/VERSION.txt)
+          
+          ## Key Packages Identified
+          $(find decompiled -type d -name "com.snapchat.*" | head -n 20)
+          
+          EOF
+      
+      - name: Upload decompiled code as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: snapchat-decompiled-${{ github.run_id }}
+          path: decompiled/
+          retention-days: 30
+      
+      - name: Commit to repository (optional)
+        if: github.event.inputs.apk_url != ''
+        run: |
+          git config user.name "JADX Bot"
+          git config user.email "jadx-bot@github.com"
+          
+          # Create version-specific branch
+          VERSION=$(cat decompiled/VERSION.txt | grep "versionName" | cut -d'"' -f2 || echo "unknown")
+          BRANCH="decompiled/snapchat-${VERSION}"
+          
+          git checkout -b "$BRANCH"
+          git add decompiled/
+          git commit -m "Decompile Snapchat version ${VERSION}"
+          git push origin "$BRANCH"
