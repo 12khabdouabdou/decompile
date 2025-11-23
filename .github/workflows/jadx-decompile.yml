@@ -35,23 +35,14 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
       
-      - name: Install apkeep
+      - name: Setup Python for APK download
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      
+      - name: Install dependencies
         run: |
-          echo "📦 Installing apkeep..."
-          
-          # Use GitHub's latest release redirect URL (most reliable)
-          # This automatically redirects to the latest version
-          curl -fSL -o apkeep.tar.gz \
-            "https://github.com/EFForg/apkeep/releases/latest/download/apkeep-x86_64-unknown-linux-gnu.tar.gz"
-          
-          tar -xzf apkeep.tar.gz
-          chmod +x apkeep
-          sudo mv apkeep /usr/local/bin/
-          rm apkeep.tar.gz
-          
-          # Show version
-          apkeep --version
-          echo "✅ apkeep installed successfully"
+          pip install requests beautifulsoup4 lxml
       
       - name: Download Snapchat APK from APKMirror
         id: download_apk
