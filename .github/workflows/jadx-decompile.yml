@@ -44,42 +44,45 @@ jobs:
         run: |
           pip install requests beautifulsoup4 lxml
       
-      - name: Download Snapchat APK from APKMirror
+      - name: Download Snapchat APK
         id: download_apk
         run: |
           mkdir -p apks
           
-          if [ "${{ github.event.inputs.auto_latest }}" == "true" ] || [ -z "${{ github.event.inputs.snapchat_version }}" ]; then
-            echo "📥 Downloading latest Snapchat version..."
-            
-            # Download latest version
-            apkeep -a com.snapchat.android \
-              -d apks/ \
-              -p 1
-            
-            # Get the downloaded file
-            APK_FILE=$(ls -t apks/com.snapchat.android_*.apk | head -n 1)
-            
-            # Extract version from filename
-            VERSION=$(basename "$APK_FILE" | sed 's/com.snapchat.android_\(.*\)\.apk/\1/')
-          else
-            echo "📥 Downloading Snapchat version ${{ github.event.inputs.snapchat_version }}..."
-            
-            # Download specific version
-            apkeep -a com.snapchat.android@${{ github.event.inputs.snapchat_version }} \
-              -d apks/
-            
-            APK_FILE=$(ls -t apks/com.snapchat.android_*.apk | head -n 1)
-            VERSION="${{ github.event.inputs.snapchat_version }}"
+          echo "📥 Downloading Snapchat APK..."
+          python scripts/download_snapchat_apk.py -d apks/
+          
+          # Get the downloaded file
+          APK_FILE=$(ls -t apks/*.apk | head -n 1)
+          
+          if [ ! -f "$APK_FILE" ]; then
+            echo "❌ APK download failed!"
+            exit 1
           fi
           
           echo "✅ Downloaded: $APK_FILE"
+          
+          # Extract version using aapt if available, otherwise use filename
+          if command -v aapt &> /dev/null; then
+            VERSION=$(aapt dump badging "$APK_FILE" | grep versionName | sed "s/.*versionName='//" | sed "s/'.*//")
+          else
+            # Fallback: extract from filename
+            VERSION=$(basename "$APK_FILE" | sed 's/com.snapchat.android_//' | sed 's/.apk//' | sed 's/_/-/g')
+          fi
+          
+          if [ -z "$VERSION" ]; then
+            VERSION="unknown-$(date +%Y%m%d)"
+          fi
+          
           echo "version=$VERSION" >> $GITHUB_OUTPUT
           echo "apk_path=$APK_FILE" >> $GITHUB_OUTPUT
           
           # Get file size
           SIZE=$(du -h "$APK_FILE" | cut -f1)
           echo "size=$SIZE" >> $GITHUB_OUTPUT
+          
+          echo "📦 Snapchat Version: $VERSION"
+          echo "📊 File Size: $SIZE"
       
       - name: Verify APK
         run: |
