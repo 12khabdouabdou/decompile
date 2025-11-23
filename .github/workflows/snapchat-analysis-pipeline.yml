@@ -1,13 +1,18 @@
-name: Auto Download and Decompile Snapchat
+name: JADX APK Decompilation
 
 on:
   workflow_dispatch:
-  schedule:
-    # Run weekly on Sundays at 00:00 UTC to check for new versions
-    - cron: '0 0 * * 0'
+    inputs:
+      apk_url:
+        description: 'URL to APK file or version'
+        required: true
+        type: string
+  push:
+    paths:
+      - 'apks/**/*.apk'  # Trigger when new APK is added
 
 jobs:
-  download-and-decompile:
+  decompile:
     runs-on: ubuntu-latest
     
     steps:
@@ -20,213 +25,79 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
       
-      - name: Setup Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.x'
-      
-      - name: Install Python dependencies
-        run: |
-          pip install requests beautifulsoup4
-      
-      - name: Download Snapchat APK
-        id: download
-        run: |
-          echo "📥 Downloading Snapchat APK..."
-          
-          mkdir -p apks
-          
-          # Method 1: Direct download from APKPure
-          echo "Trying APKPure..."
-          curl -L -o "apks/snapchat.apk" \
-            "https://d.apkpure.com/b/APK/com.snapchat.android?version=latest" \
-            --max-time 300 \
-            --connect-timeout 30 || echo "APKPure failed"
-          
-          # Check if download succeeded
-          if [ -f "apks/snapchat.apk" ] && [ -s "apks/snapchat.apk" ]; then
-            echo "✅ Downloaded from APKPure"
-          else
-            # Method 2: Try APKCombo
-            echo "Trying APKCombo..."
-            curl -L -o "apks/snapchat.apk" \
-              "https://apkcombo.com/downloader/download?package=com.snapchat.android&region=US&arches=arm64-v8a" \
-              --max-time 300 || echo "APKCombo failed"
-          fi
-          
-          # Verify we got an APK
-          if [ ! -f "apks/snapchat.apk" ] || [ ! -s "apks/snapchat.apk" ]; then
-            echo "❌ All download methods failed!"
-            echo "Please download manually from:"
-            echo "1. https://www.apkmirror.com/apk/snap-inc/snapchat/"
-            echo "2. https://apkpure.com/snapchat/com.snapchat.android"
-            exit 1
-          fi
-          
-          # Get APK info
-          APK_SIZE=$(du -h apks/snapchat.apk | cut -f1)
-          echo "apk_size=$APK_SIZE" >> $GITHUB_OUTPUT
-          echo "✅ APK downloaded: $APK_SIZE"
-      
       - name: Download JADX
         run: |
-          echo "📦 Downloading JADX..."
-          wget -q https://github.com/skylot/jadx/releases/download/v1.5.0/jadx-1.5.0.zip
-          unzip -q jadx-1.5.0.zip -d jadx
+          JADX_VERSION="1.5.0"
+          wget https://github.com/skylot/jadx/releases/download/v${JADX_VERSION}/jadx-${JADX_VERSION}.zip
+          unzip jadx-${JADX_VERSION}.zip -d jadx
           chmod +x jadx/bin/jadx
-          echo "✅ JADX ready"
+      
+      - name: Download APK (if URL provided)
+        if: github.event.inputs.apk_url != 'https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=10105129&key=e00937e7ce05de2bb2d042a323ff610f454dbb2f&forcebaseapk=true'
+        run: |
+          mkdir -p apks
+          wget -O apks/snapchat.apk ${{ github.event.inputs.apk_url }}
       
       - name: Decompile APK
-        id: decompile
         run: |
-          echo "🔧 Decompiling Snapchat APK with JADX..."
+          APK_FILE=$(find apks -name "*.apk" | head -n 1)
+          echo "Decompiling: $APK_FILE"
           
+          # Decompile to Java code
           ./jadx/bin/jadx \
             --output-dir decompiled \
-            --threads-count 4 \
-            --deobf \
             --show-bad-code \
             --no-res \
-            --no-src \
-            apks/snapchat.apk
+            --threads-count 4 \
+            "$APK_FILE"
+      
+      - name: Extract metadata
+        run: |
+          # Get APK info
+          APK_FILE=$(find apks -name "*.apk" | head -n 1)
           
-          echo "✅ Decompilation complete!"
+          # Extract version info from decompiled code
+          VERSION=$(grep -r "versionName" decompiled | head -n 1 || echo "unknown")
+          echo "Snapchat Version: $VERSION" > decompiled/VERSION.txt
           
           # Count classes
-          CLASS_COUNT=$(find decompiled -name "*.java" 2>/dev/null | wc -l || echo "0")
-          echo "class_count=$CLASS_COUNT" >> $GITHUB_OUTPUT
-          echo "📊 Decompiled $CLASS_COUNT Java classes"
+          CLASS_COUNT=$(find decompiled -name "*.java" | wc -l)
+          echo "Total Classes: $CLASS_COUNT" >> decompiled/VERSION.txt
       
-      - name: Extract version info
-        id: version
+      - name: Generate analysis report
         run: |
-          # Try to get version from AndroidManifest or build info
-          VERSION="unknown-$(date +%Y%m%d)"
-          
-          # Search for version string in decompiled code
-          if [ -d "decompiled" ]; then
-            FOUND_VERSION=$(grep -r "versionName" decompiled 2>/dev/null | head -n 1 | grep -oP '\d+\.\d+\.\d+' | head -n 1 || echo "")
-            if [ -n "$FOUND_VERSION" ]; then
-              VERSION="$FOUND_VERSION"
-            fi
-          fi
-          
-          echo "version=$VERSION" >> $GITHUB_OUTPUT
-          echo "📦 Snapchat Version: $VERSION"
-      
-      - name: Create analysis summary
-        run: |
-          VERSION="${{ steps.version.outputs.version }}"
-          APK_SIZE="${{ steps.download.outputs.apk_size }}"
-          CLASS_COUNT="${{ steps.decompile.outputs.class_count }}"
-          
-          mkdir -p decompiled
-          
-          cat > decompiled/DECOMPILATION_SUMMARY.md << EOF
-          # Snapchat Decompilation Summary
+          cat > decompiled/ANALYSIS_REPORT.md << 'EOF'
+          # Snapchat Decompilation Report
           
           **Date:** $(date)
-          **Version:** $VERSION
-          **APK Size:** $APK_SIZE
-          **Classes Decompiled:** $CLASS_COUNT
           **Workflow Run:** ${{ github.run_id }}
           
-          ## Main Packages
+          ## Statistics
+          $(cat decompiled/VERSION.txt)
           
-          \`\`\`
-          $(find decompiled -type d -path "*/com/snapchat/*" -maxdepth 5 2>/dev/null | sed 's|decompiled/sources/||' | sort | uniq | head -n 30 || echo "Package list not available")
-          \`\`\`
-          
-          ## Key Classes for SnapEnhance Hooks
-          
-          ### Media Upload
-          \`\`\`
-          $(find decompiled -name "*Media*.java" -o -name "*Upload*.java" 2>/dev/null | head -n 10 || echo "Search in sources/")
-          \`\`\`
-          
-          ### Video Processing
-          \`\`\`
-          $(find decompiled -name "*Video*.java" 2>/dev/null | head -n 10 || echo "Search in sources/")
-          \`\`\`
-          
-          ## How to Use
-          
-          1. Download the artifact from this workflow run
-          2. Extract the decompiled-snapchat.zip file
-          3. Browse Java code in \`sources/\` folder
-          4. Use search to find specific classes/methods
-          5. Document findings in your project
-          
-          ## Next Steps
-          
-          - Identify hook points for SnapEnhance
-          - Compare with previous version (if available)
-          - Update hook catalog
-          - Document in findings-log.md
+          ## Key Packages Identified
+          $(find decompiled -type d -name "com.snapchat.*" | head -n 20)
           
           EOF
-          
-          cat decompiled/DECOMPILATION_SUMMARY.md
       
-      - name: Upload decompiled code
+      - name: Upload decompiled code as artifact
         uses: actions/upload-artifact@v4
         with:
-          name: decompiled-snapchat-${{ steps.version.outputs.version }}
+          name: snapchat-decompiled-${{ github.run_id }}
           path: decompiled/
           retention-days: 30
       
-      - name: Upload original APK
-        uses: actions/upload-artifact@v4
-        with:
-          name: snapchat-apk-${{ steps.version.outputs.version }}
-          path: apks/snapchat.apk
-          retention-days: 90
-      
-      - name: Create workflow summary
+      - name: Commit to repository (optional)
+        if: github.event.inputs.apk_url != ''
         run: |
-          VERSION="${{ steps.version.outputs.version }}"
-          APK_SIZE="${{ steps.download.outputs.apk_size }}"
-          CLASS_COUNT="${{ steps.decompile.outputs.class_count }}"
+          git config user.name "JADX Bot"
+          git config user.email "jadx-bot@github.com"
           
-          cat >> $GITHUB_STEP_SUMMARY << EOF
-          # ✅ Snapchat Auto-Decompilation Complete!
+          # Create version-specific branch
+          VERSION=$(cat decompiled/VERSION.txt | grep "versionName" | cut -d'"' -f2 || echo "unknown")
+          BRANCH="decompiled/snapchat-${VERSION}"
           
-          ## 📦 Version Information
-          - **Version:** \`$VERSION\`
-          - **APK Size:** $APK_SIZE
-          - **Classes:** $CLASS_COUNT
-          - **Date:** $(date)
-          
-          ## 📥 Artifacts Generated
-          
-          Two artifacts are available for download:
-          
-          1. **decompiled-snapchat-$VERSION** - Decompiled Java source code
-          2. **snapchat-apk-$VERSION** - Original APK file
-          
-          ## 🔍 What's Inside
-          
-          - All Snapchat classes decompiled to readable Java
-          - Package structure preserved
-          - Deobfuscated names (where possible)
-          - Complete source code analysis ready
-          
-          ## 📖 Next Steps
-          
-          1. Download the decompiled artifact
-          2. Search for hook targets:
-             - Media upload classes
-             - Video processing logic
-             - Chat functionality
-          3. Document findings in \`docs/reverse-engineering/findings-log.md\`
-          4. Update SnapEnhance hooks as needed
-          
-          ## 🔗 Useful Searches
-          
-          Once downloaded, search for:
-          - \`MediaUploader\` - Media upload logic
-          - \`VideoProcessor\` - Video handling
-          - \`sendMessage\` - Chat functionality
-          - \`ChatManager\` - Chat system
-          
-          EOF
+          git checkout -b "$BRANCH"
+          git add decompiled/
+          git commit -m "Decompile Snapchat version ${VERSION}"
+          git push origin "$BRANCH"
