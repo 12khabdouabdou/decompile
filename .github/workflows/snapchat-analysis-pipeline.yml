@@ -1,33 +1,23 @@
-name: Snapchat APK Analysis Pipeline
+name: JADX APK Decompilation
 
 on:
   workflow_dispatch:
     inputs:
-      snapchat_version:
-        description: 'Snapchat version to download (e.g., 12.75.0.38)'
-        required: false
+      apk_url:
+        description: 'URL to APK file or version'
+        required: true
         type: string
-      auto_latest:
-        description: 'Auto-download latest version'
-        required: false
-        type: boolean
-        default: true
-  schedule:
-    # Run weekly on Sunday at 00:00 UTC to check for new versions
-    - cron: '0 0 * * 0'
-
-env:
-  JADX_VERSION: '1.5.0'
+  push:
+    paths:
+      - 'apks/**/*.apk'  # Trigger when new APK is added
 
 jobs:
-  download-and-analyze:
+  decompile:
     runs-on: ubuntu-latest
     
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Setup Java
         uses: actions/setup-java@v4
@@ -35,261 +25,79 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
       
-      - name: Setup Python for APK download
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.x'
-      
-      - name: Install dependencies
+      - name: Download JADX
         run: |
-          pip install requests beautifulsoup4 lxml
-      
-      - name: Download Snapchat APK
-        id: download_apk
-        run: |
-          mkdir -p apks
-          
-          echo "📥 Downloading Snapchat APK..."
-          python scripts/download_snapchat_apk.py -d apks/
-          
-          # Get the downloaded file
-          APK_FILE=$(ls -t apks/*.apk | head -n 1)
-          
-          if [ ! -f "$APK_FILE" ]; then
-            echo "❌ APK download failed!"
-            exit 1
-          fi
-          
-          echo "✅ Downloaded: $APK_FILE"
-          
-          # Extract version using aapt if available, otherwise use filename
-          if command -v aapt &> /dev/null; then
-            VERSION=$(aapt dump badging "$APK_FILE" | grep versionName | sed "s/.*versionName='//" | sed "s/'.*//")
-          else
-            # Fallback: extract from filename
-            VERSION=$(basename "$APK_FILE" | sed 's/com.snapchat.android_//' | sed 's/.apk//' | sed 's/_/-/g')
-          fi
-          
-          if [ -z "$VERSION" ]; then
-            VERSION="unknown-$(date +%Y%m%d)"
-          fi
-          
-          echo "version=$VERSION" >> $GITHUB_OUTPUT
-          echo "apk_path=$APK_FILE" >> $GITHUB_OUTPUT
-          
-          # Get file size
-          SIZE=$(du -h "$APK_FILE" | cut -f1)
-          echo "size=$SIZE" >> $GITHUB_OUTPUT
-          
-          echo "📦 Snapchat Version: $VERSION"
-          echo "📊 File Size: $SIZE"
-      
-      - name: Verify APK
-        run: |
-          APK_FILE="${{ steps.download_apk.outputs.apk_path }}"
-          
-          echo "🔍 Verifying APK..."
-          
-          # Check if file exists and is not empty
-          if [ ! -s "$APK_FILE" ]; then
-            echo "❌ APK file is empty or missing!"
-            exit 1
-          fi
-          
-          # Check file signature (basic validation)
-          file "$APK_FILE"
-          
-          # Extract APK info using aapt (if available)
-          if command -v aapt &> /dev/null; then
-            aapt dump badging "$APK_FILE" | grep -E "package|versionCode|versionName"
-          fi
-      
-      - name: Install JADX
-        run: |
-          echo "📦 Installing JADX..."
+          JADX_VERSION="1.5.0"
           wget https://github.com/skylot/jadx/releases/download/v${JADX_VERSION}/jadx-${JADX_VERSION}.zip
           unzip jadx-${JADX_VERSION}.zip -d jadx
           chmod +x jadx/bin/jadx
-          jadx/bin/jadx --version
       
-      - name: Decompile APK with JADX
-        id: decompile
+      - name: Download APK (if URL provided)
+        if: github.event.inputs.apk_url != 'https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=10105129&key=e00937e7ce05de2bb2d042a323ff610f454dbb2f&forcebaseapk=true'
         run: |
-          APK_FILE="${{ steps.download_apk.outputs.apk_path }}"
-          VERSION="${{ steps.download_apk.outputs.version }}"
-          OUTPUT_DIR="decompiled/snapchat-${VERSION}"
+          mkdir -p apks
+          wget -O apks/snapchat.apk ${{ github.event.inputs.apk_url }}
+      
+      - name: Decompile APK
+        run: |
+          APK_FILE=$(find apks -name "*.apk" | head -n 1)
+          echo "Decompiling: $APK_FILE"
           
-          echo "🔧 Decompiling Snapchat ${VERSION}..."
-          
+          # Decompile to Java code
           ./jadx/bin/jadx \
-            --output-dir "$OUTPUT_DIR" \
+            --output-dir decompiled \
             --show-bad-code \
             --no-res \
-            --no-src \
             --threads-count 4 \
-            --deobf \
             "$APK_FILE"
-          
-          echo "✅ Decompilation complete!"
-          echo "output_dir=$OUTPUT_DIR" >> $GITHUB_OUTPUT
-          
-          # Count decompiled files
-          CLASS_COUNT=$(find "$OUTPUT_DIR" -name "*.java" 2>/dev/null | wc -l || echo "0")
-          echo "class_count=$CLASS_COUNT" >> $GITHUB_OUTPUT
       
-      - name: Extract Key Information
+      - name: Extract metadata
         run: |
-          OUTPUT_DIR="${{ steps.decompile.outputs.output_dir }}"
-          VERSION="${{ steps.download_apk.outputs.version }}"
+          # Get APK info
+          APK_FILE=$(find apks -name "*.apk" | head -n 1)
           
-          echo "📊 Extracting key information..."
+          # Extract version info from decompiled code
+          VERSION=$(grep -r "versionName" decompiled | head -n 1 || echo "unknown")
+          echo "Snapchat Version: $VERSION" > decompiled/VERSION.txt
           
-          mkdir -p docs/reverse-engineering/snapchat-versions/${VERSION}
-          
-          # Extract version info
-          cat > docs/reverse-engineering/snapchat-versions/${VERSION}/metadata.md << EOF
-          # Snapchat Version ${VERSION}
-          
-          **Downloaded:** $(date)
-          **APK Size:** ${{ steps.download_apk.outputs.size }}
-          **Total Classes:** ${{ steps.decompile.outputs.class_count }}
-          **Workflow Run:** ${{ github.run_id }}
-          
-          ## Package Structure
-          EOF
-          
-          # List main packages
-          find "$OUTPUT_DIR" -type d -path "*/com/snapchat/*" -maxdepth 5 | \
-            sed "s|$OUTPUT_DIR/sources/||" | \
-            sort | uniq | head -n 50 >> docs/reverse-engineering/snapchat-versions/${VERSION}/metadata.md
+          # Count classes
+          CLASS_COUNT=$(find decompiled -name "*.java" | wc -l)
+          echo "Total Classes: $CLASS_COUNT" >> decompiled/VERSION.txt
       
-      - name: Find Hook Targets
+      - name: Generate analysis report
         run: |
-          OUTPUT_DIR="${{ steps.decompile.outputs.output_dir }}"
-          VERSION="${{ steps.download_apk.outputs.version }}"
-          
-          echo "🎯 Finding hook targets for SnapEnhance..."
-          
-          # Search for classes related to video/media handling
-          HOOK_TARGETS_FILE="docs/reverse-engineering/snapchat-versions/${VERSION}/hook-targets.md"
-          
-          cat > "$HOOK_TARGETS_FILE" << EOF
-          # Hook Targets - Snapchat ${VERSION}
-          
-          **Generated:** $(date)
-          
-          ## Media Upload Classes
-          EOF
-          
-          # Find media-related classes
-          find "$OUTPUT_DIR" -name "*.java" | xargs grep -l "class.*Media.*Upload" | \
-            sed "s|$OUTPUT_DIR/sources/||; s|/|.|g; s|.java||" | \
-            while read class; do
-              echo "- \`$class\`" >> "$HOOK_TARGETS_FILE"
-            done || true
-          
-          echo -e "\n## Video Processing Classes" >> "$HOOK_TARGETS_FILE"
-          
-          find "$OUTPUT_DIR" -name "*.java" | xargs grep -l "class.*Video.*Process" | \
-            sed "s|$OUTPUT_DIR/sources/||; s|/|.|g; s|.java||" | head -n 20 | \
-            while read class; do
-              echo "- \`$class\`" >> "$HOOK_TARGETS_FILE"
-            done || true
-          
-          echo -e "\n## Chat/Messaging Classes" >> "$HOOK_TARGETS_FILE"
-          
-          find "$OUTPUT_DIR" -name "*.java" | xargs grep -l "class.*Chat\|class.*Message" | \
-            sed "s|$OUTPUT_DIR/sources/||; s|/|.|g; s|.java||" | head -n 20 | \
-            while read class; do
-              echo "- \`$class\`" >> "$HOOK_TARGETS_FILE"
-            done || true
-      
-      - name: Generate Analysis Report
-        run: |
-          VERSION="${{ steps.download_apk.outputs.version }}"
-          
-          cat > docs/reverse-engineering/snapchat-versions/${VERSION}/ANALYSIS_REPORT.md << 'EOF'
-          # Snapchat ${VERSION} Analysis Report
+          cat > decompiled/ANALYSIS_REPORT.md << 'EOF'
+          # Snapchat Decompilation Report
           
           **Date:** $(date)
-          **Workflow:** ${{ github.run_id }}
-          **APK Source:** APKMirror
+          **Workflow Run:** ${{ github.run_id }}
           
-          ## Summary
+          ## Statistics
+          $(cat decompiled/VERSION.txt)
           
-          - **Version:** ${VERSION}
-          - **APK Size:** ${{ steps.download_apk.outputs.size }}
-          - **Classes:** ${{ steps.decompile.outputs.class_count }}
-          - **Decompilation Status:** ✅ Success
-          
-          ## Files Generated
-          
-          - [Metadata](metadata.md)
-          - [Hook Targets](hook-targets.md)
-          - Full decompiled source (available in artifacts)
-          
-          ## Next Steps
-          
-          1. Review hook targets for SnapEnhance compatibility
-          2. Compare with previous version (if available)
-          3. Update SnapEnhance hooks if API changes detected
+          ## Key Packages Identified
+          $(find decompiled -type d -name "com.snapchat.*" | head -n 20)
           
           EOF
       
-      - name: Upload decompiled source as artifact
+      - name: Upload decompiled code as artifact
         uses: actions/upload-artifact@v4
         with:
-          name: snapchat-decompiled-${{ steps.download_apk.outputs.version }}
-          path: ${{ steps.decompile.outputs.output_dir }}/
+          name: snapchat-decompiled-${{ github.run_id }}
+          path: decompiled/
           retention-days: 30
       
-      - name: Upload APK as artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: snapchat-apk-${{ steps.download_apk.outputs.version }}
-          path: ${{ steps.download_apk.outputs.apk_path }}
-          retention-days: 90
-      
-      - name: Commit documentation to repository
+      - name: Commit to repository (optional)
+        if: github.event.inputs.apk_url != ''
         run: |
-          VERSION="${{ steps.download_apk.outputs.version }}"
+          git config user.name "JADX Bot"
+          git config user.email "jadx-bot@github.com"
           
-          git config user.name "Snapchat Analysis Bot"
-          git config user.email "analysis-bot@github.com"
+          # Create version-specific branch
+          VERSION=$(cat decompiled/VERSION.txt | grep "versionName" | cut -d'"' -f2 || echo "unknown")
+          BRANCH="decompiled/snapchat-${VERSION}"
           
-          git add docs/reverse-engineering/
-          
-          if git diff --staged --quiet; then
-            echo "ℹ️ No changes to commit"
-          else
-            git commit -m "Add Snapchat ${VERSION} analysis documentation"
-            git push
-          fi
-      
-      - name: Create summary
-        run: |
-          cat >> $GITHUB_STEP_SUMMARY << EOF
-          # 📊 Snapchat Analysis Complete
-          
-          ## ✅ Successfully Analyzed Version: \`${{ steps.download_apk.outputs.version }}\`
-          
-          ### 📦 APK Details
-          - **Size:** ${{ steps.download_apk.outputs.size }}
-          - **Source:** APKMirror
-          - **Classes Found:** ${{ steps.decompile.outputs.class_count }}
-          
-          ### 📁 Artifacts Generated
-          - Decompiled source code
-          - APK file
-          - Analysis documentation
-          
-          ### 📖 Documentation
-          - Location: \`docs/reverse-engineering/snapchat-versions/${{ steps.download_apk.outputs.version }}/\`
-          - [View Analysis Report](docs/reverse-engineering/snapchat-versions/${{ steps.download_apk.outputs.version }}/ANALYSIS_REPORT.md)
-          - [View Hook Targets](docs/reverse-engineering/snapchat-versions/${{ steps.download_apk.outputs.version }}/hook-targets.md)
-          
-          ### 🎯 Next Steps
-          1. Review the hook targets
-          2. Compare with previous version
-          3. Update SnapEnhance hooks if needed
-          EOF
+          git checkout -b "$BRANCH"
+          git add decompiled/
+          git commit -m "Decompile Snapchat version ${VERSION}"
+          git push origin "$BRANCH"
