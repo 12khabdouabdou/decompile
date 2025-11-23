@@ -18,7 +18,6 @@ on:
 
 env:
   JADX_VERSION: '1.5.0'
-  APKEEP_VERSION: '0.18.0'
 
 jobs:
   download-and-analyze:
@@ -38,26 +37,19 @@ jobs:
       
       - name: Install apkeep
         run: |
-          echo "📦 Installing apkeep v${APKEEP_VERSION}..."
+          echo "📦 Installing apkeep..."
           
-          # Try with specified version first
-          if ! curl -fSL -o apkeep.tar.gz \
-            "https://github.com/EFForg/apkeep/releases/download/v${APKEEP_VERSION}/apkeep-x86_64-unknown-linux-gnu.tar.gz"; then
-            echo "⚠️  Version ${APKEEP_VERSION} not found, trying latest..."
-            
-            # Fallback to latest release
-            LATEST_URL=$(curl -s https://api.github.com/repos/EFForg/apkeep/releases/latest | \
-              grep "browser_download_url.*apkeep-x86_64-unknown-linux-gnu.tar.gz" | \
-              cut -d '"' -f 4)
-            
-            curl -fSL -o apkeep.tar.gz "$LATEST_URL"
-          fi
+          # Use GitHub's latest release redirect URL (most reliable)
+          # This automatically redirects to the latest version
+          curl -fSL -o apkeep.tar.gz \
+            "https://github.com/EFForg/apkeep/releases/latest/download/apkeep-x86_64-unknown-linux-gnu.tar.gz"
           
           tar -xzf apkeep.tar.gz
           chmod +x apkeep
           sudo mv apkeep /usr/local/bin/
           rm apkeep.tar.gz
           
+          # Show version
           apkeep --version
           echo "✅ apkeep installed successfully"
       
