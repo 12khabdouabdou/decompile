@@ -20,20 +20,16 @@ jobs:
       run: |
         wget -O snapchat.apk "${{ github.event.inputs.apk_url }}"
 
-    - name: Setup Java environment (required for apktool & signing)
-      uses: actions/setup-java@v3
-      with:
-        distribution: 'temurin'
-        java-version: '11'
-
-    - name: Install dependencies
+    - name: Setup Java environment and install dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y apktool unzip wget python3
+        sudo apt-get install -y apktool unzip wget python3 xz-utils openjdk-11-jdk
 
-    - name: Download Frida Gadget
+    - name: Download and decompress Frida Gadget
       run: |
-        wget https://github.com/frida/frida/releases/download/15.1.26/frida-gadget-android-arm64.so -O frida-gadget.so
+        wget https://github.com/frida/frida/releases/download/16.0.19/frida-gadget-16.0.19-android-arm64.so.xz
+        unxz frida-gadget-16.0.19-android-arm64.so.xz
+        mv frida-gadget-16.0.19-android-arm64.so frida-gadget.so
 
     - name: Run Frida Injector Python script
       run: |
