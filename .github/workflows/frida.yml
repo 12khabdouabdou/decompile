@@ -20,10 +20,14 @@ jobs:
       run: |
         wget -O snapchat.apk "${{ github.event.inputs.apk_url }}"
 
-    - name: Setup Java environment and install dependencies
+    - name: Setup environment and install dependencies
       run: |
         sudo apt-get update
         sudo apt-get install -y apktool unzip wget python3 xz-utils openjdk-11-jdk
+    - name: Install Python dependencies
+      run: |
+        python3 -m pip install --upgrade pip
+        pip3 install wget lief colorama requests
 
     - name: Download Frida Injector script
       run: |
@@ -35,18 +39,18 @@ jobs:
         unxz frida-gadget-16.0.19-android-arm64.so.xz
         mv frida-gadget-16.0.19-android-arm64.so frida-gadget.so
 
-    - name: Run Frida Injector Python script
+    - name: Run Frida Injector script
       run: |
         python3 Frida-Injector.py -i snapchat.apk -m 1
       env:
         FRIDA_GADGET_PATH: './frida-gadget.so'
-    
+
     - name: Sign APK
       run: |
         wget https://github.com/patrickfav/uber-apk-signer/releases/download/v1.2.1/uber-apk-signer-1.2.1.jar
         java -jar uber-apk-signer-1.2.1.jar -a output_injected.apk
 
-    - name: Upload injected APK as artifact
+    - name: Upload injected APK
       uses: actions/upload-artifact@v4
       with:
         name: injected-snapchat-apk
