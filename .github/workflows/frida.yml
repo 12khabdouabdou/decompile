@@ -25,6 +25,10 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y apktool unzip wget python3 xz-utils openjdk-11-jdk
 
+    - name: Download Frida Injector script
+      run: |
+        wget -O Frida-Injector.py https://raw.githubusercontent.com/Shapa7276/Frida-Injector/refs/heads/master/Frida-Injector.py
+
     - name: Download and decompress Frida Gadget
       run: |
         wget https://github.com/frida/frida/releases/download/16.0.19/frida-gadget-16.0.19-android-arm64.so.xz
