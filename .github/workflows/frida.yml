@@ -1,213 +1,94 @@
-name: Inject Frida into Snapchat APK
+name: Inject Frida Gadget
 
 on:
   workflow_dispatch:
     inputs:
       apk_url:
-        description: 'URL to download Snapchat APK'
+        description: 'URL of the APK to patch'
         required: true
         type: string
+      frida_version:
+        description: 'Frida version to use (optional, e.g., 16.1.4)'
+        required: false
+        default: 'latest'
 
 jobs:
-  frida-inject:
+  inject-frida:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repo
-      uses: actions/checkout@v3
-      
-    - name: Download Snapchat APK from provided URL
-      run: |
-        wget -O snapchat.apk "${{ github.event.inputs.apk_url }}"
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
-    - name: Setup environment and install dependencies
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y apktool unzip wget python3 xz-utils openjdk-11-jdk aapt
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
 
-    - name: Install Python dependencies
-      run: |
-        python3 -m pip install --upgrade pip
-        pip3 install wget lief colorama requests
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
 
-    - name: Decompile APK with debugging
-      run: |
-        apktool d snapchat.apk -o lol -f
-        echo "=== Checking decompiled structure ==="
-        ls -la lol/
-        echo "=== Checking AndroidManifest.xml ==="
-        head -50 lol/AndroidManifest.xml
-        echo "=== Listing smali files ==="
-        find lol -name "*.smali" | head -20
+      - name: Install Dependencies (Objection & Frida)
+        run: |
+          pip install objection frida-tools
+          if [ "${{ inputs.frida_version }}" != "latest" ]; then
+            pip install frida==${{ inputs.frida_version }}
+          fi
 
-    - name: Download Frida Injector script
-      run: |
-        wget -O Frida-Injector.py https://raw.githubusercontent.com/Shapa7276/Frida-Injector/refs/heads/master/Frida-Injector.py
+      - name: Install Apktool
+        run: |
+          wget https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool -O /usr/local/bin/apktool
+          wget https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.9.3.jar -O /usr/local/bin/apktool.jar
+          chmod +x /usr/local/bin/apktool
+          chmod +x /usr/local/bin/apktool.jar
+          apktool -version
 
-    - name: Download and decompress Frida Gadget
-      run: |
-        wget https://github.com/frida/frida/releases/download/16.0.19/frida-gadget-16.0.19-android-arm64.so.xz
-        unxz frida-gadget-16.0.19-android-arm64.so.xz
-        mv frida-gadget-16.0.19-android-arm64.so frida-gadget.so
+      - name: Setup Android SDK Build Tools
+        uses: android-actions/setup-android@v3
 
-    - name: Create fixed Frida Injector script
-      run: |
-        cat > Frida-Injector-Fixed.py << 'EOF'
-#!/usr/bin/env python3
-import subprocess, sys, os, lief
-from pathlib import Path
-from shutil import copyfile
-from xml.dom import minidom
-import requests
+      - name: Install Android Build Tools
+        run: |
+          sdkmanager "build-tools;34.0.0" "platform-tools"
+          echo "$ANDROID_HOME/build-tools/34.0.0" >> $GITHUB_PATH
+          echo "$ANDROID_HOME/platform-tools" >> $GITHUB_PATH
 
-apk_name = 'snapchat.apk'
-method = '1'
-outputdirectory = "lol"
-new_apk_name = "output_injected.apk"
-archdata = ["arm", "arm64", "x86", "x86_64"]
-abislist = ["armeabi-v7a", "arm64-v8a", "x86", "x86_64"]
+      - name: Download Target APK
+        run: |
+          wget "${{ inputs.apk_url }}" -O original.apk
 
-def getmainactivity():
-    print("Scanning Main Activity...")
-    try:
-        activityxml = minidom.parse(outputdirectory + '/AndroidManifest.xml')
-        activities = activityxml.getElementsByTagName('activity')
-        for activity in activities:
-            intentFilterTag = activity.getElementsByTagName("intent-filter")
-            if len(intentFilterTag) > 0:
-                for intent in intentFilterTag:
-                    categoryTag = intent.getElementsByTagName("category")
-                    if len(categoryTag) > 0:
-                        for category in categoryTag:
-                            if category.hasAttribute("android:name"):
-                                if "android.intent.category.LAUNCHER" in category.attributes["android:name"].value:
-                                    activityName = activity.attributes["android:name"].value
-                                    launcherActivity = activityName.split(".")[-1]
-                                    print(f"Found launcher activity: {launcherActivity}")
-                                    result = find_all(launcherActivity + ".smali", outputdirectory)
-                                    if result:
-                                        print(f"Found smali file: {result}")
-                                        return result
-                                    else:
-                                        print(f"Warning: Could not find {launcherActivity}.smali")
-                                        # Fallback: find first .smali file in smali folder
-                                        return find_first_smali(outputdirectory)
-    except Exception as e:
-        print(f"Error parsing manifest: {e}")
-        return find_first_smali(outputdirectory)
+      - name: Patch APK with Objection
+        run: |
+          # Objection automatically handles decompilation, gadget injection, and recompilation
+          # It attempts to detect the architecture, but we can specify it if needed.
+          # For Snapchat, it's usually arm64-v8a.
+          
+          objection patchapk --source original.apk --architecture arm64-v8a --skip-resources
+          
+          # The output file is typically named original.objection.apk
+          mv original.objection.apk patched-unsigned.apk
 
-def find_first_smali(path):
-    """Fallback: Find first .smali file in smali directory"""
-    for root, dirs, files in os.walk(path):
-        for file in files:
-            if file.endswith(".smali") and "activity" not in file.lower():
-                return os.path.join(root, file)
-    return None
+      - name: Decode Keystore
+        run: |
+          echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 --decode > release.keystore
 
-def find_all(name, path):
-    for root, dirs, files in os.walk(path):
-        if name in files:
-            return os.path.join(root, name)
-    return None
+      - name: Sign APK
+        run: |
+          # Align the APK first
+          zipalign -v -p 4 patched-unsigned.apk patched-aligned.apk
+          
+          # Sign the APK
+          apksigner sign --ks release.keystore \
+            --ks-key-alias "${{ secrets.KEY_ALIAS }}" \
+            --ks-pass pass:"${{ secrets.KEYSTORE_PASSWORD }}" \
+            --key-pass pass:"${{ secrets.KEY_PASSWORD }}" \
+            --out patched-signed.apk \
+            patched-aligned.apk
 
-def SmaliInjection(mainactivity):
-    if mainactivity is None:
-        print("ERROR: Could not find main activity smali file")
-        return False
-    
-    try:
-        with open(mainactivity, 'r') as smalifile:
-            smalicontent = smalifile.readlines()
-        
-        Flag = False
-        for i, line in enumerate(smalicontent):
-            if "# direct methods" in line:
-                if i + 3 < len(smalicontent):
-                    smalicontent[i + 2] = smalicontent[i + 2].replace('0', '1')
-                    smalicontent[i + 3] = '\n    const-string v0, "frida-gadget"\n    invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V\n'
-                    Flag = True
-                    break
-        
-        with open(mainactivity, 'w') as f:
-            f.writelines(smalicontent)
-        
-        if Flag:
-            print(f'Smali injected successfully in {mainactivity}')
-            return True
-        else:
-            print("Warning: No direct method found in smali")
-            return False
-    except Exception as e:
-        print(f"Error during smali injection: {e}")
-        return False
-
-def copygadget():
-    isgadgetdir = os.path.isdir('gadget')
-    if not isgadgetdir:
-        print("Creating gadget directory and copying gadget...")
-        os.mkdir('gadget')
-    
-    isdir = os.path.isdir(outputdirectory + '/lib')
-    if isdir:
-        arch = subprocess.check_output('ls ' + outputdirectory + '/lib/', shell=True)
-        arch_name_list = arch.decode("utf-8").splitlines()
-        for arch_name in arch_name_list:
-            if arch_name in abislist:
-                print(f"Copying gadget for architecture: {arch_name}")
-                lib_path = outputdirectory + "/lib/" + arch_name + "/libfrida-gadget.so"
-                if arch_name == "armeabi-v7a":
-                    copyfile("frida-gadget.so", lib_path)
-                elif arch_name == "arm64-v8a":
-                    copyfile("frida-gadget.so", lib_path)
-                else:
-                    copyfile("frida-gadget.so", lib_path)
-    else:
-        print("No lib folder found, creating one...")
-        os.mkdir(outputdirectory + '/lib')
-        os.mkdir(outputdirectory + '/lib/arm64-v8a')
-        copyfile("frida-gadget.so", outputdirectory + "/lib/arm64-v8a/libfrida-gadget.so")
-
-def Recompile_code():
-    print("Recompiling APK...")
-    subprocess.call(['apktool', 'b', outputdirectory, '-o', new_apk_name])
-
-def main():
-    print("Starting Frida injection...")
-    print(f"Decompiling {apk_name}...")
-    subprocess.call(['apktool', 'd', apk_name, '-o', outputdirectory, '-f'])
-    
-    print("Finding main activity...")
-    smali_path = getmainactivity()
-    
-    if smali_path:
-        print(f"Injecting Frida into {smali_path}...")
-        if SmaliInjection(smali_path):
-            print("Copying gadget...")
-            copygadget()
-            print("Recompiling...")
-            Recompile_code()
-            print("Injection complete! APK: " + new_apk_name)
-        else:
-            print("Smali injection failed")
-    else:
-        print("Could not find main activity")
-
-if __name__ == "__main__":
-    main()
-EOF
-        chmod +x Frida-Injector-Fixed.py
-
-    - name: Run Fixed Frida Injector script
-      run: |
-        python3 Frida-Injector-Fixed.py
-
-    - name: Sign APK
-      run: |
-        wget https://github.com/patrickfav/uber-apk-signer/releases/download/v1.2.1/uber-apk-signer-1.2.1.jar
-        java -jar uber-apk-signer-1.2.1.jar -a output_injected.apk
-
-    - name: Upload injected APK
-      uses: actions/upload-artifact@v4
-      with:
-        name: injected-snapchat-apk
-        path: ./output_injected-aligned-debugSigned.apk
+      - name: Upload Patched APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: snapchat-frida-patched
+          path: patched-signed.apk
