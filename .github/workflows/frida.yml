@@ -1,0 +1,53 @@
+name: Inject Frida into Snapchat APK
+
+on:
+  workflow_dispatch:
+    inputs:
+      apk_url:
+        description: 'URL to download Snapchat APK'
+        required: true
+        type: string
+
+jobs:
+  frida-inject:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+      
+    - name: Download Snapchat APK from provided URL
+      run: |
+        wget -O snapchat.apk "${{ github.event.inputs.apk_url }}"
+
+    - name: Setup Java environment (required for apktool & signing)
+      uses: actions/setup-java@v3
+      with:
+        distribution: 'temurin'
+        java-version: '11'
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y apktool unzip wget
+
+    - name: Download Frida Gadget
+      run: |
+        wget https://github.com/frida/frida/releases/download/15.1.26/frida-gadget-android-arm64.so -O frida-gadget.so
+
+    - name: Run Frida Injector Python script
+      run: |
+        python3 Frida-Injector.py -i snapchat.apk -m 1
+      env:
+        FRIDA_GADGET_PATH: './frida-gadget.so'
+    
+    - name: Sign APK
+      run: |
+        wget https://github.com/patrickfav/uber-apk-signer/releases/download/v1.2.1/uber-apk-signer-1.2.1.jar
+        java -jar uber-apk-signer-1.2.1.jar -a output_injected.apk
+
+    - name: Upload injected APK as artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: injected-snapchat-apk
+        path: ./output_injected-aligned-debugSigned.apk
