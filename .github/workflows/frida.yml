@@ -29,7 +29,7 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y apktool unzip wget
+        sudo apt-get install -y apktool unzip wget python3
 
     - name: Download Frida Gadget
       run: |
@@ -47,7 +47,7 @@ jobs:
         java -jar uber-apk-signer-1.2.1.jar -a output_injected.apk
 
     - name: Upload injected APK as artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: injected-snapchat-apk
         path: ./output_injected-aligned-debugSigned.apk
