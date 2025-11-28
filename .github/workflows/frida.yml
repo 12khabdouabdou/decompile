@@ -1,19 +1,17 @@
-name: Inject Frida Gadget
+name: Patch Snapchat with Frida Gadget
 
 on:
   workflow_dispatch:
     inputs:
       apk_url:
-        description: 'URL of the APK to patch'
+        description: 'Direct URL to the Snapchat APK (must be a merged/single APK)'
         required: true
-        type: string
-      frida_version:
-        description: 'Frida version to use (optional, e.g., 16.1.4)'
+      frida_script:
+        description: 'Path to a local Frida JS script to inject (optional, e.g., scripts/bypass.js)'
         required: false
-        default: 'latest'
 
 jobs:
-  inject-frida:
+  patch-apk:
     runs-on: ubuntu-latest
 
     steps:
@@ -27,68 +25,51 @@ jobs:
           java-version: '17'
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
-      - name: Install Dependencies (Objection & Frida)
-        run: |
-          pip install objection frida-tools
-          if [ "${{ inputs.frida_version }}" != "latest" ]; then
-            pip install frida==${{ inputs.frida_version }}
-          fi
-
       - name: Install Apktool
         run: |
-          wget https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool -O /usr/local/bin/apktool
-          wget https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.9.3.jar -O /usr/local/bin/apktool.jar
-          chmod +x /usr/local/bin/apktool
-          chmod +x /usr/local/bin/apktool.jar
+          # Download the latest Apktool jar and wrapper script
+          wget https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool -O apktool
+          wget https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.9.3.jar -O apktool.jar
+          
+          # Make executable and move to path
+          chmod +x apktool apktool.jar
+          sudo mv apktool /usr/local/bin/
+          sudo mv apktool.jar /usr/local/bin/
+          
+          # Verify installation
           apktool -version
 
-      - name: Setup Android SDK Build Tools
-        uses: android-actions/setup-android@v3
-
-      - name: Install Android Build Tools
+      - name: Install Frida Gadget Tool
         run: |
-          sdkmanager "build-tools;34.0.0" "platform-tools"
-          echo "$ANDROID_HOME/build-tools/34.0.0" >> $GITHUB_PATH
-          echo "$ANDROID_HOME/platform-tools" >> $GITHUB_PATH
+          pip install frida-gadget --upgrade
 
-      - name: Download Target APK
+      - name: Download Snapchat APK
         run: |
-          wget "${{ inputs.apk_url }}" -O original.apk
+          wget "${{ inputs.apk_url }}" -O snapchat.apk
+          echo "APK size: $(du -h snapchat.apk)"
 
-      - name: Patch APK with Objection
+      - name: Patch APK
         run: |
-          # Objection automatically handles decompilation, gadget injection, and recompilation
-          # It attempts to detect the architecture, but we can specify it if needed.
-          # For Snapchat, it's usually arm64-v8a.
+          # Build command arguments
+          CMD="frida-gadget snapchat.apk --sign --arch arm64"
           
-          objection patchapk --source original.apk --architecture arm64-v8a --skip-resources
+          # Add JS script if provided
+          if [ ! -z "${{ inputs.frida_script }}" ]; then
+            CMD="$CMD --js ${{ inputs.frida_script }}"
+          fi
           
-          # The output file is typically named original.objection.apk
-          mv original.objection.apk patched-unsigned.apk
-
-      - name: Decode Keystore
-        run: |
-          echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 --decode > release.keystore
-
-      - name: Sign APK
-        run: |
-          # Align the APK first
-          zipalign -v -p 4 patched-unsigned.apk patched-aligned.apk
-          
-          # Sign the APK
-          apksigner sign --ks release.keystore \
-            --ks-key-alias "${{ secrets.KEY_ALIAS }}" \
-            --ks-pass pass:"${{ secrets.KEYSTORE_PASSWORD }}" \
-            --key-pass pass:"${{ secrets.KEY_PASSWORD }}" \
-            --out patched-signed.apk \
-            patched-aligned.apk
+          # Run the patcher
+          echo "Running: $CMD"
+          $CMD
 
       - name: Upload Patched APK
         uses: actions/upload-artifact@v4
         with:
-          name: snapchat-frida-patched
-          path: patched-signed.apk
+          name: snapchat-patched
+          path: |
+            **/dist/*.apk
+            !snapchat.apk
