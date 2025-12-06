@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.snap.lenses.app.camera.favorites.action.BadgeFavoriteActionView android:id="@null" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <FrameLayout android:layout_gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0b86" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f080411" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="46.0dip" android:minHeight="36.0dip" android:paddingStart="@dimen/APKTOOL_DUMMYVAL_0x7f070901" android:paddingEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070901">
-        <com.snap.imageloading.view.SnapImageView android:layout_gravity="start|center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0b87" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070902" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070902" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f080433" />
-        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f071306" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060327" android:layout_gravity="start|center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0b88" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/favorite_badge_text" android:includeFontPadding="false" android:layout_marginStart="27.0dip" android:layout_marginEnd="5.0dip" app:APKTOOL_DUMMYVAL_0x7f04047c="1" />
-    </FrameLayout>
-</com.snap.lenses.app.camera.favorites.action.BadgeFavoriteActionView>

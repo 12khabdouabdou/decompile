@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0948" android:background="@android:color/transparent" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f07050c" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07065e" android:textDirection="locale" android:layoutDirection="locale"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.snap.ui.view.SnapFontTextView android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060216" android:gravity="center_horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b08db" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f07050c" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f07050c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:text="@string/ff_find_friends_label" app:APKTOOL_DUMMYVAL_0x7f04047c="1" />
-    <com.snap.component.button.SnapButtonView android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060327" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b08da" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f080327" style="@style/APKTOOL_DUMMYVAL_0x7f140549" />
-</LinearLayout>

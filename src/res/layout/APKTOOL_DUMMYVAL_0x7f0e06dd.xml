@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.snap.imageloading.view.SnapImageView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1690" android:layout_width="0.0dip" android:layout_height="0.0dip" app:APKTOOL_DUMMYVAL_0x7f0402cd="@id/APKTOOL_DUMMYVAL_0x7f0b168f" app:APKTOOL_DUMMYVAL_0x7f0402d2="0" app:APKTOOL_DUMMYVAL_0x7f0402e5="0" app:APKTOOL_DUMMYVAL_0x7f0402e9="0" app:APKTOOL_DUMMYVAL_0x7f0402eb="2" />
-    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f07130a" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060327" android:gravity="center|top" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b168f" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:maxLines="2" app:APKTOOL_DUMMYVAL_0x7f0402cc="0" app:APKTOOL_DUMMYVAL_0x7f0402d2="0" app:APKTOOL_DUMMYVAL_0x7f0402e5="0" app:APKTOOL_DUMMYVAL_0x7f0402e8="@id/APKTOOL_DUMMYVAL_0x7f0b1690" />
-</merge>

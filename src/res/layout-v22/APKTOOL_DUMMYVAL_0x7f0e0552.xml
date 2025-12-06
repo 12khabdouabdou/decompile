@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b105c" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f07050d" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f07050d" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/APKTOOL_DUMMYVAL_0x7f07050d"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
-    <com.snap.imageloading.view.SnapImageView android:background="@drawable/APKTOOL_DUMMYVAL_0x7f0805ac" android:padding="@dimen/APKTOOL_DUMMYVAL_0x7f07050b" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f0707a1" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f0707a1" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f0803d4" android:scaleType="fitCenter" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f07050c" />
-    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
-        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f071307" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060327" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/permission_title_camera" custom:APKTOOL_DUMMYVAL_0x7f04047c="1" />
-        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f0700e3" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f0604ca" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/permission_description_camera" />
-    </LinearLayout>
-</LinearLayout>

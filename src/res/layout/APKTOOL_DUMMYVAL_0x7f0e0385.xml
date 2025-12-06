@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.snap.lenses.explorer.action.DefaultActionView android:gravity="center_vertical" android:orientation="horizontal" android:id="@null" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f080313" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="46.0dip" android:paddingStart="26.0dip" android:paddingEnd="26.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.snap.imageloading.view.SnapImageView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b081a" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginEnd="8.0dip" />
-    <com.snap.ui.view.SnapFontTextView android:textColor="?APKTOOL_DUMMYVAL_0x7f04054d" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b081b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" style="@style/APKTOOL_DUMMYVAL_0x7f140297" />
-</com.snap.lenses.explorer.action.DefaultActionView>

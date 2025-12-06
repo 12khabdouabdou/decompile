@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.snap.component.button.SnapButtonView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0e2f" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:APKTOOL_DUMMYVAL_0x7f0400b0="30" app:APKTOOL_DUMMYVAL_0x7f0400b1="@string/favorite_badge_text"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

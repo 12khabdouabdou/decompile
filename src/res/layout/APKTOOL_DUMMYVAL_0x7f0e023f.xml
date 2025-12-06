@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.snap.component.cards.SnapCardView android:layout_width="0.0dip" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070a94" app:APKTOOL_DUMMYVAL_0x7f0400b5="@dimen/APKTOOL_DUMMYVAL_0x7f070a92" app:APKTOOL_DUMMYVAL_0x7f0400b6="@dimen/APKTOOL_DUMMYVAL_0x7f070a93"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

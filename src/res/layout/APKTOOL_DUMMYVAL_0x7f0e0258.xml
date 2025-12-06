@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.snap.geofilters.ui.SkipDrawingToEditsFrameLayout android:orientation="vertical" android:id="@null" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:id="@id/APKTOOL_DUMMYVAL_0x7f0b01c8" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" style="@style/APKTOOL_DUMMYVAL_0x7f14054b" />
-    <ImageView android:layout_gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0e04" android:layout_width="60.0dip" android:layout_height="60.0dip" android:alpha="0.0" />
-</com.snap.geofilters.ui.SkipDrawingToEditsFrameLayout>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.snap.lenses.caption.DefaultCaptionView android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f071310" android:textStyle="normal" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060327" android:gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0ba5" android:background="@color/APKTOOL_DUMMYVAL_0x7f06031f" android:paddingLeft="@dimen/APKTOOL_DUMMYVAL_0x7f0708ed" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f0708ee" android:paddingRight="@dimen/APKTOOL_DUMMYVAL_0x7f0708ed" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f0708ee" android:focusable="false" android:visibility="visible" android:scrollbars="none" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLength="250" android:lineSpacingMultiplier="1.2" android:inputType="none" android:textAlignment="center" />
-</com.snap.lenses.caption.DefaultCaptionView>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@null" android:background="?APKTOOL_DUMMYVAL_0x7f040148" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070e9c"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ProgressBar android:layout_gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b03ff" android:layout_width="0.0dip" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070e9d" android:layout_marginLeft="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:layout_marginRight="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:max="100" android:progress="0" android:progressDrawable="@drawable/APKTOOL_DUMMYVAL_0x7f080616" android:layout_weight="1.0" style="@android:style/Widget.ProgressBar.Horizontal" />
-    <ImageButton android:layout_gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b03fd" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f080615" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070e9b" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070e9b" android:layout_marginRight="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:scaleType="fitCenter" android:layout_weight="0.0" />
-</LinearLayout>

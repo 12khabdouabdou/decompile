@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.AppCompatImageButton android:id="@id/APKTOOL_DUMMYVAL_0x7f0b04ac" android:padding="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:visibility="gone" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f0801ed" android:tint="?APKTOOL_DUMMYVAL_0x7f04056e" style="@style/APKTOOL_DUMMYVAL_0x7f140531"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

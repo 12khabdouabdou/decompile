@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.snap.imageloading.view.SnapImageView android:id="@null" android:padding="@dimen/APKTOOL_DUMMYVAL_0x7f071076" android:visibility="gone" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070314" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070314" android:contentDescription="@string/chat_input_bar_lenses"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

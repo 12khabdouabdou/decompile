@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.snap.identity.onetaplogin.settings.SavedLoginInfoListView android:orientation="vertical" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:paddingEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070511" style="@style/APKTOOL_DUMMYVAL_0x7f1405dc"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.snap.ui.view.SnapFontTextView android:textSize="?APKTOOL_DUMMYVAL_0x7f040703" android:textColor="?APKTOOL_DUMMYVAL_0x7f0405b3" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070514" android:text="@string/saved_login_info_list_section_description" />
-    <androidx.recyclerview.widget.RecyclerView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b130d" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070514" />
-</com.snap.identity.onetaplogin.settings.SavedLoginInfoListView>

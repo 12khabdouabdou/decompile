@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" app:APKTOOL_DUMMYVAL_0x7f0402d1="1:1"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.snap.ui.view.LoadingSpinnerView android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070516" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070516" app:APKTOOL_DUMMYVAL_0x7f0402cc="0" app:APKTOOL_DUMMYVAL_0x7f0402df="0" app:APKTOOL_DUMMYVAL_0x7f0402e3="0" app:APKTOOL_DUMMYVAL_0x7f0402e9="0" />
-</androidx.constraintlayout.widget.ConstraintLayout>

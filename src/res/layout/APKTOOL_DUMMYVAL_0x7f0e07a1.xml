@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout android:theme="@style/APKTOOL_DUMMYVAL_0x7f1402a5" android:id="@null" android:background="?APKTOOL_DUMMYVAL_0x7f0404bd" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <androidx.recyclerview.widget.RecyclerView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1955" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f07149b" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070518" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
-    <com.snap.component.header.SnapSubscreenHeaderView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1954" app:APKTOOL_DUMMYVAL_0x7f04023c="@color/APKTOOL_DUMMYVAL_0x7f060314" style="@style/APKTOOL_DUMMYVAL_0x7f1405fd" />
-    <com.snap.component.button.SnapButtonView android:layout_gravity="bottom|center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b004d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070508" app:APKTOOL_DUMMYVAL_0x7f0400b0="23" />
-</androidx.coordinatorlayout.widget.CoordinatorLayout>

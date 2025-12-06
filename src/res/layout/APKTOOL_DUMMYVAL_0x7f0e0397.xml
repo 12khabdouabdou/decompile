@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@null" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/APKTOOL_DUMMYVAL_0x7f140205"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ViewStub android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0bba" android:inflatedId="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-</FrameLayout>

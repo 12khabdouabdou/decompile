@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <FrameLayout android:gravity="bottom" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1711" android:layout_width="0.0dip" android:layout_height="0.0dip" app:APKTOOL_DUMMYVAL_0x7f0402cc="@id/APKTOOL_DUMMYVAL_0x7f0b1701" app:APKTOOL_DUMMYVAL_0x7f0402d2="0" app:APKTOOL_DUMMYVAL_0x7f0402e5="0" app:APKTOOL_DUMMYVAL_0x7f0402e9="0" />
-    <LinearLayout android:orientation="vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b16ec" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f07051a" app:APKTOOL_DUMMYVAL_0x7f0402cc="@id/APKTOOL_DUMMYVAL_0x7f0b1701" app:APKTOOL_DUMMYVAL_0x7f0402d2="0" />
-    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1701" android:layout_width="wrap_content" android:layout_height="wrap_content" app:APKTOOL_DUMMYVAL_0x7f0402d5="0.0dip" />
-</androidx.constraintlayout.widget.ConstraintLayout>

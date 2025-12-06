@@ -3,17 +3,14 @@ apkFileName: snapchat.apk
 isFrameworkApk: false
 usesFramework:
   ids:
-  - 1
   tag: null
 sdkInfo:
-  minSdkVersion: 21
-  targetSdkVersion: 35
 packageInfo:
-  forcedPackageId: 127
+  forcedPackageId: null
   renameManifestPackage: null
 versionInfo:
-  versionCode: 223722
-  versionName: 13.51.0.56
+  versionCode: null
+  versionName: null
 sharedLibrary: false
 sparseResources: false
 compactEntries: false
@@ -620,7 +617,7 @@ doNotCompress:
 - org/joda/time/tz/data/Etc/UTC
 - org/joda/time/tz/data/HST
 - org/joda/time/tz/data/MST
-- res/raw/APKTOOL_DUMMYVAL_0x7f12002c
-- res/raw/APKTOOL_DUMMYVAL_0x7f120059
-- res/raw/APKTOOL_DUMMYVAL_0x7f12005a
-- res/raw/APKTOOL_DUMMYVAL_0x7f12005b
+- res/6bL
+- res/FRS
+- res/aDX
+- res/fYg

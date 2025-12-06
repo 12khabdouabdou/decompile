@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.snap.imageloading.view.SnapImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" app:APKTOOL_DUMMYVAL_0x7f0402cd="@id/APKTOOL_DUMMYVAL_0x7f0b189c" app:APKTOOL_DUMMYVAL_0x7f0402d2="0" app:APKTOOL_DUMMYVAL_0x7f0402e5="0" app:APKTOOL_DUMMYVAL_0x7f0402e9="0" app:APKTOOL_DUMMYVAL_0x7f0402eb="2" />
-    <ViewStub android:id="@id/APKTOOL_DUMMYVAL_0x7f0b189c" android:layout="@layout/APKTOOL_DUMMYVAL_0x7f0e0190" android:inflatedId="@id/APKTOOL_DUMMYVAL_0x7f0b189c" android:layout_width="fill_parent" android:layout_height="wrap_content" app:APKTOOL_DUMMYVAL_0x7f0402cc="0" app:APKTOOL_DUMMYVAL_0x7f0402e8="@id/icon" />
-</androidx.constraintlayout.widget.ConstraintLayout>

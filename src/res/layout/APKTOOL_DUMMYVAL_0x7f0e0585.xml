@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:tag="image_timer_tool" android:paddingRight="@dimen/APKTOOL_DUMMYVAL_0x7f071390" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/preview_timer_tool"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.snap.previewtools.timer.view.TimerButtonView android:layout_gravity="right" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1909" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-</FrameLayout>

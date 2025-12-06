@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.snap.imageloading.view.SnapImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f080a21" />
-    <com.snap.ui.view.SnapFontTextView android:textSize="?APKTOOL_DUMMYVAL_0x7f040706" android:textColor="?APKTOOL_DUMMYVAL_0x7f0405b2" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty_favorites_feed_title" app:APKTOOL_DUMMYVAL_0x7f04047c="2" />
-    <com.snap.ui.view.SnapFontTextView android:textColor="?APKTOOL_DUMMYVAL_0x7f0405b3" android:layout_gravity="center" android:paddingLeft="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:paddingRight="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty_favorites_feed_subtitle" android:textAlignment="center" android:paddingHorizontal="@dimen/APKTOOL_DUMMYVAL_0x7f070511" />
-</LinearLayout>

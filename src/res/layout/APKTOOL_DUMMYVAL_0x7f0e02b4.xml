@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:id="@null" android:background="?APKTOOL_DUMMYVAL_0x7f0404b8" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <include android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1932" layout="@layout/APKTOOL_DUMMYVAL_0x7f0e04d6" />
-    <WebView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1245" android:layout_width="fill_parent" android:layout_height="0.0dip" app:APKTOOL_DUMMYVAL_0x7f0402cc="0" app:APKTOOL_DUMMYVAL_0x7f0402e8="@id/APKTOOL_DUMMYVAL_0x7f0b1932" />
-</androidx.constraintlayout.widget.ConstraintLayout>

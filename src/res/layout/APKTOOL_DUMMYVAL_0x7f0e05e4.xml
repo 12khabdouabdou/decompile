@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.snap.ui.view.SnapFontTextView android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060327" android:gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b11fa" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f080632" android:padding="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:layout_width="fill_parent" android:layout_height="wrap_content" app:APKTOOL_DUMMYVAL_0x7f04047c="1" style="@style/APKTOOL_DUMMYVAL_0x7f140306" />
-    <com.snap.ui.view.SnapFontTextView android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060327" android:ellipsize="end" android:gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b11fb" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f080631" android:padding="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="12" app:APKTOOL_DUMMYVAL_0x7f04047c="1" style="@style/APKTOOL_DUMMYVAL_0x7f140306" />
-</merge>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_gravity="center" android:id="@null" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070f7a" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070f7a"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
-    <com.snap.imageloading.view.SnapImageView android:layout_gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1457" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f0805d1" android:visibility="invisible" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070f76" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070f76" android:scaleType="centerCrop" android:cropToPadding="true" />
-    <com.snap.imageloading.view.SnapImageView android:layout_gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1455" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f0805d4" android:scaleType="fitCenter" custom:APKTOOL_DUMMYVAL_0x7f04028f="true" />
-</FrameLayout>

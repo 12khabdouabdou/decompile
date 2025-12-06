@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.button.MaterialButtonToggleGroup android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0d3b" android:background="?APKTOOL_DUMMYVAL_0x7f040139" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:APKTOOL_DUMMYVAL_0x7f0400cb="@null" app:APKTOOL_DUMMYVAL_0x7f040492="true" app:APKTOOL_DUMMYVAL_0x7f0405cd="true"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <Button android:id="@null" android:layout_width="0.0dip" android:text="@string/material_timepicker_am" android:layout_weight="1.0" android:insetTop="4.0dip" android:insetBottom="4.0dip" style="?APKTOOL_DUMMYVAL_0x7f040384" />
-    <Button android:id="@null" android:layout_width="0.0dip" android:text="@string/material_timepicker_pm" android:layout_weight="1.0" android:insetTop="4.0dip" android:insetBottom="4.0dip" style="?APKTOOL_DUMMYVAL_0x7f040384" />
-</com.google.android.material.button.MaterialButtonToggleGroup>

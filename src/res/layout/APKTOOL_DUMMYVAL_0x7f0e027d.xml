@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@null" android:background="?APKTOOL_DUMMYVAL_0x7f0404bc" style="@style/APKTOOL_DUMMYVAL_0x7f1405f3"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
-    <androidx.recyclerview.widget.RecyclerView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b124a" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070511" style="@style/APKTOOL_DUMMYVAL_0x7f14060e" />
-    <com.snap.component.header.SnapSubscreenHeaderView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b13ec" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070bf1" custom:APKTOOL_DUMMYVAL_0x7f040288="@string/my_friends_search" custom:APKTOOL_DUMMYVAL_0x7f04069d="@string/my_friends" custom:APKTOOL_DUMMYVAL_0x7f0406b0="@layout/APKTOOL_DUMMYVAL_0x7f0e0769" style="@style/APKTOOL_DUMMYVAL_0x7f1405fe" />
-    <com.snap.component.scrollbar.SnapIndexScrollbar android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0a58" custom:APKTOOL_DUMMYVAL_0x7f040271="best_friends" style="@style/APKTOOL_DUMMYVAL_0x7f140562" />
-    <com.snap.identity.api.sharedui.ProgressButton android:layout_gravity="bottom|center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b004d" android:visibility="gone" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070be4" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070be3" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070515" />
-</androidx.coordinatorlayout.widget.CoordinatorLayout>

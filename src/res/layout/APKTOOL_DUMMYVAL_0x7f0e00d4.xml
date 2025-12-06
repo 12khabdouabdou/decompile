@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ViewStub android:layout_gravity="center_horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0481" android:layout="@layout/APKTOOL_DUMMYVAL_0x7f0e00d3" android:inflatedId="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f0702e1" />
-</merge>

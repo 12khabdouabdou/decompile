@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0dc4" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <include android:id="@null" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070ad0" layout="@layout/APKTOOL_DUMMYVAL_0x7f0e0481" />
-    <com.snap.ui.view.SnapFontTextView android:gravity="center" android:id="@null" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070acd" android:text="@string/memories_favorite_story_header_no_snaps" app:APKTOOL_DUMMYVAL_0x7f0402d2="0" app:APKTOOL_DUMMYVAL_0x7f0402e5="0" app:APKTOOL_DUMMYVAL_0x7f0402e8="@null" style="@style/APKTOOL_DUMMYVAL_0x7f140361" />
-    <com.snap.memories.lib.grid.view.MemoriesEmptyStateGridView android:background="?APKTOOL_DUMMYVAL_0x7f0403a8" android:layout_width="fill_parent" android:layout_height="wrap_content" app:APKTOOL_DUMMYVAL_0x7f04014e="4" app:APKTOOL_DUMMYVAL_0x7f0402d2="0" app:APKTOOL_DUMMYVAL_0x7f0402e5="0" app:APKTOOL_DUMMYVAL_0x7f0402e8="@null" app:APKTOOL_DUMMYVAL_0x7f040308="?APKTOOL_DUMMYVAL_0x7f0404bd" app:APKTOOL_DUMMYVAL_0x7f04030b="@dimen/APKTOOL_DUMMYVAL_0x7f070aa9" />
-</androidx.constraintlayout.widget.ConstraintLayout>

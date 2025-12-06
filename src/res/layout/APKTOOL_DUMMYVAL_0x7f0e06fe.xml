@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:gravity="center" android:orientation="vertical" android:id="@null" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.snap.maps.external.staticmap.api.StaticMapView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b174f" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <FrameLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b07c7" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>

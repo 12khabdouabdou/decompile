@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_gravity="end|center|top" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.snap.component.button.SnapButtonView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b101c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070d67" app:APKTOOL_DUMMYVAL_0x7f0400b0="11" app:APKTOOL_DUMMYVAL_0x7f0400b1="@string/pay_to_promote_button_text" />
-</FrameLayout>

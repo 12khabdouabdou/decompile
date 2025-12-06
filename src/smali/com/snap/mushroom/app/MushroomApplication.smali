@@ -277,9 +277,6 @@
 .method public constructor <init>()V
     .locals 3
 
-    const-string v0, "frida-gadget"
-    invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
-
     .line 13
     sget-object v0, Lzth;->c:Lzth;
 

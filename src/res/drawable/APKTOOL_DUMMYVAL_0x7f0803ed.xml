@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<layer-list
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:gravity="start" android:drawable="@drawable/APKTOOL_DUMMYVAL_0x7f080b11" />
-    <item android:gravity="start" android:drawable="@drawable/APKTOOL_DUMMYVAL_0x7f0803e8" android:left="12.0dip" android:top="-2.0dip" />
-</layer-list>

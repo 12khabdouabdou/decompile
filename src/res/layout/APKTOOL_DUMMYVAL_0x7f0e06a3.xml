@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.snap.identity.ui.profile.friending.snapcode.SnapcodeShareView android:orientation="vertical" android:background="@color/APKTOOL_DUMMYVAL_0x7f060314" android:padding="@dimen/APKTOOL_DUMMYVAL_0x7f070e89" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070e8d" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070e88"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f070e8c" android:textStyle="bold" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060327" android:layout_gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1664" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070e8a" />
-    <com.snap.ui.view.SnapFontTextView android:textSize="?APKTOOL_DUMMYVAL_0x7f0406f4" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060217" android:layout_gravity="center" android:id="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/snapcode_share_view_description" />
-</com.snap.identity.ui.profile.friending.snapcode.SnapcodeShareView>

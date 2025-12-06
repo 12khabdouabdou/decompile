@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <androidx.recyclerview.widget.RecyclerView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b05fe" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" app:APKTOOL_DUMMYVAL_0x7f0402cd="@id/APKTOOL_DUMMYVAL_0x7f0b05f8" app:APKTOOL_DUMMYVAL_0x7f0402e9="0" />
-    <View android:background="@drawable/APKTOOL_DUMMYVAL_0x7f080264" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070440" app:APKTOOL_DUMMYVAL_0x7f0402cd="@id/APKTOOL_DUMMYVAL_0x7f0b05f8" />
-    <ViewStub android:id="@id/APKTOOL_DUMMYVAL_0x7f0b05f8" android:inflatedId="@id/APKTOOL_DUMMYVAL_0x7f0b05f8" android:layout_width="0.0dip" android:layout_height="wrap_content" app:APKTOOL_DUMMYVAL_0x7f0402cc="0" app:APKTOOL_DUMMYVAL_0x7f0402d2="0" app:APKTOOL_DUMMYVAL_0x7f0402e5="0" />
-</androidx.constraintlayout.widget.ConstraintLayout>

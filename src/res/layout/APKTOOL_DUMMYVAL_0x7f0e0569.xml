@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.snap.ui.view.ShadowTextView android:textSize="?APKTOOL_DUMMYVAL_0x7f0406f7" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060327" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_mode_portrait_hint_move_closer" custom:APKTOOL_DUMMYVAL_0x7f04047c="2" custom:APKTOOL_DUMMYVAL_0x7f040496="@color/APKTOOL_DUMMYVAL_0x7f06031a" custom:APKTOOL_DUMMYVAL_0x7f040497="0.0dip" custom:APKTOOL_DUMMYVAL_0x7f040498="1.0dip" custom:APKTOOL_DUMMYVAL_0x7f040499="2.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto" />

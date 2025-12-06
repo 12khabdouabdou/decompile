@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.snap.lenses.common.RoundedImageView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b06f3" android:background="?APKTOOL_DUMMYVAL_0x7f040507" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
-    <com.snap.lenses.common.RoundedImageView android:layout_gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b06ef" android:visibility="gone" style="@style/APKTOOL_DUMMYVAL_0x7f1401ba" />
-</FrameLayout>

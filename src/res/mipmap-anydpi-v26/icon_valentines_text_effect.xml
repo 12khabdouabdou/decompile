@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<adaptive-icon
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <background android:drawable="@mipmap/icon_valentines_text_effect_background" />
-    <foreground android:drawable="@mipmap/icon_valentines_text_effect_foreground" />
-</adaptive-icon>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b119a" android:layout_width="fill_parent" android:layout_height="0.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <androidx.viewpager.widget.ViewPager android:id="@id/APKTOOL_DUMMYVAL_0x7f0b119c" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <View android:background="@drawable/APKTOOL_DUMMYVAL_0x7f0805e1" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070e50" />
-    <View android:background="@drawable/APKTOOL_DUMMYVAL_0x7f0805e0" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070e50" android:layout_alignParentBottom="true" />
-    <com.snap.commerce.lib.views.CarouselIndicator android:gravity="center_horizontal" android:layout_gravity="bottom|center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1199" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070516" android:layout_alignParentBottom="true" />
-</RelativeLayout>

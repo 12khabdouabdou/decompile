@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="start|center" android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@null" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f0801ab" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f0709ce" android:elevation="1.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.snap.ui.avatar.AvatarView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b025b" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f07051a" />
-    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
-        <com.snap.ui.view.SnapFontTextView android:textSize="?APKTOOL_DUMMYVAL_0x7f040700" android:textColor="?APKTOOL_DUMMYVAL_0x7f0405b2" android:id="@id/friend_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:singleLine="true" app:APKTOOL_DUMMYVAL_0x7f04047c="1" />
-        <com.snap.ui.view.SnapFontTextView android:textSize="?APKTOOL_DUMMYVAL_0x7f040701" android:textColor="?APKTOOL_DUMMYVAL_0x7f04011c" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0931" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-6.0dip" android:singleLine="true" />
-    </LinearLayout>
-</LinearLayout>

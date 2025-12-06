@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.snap.component.cards.SnapCardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f07051b" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f07051b" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f07142c" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f07142c"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.snap.component.cells.SnapActionCellView android:id="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-</com.snap.component.cards.SnapCardView>

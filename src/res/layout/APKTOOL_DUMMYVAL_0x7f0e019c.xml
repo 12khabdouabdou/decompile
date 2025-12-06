@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:measureAllChildren="true"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1704" android:visibility="invisible" style="@style/APKTOOL_DUMMYVAL_0x7f1402b7" />
-    <ViewStub android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1705" android:layout="@layout/APKTOOL_DUMMYVAL_0x7f0e06eb" android:inflatedId="@id/APKTOOL_DUMMYVAL_0x7f0b1704" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-</FrameLayout>

@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<view android:layout_gravity="start" android:id="@null" android:scrollbars="vertical" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@null" android:divider="?APKTOOL_DUMMYVAL_0x7f040312" android:overScrollMode="ifContentScrolls" android:textAlignment="viewStart" app:APKTOOL_DUMMYVAL_0x7f0403e7="@dimen/APKTOOL_DUMMYVAL_0x7f070020" app:APKTOOL_DUMMYVAL_0x7f0403ed="@dimen/APKTOOL_DUMMYVAL_0x7f070021" class="androidx.appcompat.app.AlertController$RecycleListView" style="@style/APKTOOL_DUMMYVAL_0x7f140455"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

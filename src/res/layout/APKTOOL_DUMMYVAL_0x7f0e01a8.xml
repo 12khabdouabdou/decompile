@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.snap.ui.view.SnapFontTextView android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060327" android:ellipsize="end" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f0808be" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:textDirection="locale" android:textAlignment="viewStart" style="@style/APKTOOL_DUMMYVAL_0x7f140384"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

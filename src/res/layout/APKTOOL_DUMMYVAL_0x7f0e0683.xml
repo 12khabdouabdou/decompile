@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
-    <TextView android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060204" android:gravity="center_horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b07ea" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:text="@string/settings_custom_emojis_skin_tone" style="@style/APKTOOL_DUMMYVAL_0x7f140222" />
-</RelativeLayout>

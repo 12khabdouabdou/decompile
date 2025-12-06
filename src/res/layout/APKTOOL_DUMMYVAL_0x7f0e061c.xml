@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@null" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f080685" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="50.0dip" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f07050f" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f07050f"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.snap.imageloading.view.SnapImageView android:layout_gravity="center|top" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1340" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f080ca4" android:padding="@dimen/APKTOOL_DUMMYVAL_0x7f07051a" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070f45" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070f45" android:scaleType="fitCenter" />
-    <com.snap.ui.view.SnapFontTextView android:ellipsize="end" android:layout_gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b137b" android:textAlignment="center" style="@style/APKTOOL_DUMMYVAL_0x7f14050f" />
-    <com.snap.ui.view.SnapFontTextView android:ellipsize="end" android:layout_gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1376" android:textAlignment="center" style="@style/APKTOOL_DUMMYVAL_0x7f14050b" />
-    <com.snap.component.button.SnapButtonView android:layout_gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1324" android:text="@string/scan_cancel_card" app:APKTOOL_DUMMYVAL_0x7f0400b0="2" style="@style/APKTOOL_DUMMYVAL_0x7f14050a" />
-    <com.snap.ui.view.button.SnapCancelButton android:layout_gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1323" android:text="@string/scan_cancel_card" style="@style/APKTOOL_DUMMYVAL_0x7f140509" />
-</LinearLayout>

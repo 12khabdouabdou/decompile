@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ViewStub android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0d92" android:layout="@layout/APKTOOL_DUMMYVAL_0x7f0e0463" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <ViewStub android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0d94" android:layout="@layout/APKTOOL_DUMMYVAL_0x7f0e0461" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <ViewStub android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0d8b" android:layout="@layout/APKTOOL_DUMMYVAL_0x7f0e0456" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <ViewStub android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0d8a" android:layout="@layout/APKTOOL_DUMMYVAL_0x7f0e0456" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-</FrameLayout>

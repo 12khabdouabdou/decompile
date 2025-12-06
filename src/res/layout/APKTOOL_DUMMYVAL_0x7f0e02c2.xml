@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@null" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f08035d" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.snap.ui.view.SnapFontEditText android:textColor="?APKTOOL_DUMMYVAL_0x7f0405b2" android:textColorHint="@color/APKTOOL_DUMMYVAL_0x7f060215" android:gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0978" android:background="@android:color/transparent" android:padding="@dimen/APKTOOL_DUMMYVAL_0x7f070710" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLength="32" android:inputType="textPassword" android:imeOptions="actionDone" />
-    <View android:layout_gravity="right" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0977" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f080380" android:visibility="gone" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070d60" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070d60" />
-</FrameLayout>

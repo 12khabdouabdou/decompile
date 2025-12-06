@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.snap.identity.loginsignup.ui.pages.onetaplogin.DefaultAccountCarouselView android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:APKTOOL_DUMMYVAL_0x7f0402cc="0" app:APKTOOL_DUMMYVAL_0x7f0402e9="0">
-        <com.snap.identity.loginsignup.ui.pages.onetaplogin.AccountCarouselListView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0039" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-        <com.snap.component.button.SnapButtonView android:enabled="false" android:id="@id/account_login_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMYVAL_0x7f070d32" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f07050f" android:layout_marginRight="@dimen/APKTOOL_DUMMYVAL_0x7f070d32" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f07050f" app:APKTOOL_DUMMYVAL_0x7f0400b0="0" app:APKTOOL_DUMMYVAL_0x7f0400b1="@string/log_in_button_text" />
-    </LinearLayout>
-</com.snap.identity.loginsignup.ui.pages.onetaplogin.DefaultAccountCarouselView>

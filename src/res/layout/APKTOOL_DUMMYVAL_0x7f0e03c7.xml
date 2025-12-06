@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@null" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f07122c" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f07122c" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.snap.ui.view.PausableLoadingSpinnerView android:layout_gravity="center" android:id="@null" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f07122d" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07122d" app:APKTOOL_DUMMYVAL_0x7f04031f="@color/APKTOOL_DUMMYVAL_0x7f060217" />
-</FrameLayout>

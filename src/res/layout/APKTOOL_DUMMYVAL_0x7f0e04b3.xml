@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.snap.ui.view.SquareRelativeLayout android:layout_gravity="center" android:id="@null" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.snap.imageloading.view.SnapImageView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b145b" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f080108" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" android:contentDescription="@string/bitmoji" />
-    <View android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0253" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f08010b" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignTop="@id/APKTOOL_DUMMYVAL_0x7f0b145b" android:layout_alignBottom="@id/APKTOOL_DUMMYVAL_0x7f0b145b" android:layout_alignStart="@id/APKTOOL_DUMMYVAL_0x7f0b145b" android:layout_alignEnd="@id/APKTOOL_DUMMYVAL_0x7f0b145b" />
-    <View android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0254" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f08010c" android:visibility="gone" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f07018f" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07018f" android:layout_alignTop="@id/APKTOOL_DUMMYVAL_0x7f0b145b" android:layout_alignEnd="@id/APKTOOL_DUMMYVAL_0x7f0b145b" />
-</com.snap.ui.view.SquareRelativeLayout>

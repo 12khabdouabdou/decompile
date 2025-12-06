@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_gravity="bottom" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0080" android:visibility="invisible" style="@style/APKTOOL_DUMMYVAL_0x7f14026e"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b073a" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@drawable/APKTOOL_DUMMYVAL_0x7f0806f7" android:showDividers="middle" />
-    <ImageView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1171" style="@style/APKTOOL_DUMMYVAL_0x7f14026d" />
-</FrameLayout>

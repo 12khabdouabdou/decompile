@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<animated-selector
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_checked="true" android:id="@null" android:drawable="@drawable/APKTOOL_DUMMYVAL_0x7f080152" />
-    <item android:id="@null" android:drawable="@drawable/APKTOOL_DUMMYVAL_0x7f080150" />
-    <transition android:drawable="@drawable/APKTOOL_DUMMYVAL_0x7f080153" android:toId="@null" android:fromId="@null" />
-    <transition android:drawable="@drawable/APKTOOL_DUMMYVAL_0x7f080151" android:toId="@null" android:fromId="@null" />
-</animated-selector>

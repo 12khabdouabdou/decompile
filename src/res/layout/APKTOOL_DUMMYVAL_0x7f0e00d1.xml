@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="horizontal" android:id="@null" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f0714ac" android:textStyle="bold" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060510" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f080cb4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ai_snap_tooltip_new" android:paddingStart="@dimen/APKTOOL_DUMMYVAL_0x7f07051a" android:paddingEnd="@dimen/APKTOOL_DUMMYVAL_0x7f07051a" />
-    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f0714ac" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060510" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ai_snap_tooltip_message" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f07051c" />
-</LinearLayout>

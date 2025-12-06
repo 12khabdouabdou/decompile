@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.snap.component.sectionheader.SnapSectionHeader android:id="@id/APKTOOL_DUMMYVAL_0x7f0b09cc" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070622" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070622" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/APKTOOL_DUMMYVAL_0x7f070621" android:paddingEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070621" app:APKTOOL_DUMMYVAL_0x7f04002d="1" app:APKTOOL_DUMMYVAL_0x7f04003d="false" app:APKTOOL_DUMMYVAL_0x7f04069c="0"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

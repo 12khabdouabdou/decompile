@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@null" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f0700a3"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.snap.ui.view.SnapFontTextView android:gravity="center_horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b09d9" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/find_friends_label_few_friends" style="@style/APKTOOL_DUMMYVAL_0x7f140374" />
-    <com.snap.component.button.SnapButtonView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0708" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:layout_width="wrap_content" android:layout_height="wrap_content" app:APKTOOL_DUMMYVAL_0x7f0400b0="0" app:APKTOOL_DUMMYVAL_0x7f0400b1="@string/find_friends_button_title" style="@style/APKTOOL_DUMMYVAL_0x7f140109" />
-</LinearLayout>

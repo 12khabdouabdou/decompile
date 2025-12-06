@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:orientation="vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b164b" android:background="?APKTOOL_DUMMYVAL_0x7f0404b8" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:APKTOOL_DUMMYVAL_0x7f04007e="false" app:APKTOOL_DUMMYVAL_0x7f0402c4="com.snap.component.tray.SnapTrayBottomSheetBehavior"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <View android:layout_gravity="center|top" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b164d" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f080c64" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f0710d1" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f0710ce" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f0710cf" />
-</FrameLayout>

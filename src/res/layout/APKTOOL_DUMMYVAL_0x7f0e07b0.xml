@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="4.0dip" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070511">
-        <FrameLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0ca8" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07072e" app:APKTOOL_DUMMYVAL_0x7f0402cc="0" app:APKTOOL_DUMMYVAL_0x7f0402d2="0" app:APKTOOL_DUMMYVAL_0x7f0402e5="0" app:APKTOOL_DUMMYVAL_0x7f0402e9="0" />
-        <com.snap.ui.view.LoadingSpinnerView android:id="@id/loading_spinner" android:layout_width="30.0dip" android:layout_height="30.0dip" app:APKTOOL_DUMMYVAL_0x7f0402cc="0" app:APKTOOL_DUMMYVAL_0x7f0402d2="0" app:APKTOOL_DUMMYVAL_0x7f0402e5="0" app:APKTOOL_DUMMYVAL_0x7f0402e9="0" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-    <com.snap.component.button.SnapButtonView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b09b4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f07051a" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f07051a" app:APKTOOL_DUMMYVAL_0x7f0400b0="35" />
-</LinearLayout>

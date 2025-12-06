@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.snap.ui.view.PillLayout android:layout_gravity="center|right|top" android:orientation="vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0cc5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layoutDirection="ltr"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

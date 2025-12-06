@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.gesture.GestureOverlayView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0e56" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:eventsInterceptionEnabled="false" android:layoutDirection="ltr"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e04d9" />
-</android.gesture.GestureOverlayView>

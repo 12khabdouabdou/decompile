@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.snap.framework.ui.views.RoundedFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:APKTOOL_DUMMYVAL_0x7f040177="@dimen/APKTOOL_DUMMYVAL_0x7f07128e"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.snap.imageloading.view.SnapImageView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0a1d" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
-    <View android:layout_gravity="bottom" android:id="@null" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f0808f6" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07128b" />
-</com.snap.framework.ui.views.RoundedFrameLayout>

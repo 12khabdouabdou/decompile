@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ProgressBar android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0891" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070a9a" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070a99" android:progressDrawable="@drawable/APKTOOL_DUMMYVAL_0x7f0804d1" style="@android:style/Widget.ProgressBar.Horizontal"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

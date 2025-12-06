@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.snap.ui.view.OptimizedImageView android:layout_gravity="center|top" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0e61" android:visibility="gone" android:layout_width="46.0dip" android:layout_height="28.0dip" />
-    <com.snap.ui.view.LazyIconView android:layout_gravity="center|top" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0e62" android:visibility="gone" android:layout_width="46.0dip" android:layout_height="10.0dip" app:APKTOOL_DUMMYVAL_0x7f0405df="@drawable/APKTOOL_DUMMYVAL_0x7f080543" />
-    <com.snap.ui.view.LazyIconView android:layout_gravity="center|top" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0e63" android:visibility="gone" android:layout_width="58.0dip" android:layout_height="126.0dip" app:APKTOOL_DUMMYVAL_0x7f0405df="@drawable/APKTOOL_DUMMYVAL_0x7f080544" />
-</merge>

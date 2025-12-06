@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.snap.lenses.camera.closebutton.DefaultCloseButtonView android:id="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" android:minWidth="@dimen/APKTOOL_DUMMYVAL_0x7f070847" android:minHeight="@dimen/APKTOOL_DUMMYVAL_0x7f070847" style="?APKTOOL_DUMMYVAL_0x7f0400bd"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

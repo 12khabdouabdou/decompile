@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@null" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.snap.identity.ui.shared.phonenumber.CountryCodeCellView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b06bc" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-</FrameLayout>

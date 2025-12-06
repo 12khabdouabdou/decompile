@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.AppCompatImageButton android:gravity="center" android:layout_gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b048d" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f0801cb" android:padding="@dimen/APKTOOL_DUMMYVAL_0x7f07050c" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f0702f1" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f0702f1" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f0801cc"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

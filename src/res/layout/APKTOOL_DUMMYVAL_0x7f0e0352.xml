@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.snap.lenses.carousel.DefaultCarouselItemView android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070856" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070856"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.snap.lenses.common.RoundedImageView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0aad" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070856" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070856" android:contentDescription="@null" />
-    <View android:id="@id/lens_fade_overlay" android:background="@drawable/lens_fade_overlay" android:visibility="gone" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070856" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070856" />
-    <ViewStub android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1053" android:layout="@layout/APKTOOL_DUMMYVAL_0x7f0e036d" android:inflatedId="@id/APKTOOL_DUMMYVAL_0x7f0b1052" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070856" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070856" />
-    <com.snap.ui.view.LoadingSpinnerView android:layout_gravity="center" android:id="@id/loading_spinner" android:visibility="gone" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f0708a6" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f0708a6" app:APKTOOL_DUMMYVAL_0x7f04031f="@color/APKTOOL_DUMMYVAL_0x7f060327" />
-</com.snap.lenses.carousel.DefaultCarouselItemView>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070527"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.snap.ui.view.SnapFontTextView android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060327" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1911" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070528" android:minWidth="@dimen/APKTOOL_DUMMYVAL_0x7f070529" style="@style/APKTOOL_DUMMYVAL_0x7f140383" />
-    <com.snap.opera.view.media.VideoSeekBarView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1439" android:clickable="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070523" app:APKTOOL_DUMMYVAL_0x7f04006f="@dimen/APKTOOL_DUMMYVAL_0x7f070522" />
-</LinearLayout>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_gravity="end|center|top" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f071274" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f071273">
-        <com.snap.ui.view.LoadingSpinnerView android:layout_gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b17ff" android:visibility="gone" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f071272" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f071272" android:scaleType="fitCenter" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070065" app:APKTOOL_DUMMYVAL_0x7f0402cc="0" app:APKTOOL_DUMMYVAL_0x7f0402d2="0" app:APKTOOL_DUMMYVAL_0x7f0402e9="0" app:APKTOOL_DUMMYVAL_0x7f04031f="@color/APKTOOL_DUMMYVAL_0x7f060327" />
-        <ImageView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b17fe" android:visibility="gone" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f071271" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f071271" android:scaleType="fitCenter" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070065" app:APKTOOL_DUMMYVAL_0x7f0402cc="0" app:APKTOOL_DUMMYVAL_0x7f0402d2="0" app:APKTOOL_DUMMYVAL_0x7f0402e9="0" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</FrameLayout>

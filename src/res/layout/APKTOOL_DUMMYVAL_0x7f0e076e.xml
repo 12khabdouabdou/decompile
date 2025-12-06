@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextView android:ellipsize="marquee" android:id="@android:id/text1" android:layout_width="fill_parent" android:layout_height="?APKTOOL_DUMMYVAL_0x7f0401b7" android:singleLine="true" style="?APKTOOL_DUMMYVAL_0x7f0405dc"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@null" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="horizontal" android:id="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginBottom="139.0dip" android:layout_alignParentBottom="true">
-        <TextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f071299" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060327" android:layout_gravity="center_vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1815" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f07129b" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f07129b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="@color/APKTOOL_DUMMYVAL_0x7f06031c" android:shadowDx="-3.0" android:shadowDy="3.0" android:shadowRadius="5.0" />
-        <TextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f07129a" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060327" android:layout_gravity="center_vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1816" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f07129b" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f07129b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="@color/APKTOOL_DUMMYVAL_0x7f06031c" android:shadowDx="-3.0" android:shadowDy="3.0" android:shadowRadius="5.0" />
-    </LinearLayout>
-</RelativeLayout>

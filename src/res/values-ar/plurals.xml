@@ -1,1255 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110000">
-        <item quantity="other">%d من العناصر تم اختيارها</item>
-        <item quantity="zero">%d من العناصر تم اختيار اختيارها</item>
-        <item quantity="one">%d عنصر واحد تم اختياره</item>
-        <item quantity="two">%d من العناصر تم اختيارها</item>
-        <item quantity="few">%d من العناصر تم اختيارها</item>
-        <item quantity="many">%d من العناصر تم اختيارها</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110001">
-        <item quantity="other">إخفاء اللقطات (الخاصة بي فقط)</item>
-        <item quantity="zero">إخفاء اللقطات (الخاصة بي فقط)</item>
-        <item quantity="one">@string/memories_opera_action_menu_hide</item>
-        <item quantity="two">إخفاء اللقطات (الخاصة بي فقط)</item>
-        <item quantity="few">إخفاء اللقطات (الخاصة بي فقط)</item>
-        <item quantity="many">إخفاء اللقطات (الخاصة بي فقط)</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110002">
-        <item quantity="other">لمدة %d ساعة</item>
-        <item quantity="zero">لمدة %d ساعة</item>
-        <item quantity="one">لمدة ساعة واحدة (%d)</item>
-        <item quantity="two">لمدة ساعتين (%d)</item>
-        <item quantity="few">لمدة %d ساعات</item>
-        <item quantity="many">لمدة %d ساعة</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110003">
-        <item quantity="other">%d‏ من اللقطات تم اختيارها</item>
-        <item quantity="zero">%d‏ من اللقطات تم اختيارها</item>
-        <item quantity="one">تم اختيار لقطة واحدة (%d)</item>
-        <item quantity="two">%d‏ من اللقطات تم اختيارهما</item>
-        <item quantity="few">%d‏ من اللقطات تم اختيارها</item>
-        <item quantity="many">%d‏ من اللقطات تم اختيارها</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110004">
-        <item quantity="other">إظهار اللقطات</item>
-        <item quantity="zero">إظهار اللقطات</item>
-        <item quantity="one">@string/memories_opera_action_menu_unhide</item>
-        <item quantity="two">إظهار اللقطات</item>
-        <item quantity="few">إظهار اللقطات</item>
-        <item quantity="many">إظهار اللقطات</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110009">
-        <item quantity="other">أضافك ⁦%1$s⁩ من مُستخدمي سناب شات!</item>
-        <item quantity="zero">أضافك ⁦%1$s⁩ من مُستخدمي سناب شات!</item>
-        <item quantity="one">أضافك ⁦%1$s⁩ من مُستخدمي سناب شات!</item>
-        <item quantity="two">أضافك ⁦%1$s⁩ من مُستخدمي سناب شات!</item>
-        <item quantity="few">أضافك ⁦%1$s⁩ من مُستخدمي سناب شات!</item>
-        <item quantity="many">أضافك ⁦%1$s⁩ من مُستخدمي سناب شات!</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11000a">
-        <item quantity="other">⁦%1$s⁩ اقتراحات الأصدقاء</item>
-        <item quantity="zero">⁦%1$s⁩ اقتراحات الأصدقاء</item>
-        <item quantity="one">⁦%1$s⁩ اقتراح الأصدقاء</item>
-        <item quantity="two">⁦%1$s⁩ اقتراحات الأصدقاء</item>
-        <item quantity="few">⁦%1$s⁩ اقتراحات الأصدقاء</item>
-        <item quantity="many">⁦%1$s⁩ اقتراحات الأصدقاء</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11000c">
-        <item quantity="other">إضافة %d من الأصدقاء</item>
-        <item quantity="zero">إضافة %d صديق</item>
-        <item quantity="one">إضافة صديق واحد (%d)</item>
-        <item quantity="two">إضافة صديقين (%d)</item>
-        <item quantity="few">إضافة %d صديقًا</item>
-        <item quantity="many">إضافة %d صديقًا</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11000d">
-        <item quantity="other">يستطيع Snap المُتعدّد التقاط ما يصل إلى ⁦%1$d⁩ اللقطات في المرة الواحدة!</item>
-        <item quantity="zero">يستطيع Snap المُتعدّد التقاط ما يصل إلى ⁦%1$d⁩ Snap في المرة الواحدة!</item>
-        <item quantity="one">يستطيع Snap المُتعدّد التقاط ما يصل إلى ⁦%1$d⁩ Snap في المرة الواحدة!</item>
-        <item quantity="two">يستطيع Snap المُتعدّد التقاط ما يصل إلى ⁦%1$d⁩ اللقطات في المرة الواحدة!</item>
-        <item quantity="few">يستطيع Snap المُتعدّد التقاط ما يصل إلى ⁦%1$d⁩ اللقطات في المرة الواحدة!</item>
-        <item quantity="many">يستطيع Snap المُتعدّد التقاط ما يصل إلى ⁦%1$d⁩ اللقطات في المرة الواحدة!</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11000e">
-        <item quantity="other">هل أنت مُتأكّد أنك تُريد إيقاف اللقطات المُتعدّدة؟ سَتفقد ⁦%1$d⁩ من اللقطات غير المحفوظة.</item>
-        <item quantity="zero">هل أنت مُتأكّد أنك تُريد إيقاف اللقطات المُتعدّدة؟ سَتفقد ⁦%1$d⁩ من اللقطات غير المحفوظة.</item>
-        <item quantity="one">هل أنت مُتأكّد أنك تُريد إيقاف اللقطات المُتعدّدة؟ سَتفقد لقطتك غير المحفوظة.</item>
-        <item quantity="two">هل أنت مُتأكّد أنك تُريد إيقاف اللقطات المُتعدّدة؟ سَتفقد ⁦%1$d⁩ من اللقطات غير المحفوظة.</item>
-        <item quantity="few">هل أنت مُتأكّد أنك تُريد إيقاف اللقطات المُتعدّدة؟ سَتفقد ⁦%1$d⁩ من اللقطات غير المحفوظة.</item>
-        <item quantity="many">هل أنت مُتأكّد أنك تُريد إيقاف اللقطات المُتعدّدة؟ سَتفقد ⁦%1$d⁩ من اللقطات غير المحفوظة.</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11000f">
-        <item quantity="other">حفظ %1$s و%2$s %3$d صورة من %4$s</item>
-        <item quantity="zero">حفظ %1$s و%2$s %3$d من الصور من %4$s</item>
-        <item quantity="one">حفظ %1$s و%2$s صورة من %4$s</item>
-        <item quantity="two">حفظ %1$s و%2$s %3$d صورتَيْن من %4$s</item>
-        <item quantity="few">حفظ %1$s و%2$s %3$d صور من %4$s</item>
-        <item quantity="many">حفظ %1$s و%2$s %3$d صورة من %4$s</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110010">
-        <item quantity="other">حفظ %1$s و%2$s %3$d من الصور التي أرسلتها</item>
-        <item quantity="zero">حفظ %1$s و%2$s %3$d من الصور التي أرسلتها</item>
-        <item quantity="one">حفظ %1$s و%2$s صورتك</item>
-        <item quantity="two">حفظ %1$s و%2$s %3$d الصورتَيْن اللتين أرسلتهما</item>
-        <item quantity="few">حفظ %1$s و%2$s %3$d من الصور التي أرسلتها</item>
-        <item quantity="many">حفظ %1$s و%2$s %3$d من الصور التي أرسلتها</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110011">
-        <item quantity="other">حفظ %1$s و%2$s %3$d عنصرًا من %4$s</item>
-        <item quantity="zero">حفظ %1$s و%2$s %3$d من العناصر من %4$s</item>
-        <item quantity="one">حفظ %1$s و%2$s عنصراً من %4$s</item>
-        <item quantity="two">حفظ %1$s و%2$s %3$d عنصرَيْن من %4$s</item>
-        <item quantity="few">حفظ %1$s و%2$s %3$d عناصر من %4$s</item>
-        <item quantity="many">حفظ %1$s و%2$s %3$d عنصرًا من %4$s</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110012">
-        <item quantity="other">حفظ %1$s و%2$s %3$d من العناصر التي أرسلتها</item>
-        <item quantity="zero">حفظ %1$s و%2$s %3$d من العناصر التي أرسلتها</item>
-        <item quantity="one">حفظ %1$s و%2$s العنصر الخاص بك</item>
-        <item quantity="two">حفظ %1$s و%2$s %3$d العنصرَيْن اللذين أرسلتهما</item>
-        <item quantity="few">حفظ %1$s و%2$s %3$d من العناصر التي أرسلتها</item>
-        <item quantity="many">حفظ %1$s و%2$s %3$d من العناصر التي أرسلتها</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110013">
-        <item quantity="other">حفظ %1$s و%2$s %3$d مقطع فيديو من %4$s</item>
-        <item quantity="zero">حفظ %1$s و%2$s %3$d من مقاطع الفيديو من %4$s</item>
-        <item quantity="one">حفظ %1$s و%2$s مقطع فيديو من %4$s</item>
-        <item quantity="two">حفظ %1$s و%2$s %3$d مقطعَيْ فيديو من %4$s</item>
-        <item quantity="few">حفظ %1$s و%2$s %3$d مقاطع فيديو من %4$s</item>
-        <item quantity="many">حفظ %1$s و%2$s %3$d مقطع فيديو من %4$s</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110014">
-        <item quantity="other">حفظ %1$s و%2$s %3$d من مقاطع الفيديو التي أرسلتها</item>
-        <item quantity="zero">حفظ %1$s و%2$s %3$d من مقاطع الفيديو التي أرسلتها</item>
-        <item quantity="one">حفظ %1$s و%2$s مقطع الفيديو الخاص بك</item>
-        <item quantity="two">حفظ %1$s و%2$s %3$d من مقاطع الفيديو التي أرسلتها</item>
-        <item quantity="few">حفظ %1$s و%2$s %3$d من مقاطع الفيديو التي أرسلتها</item>
-        <item quantity="many">حفظ %1$s و%2$s %3$d من مقاطع الفيديو التي أرسلتها</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110015">
-        <item quantity="other">لقد حفظتَ أنت و%1$s %2$d صورًا من %3$s</item>
-        <item quantity="zero">لقد حفظتَ أنت و%1$s %2$d من الصور من %3$s</item>
-        <item quantity="one">لقد حفظتَ أنت و%1$s صورة من %3$s</item>
-        <item quantity="two">لقد حفظتَ أنت و%1$s %2$d صورتَيْن من %3$s</item>
-        <item quantity="few">لقد حفظتَ أنت و%1$s %2$d صور من %3$s</item>
-        <item quantity="many">لقد حفظتَ أنت و%1$s %2$d صورًا من %3$s</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110016">
-        <item quantity="other">لقد حفظتَ أنت و%1$s %2$d عنصر من %3$s</item>
-        <item quantity="zero">لقد حفظتَ أنت و%1$s %2$d من العناصر من %3$s</item>
-        <item quantity="one">لقد حفظتَ أنت و%1$s عنصرًا من %3$s</item>
-        <item quantity="two">لقد حفظتَ أنت و%1$s %2$d عنصرَيْن من %3$s</item>
-        <item quantity="few">لقد حفظتَ أنت و%1$s %2$d عناصر من %3$s</item>
-        <item quantity="many">لقد حفظتَ أنت و%1$s %2$d عنصر من %3$s</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110017">
-        <item quantity="other">لقد حفظتَ أنت و%1$s %2$dمقطع فيديو من %3$s</item>
-        <item quantity="zero">لقد حفظتَ أنت و%1$s %2$d مقاطع فيديو من %3$s</item>
-        <item quantity="one">لقد حفظتَ أنت و%1$s مقطع فيديو من %3$s</item>
-        <item quantity="two">لقد حفظتَ أنت و%1$s %2$d مقطَعيْ فيديو من %3$s</item>
-        <item quantity="few">لقد حفظتَ أنت و%1$s %2$d مقاطع فيديو من %3$s</item>
-        <item quantity="many">لقد حفظتَ أنت و%1$s %2$d مقطع فيديو من %3$s</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110018">
-        <item quantity="other">حفظ %1$s و%2$s %3$d صور من %4$s</item>
-        <item quantity="zero">حفظ %1$s و%2$s %3$d من الصور من %4$s</item>
-        <item quantity="one">حفظ %1$s و%2$s صورة من %4$s</item>
-        <item quantity="two">حفظ %1$s و%2$s %3$d من الصور من %4$s</item>
-        <item quantity="few">حفظ %1$s و%2$s %3$d صور من %4$s</item>
-        <item quantity="many">حفظ %1$s و%2$s %3$d صورًا من %4$s</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110019">
-        <item quantity="other">حفظ %1$s و%2$s %3$d من الصور التي أرسلتها</item>
-        <item quantity="zero">حفظ %1$s و%2$s %3$d من الصور التي أرسلتها</item>
-        <item quantity="one">حفظ %1$s و%2$s صورتك</item>
-        <item quantity="two">حفظ %1$s و%2$s %3$d من الصور التي أرسلتها</item>
-        <item quantity="few">حفظ %1$s و%2$s %3$d صور التي أرسلتها</item>
-        <item quantity="many">حفظ %1$s و%2$s %3$d من الصور التي أرسلتها</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11001a">
-        <item quantity="other">حفظ %1$s و%2$s %3$d عنصر من %4$s</item>
-        <item quantity="zero">حفظ %1$s و%2$s %3$d من العناصر من %4$s</item>
-        <item quantity="one">حفظ %1$s و%2$s عنصراً من %4$s</item>
-        <item quantity="two">حفظ %1$s و%2$s %3$d من العناصر من %4$s</item>
-        <item quantity="few">حفظ %1$s و%2$s %3$d عناصر من %4$s</item>
-        <item quantity="many">حفظ %1$s و%2$s %3$d عنصرًا من %4$s</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11001b">
-        <item quantity="other">حفظ %1$s و%2$s %3$d من العناصر التي أرسلتها</item>
-        <item quantity="zero">حفظ %1$s و%2$s %3$d من العناصر التي أرسلتها</item>
-        <item quantity="one">حفظ %1$s و%2$s العنصر الخاص بك</item>
-        <item quantity="two">حفظ %1$s و%2$s %3$d من العناصر التي أرسلتها</item>
-        <item quantity="few">حفظ %1$s و%2$s %3$d من العناصر التي أرسلتها</item>
-        <item quantity="many">حفظ %1$s و%2$s %3$d من العناصر التي أرسلتها</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11001c">
-        <item quantity="other">حفظ %1$s و%2$s %3$d فيديو من %4$s</item>
-        <item quantity="zero">حفظ %1$s و%2$s %3$d من مقاطع الفيديو من %4$s</item>
-        <item quantity="one">حفظ %1$s و%2$s مقطع فيديو من %4$s</item>
-        <item quantity="two">حفظ %1$s و%2$s %3$d من الفيديوهات من %4$s</item>
-        <item quantity="few">حفظ %1$s و%2$s %3$d فيديو من %4$s</item>
-        <item quantity="many">حفظ %1$s و%2$s %3$d فيديو من %4$s</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11001d">
-        <item quantity="other">حفظ %1$s و%2$s %3$d من مقاطع الفيديو التي أرسلتها</item>
-        <item quantity="zero">حفظ %1$s و%2$s %3$d فيديو الذي أرسلته</item>
-        <item quantity="one">حفظ %1$s و%2$s مقطع الفيديو الخاص بك</item>
-        <item quantity="two">حفظ %1$s و%2$s %3$d من الفيديوهات التي أرسلتها</item>
-        <item quantity="few">حفظ %1$s و%2$s %3$d من مقاطع الفيديو التي أرسلتها</item>
-        <item quantity="many">حفظ %1$s و%2$s %3$d من مقاطع الفيديو التي أرسلتها</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11001e">
-        <item quantity="other">لقد حفظتَ أنت و%1$s و%2$s %3$d صور من %4$s</item>
-        <item quantity="zero">لقد حفظتَ أنت و%1$s و%2$s %3$d من الصور من %4$s</item>
-        <item quantity="one">لقد حفظتَ أنت و%1$s و%2$s صورة من %4$s</item>
-        <item quantity="two">لقد حفظتَ أنت و%1$s و%2$s %3$d من الصور من %4$s</item>
-        <item quantity="few">لقد حفظتَ أنت و%1$s و%2$s %3$d صور من %4$s</item>
-        <item quantity="many">لقد حفظتَ أنت و%1$s و%2$s %3$d من الصور من %4$s</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11001f">
-        <item quantity="other">لقد حفظتَ أنت و%1$s و%2$s %3$d عنصر من %4$s</item>
-        <item quantity="zero">لقد حفظتَ أنت و%1$s و%2$s %3$d من العناصر من %4$s</item>
-        <item quantity="one">لقد حفظتَ أنت و%1$s و%2$s عنصرًا من %4$s</item>
-        <item quantity="two">لقد حفظتَ أنت و%1$s و%2$s %3$d من العناصر من %4$s</item>
-        <item quantity="few">لقد حفظتَ أنت و%1$s و%2$s %3$d من العناصر من %4$s</item>
-        <item quantity="many">لقد حفظتَ أنت و%1$s و%2$s %3$d عناصر من %4$s</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110020">
-        <item quantity="other">لقد حفظتَ أنت و%1$s و%2$s %3$d فيديو من %4$s</item>
-        <item quantity="zero">لقد حفظتَ أنت و%1$s و%2$s %3$d من مقاطع الفيديو من %4$s</item>
-        <item quantity="one">لقد حفظتَ أنت و%1$s و%2$s مقطع فيديو من %4$s</item>
-        <item quantity="two">لقد حفظتَ أنت و%1$s و%2$s %3$d من الفيديوهات من %4$s</item>
-        <item quantity="few">لقد حفظتَ أنت و%1$s و%2$s %3$d فيديوهات من %4$s</item>
-        <item quantity="many">لقد حفظتَ أنت و%1$s و%2$s %3$d فيديو من %4$s</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110021">
-        <item quantity="other">حفظ %1$s %2$d صورة من %3$s</item>
-        <item quantity="zero">حفظ %1$s %2$d من الصور من %3$s</item>
-        <item quantity="one">حفظ %1$s صورة من %3$s</item>
-        <item quantity="two">حفظ %1$s %2$d صورَتيْن من %3$s</item>
-        <item quantity="few">حفظ %1$s %2$d صور من %3$s</item>
-        <item quantity="many">حفظ %1$s %2$d صورة من %3$s</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110022">
-        <item quantity="other">حفظ %1$s %2$d من الصور التي أرسلتها</item>
-        <item quantity="zero">حفظ %1$s %2$d من الصور التي أرسلتها</item>
-        <item quantity="one">حفظ %1$s صورتك</item>
-        <item quantity="two">حفظ %1$s %2$d الصورَتيْن اللتين أرسلتهما</item>
-        <item quantity="few">حفظ %1$s %2$d من الصور التي أرسلتها</item>
-        <item quantity="many">حفظ %1$s %2$d من الصور التي أرسلتها</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110023">
-        <item quantity="other">حفظ %1$s %2$d عنصرًا من %3$s</item>
-        <item quantity="zero">حفظ %1$s %2$d من العناصر من %3$s</item>
-        <item quantity="one">حفظ %1$s عنصراً من %3$s</item>
-        <item quantity="two">حفظ %1$s %2$d عنصرَيْن من %3$s</item>
-        <item quantity="few">حفظ %1$s %2$d عناصر من %3$s</item>
-        <item quantity="many">حفظ %1$s %2$d عنصرًا من %3$s</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110024">
-        <item quantity="other">حفظ %1$s %2$d من العناصر التي أرسلتها</item>
-        <item quantity="zero">حفظ %1$s %2$d من العناصر التي أرسلتها</item>
-        <item quantity="one">حفظ %1$s العنصر الخاص بك</item>
-        <item quantity="two">حفظ %1$s %2$d العنصرَين اللذين أرسلتهما</item>
-        <item quantity="few">حفظ %1$s %2$d من العناصر التي أرسلتها</item>
-        <item quantity="many">حفظ %1$s %2$d من العناصر التي أرسلتها</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110025">
-        <item quantity="other">حفظ %1$s %2$d مقطع فيديو من %3$s</item>
-        <item quantity="zero">حفظ %1$s %2$d من مقاطع الفيديو من %3$s</item>
-        <item quantity="one">حفظ %1$s مقطع فيديو من %3$s</item>
-        <item quantity="two">حفظ %1$s %2$d مقطعَيْ فيديو من %3$s</item>
-        <item quantity="few">حفظ %1$s %2$d مقاطع فيديو من %3$s</item>
-        <item quantity="many">حفظ %1$s %2$d مقطع فيديو من %3$s</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110026">
-        <item quantity="other">حفظ %1$s %2$d من مقاطع الفيديو التي أرسلتها</item>
-        <item quantity="zero">حفظ %1$s %2$d من مقاطع فيديو التي أرسلتها</item>
-        <item quantity="one">حفظ %1$s مقطع الفيديو الخاص بك</item>
-        <item quantity="two">حفظ %1$s %2$d مقطعَيْ الفيديو اللذين أرسلتهما</item>
-        <item quantity="few">حفظ %1$s %2$d من مقاطع الفيديو التي أرسلتها</item>
-        <item quantity="many">حفظ %1$s %2$d من مقاطع الفيديو التي أرسلتها</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110027">
-        <item quantity="other">لقد حفظتَ %1$d صورة من %2$s</item>
-        <item quantity="zero">لقد حفظتَ %1$d من الصور من %2$s</item>
-        <item quantity="one">لقد حفظتَ صورة من %2$s</item>
-        <item quantity="two">لقد حفظتَ %1$d صورتين من %2$s</item>
-        <item quantity="few">لقد حفظتَ %1$d صور من %2$s</item>
-        <item quantity="many">لقد حفظتَ %1$d صورة من %2$s</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110028">
-        <item quantity="other">لقد حفظتَ %1$d عنصرًا من %2$s</item>
-        <item quantity="zero">لقد حفظتَ %1$d من العناصر من %2$s</item>
-        <item quantity="one">لقد حفظتَ عنصراً من %2$s</item>
-        <item quantity="two">لقد حفظتَ %1$d عنصُرَيْن من %2$s</item>
-        <item quantity="few">لقد حفظتَ %1$d عناصر من %2$s</item>
-        <item quantity="many">لقد حفظتَ %1$d عنصرًا من %2$s</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110029">
-        <item quantity="other">لقد حفظتَ %1$d مقطع فيديو من %2$s</item>
-        <item quantity="zero">لقد حفظتَ %1$d من مقاطع الفيديو من %2$s</item>
-        <item quantity="one">لقد حفظتَ مقطع فيديو من %2$s</item>
-        <item quantity="two">لقد حفظتَ %1$d مقطعَيْ فيديو من %2$s</item>
-        <item quantity="few">لقد حفظتَ %1$d مقاطع فيديو من %2$s</item>
-        <item quantity="many">لقد حفظتَ %1$d مقطع فيديو من %2$s</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11002a">
-        <item quantity="other">يُمكنك فقط إضافة حتى ⁦%1$d⁩ قصص مُخصصة في آن واحد</item>
-        <item quantity="zero">يُمكنك فقط إضافة حتى ⁦%1$d⁩ قصة مُخصصة في آن واحد</item>
-        <item quantity="one">يُمكنك فقط إضافة ⁦%1$d⁩ قصة واحدة مُخصصة في آن واحد</item>
-        <item quantity="two">يُمكنك فقط إضافة حتى ⁦%1$d⁩ قصتين مُخصصتين في آن واحد</item>
-        <item quantity="few">يُمكنك فقط إضافة حتى ⁦%1$d⁩ قصص مُخصصة في آن واحد</item>
-        <item quantity="many">يُمكنك فقط إضافة حتى ⁦%1$d⁩ قصة مُخصصة في آن واحد</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11002b">
-        <item quantity="other">⁦%1$d⁩ من الأقدام</item>
-        <item quantity="zero">⁦%1$d⁩ قدم</item>
-        <item quantity="one">⁦%1$d⁩ قدمًا</item>
-        <item quantity="two">⁦%1$d⁩ قدمًا</item>
-        <item quantity="few">⁦%1$d⁩ قدمًا</item>
-        <item quantity="many">⁦%1$d⁩ قدمًا</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11002d">
-        <item quantity="other">عيد ميلاد ⁦%1$s⁩ بعد ⁦%2$d⁩ من الأيام 🎂. أهدِ له سناب شات+</item>
-        <item quantity="zero">عيد ميلاد ⁦%1$s⁩ بعد ⁦%2$d⁩ من الأيام 🎂. أهدِ له سناب شات+</item>
-        <item quantity="one">عيد ميلاد ⁦%1$s⁩ غدًا 🎂. أهدِ له سناب شات+</item>
-        <item quantity="two">عيد ميلاد ⁦%1$s⁩ بعد ⁦%2$d⁩ من الأيام 🎂. أهدِ له سناب شات+</item>
-        <item quantity="few">عيد ميلاد ⁦%1$s⁩ بعد ⁦%2$d⁩ من الأيام 🎂. أهدِ له سناب شات+</item>
-        <item quantity="many">عيد ميلاد ⁦%1$s⁩ بعد ⁦%2$d⁩ من الأيام 🎂. أهدِ له سناب شات+</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11002e">
-        <item quantity="other">يوجد ⁦%1$d⁩ مقطع من اللقطات في Pixy لديك. هل تريد أيضًا إعادة ضبط الجهاز وحذف جميع اللقطات وبيانات المُستخدم؟</item>
-        <item quantity="zero">يوجد ⁦%1$d⁩ من اللقطات في Pixy لديك. هل تريد أيضًا إعادة ضبط الجهاز وحذف جميع اللقطات وبيانات المُستخدم؟</item>
-        <item quantity="one">يوجد لقطة واحدة في Pixy لديك. هل تريد أيضًا إعادة ضبط الجهاز وحذف جميع اللقطات وبيانات المُستخدم؟</item>
-        <item quantity="two">يوجد مقطعا Snap (⁦%1$d⁩) في Pixy لديك. هل تريد أيضًا إعادة ضبط الجهاز وحذف جميع اللقطات وبيانات المُستخدم؟</item>
-        <item quantity="few">يوجد ⁦%1$d⁩ اللقطات في Pixy لديك. هل تريد أيضًا إعادة ضبط الجهاز وحذف جميع اللقطات وبيانات المُستخدم؟</item>
-        <item quantity="many">يوجد ⁦%1$d⁩ مقطعًا من اللقطات في Pixy لديك. هل تريد أيضًا إعادة ضبط الجهاز وحذف جميع اللقطات وبيانات المُستخدم؟</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11002f">
-        <item quantity="other">سيؤدي حذف هذه اللقطات إلى إزالتها من جهاز Cheerio الخاص بك.</item>
-        <item quantity="zero">سيؤدي حذف هذه اللقطات إلى إزالتها من جهاز Cheerio الخاص بك.</item>
-        <item quantity="one">سيؤدي حذف هذه اللقطة إلى إزالتها من جهاز Cheerio الخاص بك.</item>
-        <item quantity="two">سيؤدي حذف هذه اللقطات إلى إزالتها من جهاز Cheerio الخاص بك.</item>
-        <item quantity="few">سيؤدي حذف هذه اللقطات إلى إزالتها من جهاز Cheerio الخاص بك.</item>
-        <item quantity="many">سيؤدي حذف هذه اللقطات إلى إزالتها من جهاز Cheerio الخاص بك.</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110030">
-        <item quantity="other">تم حذف %d لقطة</item>
-        <item quantity="zero">تم حذف %d لقطة</item>
-        <item quantity="one">حُذف لقطة واحدة</item>
-        <item quantity="two">تم حذف %d مقطعا Snap</item>
-        <item quantity="few">تم حذف %d اللقطات</item>
-        <item quantity="many">تم حذف %d لقطة</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110032">
-        <item quantity="other">%d من اللقطات الجديدة</item>
-        <item quantity="zero">%d لقطة جديدة</item>
-        <item quantity="one">لقطة واحدة جديد</item>
-        <item quantity="two">مقطعا Snap (%d) جديدان</item>
-        <item quantity="few">%d مقطع/اللقطات جديد/جديدة</item>
-        <item quantity="many">%d مقطع/اللقطات جديد/جديدة</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110033">
-        <item quantity="other">%d لقطة جديدة. المس للاستيراد.</item>
-        <item quantity="zero">%d لقطة جديدة. المس للاستيراد.</item>
-        <item quantity="one">لقطة جديدة واحدة. المس للاستيراد.</item>
-        <item quantity="two">مقطعا Snap %d جديدان. المس للاستيراد.</item>
-        <item quantity="few">%d اللقطات جديدة. المس للاستيراد.</item>
-        <item quantity="many">%d لقطة جديدة. المس للاستيراد.</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110034">
-        <item quantity="other">تم استيراد %d لقطة.</item>
-        <item quantity="zero">تم استيراد %d لقطة.</item>
-        <item quantity="one">تم استيراد لقطة واحدة %d.</item>
-        <item quantity="two">تم استيراد مقطعي (%d) Snap.</item>
-        <item quantity="few">تم استيراد %d اللقطات.</item>
-        <item quantity="many">تم استيراد %d لقطة.</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11003a">
-        <item quantity="other">إخفاء الردود</item>
-        <item quantity="zero">إخفاء الردود</item>
-        <item quantity="one">إخفاء الرد</item>
-        <item quantity="two">إخفاء الردود</item>
-        <item quantity="few">إخفاء الردود</item>
-        <item quantity="many">إخفاء الردود</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11003b">
-        <item quantity="other">إظهار %s من الردود</item>
-        <item quantity="zero">إظهار %s من الردود</item>
-        <item quantity="one">إظهار رد واحد</item>
-        <item quantity="two">إظهار %s من الردود</item>
-        <item quantity="few">إظهار %s من الردود</item>
-        <item quantity="many">إظهار %s من الردود</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11003c">
-        <item quantity="other">⁦%1$d⁩ جديدة</item>
-        <item quantity="zero">⁦%1$d⁩ جديد</item>
-        <item quantity="one">⁦%1$d⁩ جديد</item>
-        <item quantity="two">⁦%1$d⁩ جديدان</item>
-        <item quantity="few">⁦%1$d⁩ جديدة</item>
-        <item quantity="many">⁦%1$d⁩ جديدة</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11003d">
-        <item quantity="other">⁦%1$d⁩ للاستيراد</item>
-        <item quantity="zero">⁦%1$d⁩ للاستيراد</item>
-        <item quantity="one">⁦%1$d⁩ للاستيراد</item>
-        <item quantity="two">⁦%1$d⁩ للاستيراد</item>
-        <item quantity="few">⁦%1$d⁩ للاستيراد</item>
-        <item quantity="many">⁦%1$d⁩ للاستيراد</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11003e">
-        <item quantity="other">%d‏ أيام</item>
-        <item quantity="zero">%d‏ أيام</item>
-        <item quantity="one">يوم واحد (%d)</item>
-        <item quantity="two">يومان (%d)</item>
-        <item quantity="few">%d‏ أيام</item>
-        <item quantity="many">%d‏ أيام</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11003f">
-        <item quantity="other">%d‏ يوم</item>
-        <item quantity="zero">%d يوم</item>
-        <item quantity="one">%d‏ يوم</item>
-        <item quantity="two">يومان (%d)</item>
-        <item quantity="few">%d‏ أيام</item>
-        <item quantity="many">%d‏ يومًا</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110040">
-        <item quantity="other">منذ %d‏ يوم</item>
-        <item quantity="zero">منذ %d‏ يوم</item>
-        <item quantity="one">منذ يوم واحد (%d)</item>
-        <item quantity="two">منذ يومين (%d)</item>
-        <item quantity="few">منذ %d‏ أيام</item>
-        <item quantity="many">منذ %d‏ يومًا</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110047">
-        <item quantity="other">تم التحديث منذ ⁦%1$s⁩ يوم</item>
-        <item quantity="zero">تم التحديث منذ ⁦%1$s⁩ يوم</item>
-        <item quantity="one">تم التحديث منذ يوم واحد (⁦%1$s⁩)</item>
-        <item quantity="two">تم التحديث منذ يومين (⁦%1$s⁩)</item>
-        <item quantity="few">تم التحديث منذ ⁦%1$s⁩ أيام</item>
-        <item quantity="many">تم التحديث منذ ⁦%1$s⁩ يومًا</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110048">
-        <item quantity="other">هل أنت مُتأكّد أنك تُريد التخلي عن Snap المُتعدّد؟ سَتفقد ⁦%1$d⁩ اللقطات غير محفوظة.</item>
-        <item quantity="zero">هل أنت مُتأكّد أنك تُريد التخلي عن Snap المُتعدّد؟ سَتفقد ⁦%1$d⁩ من اللقطات غير المحفوظة.</item>
-        <item quantity="one">هل أنت متأكد أنك تريد تجاهل اللقطات المُتعدّدة؟ سَتفقد لقطاتك غير المحفوظة.</item>
-        <item quantity="two">هل أنت مُتأكّد أنك تُريد التخلي عن Snap المُتعدّد؟ سَتفقد ⁦%1$d⁩ من اللقطات غير المحفوظة.</item>
-        <item quantity="few">هل أنت مُتأكّد أنك تُريد التخلي عن Snap المُتعدّد؟ سَتفقد ⁦%1$d⁩ اللقطات غير محفوظة.</item>
-        <item quantity="many">هل أنت مُتأكّد أنك تُريد التخلي عن Snap المُتعدّد؟ سَتفقد ⁦%1$d⁩ اللقطات غير محفوظة.</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11004a">
-        <item quantity="other">فشل حفظ ⁦%1$d⁩ اللقطات</item>
-        <item quantity="zero">فشل حفظ ⁦%1$d⁩ اللقطات</item>
-        <item quantity="one">فشل حفظ لقطة ⁦%1$d⁩</item>
-        <item quantity="two">فشل حفظ ⁦%1$d⁩ اللقطات</item>
-        <item quantity="few">فشل حفظ ⁦%1$d⁩ اللقطات</item>
-        <item quantity="many">فشل حفظ ⁦%1$d⁩ اللقطات</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11004b">
-        <item quantity="other">أضف %d صانع محتوى</item>
-        <item quantity="zero">أضف %d صانع محتوى</item>
-        <item quantity="one">أضف صانع محتوى واحد</item>
-        <item quantity="two">أضف صانعي (%d) محتوى</item>
-        <item quantity="few">أضف %d صانع محتوى</item>
-        <item quantity="many">أضف %d صانع محتوى</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11004c">
-        <item quantity="other">%d قدم</item>
-        <item quantity="zero">%d من الأقدام</item>
-        <item quantity="one">%d قدمًا</item>
-        <item quantity="two">%d قدمًا</item>
-        <item quantity="few">%d قدمًا</item>
-        <item quantity="many">%d قدمًا</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11004d">
-        <item quantity="other">%d كم</item>
-        <item quantity="zero">%d كم</item>
-        <item quantity="one">%d كم</item>
-        <item quantity="two">%d كم</item>
-        <item quantity="few">%d كم</item>
-        <item quantity="many">%d كم</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11004e">
-        <item quantity="other">%d من الأمتار</item>
-        <item quantity="zero">%d دقيقة</item>
-        <item quantity="one">%d من الأمتار</item>
-        <item quantity="two">%d من الأمتار</item>
-        <item quantity="few">%d من الأمتار</item>
-        <item quantity="many">%d من الأمتار</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11004f">
-        <item quantity="other">%d من الأميال</item>
-        <item quantity="zero">%d من الأميال</item>
-        <item quantity="one">%d من الأميال</item>
-        <item quantity="two">%d من الأميال</item>
-        <item quantity="few">%d من الأميال</item>
-        <item quantity="many">%d من الأميال</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110050">
-        <item quantity="other">ارسل ⁦%1$s⁩ المزيد من طلبات الصداقة!</item>
-        <item quantity="zero">ارسل ⁦%1$s⁩ المزيد من طلبات الصداقة!</item>
-        <item quantity="one">ارسل ⁦%1$s⁩ المزيد من طلبات الصداقة!</item>
-        <item quantity="two">ارسل ⁦%1$s⁩ المزيد من طلبات الصداقة!</item>
-        <item quantity="few">ارسل ⁦%1$s⁩ المزيد من طلبات الصداقة!</item>
-        <item quantity="many">ارسل ⁦%1$s⁩ المزيد من طلبات الصداقة!</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110051">
-        <item quantity="other">"تمت إضافة العناصر الخاصة بك إلى 'خاص بي فقط' بنجاح. هل ترغب في حذف العناصر الأصلية من ألبوم الكاميرا؟"</item>
-        <item quantity="zero">"تمت إضافة العناصر الخاصة بك إلى 'خاص بي فقط' بنجاح. هل ترغب في حذف العناصر الأصلية من ألبوم الكاميرا؟"</item>
-        <item quantity="one">"تمت إضافة العنصر الخاص بك إلى 'خاص بي فقط' بنجاح. هل ترغب في حذف العنصر الأصلي من ألبوم الكاميرا؟"</item>
-        <item quantity="two">"تمت إضافة العناصر الخاصة بك إلى 'خاص بي فقط' بنجاح. هل ترغب في حذف العناصر الأصلية من ألبوم الكاميرا؟"</item>
-        <item quantity="few">"تمت إضافة العناصر الخاصة بك إلى 'خاص بي فقط' بنجاح. هل ترغب في حذف العناصر الأصلية من ألبوم الكاميرا؟"</item>
-        <item quantity="many">"تمت إضافة العناصر الخاصة بك إلى 'خاص بي فقط' بنجاح. هل ترغب في حذف العناصر الأصلية من ألبوم الكاميرا؟"</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110052">
-        <item quantity="other">"تم حفظ صورك بنجاح في 'خاص بي فقط'. هل ترغب في حذف الصور الأصلية من ألبوم الكاميرا؟"</item>
-        <item quantity="zero">"تم حفظ من صورك بنجاح في 'خاص بي فقط'. هل ترغب في حذف الصور الأصلية من ألبوم الكاميرا؟"</item>
-        <item quantity="one">"تم حفظ صورتك بنجاح في 'خاص بي فقط'. هل ترغب في حذف الصورة الأصلية من ألبوم الكاميرا؟"</item>
-        <item quantity="two">"تم حفظ صورك بنجاح في 'خاص بي فقط'. هل ترغب في حذف الصور الأصلية من ألبوم الكاميرا؟"</item>
-        <item quantity="few">"تم حفظ صورك بنجاح في 'خاص بي فقط'. هل ترغب في حذف الصور الأصلية من ألبوم الكاميرا؟"</item>
-        <item quantity="many">"تم حفظ صورك بنجاح في 'خاص بي فقط'. هل ترغب في حذف الصور الأصلية من ألبوم الكاميرا؟"</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110053">
-        <item quantity="other">"تم إضافة الفيديوهات الخاصة بك إلى 'خاص بي فقط' بنجاح. هل ترغب في حذف الفيديوهات الأصلية من ألبوم الكاميرا؟"</item>
-        <item quantity="zero">"تمت إضافة الفيديوهات الخاصة بك إلى 'خاص بي فقط' بنجاح. هل ترغب في حذف الفيديوهات الأصلية من ألبوم الكاميرا؟"</item>
-        <item quantity="one">"تمت إضافة الفيديو الخاص بك إلى 'خاص بي فقط' بنجاح. هل ترغب في حذف الفيديو الأصلي من ألبوم الكاميرا؟"</item>
-        <item quantity="two">"تمت إضافة الفيديوهات الخاصة بك إلى 'خاص بي فقط' بنجاح. هل ترغب في حذف الفيديوهات الأصلية من ألبوم الكاميرا؟"</item>
-        <item quantity="few">"تمت إضافة الفيديوهات الخاصة بك إلى 'خاص بي فقط' بنجاح. هل ترغب في حذف فاليديوهات الأصلية من ألبوم الكاميرا؟"</item>
-        <item quantity="many">"تمت إضافة الفيديوهات الخاصة بك إلى 'خاص بي فقط' بنجاح. هل ترغب في حذف الفيديوهات الأصلية من ألبوم الكاميرا؟"</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110054">
-        <item quantity="other">حذف النسخ الأصلية</item>
-        <item quantity="zero">حذف النسخ الأصلية</item>
-        <item quantity="one">حذف النسخة الأصلية</item>
-        <item quantity="two">حذف النسخ الأصلية</item>
-        <item quantity="few">حذف النسخ الأصلية</item>
-        <item quantity="many">حذف النسخ الأصلية</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110055">
-        <item quantity="other">حاول مرة أخرى بعد ⁦%1$d⁩ من الدقائق.</item>
-        <item quantity="zero">حاول مرة أخرى بعد ⁦%1$d⁩ من الدقائق.</item>
-        <item quantity="one">حاول مرة أخرى بعد دقيقة واحدة (⁦%1$d⁩)</item>
-        <item quantity="two">حاول مرة أخرى بعد ⁦%1$d⁩ من الدقائق.</item>
-        <item quantity="few">حاول مرة أخرى بعد ⁦%1$d⁩ من الدقائق.</item>
-        <item quantity="many">حاول مرة أخرى بعد ⁦%1$d⁩ من الدقائق.</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110056">
-        <item quantity="other">%d قدم</item>
-        <item quantity="zero">%d قدم</item>
-        <item quantity="one">قدم واحد (%d)</item>
-        <item quantity="two">قدمان (%d)</item>
-        <item quantity="few">%d أقدام</item>
-        <item quantity="many">%d قدمًا</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110057">
-        <item quantity="other">%d دقيقة</item>
-        <item quantity="zero">%d دقيقة</item>
-        <item quantity="one">دقيقة واحدة (%d)</item>
-        <item quantity="two">دقيقتان (%d)</item>
-        <item quantity="few">%d دقائق</item>
-        <item quantity="many">%d من الأمتار</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110058">
-        <item quantity="other">%d‏ ساعات</item>
-        <item quantity="zero">%d ساعات</item>
-        <item quantity="one">عدد الساعات: %d‏</item>
-        <item quantity="two">عدد الساعات: %d‏</item>
-        <item quantity="few">عدد الساعات: %d‏</item>
-        <item quantity="many">عدد الساعات: %d‏</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110059">
-        <item quantity="other">%d‏ ساعة</item>
-        <item quantity="zero">%d‏ ساعة</item>
-        <item quantity="one">ساعة واحدة (%d)</item>
-        <item quantity="two">ساعتان (%d)</item>
-        <item quantity="few">%d‏ ساعات</item>
-        <item quantity="many">%d‏ ساعة</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11005a">
-        <item quantity="other">%d ساعة</item>
-        <item quantity="zero">%d ساعة</item>
-        <item quantity="one">%d ساعة</item>
-        <item quantity="two">%d ساعة</item>
-        <item quantity="few">%d ساعة</item>
-        <item quantity="many">%d ساعة</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11005b">
-        <item quantity="other">منذ %d‏ ساعة</item>
-        <item quantity="zero">منذ %d‏ ساعة</item>
-        <item quantity="one">منذ ساعة واحدة (%d)</item>
-        <item quantity="two">منذ ساعتين (%d)</item>
-        <item quantity="few">منذ %d‏ ساعات</item>
-        <item quantity="many">منذ %d‏ ساعة</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110062">
-        <item quantity="other">تم التحديث منذ ⁦%1$s⁩ ساعة</item>
-        <item quantity="zero">تم التحديث منذ ⁦%1$s⁩ ساعة</item>
-        <item quantity="one">تم التحديث منذ ساعة واحدة (⁦%1$s⁩)</item>
-        <item quantity="two">تم التحديث منذ ساعتين (⁦%1$s⁩)</item>
-        <item quantity="few">تم التحديث منذ ⁦%1$s⁩ ساعات</item>
-        <item quantity="many">تم التحديث منذ ⁦%1$s⁩ ساعةً</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110065">
-        <item quantity="other">عدد الساعات: %d</item>
-        <item quantity="zero">عدد الساعات: %d</item>
-        <item quantity="one">عدد الساعات: %d</item>
-        <item quantity="two">عدد الساعات: %d</item>
-        <item quantity="few">عدد الساعات: %d</item>
-        <item quantity="many">عدد الساعات: %d</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110066">
-        <item quantity="other">سوف تشارك موقعك المباشر مع الأصدقاء الموجودين حاليًا في هذه المجموعة. يستطيع %d صديق رؤية موقعك المباشر.</item>
-        <item quantity="zero">سوف تشارك موقعك المباشر مع الأصدقاء الموجودين حاليًا في هذه المجموعة. يستطيع %d صديق رؤية موقعك المباشر.</item>
-        <item quantity="one">سوف تشارك موقعك المباشر مع الأصدقاء الموجودين حاليًا في هذه المجموعة. يستطيع صديق (%d) رؤية موقعك المباشر.</item>
-        <item quantity="two">سوف تشارك موقعك المباشر مع الأصدقاء الموجودين حاليًا في هذه المجموعة. يستطيع صديقان (%d) رؤية موقعك المباشر.</item>
-        <item quantity="few">سوف تشارك موقعك المباشر مع الأصدقاء الموجودين حاليًا في هذه المجموعة. يستطيع %d أصدقاء رؤية موقعك المباشر.</item>
-        <item quantity="many">سوف تشارك موقعك المباشر مع الأصدقاء الموجودين حاليًا في هذه المجموعة. يستطيع %d صديقًا رؤية موقعك المباشر.</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110067">
-        <item quantity="other">%d ساعة</item>
-        <item quantity="zero">%d ساعة</item>
-        <item quantity="one">%d ساعة</item>
-        <item quantity="two">%d من الساعات</item>
-        <item quantity="few">%d من الساعات</item>
-        <item quantity="many">%d من الساعات</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110069">
-        <item quantity="other">سوف تشارك الموقع المباشر مع الأصدقاء الموجودين حاليًا في هذه المجموعة. لن يحصل %d عضو على موقعك لأنك لم تسجل كصديق معهم.</item>
-        <item quantity="zero">سوف تشارك الموقع المباشر مع الأصدقاء الموجودين حاليًا في هذه المجموعة. لن يحصل %d عضو على موقعك لأنك لم تسجل كصديق معهم.</item>
-        <item quantity="one">سوف تشارك الموقع المباشر مع الأصدقاء الموجودين حاليًا في هذه المجموعة. لن يحصل عضو (%d) على موقعك لأنك لم تسجل كصديق معهم.</item>
-        <item quantity="two">سوف تشارك الموقع المباشر مع الأصدقاء الموجودين حاليًا في هذه المجموعة. لن يحصل عضوان (%d) على موقعك لأنك لم تسجل كصديق معهم.</item>
-        <item quantity="few">سوف تشارك الموقع المباشر مع الأصدقاء الموجودين حاليًا في هذه المجموعة. لن يحصل %d أعضاء على موقعك لأنك لم تسجل كصديق معهم.</item>
-        <item quantity="many">سوف تشارك الموقع المباشر مع الأصدقاء الموجودين حاليًا في هذه المجموعة. لن يحصل %d عضوًا على موقعك لأنك لم تسجل كصديق معهم.</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11006b">
-        <item quantity="other">⁦%1$s⁩ و⁦%2$s⁩ و⁦%3$s⁩ و⁦%4$d⁩ من أصدقائك على الخريطة!</item>
-        <item quantity="zero">⁦%1$s⁩ و⁦%2$s⁩ و⁦%3$s⁩ و⁦%4$d⁩ من أصدقائك على الخريطة!</item>
-        <item quantity="one">⁦%1$s⁩ و⁦%2$s⁩ و⁦%3$s⁩ و⁦%4$d⁩ من أصدقائك على الخريطة!</item>
-        <item quantity="two">⁦%1$s⁩ و⁦%2$s⁩ و⁦%3$s⁩ و⁦%4$d⁩ من أصدقائك على الخريطة!</item>
-        <item quantity="few">⁦%1$s⁩ و⁦%2$s⁩ و⁦%3$s⁩ و⁦%4$d⁩ من أصدقائك على الخريطة!</item>
-        <item quantity="many">⁦%1$s⁩ و⁦%2$s⁩ و⁦%3$s⁩ و⁦%4$d⁩ من أصدقائك على الخريطة!</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11006f">
-        <item quantity="other">⁦%1$d⁩ صديق يُشاركون موقعهم</item>
-        <item quantity="zero">⁦%1$d⁩ أصدقاء يُشاركون موقعهم</item>
-        <item quantity="one">صديق ⁦%1$d⁩ يُشارك موقعه</item>
-        <item quantity="two">صديقان ⁦%1$d⁩ يُشاركان موقعهما</item>
-        <item quantity="few">⁦%1$d⁩ أصدقاء يُشاركون موقعهم</item>
-        <item quantity="many">⁦%1$d⁩ صديقًا يُشاركون موقعهم</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110075">
-        <item quantity="other">تم تصدير ⁦%1$d⁩ من ⁦%2$d⁩ اللقطات. وتعذّر تصدير ⁦%3$d⁩ لقطة.</item>
-        <item quantity="zero">تم تصدير ⁦%1$d⁩ من ⁦%2$d⁩ اللقطات. وتعذّر تصدير ⁦%3$d⁩ اللقطات.</item>
-        <item quantity="one">تم تصدير ⁦%1$d⁩ من ⁦%2$d⁩ اللقطات. وتعذّر تصدير لقطة واحدة (⁦%3$d⁩).</item>
-        <item quantity="two">تم تصدير ⁦%1$d⁩ من ⁦%2$d⁩ اللقطات. وتعذّر تصدير مقطعَي (⁦%3$d⁩) Snap.</item>
-        <item quantity="few">تم تصدير ⁦%1$d⁩ من ⁦%2$d⁩ اللقطات. وتعذّر تصدير ⁦%3$d⁩ اللقطات.</item>
-        <item quantity="many">تم تصدير ⁦%1$d⁩ من ⁦%2$d⁩ اللقطات. وتعذّر تصدير ⁦%3$d⁩ لقطة.</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110076">
-        <item quantity="other">جارٍ تصدير ⁦%1$d⁩ من ⁦%2$d⁩ لقطة…</item>
-        <item quantity="zero">جارٍ تصدير ⁦%1$d⁩ من ⁦%2$d⁩ اللقطات…</item>
-        <item quantity="one">جارٍ تصدير لقطة…</item>
-        <item quantity="two">جارٍ تصدير ⁦%1$d⁩ من مقطعَي (⁦%2$d⁩) Snap…</item>
-        <item quantity="few">جارٍ تصدير ⁦%1$d⁩ من ⁦%2$d⁩ اللقطات …</item>
-        <item quantity="many">جارٍ تصدير ⁦%1$d⁩ من ⁦%2$d⁩ لقطة…</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110077">
-        <item quantity="other">تم تصدير اللقطات.</item>
-        <item quantity="zero">تم تصدير اللقطات.</item>
-        <item quantity="one">تم تصدير لقطة.</item>
-        <item quantity="two">تم تصدير مقطعَي Snap.</item>
-        <item quantity="few">تم تصدير اللقطات.</item>
-        <item quantity="many">تم تصدير اللقطات.</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110078">
-        <item quantity="other">عذرًا، يمكن تحديد %d من العناصر فقط في كل مرة.</item>
-        <item quantity="zero">عذرًا، يمكن تحديد %d من العناصر فقط في كل مرة.</item>
-        <item quantity="one">عذرًا، يمكن تحديد عنصر واحد (%d) فقط في كل مرة.</item>
-        <item quantity="two">عذرًا، يمكن تحديد %d من العناصر فقط في كل مرة.</item>
-        <item quantity="few">عذرًا، يمكن تحديد %d من العناصر فقط في كل مرة.</item>
-        <item quantity="many">عذرًا، يمكن تحديد %d من العناصر فقط في كل مرة.</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110079">
-        <item quantity="other">ستُحذَف هذه الصور من جهازك</item>
-        <item quantity="zero">ستُحذَف هذه الصور من جهازك</item>
-        <item quantity="one">ستُحذَف هذه الصورة من جهازك</item>
-        <item quantity="two">ستُحذَف هذه الصور من جهازك</item>
-        <item quantity="few">ستُحذَف هذه الصور من جهازك</item>
-        <item quantity="many">ستُحذَف هذه الصور من جهازك</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11007a">
-        <item quantity="other">ستُحذَف هذه العناصر من جهازك</item>
-        <item quantity="zero">ستُحذَف هذه العناصر من جهازك</item>
-        <item quantity="one">سيُحذَف هذا العنصر من جهازك</item>
-        <item quantity="two">ستُحذَف هذه العناصر من جهازك</item>
-        <item quantity="few">ستُحذَف هذه العناصر من جهازك</item>
-        <item quantity="many">ستُحذَف هذه العناصر من جهازك</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11007b">
-        <item quantity="other">ستُحذَف هذه الفيديوهات من جهازك</item>
-        <item quantity="zero">ستُحذَف هذه الفيديوهات من جهازك</item>
-        <item quantity="one">سيُحذَف هذا الفيديو من جهازك</item>
-        <item quantity="two">ستُحذَف هذه الفيديوهات من جهازك</item>
-        <item quantity="few">ستُحذَف هذه الفيديوهات من جهازك</item>
-        <item quantity="many">ستُحذَف هذه الفيديوهات من جهازك</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11007c">
-        <item quantity="other">هل تريد حذف الذكريات؟</item>
-        <item quantity="zero">هل تريد حذف الذكريات؟</item>
-        <item quantity="one">هل تريد حذف الذكرى؟</item>
-        <item quantity="two">هل تريد حذف الذكريات؟</item>
-        <item quantity="few">هل تريد حذف الذكريات؟</item>
-        <item quantity="many">هل تريد حذف الذكريات؟</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11007d">
-        <item quantity="other">حذف اللقطات؟</item>
-        <item quantity="zero">حذف اللقطات؟</item>
-        <item quantity="one">حذف اللقطة؟</item>
-        <item quantity="two">حذف اللقطات؟</item>
-        <item quantity="few">حذف اللقطات؟</item>
-        <item quantity="many">حذف اللقطات؟</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11007e">
-        <item quantity="other">حذف القصص؟</item>
-        <item quantity="zero">حذف القصص؟</item>
-        <item quantity="one">حذف القصة؟</item>
-        <item quantity="two">حذف القصص؟</item>
-        <item quantity="few">حذف القصص؟</item>
-        <item quantity="many">حذف القصص؟</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11007f">
-        <item quantity="other">لا يمكنني تصدير اللقطات.</item>
-        <item quantity="zero">لا يمكنني تصدير اللقطات.</item>
-        <item quantity="one">لا يمكنني تصدير اللقطة.</item>
-        <item quantity="two">لا يمكنني تصدير اللقطات.</item>
-        <item quantity="few">لا يمكنني تصدير اللقطات.</item>
-        <item quantity="many">لا يمكنني تصدير اللقطات.</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110080">
-        <item quantity="other">تمت إضافة %d‏ من اللقطات إلى قصة العناصر المفضلة</item>
-        <item quantity="zero">تمت إضافة %d‏ من اللقطات إلى قصة العناصر المفضلة</item>
-        <item quantity="one">تمت إضافة اللقطة إلى قصة العناصر المفضلة</item>
-        <item quantity="two">تمت إضافة %d‏ من اللقطات إلى قصة العناصر المفضلة</item>
-        <item quantity="few">تمت إضافة %d‏ من اللقطات إلى قصة العناصر المفضلة</item>
-        <item quantity="many">تمت إضافة %d‏ من اللقطات إلى قصة العناصر المفضلة</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110081">
-        <item quantity="other">تمت إزالة %d من اللقطات من قصة العناصر المفضلة</item>
-        <item quantity="zero">تمت إزالة %d‏ من اللقطات من قصة العناصر المفضلة</item>
-        <item quantity="one">تمت إزالة اللقطة من قصة العناصر المفضلة</item>
-        <item quantity="two">تمت إزالة %d‏ من اللقطات من قصة العناصر المفضلة</item>
-        <item quantity="few">تمت إزالة %d‏ من اللقطات من قصة العناصر المفضلة</item>
-        <item quantity="many">تمت إزالة %d‏ من اللقطات من قصة العناصر المفضلة</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110082">
-        <item quantity="other">منذ ⁦%1$d⁩ من الأعوام</item>
-        <item quantity="zero">منذ ⁦%1$d⁩ من الأعوام</item>
-        <item quantity="one">منذ عام واحد (⁦%1$d⁩)</item>
-        <item quantity="two">منذ ⁦%1$d⁩ من الأعوام</item>
-        <item quantity="few">منذ ⁦%1$d⁩ من الأعوام</item>
-        <item quantity="many">منذ ⁦%1$d⁩ من الأعوام</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110083">
-        <item quantity="other">منذ ⁦%1$d⁩ من الأعوام، اليوم</item>
-        <item quantity="zero">منذ⁦%1$d⁩ من الأعوام، اليوم</item>
-        <item quantity="one">منذ عام وحد (⁦%1$d⁩)، اليوم</item>
-        <item quantity="two">منذ ⁦%1$d⁩ من الأعوام، اليوم</item>
-        <item quantity="few">منذ ⁦%1$d⁩ من الأعوام، اليوم</item>
-        <item quantity="many">منذ ⁦%1$d⁩ من الأعوام، اليوم</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110084">
-        <item quantity="other">%1$s، منذ %2$d من الأعوام</item>
-        <item quantity="zero">%1$s، منذ %2$d من الأعوام</item>
-        <item quantity="one">%1$s، منذ عام واحد (%2$d)</item>
-        <item quantity="two">%1$s، منذ %2$d من الأعوام</item>
-        <item quantity="few">%1$s، منذ %2$d من الأعوام</item>
-        <item quantity="many">%1$s، منذ %2$d من الأعوام</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110085">
-        <item quantity="other">منذ ⁦%1$d⁩ من الأعوام</item>
-        <item quantity="zero">منذ ⁦%1$d⁩ من الأعوام</item>
-        <item quantity="one">منذ عام واحد (⁦%1$d⁩)</item>
-        <item quantity="two">منذ ⁦%1$d⁩ من الأعوام</item>
-        <item quantity="few">منذ ⁦%1$d⁩ من الأعوام</item>
-        <item quantity="many">منذ ⁦%1$d⁩ من الأعوام</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110086">
-        <item quantity="other">ستظل اللقطات المرتبطة بهذه القصص متوفرة في صفحة قصتي الجديدة. ولن تتأثر القصص التي أنشأتها أو عدّلتها.</item>
-        <item quantity="zero">ستظل اللقطات المرتبطة بهذه القصص متوفرة في صفحة قصتي الجديدة. ولن تتأثر القصص التي أنشأتها أو عدّلتها.</item>
-        <item quantity="one">ستظل اللقطات المرتبطة بهذه القصة الواحدة متوفرة في صفحة قصتي. ولن تتأثر القصص التي أنشأتها أو عدّلتها.</item>
-        <item quantity="two">ستظل اللقطات المرتبطة بهذه القصص متوفرة في صفحة قصتي الجديدة. ولن تتأثر القصص التي أنشأتها أو عدّلتها.</item>
-        <item quantity="few">ستظل اللقطات المرتبطة بهذه القصص متوفرة في صفحة قصتي. ولن تتأثر القصص التي أنشأتها أو عدّلتها.</item>
-        <item quantity="many">ستظل اللقطات المرتبطة بهذه القصص متوفرة في صفحة قصتي الجديدة. ولن تتأثر القصص التي أنشأتها أو عدّلتها.</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110087">
-        <item quantity="other">هل تريد إزالة %d من القصص القديمة التي تم حفظها تلقائيًا؟</item>
-        <item quantity="zero">هل تريد إزالة %d من القصص القديمة التي تم حفظها تلقائيًا؟</item>
-        <item quantity="one">هل تريد إزالة قصة واحدة (%d) قديمة تم حفظها تلقائيًا؟</item>
-        <item quantity="two">هل تريد إزالة %d من القصص القديمة التي تم حفظها تلقائيًا؟</item>
-        <item quantity="few">هل تريد إزالة %d من القصص القديمة التي تم حفظها تلقائيًا؟</item>
-        <item quantity="many">هل تريد إزالة %d من القصص القديمة التي تم حفظها تلقائيًا؟</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11008a">
-        <item quantity="other">سيؤدي ذلك إلى إزالة %d من القصص القديمة التي تم حفظها تلقائيًا.</item>
-        <item quantity="zero">سيؤدي ذلك إلى إزالة %d من القصص الأقدم التي تم حفظها تلقائيًا.</item>
-        <item quantity="one">سيؤدي ذلك إلى إزالة قصة واحدة قديمة (%d) تم حفظها تلقائيًا.</item>
-        <item quantity="two">سيؤدي ذلك إلى إزالة %d من القصص القديمة التي تم حفظها تلقائيًا.</item>
-        <item quantity="few">سيؤدي ذلك إلى إزالة %dمن القصص القديمة التي تم حفظها تلقائيًا.</item>
-        <item quantity="many">سيؤدي ذلك إلى إزالة %d من القصص القديمة التي تم حفظها تلقائيًا.</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11008b">
-        <item quantity="other">عذرًا، يمكن تحديد %d‏ من اللقطات فقط في كل مرة.</item>
-        <item quantity="zero">عذرًا، يمكن تحديد %d‏ من اللقطات فقط في كل مرة.</item>
-        <item quantity="one">عذرًا، يمكن تحديد لقطة واحدة (%d) فقط في كل مرة.</item>
-        <item quantity="two">عذرًا، يمكن تحديد %d‏ من اللقطات فقط في كل مرة.</item>
-        <item quantity="few">عذرًا، يمكن تحديد %d‏ من اللقطات فقط في كل مرة.</item>
-        <item quantity="many">عذرًا، يمكن تحديد %d‏ من اللقطات فقط في كل مرة.</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11008c">
-        <item quantity="other">%1$d تم استيراد اللقطات من %2$s</item>
-        <item quantity="zero">%1$d اللقطات تم استيرادها من قبل %2$s</item>
-        <item quantity="one">%1$d استورد Snap من %2$s</item>
-        <item quantity="two">%1$d اللقطات تم استيرادها من قبل %2$s</item>
-        <item quantity="few">%1$d اللقطات تم استيرادها من قبل %2$s</item>
-        <item quantity="many">%1$d اللقطات تم استيرادها من قبل %2$s</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11008d">
-        <item quantity="other">تم استيراد%d اللقطات!</item>
-        <item quantity="zero">تم استيراد%d اللقطات!</item>
-        <item quantity="one">تم استيراد %d Snap!</item>
-        <item quantity="two">تم استيراد%d اللقطات!</item>
-        <item quantity="few">تم استيراد%d اللقطات!</item>
-        <item quantity="many">تم استيراد%d اللقطات!</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11008e">
-        <item quantity="other">اللقطات جديدة من %s</item>
-        <item quantity="zero">اللقطات جديدة من %s</item>
-        <item quantity="one">لقطة جديدة من %s</item>
-        <item quantity="two">اللقطات جديدة من %s</item>
-        <item quantity="few">اللقطات جديدة من %s</item>
-        <item quantity="many">اللقطات جديدة من %s</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11008f">
-        <item quantity="other">استيراد %1$d من %2$d اللقطات</item>
-        <item quantity="zero">استيراد %1$d من %2$d اللقطات</item>
-        <item quantity="one">استيراد %1$d من Snap واحدة (%2$d)</item>
-        <item quantity="two">استيراد %1$d من %2$d من اللقطات</item>
-        <item quantity="few">استيراد %1$d من %2$d اللقطات</item>
-        <item quantity="many">استيراد %1$d من %2$d اللقطات</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110090">
-        <item quantity="other">تم تحديد %d</item>
-        <item quantity="zero">تم تحديد %d</item>
-        <item quantity="one">تم تحديد %d</item>
-        <item quantity="two">تم تحديد %d</item>
-        <item quantity="few">تم تحديد %d</item>
-        <item quantity="many">تم تحديد %d</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110091">
-        <item quantity="other">%d‏ دقيقة</item>
-        <item quantity="zero">%d‏ دقيقة</item>
-        <item quantity="one">دقيقة (%d)</item>
-        <item quantity="two">دقيقتان (%d)</item>
-        <item quantity="few">%d‏ دقائق</item>
-        <item quantity="many">%d‏ دقيقة</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110092">
-        <item quantity="other">%d دقيقة</item>
-        <item quantity="zero">%d دقيقة</item>
-        <item quantity="one">%d دقيقة</item>
-        <item quantity="two">%d دقيقة</item>
-        <item quantity="few">%d دقيقة</item>
-        <item quantity="many">%d دقيقة</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f110093">
-        <item quantity="other">منذ %d‏ دقيقة</item>
-        <item quantity="zero">منذ %d‏ دقيقة</item>
-        <item quantity="one">منذ دقيقة واحدة (%d)</item>
-        <item quantity="two">منذ دقيقتين (%d)</item>
-        <item quantity="few">منذ %d‏ دقائق</item>
-        <item quantity="many">منذ %d‏ دقيقة</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11009a">
-        <item quantity="other">تم التحديث منذ ⁦%1$s⁩ دقيقة</item>
-        <item quantity="zero">تم التحديث منذ ⁦%1$s⁩ دقيقة</item>
-        <item quantity="one">تم التحديث منذ دقيقة واحدة (⁦%1$s⁩)</item>
-        <item quantity="two">تم التحديث منذ دقيقتين (⁦%1$s⁩)</item>
-        <item quantity="few">تم التحديث منذ ⁦%1$s⁩ دقائق</item>
-        <item quantity="many">تم التحديث منذ ⁦%1$s⁩ دقيقةً</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11009b">
-        <item quantity="other">%d‏ شهر</item>
-        <item quantity="zero">%d‏ شهر</item>
-        <item quantity="one">شهر واحد (%d)</item>
-        <item quantity="two">شهران (%d)</item>
-        <item quantity="few">%d‏ أشهر</item>
-        <item quantity="many">%d‏ شهرًا</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f11009c">
-        <item quantity="other">منذ %d‏ شهر</item>
-        <item quantity="zero">منذ %d‏ شهر</item>
-        <item quantity="one">منذ شهر واحد (%d)</item>
-        <item quantity="two">منذ شهرين (%d)</item>
-        <item quantity="few">منذ %d‏ أشهر</item>
-        <item quantity="many">منذ %d‏ شهرًا</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100a3">
-        <item quantity="other">تم التحديث منذ ⁦%1$s⁩ شهر</item>
-        <item quantity="zero">تم التحديث منذ ⁦%1$s⁩ شهر</item>
-        <item quantity="one">تم التحديث منذ شهر واحد (⁦%1$s⁩)</item>
-        <item quantity="two">تم التحديث منذ شهرين (⁦%1$s⁩)</item>
-        <item quantity="few">تم التحديث منذ ⁦%1$s⁩ شهور</item>
-        <item quantity="many">تم التحديث منذ ⁦%1$s⁩ شهرًا</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100a7">
-        <item quantity="other">⁦%1$d⁩‏ من اللقطات لم يتم عمل نسخة احتياطية منها في \"الذكريات\" حتى الآن. إذا قمت بتسجيل الخروج الآن، فستفقد هذه اللقطات.</item>
-        <item quantity="zero">⁦%1$d⁩‏ من اللقطات لم يتم عمل نسخة احتياطية منها في \"الذكريات\" حتى الآن. إذا قمت بتسجيل الخروج الآن، فستفقد هذه اللقطات.</item>
-        <item quantity="one">هناك لقطة واحدة لم يتم عمل نسخة احتياطية منها في \"الذكريات\" حتى الآن. إذا قمت بتسجيل الخروج الآن، فستفقد هذه اللقطة.</item>
-        <item quantity="two">⁦%1$d⁩‏ من اللقطات لم يتم عمل نسخة احتياطية منها في \"الذكريات\" حتى الآن. إذا قمت بتسجيل الخروج الآن، فستفقد هذه اللقطات.</item>
-        <item quantity="few">⁦%1$d⁩‏ من اللقطات لم يتم عمل نسخة احتياطية منها في \"الذكريات\" حتى الآن. إذا قمت بتسجيل الخروج الآن، فستفقد هذه اللقطات.</item>
-        <item quantity="many">⁦%1$d⁩‏ من اللقطات لم يتم عمل نسخة احتياطية منها في \"الذكريات\" حتى الآن. إذا قمت بتسجيل الخروج الآن، فستفقد هذه اللقطات.</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100a8">
-        <item quantity="other">إضافة %d صديق</item>
-        <item quantity="zero">إضافة %d صديق</item>
-        <item quantity="one">إضافة صديق واحد</item>
-        <item quantity="two">إضافة صديقين (%d)</item>
-        <item quantity="few">إضافة %d أصدقاء</item>
-        <item quantity="many">إضافة %d صديقًا</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100a9">
-        <item quantity="other">%d ساعة</item>
-        <item quantity="zero">%d ساعة</item>
-        <item quantity="one">%d ساعة</item>
-        <item quantity="two">%d ساعتين</item>
-        <item quantity="few">%d ساعات</item>
-        <item quantity="many">%d ساعة</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100aa">
-        <item quantity="other">%d دقيقة</item>
-        <item quantity="zero">%d دقيقة</item>
-        <item quantity="one">%d دقيقة</item>
-        <item quantity="two">%d دقيقتين</item>
-        <item quantity="few">%d دقائق</item>
-        <item quantity="many">%d دقيقة</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ab">
-        <item quantity="other">%1$s+⁦%2$d⁩ آخرين</item>
-        <item quantity="zero">%1$s+⁦%2$d⁩ آخر</item>
-        <item quantity="one">%1$s+⁦%2$d⁩ آخر</item>
-        <item quantity="two">%1$s+⁦%2$d⁩ آخرين</item>
-        <item quantity="few">%1$s+⁦%2$d⁩ آخرين</item>
-        <item quantity="many">%1$s+⁦%2$d⁩ آخرين</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100b3">
-        <item quantity="other">يوجد %d مقطع من اللقطات على جهاز Pixy من المُستخدم الأخير. سيؤدي الاقتران بهذا الجهاز إلى إعادة ضبط الجهاز وحذف جميع اللقطات وبيانات المُستخدم.</item>
-        <item quantity="zero">يوجد %d من اللقطات على جهاز Pixy من المُستخدم الأخير. سيؤدي الاقتران بهذا الجهاز إلى إعادة ضبط الجهاز وحذف جميع اللقطات وبيانات المُستخدم.</item>
-        <item quantity="one">يوجد لقطة واحدة على جهاز Pixy من المُستخدم الأخير. سيؤدي الاقتران بهذا الجهاز إلى إعادة ضبط الجهاز وحذف جميع اللقطات وبيانات المُستخدم.</item>
-        <item quantity="two">يوجد مقطعا Snap (%d) على جهاز Pixy من المُستخدم الأخير. سيؤدي الاقتران بهذا الجهاز إلى إعادة ضبط الجهاز وحذف جميع اللقطات وبيانات المُستخدم.</item>
-        <item quantity="few">يوجد %d اللقطات على جهاز Pixy من المُستخدم الأخير. سيؤدي الاقتران بهذا الجهاز إلى إعادة ضبط الجهاز وحذف جميع اللقطات وبيانات المُستخدم.</item>
-        <item quantity="many">يوجد %d مقطعًا من اللقطات على جهاز Pixy من المُستخدم الأخير. سيؤدي الاقتران بهذا الجهاز إلى إعادة ضبط الجهاز وحذف جميع اللقطات وبيانات المُستخدم.</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100b4">
-        <item quantity="other">%d عنصر/عناصر</item>
-        <item quantity="zero">%d عنصر/عناصر</item>
-        <item quantity="one">1 عنصر</item>
-        <item quantity="two">%d العناصر</item>
-        <item quantity="few">%d العناصر</item>
-        <item quantity="many">%d العناصر</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100b9">
-        <item quantity="other">%d لقطة جديدة</item>
-        <item quantity="zero">%d لقطة جديدة</item>
-        <item quantity="one">لقطة (%d) جديدة</item>
-        <item quantity="two">مقطعا Snap (%d) جديدان</item>
-        <item quantity="few">%d لقطات جديدة</item>
-        <item quantity="many">%d لقطة جديدة</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ba">
-        <item quantity="other">+ إضافة %d صديقًا</item>
-        <item quantity="zero">+ إضافة %d صديقًا</item>
-        <item quantity="one">+ إضافة صديق واحد</item>
-        <item quantity="two">+ إضافة صديقين (%d)</item>
-        <item quantity="few">+ إضافة %d صديقًا</item>
-        <item quantity="many">+ إضافة %d صديقًا</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100bb">
-        <item quantity="other">تم حفظ ⁦%1$d⁩ من اللقطات!</item>
-        <item quantity="zero">تم حفظ ⁦%1$d⁩ من اللقطات!</item>
-        <item quantity="one">تم حفظ لقطة ⁦%1$d⁩.</item>
-        <item quantity="two">تم حفظ ⁦%1$d⁩ من اللقطات!</item>
-        <item quantity="few">تم حفظ ⁦%1$d⁩ من اللقطات!</item>
-        <item quantity="many">تم حفظ ⁦%1$d⁩ من اللقطات!</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100bc">
-        <item quantity="other">%s اللقطات</item>
-        <item quantity="zero">%s اللقطات</item>
-        <item quantity="one">%s Snap</item>
-        <item quantity="two">%s من اللقطات</item>
-        <item quantity="few">%s اللقطات</item>
-        <item quantity="many">%s اللقطات</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100bd">
-        <item quantity="other">%d‏ ثانية</item>
-        <item quantity="zero">%d ثانية</item>
-        <item quantity="one">ثانية واحدة (%d)</item>
-        <item quantity="two">ثانيتان (%d)</item>
-        <item quantity="few">%d‏ ثوانٍ</item>
-        <item quantity="many">%d‏ ثانية</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100bf">
-        <item quantity="other">منذ %d‏ ثانية</item>
-        <item quantity="zero">منذ %d ثانية</item>
-        <item quantity="one">منذ ثانية واحدة (%d)</item>
-        <item quantity="two">منذ ثانيتين (%d)</item>
-        <item quantity="few">منذ %d‏ ثوانٍ</item>
-        <item quantity="many">منذ %d‏ ثانية</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100c6">
-        <item quantity="other">تم التحديث منذ ⁦%1$s⁩ ثانية</item>
-        <item quantity="zero">تم التحديث منذ ⁦%1$s⁩ ثانية</item>
-        <item quantity="one">تم التحديث منذ ثانية واحدة (⁦%1$s⁩)</item>
-        <item quantity="two">تم التحديث منذ ثانيتين (⁦%1$s⁩)</item>
-        <item quantity="few">تم التحديث منذ ⁦%1$s⁩ ثوانٍ</item>
-        <item quantity="many">تم التحديث منذ ⁦%1$s⁩ ثانيةً</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100c7">
-        <item quantity="other">⁦%1$d⁩ صديق</item>
-        <item quantity="zero">⁦%1$d⁩ من الأصدقاء</item>
-        <item quantity="one">صديق واحد</item>
-        <item quantity="two">صديقان (⁦%1$d⁩)</item>
-        <item quantity="few">⁦%1$d⁩ أصدقاء</item>
-        <item quantity="many">⁦%1$d⁩ صديق</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100c8">
-        <item quantity="other">⁦%1$s⁩ و⁦%2$d⁩ آخرين</item>
-        <item quantity="zero">⁦%1$s⁩ و⁦%2$d⁩ آخرين</item>
-        <item quantity="one">⁦%1$s⁩ و1 آخر</item>
-        <item quantity="two">⁦%1$s⁩ و⁦%2$d⁩ آخرين</item>
-        <item quantity="few">⁦%1$s⁩ و⁦%2$d⁩ آخرين</item>
-        <item quantity="many">⁦%1$s⁩ و⁦%2$d⁩ آخرين</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100c9">
-        <item quantity="other">عمري %d عام.</item>
-        <item quantity="zero">عمري %d عام.</item>
-        <item quantity="one">عمري %d عام واحد.</item>
-        <item quantity="two">عمري %d عامان.</item>
-        <item quantity="few">عمري %d أعوام.</item>
-        <item quantity="many">عمري %d عامًا.</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ca">
-        <item quantity="other">ثانية</item>
-        <item quantity="zero">ثانية</item>
-        <item quantity="one">ثانية</item>
-        <item quantity="two">ثانيتان</item>
-        <item quantity="few">ثوان</item>
-        <item quantity="many">ثانية</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100cb">
-        <item quantity="other">⁦%1$d⁩‏ من اللقطات</item>
-        <item quantity="zero">⁦%1$d⁩‏ من اللقطات</item>
-        <item quantity="one">⁦%1$d⁩ لقطة واحدة</item>
-        <item quantity="two">⁦%1$d⁩‏ من اللقطات</item>
-        <item quantity="few">⁦%1$d⁩‏ من اللقطات</item>
-        <item quantity="many">⁦%1$d⁩‏ من اللقطات</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100cc">
-        <item quantity="other">كيف تود تصدير اللقطات؟</item>
-        <item quantity="zero">كيف تود تصدير اللقطات؟</item>
-        <item quantity="one">كيف تود تصدير Snap؟</item>
-        <item quantity="two">كيف تود تصدير اللقطات؟</item>
-        <item quantity="few">كيف تود تصدير اللقطات؟</item>
-        <item quantity="many">كيف تود تصدير اللقطات؟</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100cd">
-        <item quantity="other">\"يوجد %d تعليق مُعلق في منصّة \"الأضواء\".</item>
-        <item quantity="zero">\"يوجد %d تعليق مُعلق في منصّة \"الأضواء\".</item>
-        <item quantity="one">تعليق واحد مُعلّق في منصّة الأضواء!</item>
-        <item quantity="two">\"يوجد تعليقين (%d) معلقين في منصّة \"الأضواء\".</item>
-        <item quantity="few">\"يوجد %d تعليقات مُعلقة في منصّة \"الأضواء\".</item>
-        <item quantity="many">\"يوجد %d تعليقًا مُعلقًا في منصّة \"الأضواء\".</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100cf">
-        <item quantity="other">"تم إخفاء موقعك المباشر، لكن ما زال بإمكان ⁦%1$s⁩ صديق رؤية آخر موقع ظهرت فيه.
-
- يمكنك تغيير هذا في إعدادات الخريطة."</item>
-        <item quantity="zero">"تم إخفاء موقعك المباشر، لكن ما زال بإمكان ⁦%1$s⁩ صديق رؤية آخر موقع ظهرت فيه.
-
- يمكنك تغيير هذا في إعدادات الخريطة."</item>
-        <item quantity="one">"تم إخفاء موقعك المباشر، لكن ما زال بإمكان صديق (⁦%1$s⁩) رؤية آخر موقع ظهرت فيه.
-
- يمكنك تغيير هذا في إعدادات الخريطة."</item>
-        <item quantity="two">"تم إخفاء موقعك المباشر، لكن ما زال بإمكان صديقين (⁦%1$s⁩) رؤية آخر موقع ظهرت فيه.
-
- يمكنك تغيير هذا في إعدادات الخريطة."</item>
-        <item quantity="few">"تم إخفاء موقعك المباشر، لكن ما زال بإمكان ⁦%1$s⁩ أصدقاء رؤية آخر موقع ظهرت فيه.
-
- يمكنك تغيير هذا في إعدادات الخريطة."</item>
-        <item quantity="many">"تم إخفاء موقعك المباشر، لكن ما زال بإمكان ⁦%1$s⁩ صديقًا رؤية آخر موقع ظهرت فيه.
-
- يمكنك تغيير هذا في إعدادات الخريطة."</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d0">
-        <item quantity="other">لقد حفظت إعدادات موقعك، ولكن ⁦%1$s⁩ صديق ما زال بإمكانه رؤية موقعك المباشر. لإيقاف المشاركة، المس \"إيقاف\" بجانب اسم كل منهم.</item>
-        <item quantity="zero">لقد حفظت إعدادات موقعك، ولكن ⁦%1$s⁩ صديق ما زال بإمكانه رؤية موقعك المباشر. لإيقاف المشاركة، المس \"إيقاف\" بجانب اسمه.</item>
-        <item quantity="one">لقد حفظت إعدادات موقعك، ولكن ⁦%1$s⁩ صديق ما زال بإمكانه رؤية موقعك المباشر. لإيقاف المشاركة، المس \"إيقاف\" بجانب اسمه.</item>
-        <item quantity="two">لقد حفظت إعدادات موقعك، ولكن ⁦%1$s⁩ صديق ما زال بإمكانهما رؤية موقعك المباشر. لإيقاف المشاركة، المس \"إيقاف\" بجانب اسم كل منهما.</item>
-        <item quantity="few">لقد حفظت إعدادات موقعك، ولكن ⁦%1$s⁩ أصدقاء ما زال بإمكانهم رؤية موقعك المباشر. لإيقاف المشاركة، المس \"إيقاف\" بجانب اسم كل منهم.</item>
-        <item quantity="many">لقد حفظت إعدادات موقعك، ولكن ⁦%1$s⁩ صديقًا ما زال بإمكانه رؤية موقعك المباشر. لإيقاف المشاركة، المس \"إيقاف\" بجانب اسم كل منهم.</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d3">
-        <item quantity="other">أنت في وضع الشبح ولكن ما زال بإمكان ⁦%1$s⁩ صديق رؤية موقعك المباشر. لإيقاف المشاركة، المس \"إخفاء موقعي المباشر\" أدناه.</item>
-        <item quantity="zero">أنت في وضع الشبح ولكن ما زال بإمكان ⁦%1$s⁩ صديق رؤية موقعك المباشر. لإيقاف المشاركة، المس \"إخفاء موقعي المباشر\" أدناه.</item>
-        <item quantity="one">أنت في وضع الشبح ولكن ما زال بإمكان صديق (⁦%1$s⁩) رؤية موقعك المباشر. لإيقاف المشاركة، المس \"إخفاء موقعي المباشر\" أدناه.</item>
-        <item quantity="two">أنت في وضع الشبح ولكن ما زال بإمكان صديقين (⁦%1$s⁩) رؤية موقعك المباشر. لإيقاف المشاركة، المس \"إخفاء موقعي المباشر\" أدناه.</item>
-        <item quantity="few">أنت في وضع الشبح ولكن ما زال بإمكان ⁦%1$s⁩ أصدقاء رؤية موقعك المباشر. لإيقاف المشاركة، المس \"إخفاء موقعي المباشر\" أدناه.</item>
-        <item quantity="many">أنت في وضع الشبح ولكن ما زال بإمكان ⁦%1$s⁩ صديقًا رؤية موقعك المباشر. لإيقاف المشاركة، المس \"إخفاء موقعي المباشر\" أدناه.</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d4">
-        <item quantity="other">%d مشاهدات</item>
-        <item quantity="zero">%d من المشاهدات</item>
-        <item quantity="one">%d مشاهدة</item>
-        <item quantity="two">%d مشاهدة</item>
-        <item quantity="few">%d مشاهدة</item>
-        <item quantity="many">%d مشاهدة</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d5">
-        <item quantity="other">+ ⁦%1$d⁩ آخرين</item>
-        <item quantity="zero">+ ⁦%1$d⁩ آخر</item>
-        <item quantity="one">+ ⁦%1$d⁩ آخر</item>
-        <item quantity="two">+ ⁦%1$d⁩ آخران</item>
-        <item quantity="few">+ ⁦%1$d⁩ آخرين</item>
-        <item quantity="many">+ ⁦%1$d⁩ آخرين</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d6">
-        <item quantity="other">⁦%1$s⁩ و⁦%2$d⁩ آخرين…</item>
-        <item quantity="zero">⁦%1$s⁩ و⁦%2$d⁩ آخر…</item>
-        <item quantity="one">⁦%1$s⁩ و⁦%2$d⁩ آخر…</item>
-        <item quantity="two">⁦%1$s⁩ و⁦%2$d⁩ آخران…</item>
-        <item quantity="few">⁦%1$s⁩ و⁦%2$d⁩ آخرين…</item>
-        <item quantity="many">⁦%1$s⁩ و⁦%2$d⁩ آخرين…</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d7">
-        <item quantity="other">تم التحقق من عدد %d من ملفات الأعضاء</item>
-        <item quantity="zero">تم التحقق من عدد %d من ملفات الأعضاء</item>
-        <item quantity="one">تم التحقق من عدد %d من ملفات الأعضاء</item>
-        <item quantity="two">تم التحقق من عدد %d من ملفات الأعضاء</item>
-        <item quantity="few">تم التحقق من عدد %d من ملفات الأعضاء</item>
-        <item quantity="many">تم التحقق من عدد %d من ملفات الأعضاء</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d8">
-        <item quantity="other">%d عضو</item>
-        <item quantity="zero">%d عضو</item>
-        <item quantity="one">عضو واحد (%d)</item>
-        <item quantity="two">عضوان (%d)</item>
-        <item quantity="few">%d أعضاء</item>
-        <item quantity="many">%d عضوًا</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d9">
-        <item quantity="other">إضافة %d اللقطات…</item>
-        <item quantity="zero">إضافة %d اللقطات…</item>
-        <item quantity="one">إضافة %d من اللقطات…</item>
-        <item quantity="two">إضافة %d اللقطات…</item>
-        <item quantity="few">إضافة %d اللقطات…</item>
-        <item quantity="many">إضافة %d اللقطات…</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100da">
-        <item quantity="other">فشل إضافة %d اللقطات</item>
-        <item quantity="zero">فشل إضافة %d اللقطات</item>
-        <item quantity="one">فشل إضافة %d لقطة</item>
-        <item quantity="two">فشل إضافة %d اللقطات</item>
-        <item quantity="few">فشل إضافة %d اللقطات</item>
-        <item quantity="many">فشل إضافة %d اللقطات</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100db">
-        <item quantity="other">بانتظار إضافة %d اللقطات...</item>
-        <item quantity="zero">بانتظار إضافة %d اللقطات...</item>
-        <item quantity="one">بانتظار إضافة %d لقطة...</item>
-        <item quantity="two">بانتظار إضافة %d اللقطات...</item>
-        <item quantity="few">بانتظار إضافة %d اللقطات...</item>
-        <item quantity="many">بانتظار إضافة %d اللقطات...</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100df">
-        <item quantity="other">مع %d صديق</item>
-        <item quantity="zero">مع %d صديق</item>
-        <item quantity="one">مع %d صديق</item>
-        <item quantity="two">مع %d صديق</item>
-        <item quantity="few">مع %d أصدقاء</item>
-        <item quantity="many">مع %d صديق</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100e0">
-        <item quantity="other">⁦%1$d⁩ من ⁦%2$d⁩ إضافة لأصدقاء جُدُد</item>
-        <item quantity="zero">⁦%1$d⁩ من ⁦%2$d⁩ إضافة أصدقاء جُدُد</item>
-        <item quantity="one">⁦%1$d⁩ من إضافة واحدة (⁦%2$d⁩) لأصدقاء جُدُد</item>
-        <item quantity="two">⁦%1$d⁩ من إضافتين (⁦%2$d⁩) لأصدقاء جُدُد</item>
-        <item quantity="few">⁦%1$d⁩ من ⁦%2$d⁩ إضافات لأصدقاء جُدُد</item>
-        <item quantity="many">⁦%1$d⁩ من ⁦%2$d⁩ إضافةً لأصدقاء جُدُد</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100e1">
-        <item quantity="other">حدث</item>
-        <item quantity="zero">حدث</item>
-        <item quantity="one">حدث واحد</item>
-        <item quantity="two">حدثان</item>
-        <item quantity="few">أحداث</item>
-        <item quantity="many">حدثًا</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100e3">
-        <item quantity="other">%d‏ أسابيع</item>
-        <item quantity="zero">%d‏ أسابيع</item>
-        <item quantity="one">أسبوع واحد (%d)</item>
-        <item quantity="two">أسبوعان (%d)</item>
-        <item quantity="few">%d‏ أسابيع</item>
-        <item quantity="many">%d‏ أسابيع</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100e4">
-        <item quantity="other">%d‏ أسبوع</item>
-        <item quantity="zero">%d‏ أسابيع</item>
-        <item quantity="one">أسبوع واحد (%d)</item>
-        <item quantity="two">أسبوعان (%d)</item>
-        <item quantity="few">%d‏ أسابيع</item>
-        <item quantity="many">%d‏ أسبوعًا</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100e5">
-        <item quantity="other">منذ %d‏ أسبوع</item>
-        <item quantity="zero">منذ %d‏ من الأسابيع</item>
-        <item quantity="one">منذ أسبوع واحد (%d)</item>
-        <item quantity="two">منذ أسبوعين (%d)</item>
-        <item quantity="few">منذ %d‏ أسابيع</item>
-        <item quantity="many">منذ %d‏ أسبوعًا</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ec">
-        <item quantity="other">تم التحديث منذ ⁦%1$s⁩ أسابيع</item>
-        <item quantity="zero">تم التحديث منذ ⁦%1$s⁩ أسابيع</item>
-        <item quantity="one">تم التحديث منذ أسبوع واحد (⁦%1$s⁩)</item>
-        <item quantity="two">تم التحديث منذ ⁦%1$s⁩ أسابيع</item>
-        <item quantity="few">تم التحديث منذ ⁦%1$s⁩ أسابيع</item>
-        <item quantity="many">تم التحديث منذ ⁦%1$s⁩ أسابيع</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ed">
-        <item quantity="other">%d‏ سنة</item>
-        <item quantity="zero">%d‏ سنة</item>
-        <item quantity="one">سنة واحدة (%d)</item>
-        <item quantity="two">سنتان (%d)</item>
-        <item quantity="few">%d‏ سنوات</item>
-        <item quantity="many">%d‏ سنة</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ee">
-        <item quantity="other">منذ %d‏ سنة</item>
-        <item quantity="zero">منذ %d‏ سنة</item>
-        <item quantity="one">منذ سنة واحدة (%d)</item>
-        <item quantity="two">منذ سنتين (%d)</item>
-        <item quantity="few">منذ %d‏ سنوات</item>
-        <item quantity="many">منذ %d‏ سنة</item>
-    </plurals>
-    <plurals name="APKTOOL_DUMMYVAL_0x7f1100f5">
-        <item quantity="other">تم التحديث منذ ⁦%1$s⁩ سنة</item>
-        <item quantity="zero">تم التحديث منذ ⁦%1$s⁩ سنة</item>
-        <item quantity="one">تم التحديث منذ سنة واحدة (⁦%1$s⁩)</item>
-        <item quantity="two">تم التحديث منذ سنتين (⁦%1$s⁩)</item>
-        <item quantity="few">تم التحديث منذ ⁦%1$s⁩ سنوات</item>
-        <item quantity="many">تم التحديث منذ ⁦%1$s⁩ سنةً</item>
-    </plurals>
-</resources>

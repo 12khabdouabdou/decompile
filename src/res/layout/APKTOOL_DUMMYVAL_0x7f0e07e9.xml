@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="@color/APKTOOL_DUMMYVAL_0x7f06020f" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
-    <com.snap.component.header.SnapSubscreenHeaderView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b13ec" custom:APKTOOL_DUMMYVAL_0x7f04023d="9" custom:APKTOOL_DUMMYVAL_0x7f04069d="@string/linked_wallets" style="@style/APKTOOL_DUMMYVAL_0x7f1405f4" />
-    <com.snap.ui.view.SnapFontTextView android:textSize="?APKTOOL_DUMMYVAL_0x7f040706" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f06020c" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b064d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:text="@string/wallets" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f07050d" custom:APKTOOL_DUMMYVAL_0x7f04047c="2" />
-    <com.snap.component.cards.SnapCardView android:layout_gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b064e" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070511" custom:APKTOOL_DUMMYVAL_0x7f0400b5="@dimen/APKTOOL_DUMMYVAL_0x7f070287" />
-</LinearLayout>

@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<View android:id="@null" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f0808cb" android:paddingLeft="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f0706ca" android:paddingRight="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f0706ca" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f07115b" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07115a" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f07051a"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

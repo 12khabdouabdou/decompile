@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.snap.component.tray.SnapTrayCoordinatorLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b164c" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e06d1" />
-</com.snap.component.tray.SnapTrayCoordinatorLayout>

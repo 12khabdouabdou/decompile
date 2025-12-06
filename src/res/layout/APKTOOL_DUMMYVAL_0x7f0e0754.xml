@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.snap.framework.ui.views.RoundedFrameLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0105" android:background="?APKTOOL_DUMMYVAL_0x7f0404bd" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f07128d" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07128c" app:APKTOOL_DUMMYVAL_0x7f040177="@dimen/APKTOOL_DUMMYVAL_0x7f07128e"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <ImageView android:layout_gravity="center" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f07127c" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07127c" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f080bd1" android:scaleType="fitCenter" />
-        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f071303" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f07051a" android:text="@string/story_profile_stories_add_snap" android:textAlignment="center" />
-    </LinearLayout>
-</com.snap.framework.ui.views.RoundedFrameLayout>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:orientation="vertical"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
-    <com.snap.framework.ui.views.RoundedTriangleView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1162" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070e29" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070e28" custom:APKTOOL_DUMMYVAL_0x7f040077="@dimen/APKTOOL_DUMMYVAL_0x7f070e22" custom:APKTOOL_DUMMYVAL_0x7f040686="@dimen/APKTOOL_DUMMYVAL_0x7f070e23" />
-    <LinearLayout android:orientation="vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1160" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/APKTOOL_DUMMYVAL_0x7f0b1162" />
-    <com.snap.framework.ui.views.RoundedTriangleView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1161" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070e29" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070e28" android:layout_below="@id/APKTOOL_DUMMYVAL_0x7f0b1160" android:rotation="180.0" custom:APKTOOL_DUMMYVAL_0x7f040077="@dimen/APKTOOL_DUMMYVAL_0x7f070e22" custom:APKTOOL_DUMMYVAL_0x7f040686="@dimen/APKTOOL_DUMMYVAL_0x7f070e23" />
-</merge>

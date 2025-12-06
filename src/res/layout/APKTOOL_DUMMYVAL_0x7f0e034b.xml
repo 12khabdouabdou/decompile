@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.snap.lenses.bitmoji.DefaultBitmojiPopupView android:orientation="vertical" android:id="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <FrameLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b065a" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f080420" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <com.snap.framework.ui.views.TriangleView android:layout_gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0ba6" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f0708fe" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f0708fd" android:layout_marginTop="-1.0dip" android:rotation="180.0" />
-</com.snap.lenses.bitmoji.DefaultBitmojiPopupView>

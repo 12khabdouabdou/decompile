@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextView android:gravity="start|bottom|center" android:layout_gravity="start|center|top" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0e15" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070b46" android:layout_width="fill_parent" android:layout_height="wrap_content" app:APKTOOL_DUMMYVAL_0x7f0401f9="@dimen/APKTOOL_DUMMYVAL_0x7f070b4a" app:APKTOOL_DUMMYVAL_0x7f040309="@dimen/APKTOOL_DUMMYVAL_0x7f070b3b" style="?APKTOOL_DUMMYVAL_0x7f04038d"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

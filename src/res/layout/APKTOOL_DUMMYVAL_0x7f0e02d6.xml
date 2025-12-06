@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ViewStub android:layout_gravity="bottom|center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b03d1" android:layout="@layout/APKTOOL_DUMMYVAL_0x7f0e02d7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f07020f" />
-    <ViewStub android:layout_gravity="bottom|center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b03cd" android:layout="@layout/APKTOOL_DUMMYVAL_0x7f0e02d4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f07020a" />
-    <ViewStub android:layout_gravity="bottom|center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b03d2" android:layout="@layout/APKTOOL_DUMMYVAL_0x7f0e02d8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f07020a" />
-</merge>

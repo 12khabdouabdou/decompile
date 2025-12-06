@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f071467"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr">
-        <TextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0a8d" android:focusable="false" android:focusableInTouchMode="false" style="@style/APKTOOL_DUMMYVAL_0x7f1401bf" />
-        <View android:background="?APKTOOL_DUMMYVAL_0x7f04011c" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f071462" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f071460" />
-        <EditText android:id="@id/input_field_edit_text" android:inputType="phone" style="@style/APKTOOL_DUMMYVAL_0x7f1401c4" />
-    </LinearLayout>
-</merge>

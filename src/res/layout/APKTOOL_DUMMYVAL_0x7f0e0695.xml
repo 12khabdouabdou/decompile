@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="?APKTOOL_DUMMYVAL_0x7f0404b8" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
-    <com.snap.ui.view.ScHeaderView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1312" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:APKTOOL_DUMMYVAL_0x7f040237="@color/APKTOOL_DUMMYVAL_0x7f060233" custom:APKTOOL_DUMMYVAL_0x7f0404a8="true" custom:APKTOOL_DUMMYVAL_0x7f0404a9="true" />
-</LinearLayout>

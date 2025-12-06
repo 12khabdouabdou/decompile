@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b158a" android:layout_width="fill_parent" android:layout_height="0.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <androidx.recyclerview.widget.RecyclerView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1586" android:layout_width="wrap_content" android:layout_height="fill_parent" app:APKTOOL_DUMMYVAL_0x7f0402df="0" app:APKTOOL_DUMMYVAL_0x7f0402e9="0" />
-    <SeekBar android:gravity="center_horizontal" android:layout_gravity="bottom|center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1587" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070511" app:APKTOOL_DUMMYVAL_0x7f0402cc="0" />
-    <com.snap.component.button.SnapButtonView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b104d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070516" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070511" app:APKTOOL_DUMMYVAL_0x7f0400b0="8" app:APKTOOL_DUMMYVAL_0x7f0400b1="@string/pdp_try_on_button" app:APKTOOL_DUMMYVAL_0x7f0402cc="0" app:APKTOOL_DUMMYVAL_0x7f0402d2="0" />
-</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.snap.component.cards.SnapCardView style="@style/APKTOOL_DUMMYVAL_0x7f1402bd"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.snap.imageloading.view.SnapImageView android:layout_gravity="start|center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b17ce" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070ac9" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070ac7" android:scaleType="centerCrop" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070ac8" />
-    <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e073e" />
-</com.snap.component.cards.SnapCardView>

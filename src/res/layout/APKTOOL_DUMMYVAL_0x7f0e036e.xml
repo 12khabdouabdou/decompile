@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.snap.lenses.app.camera.sendto.DefaultSendToActionView android:id="@null" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.snap.imageloading.view.SnapImageView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0bf0" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f08006f" android:padding="@dimen/APKTOOL_DUMMYVAL_0x7f07008c" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f07008e" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07008e" android:src="@drawable/sigicons_arrow_right_share_stroke" android:tint="@color/APKTOOL_DUMMYVAL_0x7f060327" />
-</com.snap.lenses.app.camera.sendto.DefaultSendToActionView>

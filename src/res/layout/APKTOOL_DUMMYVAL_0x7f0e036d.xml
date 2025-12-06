@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.snap.lenses.carousel.PercentProgressView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1052" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/APKTOOL_DUMMYVAL_0x7f07085a" android:contentDescription="@null" app:APKTOOL_DUMMYVAL_0x7f04010a="@color/APKTOOL_DUMMYVAL_0x7f060327"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

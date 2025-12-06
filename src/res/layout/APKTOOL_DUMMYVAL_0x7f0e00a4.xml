@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
-    <ViewStub android:id="@id/APKTOOL_DUMMYVAL_0x7f0b03b6" android:layout="@layout/APKTOOL_DUMMYVAL_0x7f0e00a3" android:inflatedId="@id/APKTOOL_DUMMYVAL_0x7f0b03b5" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f07079b" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07079b" />
-    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f071300" android:textColor="?APKTOOL_DUMMYVAL_0x7f040148" android:gravity="center" android:id="@id/button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:paddingStart="@dimen/APKTOOL_DUMMYVAL_0x7f070202" android:paddingEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070202" custom:APKTOOL_DUMMYVAL_0x7f04047c="1" />
-</merge>

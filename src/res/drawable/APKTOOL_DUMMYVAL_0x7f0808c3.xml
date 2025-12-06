@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape android:shape="oval"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <gradient android:startColor="@color/APKTOOL_DUMMYVAL_0x7f060317" android:endColor="@android:color/transparent" android:useLevel="false" android:angle="0.0" android:type="radial" android:centerX="50.0%" android:centerY="50.0%" android:gradientRadius="50.0%p" />
-</shape>

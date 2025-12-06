@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextView android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060327" android:layout_gravity="bottom|center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1793" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f0808d9" android:paddingLeft="@dimen/APKTOOL_DUMMYVAL_0x7f071492" android:paddingRight="@dimen/APKTOOL_DUMMYVAL_0x7f071492" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.snap.lenses.camera.cta.DefaultCtaView android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f0708ae" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/APKTOOL_DUMMYVAL_0x7f0708ae" android:paddingEnd="@dimen/APKTOOL_DUMMYVAL_0x7f0708ae"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
-    <com.snap.ui.view.SnapFontTextView android:gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0b29" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f080408" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/APKTOOL_DUMMYVAL_0x7f0708af" android:paddingEnd="@dimen/APKTOOL_DUMMYVAL_0x7f0708af" style="@style/APKTOOL_DUMMYVAL_0x7f14047f" />
-</com.snap.lenses.camera.cta.DefaultCtaView>

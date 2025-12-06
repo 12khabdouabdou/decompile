@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@null" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:gravity="center_vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b14f0" android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeight" android:layout_marginLeft="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:layout_marginRight="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:text="@string/settings_lens_studio" style="@style/APKTOOL_DUMMYVAL_0x7f14058e" />
-    <LinearLayout android:orientation="vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0659" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e03bd" />
-        <TextView android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeight" android:layout_marginLeft="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:layout_marginRight="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:text="@string/settings_contacts" style="@style/APKTOOL_DUMMYVAL_0x7f14058e" />
-    </LinearLayout>
-</LinearLayout>

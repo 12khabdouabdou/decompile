@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0df3" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:APKTOOL_DUMMYVAL_0x7f0402d2="0" app:APKTOOL_DUMMYVAL_0x7f0402e5="0" app:APKTOOL_DUMMYVAL_0x7f0402e9="0" />
-    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b092e" android:visibility="invisible" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:APKTOOL_DUMMYVAL_0x7f0402d2="0" app:APKTOOL_DUMMYVAL_0x7f0402e5="0" app:APKTOOL_DUMMYVAL_0x7f0402e9="0" />
-    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1845" android:visibility="invisible" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:APKTOOL_DUMMYVAL_0x7f0402d2="0" app:APKTOOL_DUMMYVAL_0x7f0402e5="0" app:APKTOOL_DUMMYVAL_0x7f0402e8="0" />
-</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.snap.lenses.explorer.action.DefaultActionView android:gravity="center" android:orientation="vertical" android:id="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:APKTOOL_DUMMYVAL_0x7f040253="@id/APKTOOL_DUMMYVAL_0x7f0b081b"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <com.snap.imageloading.view.SnapImageView android:layout_gravity="center|top" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b081a" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f07061c" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07061c" />
-        <com.snap.ui.view.SnapFontTextView android:textColor="@color/APKTOOL_DUMMYVAL_0x7f0600b4" android:layout_gravity="bottom|center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b081b" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f080312" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:textAllCaps="true" style="@style/APKTOOL_DUMMYVAL_0x7f140295" />
-    </FrameLayout>
-</com.snap.lenses.explorer.action.DefaultActionView>

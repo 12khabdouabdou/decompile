@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.snap.ui.view.stackdraw.StackDrawLayout android:gravity="center" android:id="@null" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070de8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070de8" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/APKTOOL_DUMMYVAL_0x7f070de7" android:paddingEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070de7"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

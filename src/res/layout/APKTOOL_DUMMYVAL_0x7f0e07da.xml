@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <LinearLayout android:gravity="right" android:orientation="vertical" android:id="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f0714c6" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f0714c5" app:APKTOOL_DUMMYVAL_0x7f0402e3="0" app:APKTOOL_DUMMYVAL_0x7f0402e9="0">
-        <ImageButton android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0136" android:background="@null" android:padding="@dimen/APKTOOL_DUMMYVAL_0x7f07051b" android:visibility="gone" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f0700d4" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f0700d4" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f08093f" android:scaleType="centerInside" />
-        <ImageButton android:id="@id/APKTOOL_DUMMYVAL_0x7f0b013a" android:background="@null" android:padding="@dimen/APKTOOL_DUMMYVAL_0x7f07051b" android:visibility="gone" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f0700d4" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f0700d4" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f080940" android:scaleType="centerInside" />
-    </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>

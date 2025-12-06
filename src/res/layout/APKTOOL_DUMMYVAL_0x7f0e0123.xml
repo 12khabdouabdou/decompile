@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.snap.messaging.chat.ui.view.SwipeableMessageLinearLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b04bf" android:clipChildren="false" android:clipToPadding="false" android:descendantFocusability="blocksDescendants" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070371" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f07036f" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070508" style="@style/APKTOOL_DUMMYVAL_0x7f14052d"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.snap.messaging.chat.ui.view.MessagePluginContentView android:id="@id/plugin_content_holder" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-</com.snap.messaging.chat.ui.view.SwipeableMessageLinearLayout>

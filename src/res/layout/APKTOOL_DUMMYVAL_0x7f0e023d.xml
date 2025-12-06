@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ImageView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b088c" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f07050f" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f07050f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f080b86" android:tint="@color/APKTOOL_DUMMYVAL_0x7f0601cc"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.snap.lenses.app.camera.status.DefaultLensesStatusView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f071306" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060327" android:id="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" app:APKTOOL_DUMMYVAL_0x7f040040="2.5" app:APKTOOL_DUMMYVAL_0x7f04019f="@color/APKTOOL_DUMMYVAL_0x7f06032c" app:APKTOOL_DUMMYVAL_0x7f040254="0.75" app:APKTOOL_DUMMYVAL_0x7f04047c="1"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

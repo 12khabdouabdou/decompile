@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="vertical" android:padding="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f07130d" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060214" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:text="@string/variant_section_load_error_message" android:textAlignment="center" />
-    <com.snap.component.button.SnapButtonView android:layout_gravity="center_horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b12a0" android:layout_width="wrap_content" android:layout_height="wrap_content" app:APKTOOL_DUMMYVAL_0x7f0400b0="6" app:APKTOOL_DUMMYVAL_0x7f0400b1="@string/retry" />
-</LinearLayout>

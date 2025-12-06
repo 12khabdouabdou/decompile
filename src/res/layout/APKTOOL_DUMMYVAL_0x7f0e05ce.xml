@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e05c8" />
-    <androidx.recyclerview.widget.RecyclerView android:scrollbarStyle="outsideOverlay" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b124a" android:background="?APKTOOL_DUMMYVAL_0x7f0404b8" android:scrollbars="vertical" android:clipToPadding="false" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" android:paddingStart="@dimen/APKTOOL_DUMMYVAL_0x7f07051a" android:paddingEnd="@dimen/APKTOOL_DUMMYVAL_0x7f07051a" />
-</LinearLayout>

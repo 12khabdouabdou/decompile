@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.AppCompatImageButton android:layout_gravity="bottom" android:id="@null" android:visibility="gone" android:src="@drawable/sigicons_map_pin_stroke" android:adjustViewBounds="false" app:APKTOOL_DUMMYVAL_0x7f040683="@color/APKTOOL_DUMMYVAL_0x7f0600cd" style="@style/APKTOOL_DUMMYVAL_0x7f140531"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

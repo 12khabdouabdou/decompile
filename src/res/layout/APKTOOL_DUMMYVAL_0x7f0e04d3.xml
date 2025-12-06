@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.snap.ui.view.SnapFontTextView android:text="@string/more_new_chats_message" android:drawableStart="@drawable/sigicons_chevron_up_fill" style="@style/APKTOOL_DUMMYVAL_0x7f140589"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

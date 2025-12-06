@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout style="@style/APKTOOL_DUMMYVAL_0x7f1405f3"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
-    <androidx.recyclerview.widget.RecyclerView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b124a" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f0700c5" style="@style/APKTOOL_DUMMYVAL_0x7f14060e" />
-    <com.snap.component.header.SnapSubscreenHeaderView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b13ec" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070bf1" android:visibility="gone" custom:APKTOOL_DUMMYVAL_0x7f040288="@string/my_friends_search" custom:APKTOOL_DUMMYVAL_0x7f04069d="@string/invite_friends_header" style="@style/APKTOOL_DUMMYVAL_0x7f1405fe" />
-    <com.snap.ui.view.LoadingSpinnerView android:layout_gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b11dd" android:visibility="gone" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070946" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070946" />
-    <com.snap.component.scrollbar.SnapIndexScrollbar android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0a58" android:visibility="gone" custom:APKTOOL_DUMMYVAL_0x7f040271="best_friends" style="@style/APKTOOL_DUMMYVAL_0x7f140562" />
-</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:id="@null" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" app:APKTOOL_DUMMYVAL_0x7f0402d4="16.0dip" />
-    <include android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0d36" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" app:APKTOOL_DUMMYVAL_0x7f0402cd="@id/APKTOOL_DUMMYVAL_0x7f0b0d3b" app:APKTOOL_DUMMYVAL_0x7f0402df="0" app:APKTOOL_DUMMYVAL_0x7f0402e9="@null" app:APKTOOL_DUMMYVAL_0x7f0402eb="2" layout="@layout/APKTOOL_DUMMYVAL_0x7f0e043e" />
-    <include android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0d3b" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" app:APKTOOL_DUMMYVAL_0x7f0402cc="0" app:APKTOOL_DUMMYVAL_0x7f0402df="@id/APKTOOL_DUMMYVAL_0x7f0b0d36" app:APKTOOL_DUMMYVAL_0x7f0402e3="@id/APKTOOL_DUMMYVAL_0x7f0b0d36" app:APKTOOL_DUMMYVAL_0x7f0402e8="@id/APKTOOL_DUMMYVAL_0x7f0b0d36" app:APKTOOL_DUMMYVAL_0x7f0402eb="2" layout="@layout/APKTOOL_DUMMYVAL_0x7f0e0441" />
-    <com.google.android.material.timepicker.ClockFaceView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0d37" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f07040b" app:APKTOOL_DUMMYVAL_0x7f0402e4="@id/APKTOOL_DUMMYVAL_0x7f0b0d36" app:APKTOOL_DUMMYVAL_0x7f0402e9="0" />
-</merge>

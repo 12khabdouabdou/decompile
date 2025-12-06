@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <TextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0fa5" style="@style/APKTOOL_DUMMYVAL_0x7f1405a2" />
-    <com.snap.component.button.SnapButtonView android:layout_gravity="start" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0fa4" android:layout_width="wrap_content" android:layout_height="wrap_content" app:APKTOOL_DUMMYVAL_0x7f0400b0="9" app:APKTOOL_DUMMYVAL_0x7f0400b1="@string/debugging_bandwidth_normal" />
-</LinearLayout>

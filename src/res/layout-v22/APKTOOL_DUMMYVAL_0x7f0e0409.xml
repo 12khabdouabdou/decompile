@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0cb1" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f080478" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <androidx.recyclerview.widget.RecyclerView android:id="@null" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f0709c6" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f0709c5" android:paddingHorizontal="6.0dip" app:APKTOOL_DUMMYVAL_0x7f0402cd="@null" app:APKTOOL_DUMMYVAL_0x7f0402d2="0" app:APKTOOL_DUMMYVAL_0x7f0402e5="0" app:APKTOOL_DUMMYVAL_0x7f0402e9="0" />
-    <View android:id="@null" android:layout_width="fill_parent" android:layout_height="0.0dip" app:APKTOOL_DUMMYVAL_0x7f0402cc="0" app:APKTOOL_DUMMYVAL_0x7f0402d2="0" app:APKTOOL_DUMMYVAL_0x7f0402e5="0" app:APKTOOL_DUMMYVAL_0x7f0402e8="@null" />
-</androidx.constraintlayout.widget.ConstraintLayout>

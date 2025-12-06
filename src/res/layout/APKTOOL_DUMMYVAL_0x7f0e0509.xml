@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:id="@null" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ImageView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0e57" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f080588" android:padding="@dimen/APKTOOL_DUMMYVAL_0x7f070d3c" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070d3a" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070d3a" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f080589" android:contentDescription="@string/operax_content_description_navigate_close" app:APKTOOL_DUMMYVAL_0x7f0402cc="0" app:APKTOOL_DUMMYVAL_0x7f0402df="0" app:APKTOOL_DUMMYVAL_0x7f0402e3="0" />
-</androidx.constraintlayout.widget.ConstraintLayout>

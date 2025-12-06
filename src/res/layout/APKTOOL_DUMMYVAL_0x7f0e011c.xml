@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.snap.messaging.chat.ui.view.ReplyButtonView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1287" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f07034a" android:layout_height="fill_parent" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070349"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b11f8" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
-    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070eba" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:APKTOOL_DUMMYVAL_0x7f0402d2="0" custom:APKTOOL_DUMMYVAL_0x7f0402e5="0" custom:APKTOOL_DUMMYVAL_0x7f0402e9="0">
-        <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e05e1" />
-        <TextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f07146b" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060327" android:layout_gravity="center_horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b11f1" android:background="?APKTOOL_DUMMYVAL_0x7f04048f" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/question_sticker_new_question" android:drawableLeft="@drawable/APKTOOL_DUMMYVAL_0x7f08062d" android:drawablePadding="@dimen/APKTOOL_DUMMYVAL_0x7f070508" />
-    </LinearLayout>
-    <TextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f071469" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060327" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b11ee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:text="@string/question_sticker_disclaimer" custom:APKTOOL_DUMMYVAL_0x7f0402cc="0" custom:APKTOOL_DUMMYVAL_0x7f0402d2="0" custom:APKTOOL_DUMMYVAL_0x7f0402e5="0" />
-</androidx.constraintlayout.widget.ConstraintLayout>
