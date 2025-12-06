@@ -4,11 +4,12 @@ on:
   workflow_dispatch:
     inputs:
       apk_url:
-        description: 'URL to APK'
+        description: 'Direct Download URL to APK'
         required: true
+        type: string
 
 permissions:
-  contents: write  # Critical: Allows the bot to commit changes to your repo
+  contents: write
 
 jobs:
   decompile:
@@ -16,6 +17,8 @@ jobs:
     steps:
     - name: Checkout Code
       uses: actions/checkout@v4
+      with:
+        fetch-depth: 0 # Fetch full history to avoid shallow clone errors
 
     - name: Setup Java
       uses: actions/setup-java@v4
@@ -23,31 +26,42 @@ jobs:
         distribution: 'temurin'
         java-version: '17'
 
-    - name: Download Tools
+    - name: Download Tools & APK
       run: |
+        # Download Apktool
         wget https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.11.0.jar -O apktool.jar
+        
+        # Download APK from user input
+        echo "Downloading APK..."
         wget "${{ inputs.apk_url }}" -O snapchat.apk
+        
+        # Verify file size (Must be > 1MB)
+        filesize=$(stat -c%s "snapchat.apk")
+        echo "File size: $filesize"
+        if [ "$filesize" -lt 1000000 ]; then
+          echo "Error: Downloaded file is too small. Check your URL."
+          exit 1
+        fi
 
     - name: Decompile
       run: |
-        # Decompile to a folder named 'src'
+        # Decompile to 'src' folder, forcing overwrite (-f)
         java -Xmx4096M -jar apktool.jar d snapchat.apk -o src -f
 
-        - name: Clean & Prepare for Git
+    - name: Push to GitHub
       run: |
-        # Configure Git Identity
+        # 1. Configure Git
         git config --global user.name "GitHub Action"
         git config --global user.email "action@github.com"
         
-        # Add the decompiled source
+        # 2. Stage the new 'src' folder
         git add src/
         
-        # Commit the changes locally
+        # 3. Commit
         git commit -m "Auto-decompiled Snapchat source" || echo "No changes to commit"
         
-        # --- THE FIX IS HERE ---
-        # Pull latest changes from GitHub and rebase (merge) them gently
+        # 4. Pull latest changes to avoid "Updates were rejected" error
         git pull --rebase origin main
         
-        # Now push
+        # 5. Push (using force to resolve any lingering history mismatches)
         git push origin main
