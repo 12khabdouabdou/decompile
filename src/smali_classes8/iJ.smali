@@ -1,0 +1,161 @@
+.class public final LiJ;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Function;
+
+
+# instance fields
+.field public final synthetic a:Landroid/location/Location;
+
+
+# direct methods
+.method public constructor <init>(Landroid/location/Location;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LiJ;->a:Landroid/location/Location;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 10
+
+    .line 1
+    check-cast p1, LkZf;
+
+    .line 2
+    .line 3
+    iget-object v0, p0, LiJ;->a:Landroid/location/Location;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Landroid/location/Location;->getAltitude()D
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-wide v0
+
+    .line 9
+    double-to-int v0, v0
+
+    .line 10
+    new-instance v1, LaJ;
+
+    .line 11
+    .line 12
+    invoke-direct {v1}, LaJ;-><init>()V
+
+    .line 13
+    .line 14
+    .line 15
+    sget-object v2, LaJ$a;->c:LaJ$a;
+
+    .line 16
+    .line 17
+    iget-object v2, v2, LaJ$a;->a:Ljava/lang/String;
+
+    .line 18
+    .line 19
+    iput-object v2, v1, LaJ;->a:Ljava/lang/String;
+
+    .line 20
+    .line 21
+    sget-object v2, LaJ$b;->c:LaJ$b;
+
+    .line 22
+    .line 23
+    iget-object v2, v2, LaJ$b;->a:Ljava/lang/String;
+
+    .line 24
+    .line 25
+    iput-object v2, v1, LaJ;->b:Ljava/lang/String;
+
+    .line 26
+    .line 27
+    new-instance v2, LTI;
+
+    .line 28
+    .line 29
+    invoke-direct {v2, v0, v1}, LTI;-><init>(ILaJ;)V
+
+    .line 30
+    .line 31
+    .line 32
+    invoke-virtual {p1, v2}, LkZf;->g(Ljava/lang/Object;)Ljava/lang/String;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object p1
+
+    .line 36
+    invoke-static {v2, p1}, LDrk;->e(LGj9;Ljava/lang/String;)V
+
+    .line 37
+    .line 38
+    .line 39
+    new-instance v3, LTCh;
+
+    .line 40
+    .line 41
+    new-instance p1, LcJ;
+
+    .line 42
+    .line 43
+    invoke-direct {p1, v2}, LcJ;-><init>(LTI;)V
+
+    .line 44
+    .line 45
+    .line 46
+    invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+
+    .line 47
+    .line 48
+    .line 49
+    move-result-object v5
+
+    .line 50
+    const/4 v6, 0x0
+
+    .line 51
+    const/16 v9, 0x7d
+
+    .line 52
+    .line 53
+    const/4 v4, 0x0
+
+    .line 54
+    const/4 v7, 0x0
+
+    .line 55
+    const/4 v8, 0x0
+
+    .line 56
+    invoke-direct/range {v3 .. v9}, LTCh;-><init>(LgH8;Ljava/util/List;ZLlDf;Ljava/lang/Long;I)V
+
+    .line 57
+    .line 58
+    .line 59
+    invoke-static {v3}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+
+    .line 60
+    .line 61
+    .line 62
+    move-result-object p1
+
+    .line 63
+    return-object p1
+.end method

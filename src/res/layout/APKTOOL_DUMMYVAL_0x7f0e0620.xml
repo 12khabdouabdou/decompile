@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@null" android:background="@color/APKTOOL_DUMMYVAL_0x7f06031e" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:paddingEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070508"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b07eb" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f080684" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070f4b" android:layout_margin="@dimen/APKTOOL_DUMMYVAL_0x7f07050f" android:paddingStart="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:paddingEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070508">
+        <com.snap.ui.view.LoadingSpinnerView android:layout_gravity="center" android:id="@null" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070f52" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070f52" />
+    </FrameLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0424" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.snap.scan.ui.view.CardsView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0146" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</FrameLayout>

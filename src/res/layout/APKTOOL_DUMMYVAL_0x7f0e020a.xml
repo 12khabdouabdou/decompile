@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f0712ae" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0fb1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f0712ad" />
+    <com.snap.discover.playback.ui.views.SubscribedAnimationView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0fb0" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f0712ac" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f0712ab" />
+    <TextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f0712ae" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0fb2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f0712ad" />
+</LinearLayout>

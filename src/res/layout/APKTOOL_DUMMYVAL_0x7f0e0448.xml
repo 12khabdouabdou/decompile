@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@null" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0d36" layout="@layout/APKTOOL_DUMMYVAL_0x7f0e043e" />
+    <include android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0d3b" layout="@layout/APKTOOL_DUMMYVAL_0x7f0e0440" />
+    <com.google.android.material.timepicker.ClockFaceView android:layout_gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0d37" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="36.0dip" app:APKTOOL_DUMMYVAL_0x7f0402d2="0" app:APKTOOL_DUMMYVAL_0x7f0402e5="0" app:APKTOOL_DUMMYVAL_0x7f0402e8="@id/APKTOOL_DUMMYVAL_0x7f0b0d36" />
+</merge>

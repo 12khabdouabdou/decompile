@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.ScHeaderView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b103b" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:APKTOOL_DUMMYVAL_0x7f040237="@color/APKTOOL_DUMMYVAL_0x7f060233" custom:APKTOOL_DUMMYVAL_0x7f0404a8="true" custom:APKTOOL_DUMMYVAL_0x7f0404a9="true">
+        <TextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f070c11" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060233" android:layout_gravity="end|center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b103a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f07051b" android:paddingStart="@dimen/APKTOOL_DUMMYVAL_0x7f070516" android:paddingEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070511" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b104b" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="25.0dip" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070c00" />
+    </com.snap.ui.view.ScHeaderView>
+</merge>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?APKTOOL_DUMMYVAL_0x7f0404b8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.component.header.SnapSubscreenHeaderView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b09c0" android:maxLines="2" custom:APKTOOL_DUMMYVAL_0x7f0401a0="@string/phone_verification_skip" custom:APKTOOL_DUMMYVAL_0x7f04023c="?APKTOOL_DUMMYVAL_0x7f0404b8" custom:APKTOOL_DUMMYVAL_0x7f04069d="@string/settings_tfa_settings_header" custom:APKTOOL_DUMMYVAL_0x7f0406af="@layout/APKTOOL_DUMMYVAL_0x7f0e0767" style="@style/APKTOOL_DUMMYVAL_0x7f140604" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070511">
+            <com.snap.ui.view.SnapFontTextView android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:text="@string/settings_tfa_setup_recommendation_sms_explanation" style="@style/APKTOOL_DUMMYVAL_0x7f1401b4" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f0806e5" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+        </LinearLayout>
+    </ScrollView>
+    <com.snap.identity.ui.settings.shared.SettingsStatefulButton android:id="@id/APKTOOL_DUMMYVAL_0x7f0b18d8" android:background="?APKTOOL_DUMMYVAL_0x7f0404b8" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070f10" custom:APKTOOL_DUMMYVAL_0x7f0400aa="@string/settings_tfa_setup_recommendation_sms_button_text" style="@style/APKTOOL_DUMMYVAL_0x7f1401b3" />
+</LinearLayout>

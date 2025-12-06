@@ -1,0 +1,140 @@
+.class public final Lcom/snap/lenses/data/collections/b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/snap/lenses/data/collections/LensCollectionsHttpInterface;
+
+
+# instance fields
+.field public final synthetic a:Lcom/snap/lenses/data/collections/LensCollectionsHttpInterface$a;
+
+.field public final synthetic b:Ljava/lang/String;
+
+.field public final synthetic c:Ljava/lang/String;
+
+.field public final synthetic d:Ljava/util/Map;
+
+
+# direct methods
+.method public constructor <init>(Lcom/snap/lenses/data/collections/LensCollectionsHttpInterface$a;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/snap/lenses/data/collections/b;->a:Lcom/snap/lenses/data/collections/LensCollectionsHttpInterface$a;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, Lcom/snap/lenses/data/collections/b;->b:Ljava/lang/String;
+
+    .line 7
+    .line 8
+    iput-object p3, p0, Lcom/snap/lenses/data/collections/b;->c:Ljava/lang/String;
+
+    .line 9
+    .line 10
+    iput-object p4, p0, Lcom/snap/lenses/data/collections/b;->d:Ljava/util/Map;
+
+    .line 11
+    .line 12
+    return-void
+.end method
+
+
+# virtual methods
+.method public final fetchCollection(LgP9;)Lio/reactivex/rxjava3/core/Single;
+    .locals 7
+
+    .line 1
+    sget-object v0, LoRg;->c:LoRg;
+
+    .line 2
+    .line 3
+    iget-object v0, p0, Lcom/snap/lenses/data/collections/b;->b:Ljava/lang/String;
+
+    .line 4
+    .line 5
+    invoke-static {v0}, LPZj;->y(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v3
+
+    .line 9
+    iget-object v0, p0, Lcom/snap/lenses/data/collections/b;->c:Ljava/lang/String;
+
+    .line 10
+    .line 11
+    invoke-static {v0}, LPZj;->y(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    if-nez v0, :cond_0
+
+    .line 16
+    .line 17
+    const-string v0, "https://us-central1-gcp.api.snapchat.com"
+
+    .line 18
+    .line 19
+    :cond_0
+    const-string v1, "/lc/serve_lens_collections"
+
+    .line 20
+    .line 21
+    invoke-virtual {v0, v1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v4
+
+    .line 25
+    iget-object v6, p0, Lcom/snap/lenses/data/collections/b;->d:Ljava/util/Map;
+
+    .line 26
+    .line 27
+    iget-object v1, p0, Lcom/snap/lenses/data/collections/b;->a:Lcom/snap/lenses/data/collections/LensCollectionsHttpInterface$a;
+
+    .line 28
+    .line 29
+    const-string v2, "https://auth.snapchat.com/snap_token/api/api-gateway"
+
+    .line 30
+    .line 31
+    move-object v5, p1
+
+    .line 32
+    invoke-interface/range {v1 .. v6}, Lcom/snap/lenses/data/collections/LensCollectionsHttpInterface$a;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;LgP9;Ljava/util/Map;)Lio/reactivex/rxjava3/core/Single;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object p1
+
+    .line 36
+    iget-object v0, v5, LgP9;->t:[J
+
+    .line 37
+    .line 38
+    invoke-static {v0}, Ljava/util/Arrays;->toString([J)Ljava/lang/String;
+
+    .line 39
+    .line 40
+    .line 41
+    sget-object v0, LQFa;->a:LQFa;
+
+    .line 42
+    .line 43
+    return-object p1
+.end method

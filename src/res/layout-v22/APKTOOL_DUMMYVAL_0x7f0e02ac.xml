@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.identity.loginsignup.ui.pages.usernamesuggestion.v2.SignupUsernameSuggestionItemView android:gravity="center_vertical" android:layout_gravity="center" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.component.cards.SnapCardView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0ab9" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMYVAL_0x7f070514" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f07051a" android:layout_marginRight="@dimen/APKTOOL_DUMMYVAL_0x7f070514" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f07051a" android:layout_marginHorizontal="@dimen/APKTOOL_DUMMYVAL_0x7f070514" android:layout_marginVertical="@dimen/APKTOOL_DUMMYVAL_0x7f07051a">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMYVAL_0x7f070514" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f07050c" android:layout_marginRight="@dimen/APKTOOL_DUMMYVAL_0x7f070514" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f07050c" android:layout_marginHorizontal="@dimen/APKTOOL_DUMMYVAL_0x7f070514" android:layout_marginVertical="@dimen/APKTOOL_DUMMYVAL_0x7f07050c">
+            <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f071307" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0abb" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <com.snap.component.button.SnapRadioButton android:layout_gravity="end|center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0aba" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.snap.component.cards.SnapCardView>
+</com.snap.identity.loginsignup.ui.pages.usernamesuggestion.v2.SignupUsernameSuggestionItemView>

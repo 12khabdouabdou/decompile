@@ -1,0 +1,36 @@
+.class public abstract Lcom/snapchat/client/content_manager/ContentStreamer;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/snapchat/client/content_manager/ContentStreamer$CppProxy;
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public abstract getMetadataIfAvailable()Lcom/snapchat/client/content_manager/StreamerMetadata;
+.end method
+
+.method public abstract setRequestContext(Lcom/snapchat/client/mdp_common/RequestContext;)V
+.end method
+
+.method public abstract streamByteRange(Lcom/snapchat/client/content_manager/Range;Lcom/snapchat/client/content_manager/StreamerCallback;)Lcom/snapchat/client/content_manager/StreamerCancelable;
+.end method

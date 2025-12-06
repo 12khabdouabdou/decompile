@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f080c82" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.component.header.SnapSubscreenHeaderView app:APKTOOL_DUMMYVAL_0x7f04023c="@color/APKTOOL_DUMMYVAL_0x7f060327" app:APKTOOL_DUMMYVAL_0x7f04023d="9" app:APKTOOL_DUMMYVAL_0x7f04069d="@string/title_reset_password" style="@style/APKTOOL_DUMMYVAL_0x7f1405f4" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.snap.ui.view.SnapFontTextView android:layout_gravity="center_horizontal" android:id="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:text="@string/recovery_find_account" style="@style/APKTOOL_DUMMYVAL_0x7f140374" />
+            <com.snap.component.cards.SnapCardView android:background="?APKTOOL_DUMMYVAL_0x7f040148" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="17.0dip" android:layout_marginEnd="15.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.snap.component.cells.SnapInfoCellView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b07dc" android:layout_width="fill_parent" android:layout_height="wrap_content" app:APKTOOL_DUMMYVAL_0x7f040260="@drawable/APKTOOL_DUMMYVAL_0x7f080c8e" app:APKTOOL_DUMMYVAL_0x7f04048d="true" app:APKTOOL_DUMMYVAL_0x7f040687="Username or Email" />
+                    <com.snap.component.cells.SnapInfoCellView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b106d" android:layout_width="fill_parent" android:layout_height="wrap_content" app:APKTOOL_DUMMYVAL_0x7f040260="@drawable/APKTOOL_DUMMYVAL_0x7f080c17" app:APKTOOL_DUMMYVAL_0x7f04048d="true" app:APKTOOL_DUMMYVAL_0x7f040687="Phone Number" />
+                </LinearLayout>
+            </com.snap.component.cards.SnapCardView>
+        </LinearLayout>
+    </ScrollView>
+    <com.snap.component.button.SnapButtonView android:enabled="false" android:id="@id/nav_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/APKTOOL_DUMMYVAL_0x7f070511" app:APKTOOL_DUMMYVAL_0x7f0400b0="3" app:APKTOOL_DUMMYVAL_0x7f0400b1="@string/continue_text" />
+</LinearLayout>

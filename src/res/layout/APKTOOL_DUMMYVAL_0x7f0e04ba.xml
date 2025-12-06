@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0eb3" android:visibility="gone" style="@style/APKTOOL_DUMMYVAL_0x7f140534">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0eb2" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_bitmoji" style="@style/APKTOOL_DUMMYVAL_0x7f14058e" />
+            <com.snap.ui.view.SnapFontTextView android:id="@null" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_bitmoji_description" style="@style/APKTOOL_DUMMYVAL_0x7f140592" />
+        </LinearLayout>
+        <com.snap.component.button.SnapCheckBox android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0eb0" style="@style/APKTOOL_DUMMYVAL_0x7f14058b" />
+    </LinearLayout>
+    <include android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0eb4" android:visibility="gone" layout="@layout/APKTOOL_DUMMYVAL_0x7f0e03bd" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f19" android:visibility="gone" style="@style/APKTOOL_DUMMYVAL_0x7f140534">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f18" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_plus_promotions" style="@style/APKTOOL_DUMMYVAL_0x7f14058e" />
+            <com.snap.ui.view.SnapFontTextView android:id="@null" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_plus_promotions_description" style="@style/APKTOOL_DUMMYVAL_0x7f140592" />
+        </LinearLayout>
+        <com.snap.component.button.SnapCheckBox android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f16" style="@style/APKTOOL_DUMMYVAL_0x7f14058b" />
+    </LinearLayout>
+    <include android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f1a" android:visibility="gone" layout="@layout/APKTOOL_DUMMYVAL_0x7f0e03bd" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f1e" android:visibility="gone" style="@style/APKTOOL_DUMMYVAL_0x7f140534">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f1d" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_plus_updates" style="@style/APKTOOL_DUMMYVAL_0x7f14058e" />
+            <com.snap.ui.view.SnapFontTextView android:id="@null" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_plus_updates_description" style="@style/APKTOOL_DUMMYVAL_0x7f140592" />
+        </LinearLayout>
+        <com.snap.component.button.SnapCheckBox android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f1b" style="@style/APKTOOL_DUMMYVAL_0x7f14058b" />
+    </LinearLayout>
+    <include android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f1f" android:visibility="gone" layout="@layout/APKTOOL_DUMMYVAL_0x7f0e03bd" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0ec0" style="@style/APKTOOL_DUMMYVAL_0x7f140534">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0ebf" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_dreams_suggestions_header" style="@style/APKTOOL_DUMMYVAL_0x7f14058e" />
+            <com.snap.ui.view.SnapFontTextView android:id="@null" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_dreams_suggestions_body" style="@style/APKTOOL_DUMMYVAL_0x7f140592" />
+        </LinearLayout>
+        <com.snap.component.button.SnapCheckBox android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0ebd" style="@style/APKTOOL_DUMMYVAL_0x7f14058b" />
+    </LinearLayout>
+    <include android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f4a" android:visibility="gone" layout="@layout/APKTOOL_DUMMYVAL_0x7f0e03bd" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f49" style="@style/APKTOOL_DUMMYVAL_0x7f140534">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f48" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_user_tagging" style="@style/APKTOOL_DUMMYVAL_0x7f14058e" />
+            <com.snap.ui.view.SnapFontTextView android:id="@null" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_user_tagging_description" style="@style/APKTOOL_DUMMYVAL_0x7f140592" />
+        </LinearLayout>
+        <com.snap.component.button.SnapCheckBox android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f46" style="@style/APKTOOL_DUMMYVAL_0x7f14058b" />
+    </LinearLayout>
+    <include android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0ef8" android:visibility="gone" layout="@layout/APKTOOL_DUMMYVAL_0x7f0e03bd" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0ef7" android:visibility="gone" style="@style/APKTOOL_DUMMYVAL_0x7f140534">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0ef2" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_memories_header" style="@style/APKTOOL_DUMMYVAL_0x7f14058e" />
+            <com.snap.ui.view.SnapFontTextView android:id="@null" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_memories_body" style="@style/APKTOOL_DUMMYVAL_0x7f140592" />
+        </LinearLayout>
+        <com.snap.component.button.SnapCheckBox android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0eea" style="@style/APKTOOL_DUMMYVAL_0x7f14058b" />
+    </LinearLayout>
+    <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e03bd" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0edc" style="@style/APKTOOL_DUMMYVAL_0x7f140534">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0edb" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_friends_birthday_header" style="@style/APKTOOL_DUMMYVAL_0x7f14058e" />
+            <com.snap.ui.view.SnapFontTextView android:id="@null" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_friends_birthday_body" style="@style/APKTOOL_DUMMYVAL_0x7f140592" />
+        </LinearLayout>
+        <com.snap.component.button.SnapCheckBox android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0ed9" style="@style/APKTOOL_DUMMYVAL_0x7f14058b" />
+    </LinearLayout>
+    <include android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0efd" android:visibility="gone" layout="@layout/APKTOOL_DUMMYVAL_0x7f0e03bd" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0efc" android:visibility="gone" style="@style/APKTOOL_DUMMYVAL_0x7f140534">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0efb" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_message_reminder_header" style="@style/APKTOOL_DUMMYVAL_0x7f14058e" />
+            <com.snap.ui.view.SnapFontTextView android:id="@null" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_message_reminder_body" style="@style/APKTOOL_DUMMYVAL_0x7f140592" />
+        </LinearLayout>
+        <com.snap.component.button.SnapCheckBox android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0ef9" style="@style/APKTOOL_DUMMYVAL_0x7f14058b" />
+    </LinearLayout>
+    <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e03bd" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0eb8" style="@style/APKTOOL_DUMMYVAL_0x7f140534">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0eb7" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_creative_tools_header" style="@style/APKTOOL_DUMMYVAL_0x7f14058e" />
+            <com.snap.ui.view.SnapFontTextView android:id="@null" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_creative_tools_body" style="@style/APKTOOL_DUMMYVAL_0x7f140592" />
+        </LinearLayout>
+        <com.snap.component.button.SnapCheckBox android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0eb5" style="@style/APKTOOL_DUMMYVAL_0x7f14058b" />
+    </LinearLayout>
+    <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e03bd" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0eaf" style="@style/APKTOOL_DUMMYVAL_0x7f140534">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0eae" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_best_friends_sounds_header" style="@style/APKTOOL_DUMMYVAL_0x7f14058e" />
+            <com.snap.ui.view.SnapFontTextView android:id="@null" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_best_friends_sounds_body" style="@style/APKTOOL_DUMMYVAL_0x7f140592" />
+        </LinearLayout>
+        <com.snap.component.button.SnapCheckBox android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0eac" style="@style/APKTOOL_DUMMYVAL_0x7f14058b" />
+    </LinearLayout>
+    <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e03bd" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f43" style="@style/APKTOOL_DUMMYVAL_0x7f140534">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f42" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_submitted_story_header" style="@style/APKTOOL_DUMMYVAL_0x7f14058e" />
+            <com.snap.ui.view.SnapFontTextView android:id="@null" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_submitted_story_body" style="@style/APKTOOL_DUMMYVAL_0x7f140592" />
+        </LinearLayout>
+        <com.snap.component.button.SnapCheckBox android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f40" style="@style/APKTOOL_DUMMYVAL_0x7f14058b" />
+    </LinearLayout>
+    <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e03bd" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f14" style="@style/APKTOOL_DUMMYVAL_0x7f140534">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f13" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_posts_to_spotlight_and_map_header" style="@style/APKTOOL_DUMMYVAL_0x7f14058e" />
+            <com.snap.ui.view.SnapFontTextView android:id="@null" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_posts_to_spotlight_and_map_body" style="@style/APKTOOL_DUMMYVAL_0x7f140592" />
+        </LinearLayout>
+        <com.snap.component.button.SnapCheckBox android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f11" style="@style/APKTOOL_DUMMYVAL_0x7f14058b" />
+    </LinearLayout>
+    <include android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f3e" android:visibility="gone" layout="@layout/APKTOOL_DUMMYVAL_0x7f0e03bd" />
+    <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/APKTOOL_DUMMYVAL_0x7f0e06ea" />
+    <include android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0ee5" android:visibility="gone" layout="@layout/APKTOOL_DUMMYVAL_0x7f0e03bd" />
+    <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/APKTOOL_DUMMYVAL_0x7f0e0417" />
+    <include android:id="@null" android:visibility="visible" layout="@layout/APKTOOL_DUMMYVAL_0x7f0e03bd" />
+    <LinearLayout android:orientation="vertical" android:id="@null" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.snap.ui.view.SnapFontTextView android:id="@null" android:text="@string/settings_notification_friend_suggests_header" style="@style/APKTOOL_DUMMYVAL_0x7f1405dd" />
+        <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e068b" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0ecb" style="@style/APKTOOL_DUMMYVAL_0x7f140534">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0ed2" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_friend_suggests_contacts_header" style="@style/APKTOOL_DUMMYVAL_0x7f14058e" />
+                <com.snap.ui.view.SnapFontTextView android:id="@null" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_friend_suggests_contacts_body" style="@style/APKTOOL_DUMMYVAL_0x7f140592" />
+            </LinearLayout>
+            <com.snap.component.button.SnapCheckBox android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0ed0" style="@style/APKTOOL_DUMMYVAL_0x7f14058b" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0ecd" style="@style/APKTOOL_DUMMYVAL_0x7f140534">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0ed8" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_friend_suggests_regular_header" style="@style/APKTOOL_DUMMYVAL_0x7f14058e" />
+                <com.snap.ui.view.SnapFontTextView android:id="@null" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_friend_suggests_regular_body" style="@style/APKTOOL_DUMMYVAL_0x7f140592" />
+            </LinearLayout>
+            <com.snap.component.button.SnapCheckBox android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0ed6" style="@style/APKTOOL_DUMMYVAL_0x7f14058b" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0ecc" style="@style/APKTOOL_DUMMYVAL_0x7f140534">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0ed5" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_friend_suggests_pending_header" style="@style/APKTOOL_DUMMYVAL_0x7f14058e" />
+                <com.snap.ui.view.SnapFontTextView android:id="@null" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_friend_suggests_pending_body" style="@style/APKTOOL_DUMMYVAL_0x7f140592" />
+            </LinearLayout>
+            <com.snap.component.button.SnapCheckBox android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0ed3" style="@style/APKTOOL_DUMMYVAL_0x7f14058b" />
+        </LinearLayout>
+    </LinearLayout>
+    <include android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f07" android:visibility="gone" layout="@layout/APKTOOL_DUMMYVAL_0x7f0e03bd" />
+    <LinearLayout android:orientation="vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f06" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.snap.ui.view.SnapFontTextView android:id="@null" android:text="@string/settings_notification_message_reminders_header" style="@style/APKTOOL_DUMMYVAL_0x7f1405dd" />
+        <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e068b" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0efe" style="@style/APKTOOL_DUMMYVAL_0x7f140534">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f01" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_message_reminders_friend_header" style="@style/APKTOOL_DUMMYVAL_0x7f14058e" />
+                <com.snap.ui.view.SnapFontTextView android:id="@null" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_message_reminders_friend_body" style="@style/APKTOOL_DUMMYVAL_0x7f140592" />
+            </LinearLayout>
+            <com.snap.component.button.SnapCheckBox android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0eff" style="@style/APKTOOL_DUMMYVAL_0x7f14058b" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f02" android:visibility="gone" style="@style/APKTOOL_DUMMYVAL_0x7f140534">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f05" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_message_reminders_pending_header" style="@style/APKTOOL_DUMMYVAL_0x7f14058e" />
+                <com.snap.ui.view.SnapFontTextView android:id="@null" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_message_reminders_pending_body" style="@style/APKTOOL_DUMMYVAL_0x7f140592" />
+            </LinearLayout>
+            <com.snap.component.button.SnapCheckBox android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f03" style="@style/APKTOOL_DUMMYVAL_0x7f14058b" />
+        </LinearLayout>
+    </LinearLayout>
+    <include android:id="@null" android:visibility="visible" layout="@layout/APKTOOL_DUMMYVAL_0x7f0e03bd" />
+    <LinearLayout android:orientation="vertical" android:id="@null" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.snap.ui.view.SnapFontTextView android:id="@null" android:text="@string/settings_notification_public_content_header" style="@style/APKTOOL_DUMMYVAL_0x7f1405dd" />
+        <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e068b" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f2c" style="@style/APKTOOL_DUMMYVAL_0x7f140534">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f2f" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_public_content_subscription_header" style="@style/APKTOOL_DUMMYVAL_0x7f14058e" />
+                <com.snap.ui.view.SnapFontTextView android:id="@null" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_public_content_subscription_body" style="@style/APKTOOL_DUMMYVAL_0x7f140592" />
+            </LinearLayout>
+            <com.snap.component.button.SnapCheckBox android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f2d" style="@style/APKTOOL_DUMMYVAL_0x7f14058b" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f26" android:visibility="gone" style="@style/APKTOOL_DUMMYVAL_0x7f140534">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f29" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_public_content_fof_header" style="@style/APKTOOL_DUMMYVAL_0x7f14058e" />
+                <com.snap.ui.view.SnapFontTextView android:id="@null" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_public_content_fof_body" style="@style/APKTOOL_DUMMYVAL_0x7f140592" />
+            </LinearLayout>
+            <com.snap.component.button.SnapCheckBox android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f27" style="@style/APKTOOL_DUMMYVAL_0x7f14058b" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f22" style="@style/APKTOOL_DUMMYVAL_0x7f140534">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f25" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_public_content_contacts_header" style="@style/APKTOOL_DUMMYVAL_0x7f14058e" />
+                <com.snap.ui.view.SnapFontTextView android:id="@null" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_public_content_contacts_body" style="@style/APKTOOL_DUMMYVAL_0x7f140592" />
+            </LinearLayout>
+            <com.snap.component.button.SnapCheckBox android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f23" style="@style/APKTOOL_DUMMYVAL_0x7f14058b" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f30" style="@style/APKTOOL_DUMMYVAL_0x7f140534">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f33" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_public_content_trending_header" style="@style/APKTOOL_DUMMYVAL_0x7f14058e" />
+                <com.snap.ui.view.SnapFontTextView android:id="@null" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_public_content_trending_body" style="@style/APKTOOL_DUMMYVAL_0x7f140592" />
+            </LinearLayout>
+            <com.snap.component.button.SnapCheckBox android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f31" style="@style/APKTOOL_DUMMYVAL_0x7f14058b" />
+        </LinearLayout>
+    </LinearLayout>
+    <include android:id="@null" layout="@layout/APKTOOL_DUMMYVAL_0x7f0e03bd" />
+    <LinearLayout android:orientation="vertical" android:id="@null" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.snap.ui.view.SnapFontTextView android:id="@null" android:text="@string/settings_notification_friend_stories_header" style="@style/APKTOOL_DUMMYVAL_0x7f1405dd" />
+        <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e068b" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0ec1" style="@style/APKTOOL_DUMMYVAL_0x7f140534">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0ec4" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_friend_stories_private_header" style="@style/APKTOOL_DUMMYVAL_0x7f14058e" />
+                <com.snap.ui.view.SnapFontTextView android:id="@null" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_friend_stories_private_body" style="@style/APKTOOL_DUMMYVAL_0x7f140592" />
+            </LinearLayout>
+            <com.snap.component.button.SnapCheckBox android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0ec2" style="@style/APKTOOL_DUMMYVAL_0x7f14058b" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0ec5" style="@style/APKTOOL_DUMMYVAL_0x7f140534">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0ec8" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_friend_stories_regular_header" style="@style/APKTOOL_DUMMYVAL_0x7f14058e" />
+                <com.snap.ui.view.SnapFontTextView android:id="@null" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_friend_stories_regular_body" style="@style/APKTOOL_DUMMYVAL_0x7f140592" />
+            </LinearLayout>
+            <com.snap.component.button.SnapCheckBox android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0ec6" style="@style/APKTOOL_DUMMYVAL_0x7f14058b" />
+        </LinearLayout>
+    </LinearLayout>
+    <include android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0ef1" android:visibility="gone" layout="@layout/APKTOOL_DUMMYVAL_0x7f0e03bd" />
+    <LinearLayout android:orientation="vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0ef0" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.snap.ui.view.SnapFontTextView android:id="@null" android:text="@string/settings_notification_memories_header" style="@style/APKTOOL_DUMMYVAL_0x7f1405dd" />
+        <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e068b" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0eeb" style="@style/APKTOOL_DUMMYVAL_0x7f140534">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0eee" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_memories_daily_flashback_header" style="@style/APKTOOL_DUMMYVAL_0x7f14058e" />
+                <com.snap.ui.view.SnapFontTextView android:id="@null" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_memories_daily_flashback_body" style="@style/APKTOOL_DUMMYVAL_0x7f140592" />
+            </LinearLayout>
+            <com.snap.component.button.SnapCheckBox android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0eec" style="@style/APKTOOL_DUMMYVAL_0x7f14058b" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0ef3" style="@style/APKTOOL_DUMMYVAL_0x7f140534">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0ef6" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_memories_themed_flashback_header" style="@style/APKTOOL_DUMMYVAL_0x7f14058e" />
+                <com.snap.ui.view.SnapFontTextView android:id="@null" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_memories_themed_flashback_body" style="@style/APKTOOL_DUMMYVAL_0x7f140592" />
+            </LinearLayout>
+            <com.snap.component.button.SnapCheckBox android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0ef4" style="@style/APKTOOL_DUMMYVAL_0x7f14058b" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0ee6" style="@style/APKTOOL_DUMMYVAL_0x7f140534">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0ee9" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_memories_chat_flashback_header" style="@style/APKTOOL_DUMMYVAL_0x7f14058e" />
+                <com.snap.ui.view.SnapFontTextView android:id="@null" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_memories_chat_flashback_body" style="@style/APKTOOL_DUMMYVAL_0x7f140592" />
+            </LinearLayout>
+            <com.snap.component.button.SnapCheckBox android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0ee7" style="@style/APKTOOL_DUMMYVAL_0x7f14058b" />
+        </LinearLayout>
+    </LinearLayout>
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/APKTOOL_DUMMYVAL_0x7f0e04bb" />
+    <include android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0eba" android:visibility="gone" layout="@layout/APKTOOL_DUMMYVAL_0x7f0e03bd" />
+    <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/APKTOOL_DUMMYVAL_0x7f0e01cc" />
+    <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e03bd" />
+    <LinearLayout android:orientation="vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f3f" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.snap.ui.view.SnapFontTextView android:id="@null" android:text="@string/settings_notification_stories_i_follow_header" style="@style/APKTOOL_DUMMYVAL_0x7f1405dd" />
+        <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e068b" />
+        <com.snap.ui.view.SnapFontTextView android:gravity="center_vertical" android:orientation="vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0c94" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:layout_height="0.0dip" android:text="@string/settings_notification_stories_manage_notifications" android:layout_weight="1.0" style="@style/APKTOOL_DUMMYVAL_0x7f14058f" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f0c" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.snap.ui.view.SnapFontTextView android:id="@null" android:text="@string/settings_notification_messaging_header" style="@style/APKTOOL_DUMMYVAL_0x7f1405dd" />
+        <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e068b" />
+        <com.snap.ui.view.SnapLinkFriendlyTextView android:text="@string/settings_notification_messaging_header_body" android:paddingStart="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:paddingEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070511" style="@style/APKTOOL_DUMMYVAL_0x7f140592" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f0a" style="@style/APKTOOL_DUMMYVAL_0x7f140534">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f45" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_messaging_transactional_header" style="@style/APKTOOL_DUMMYVAL_0x7f14058e" />
+                <com.snap.ui.view.SnapFontTextView android:id="@null" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_messaging_transactional_body" style="@style/APKTOOL_DUMMYVAL_0x7f140592" />
+            </LinearLayout>
+            <com.snap.component.button.SnapCheckBox android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f0b" style="@style/APKTOOL_DUMMYVAL_0x7f14058b" />
+        </LinearLayout>
+        <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e03bd" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f08" style="@style/APKTOOL_DUMMYVAL_0x7f140534">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f21" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_messaging_promotional_header" style="@style/APKTOOL_DUMMYVAL_0x7f14058e" />
+                <com.snap.ui.view.SnapFontTextView android:id="@null" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070cf8" android:text="@string/settings_notification_messaging_promotional_body" style="@style/APKTOOL_DUMMYVAL_0x7f140592" />
+            </LinearLayout>
+            <com.snap.component.button.SnapCheckBox android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f09" style="@style/APKTOOL_DUMMYVAL_0x7f14058b" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

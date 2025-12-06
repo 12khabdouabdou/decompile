@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b11ca" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f07051a" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:elevation="@dimen/APKTOOL_DUMMYVAL_0x7f071073"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0425" android:visibility="invisible" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMYVAL_0x7f0713a5" android:layout_marginRight="@dimen/APKTOOL_DUMMYVAL_0x7f0713a5" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f0713a3" android:requiresFadingEdge="horizontal|vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0423" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</HorizontalScrollView>

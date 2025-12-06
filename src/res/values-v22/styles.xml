@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="APKTOOL_DUMMYVAL_0x7f14004b" parent="@style/APKTOOL_DUMMYVAL_0x7f14008f" />
+    <style name="APKTOOL_DUMMYVAL_0x7f140052" parent="@style/APKTOOL_DUMMYVAL_0x7f140090" />
+    <style name="APKTOOL_DUMMYVAL_0x7f140181" parent="@style/APKTOOL_DUMMYVAL_0x7f140180">
+        <item name="android:background">@drawable/APKTOOL_DUMMYVAL_0x7f080286</item>
+        <item name="android:drawablePadding">@dimen/APKTOOL_DUMMYVAL_0x7f0706ca</item>
+        <item name="android:drawableEnd">@android:color/transparent</item>
+        <item name="android:paddingStart">@dimen/APKTOOL_DUMMYVAL_0x7f07050c</item>
+        <item name="android:paddingEnd">@dimen/APKTOOL_DUMMYVAL_0x7f070508</item>
+        <item name="android:drawableTint">@color/APKTOOL_DUMMYVAL_0x7f060327</item>
+    </style>
+    <style name="APKTOOL_DUMMYVAL_0x7f140182" parent="@style/APKTOOL_DUMMYVAL_0x7f140180">
+        <item name="android:background">@drawable/APKTOOL_DUMMYVAL_0x7f080285</item>
+        <item name="android:drawablePadding">@dimen/APKTOOL_DUMMYVAL_0x7f07051a</item>
+        <item name="android:drawableEnd">@android:color/transparent</item>
+        <item name="android:paddingStart">@dimen/APKTOOL_DUMMYVAL_0x7f070508</item>
+        <item name="android:paddingEnd">@dimen/APKTOOL_DUMMYVAL_0x7f070511</item>
+        <item name="android:drawableTint">@color/APKTOOL_DUMMYVAL_0x7f060327</item>
+    </style>
+    <style name="APKTOOL_DUMMYVAL_0x7f140589">
+        <item name="android:textSize">?APKTOOL_DUMMYVAL_0x7f040706</item>
+        <item name="android:textColor">@color/APKTOOL_DUMMYVAL_0x7f060327</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/APKTOOL_DUMMYVAL_0x7f0801c2</item>
+        <item name="android:paddingTop">@dimen/APKTOOL_DUMMYVAL_0x7f070c21</item>
+        <item name="android:paddingBottom">@dimen/APKTOOL_DUMMYVAL_0x7f070c21</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">@dimen/APKTOOL_DUMMYVAL_0x7f070c1f</item>
+        <item name="android:paddingStart">@dimen/APKTOOL_DUMMYVAL_0x7f070c20</item>
+        <item name="android:paddingEnd">@dimen/APKTOOL_DUMMYVAL_0x7f070c20</item>
+        <item name="android:drawableTint">@color/APKTOOL_DUMMYVAL_0x7f060327</item>
+    </style>
+    <style name="APKTOOL_DUMMYVAL_0x7f14008f" parent="@style/APKTOOL_DUMMYVAL_0x7f140085">
+        <item name="APKTOOL_DUMMYVAL_0x7f04001c">?android:actionModeShareDrawable</item>
+        <item name="APKTOOL_DUMMYVAL_0x7f0401b9">?android:editTextBackground</item>
+    </style>
+    <style name="APKTOOL_DUMMYVAL_0x7f140090" parent="@style/APKTOOL_DUMMYVAL_0x7f140087">
+        <item name="APKTOOL_DUMMYVAL_0x7f04001c">?android:actionModeShareDrawable</item>
+        <item name="APKTOOL_DUMMYVAL_0x7f0401b9">?android:editTextBackground</item>
+    </style>
+</resources>

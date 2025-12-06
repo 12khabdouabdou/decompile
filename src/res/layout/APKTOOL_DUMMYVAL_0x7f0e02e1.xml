@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@null"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center|top" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0a04" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f07075c" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07075c">
+        <ImageView android:layout_gravity="center|top" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b09f6" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f07075e" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07075e" />
+        <ViewStub android:layout_gravity="center|right|top" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0a0c" android:layout="@layout/APKTOOL_DUMMYVAL_0x7f0e02e0" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f07078c" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07078c" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f07076f" android:layout_marginRight="@dimen/APKTOOL_DUMMYVAL_0x7f07076e" />
+    </FrameLayout>
+    <ViewStub android:layout_gravity="bottom|center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b09f7" android:layout="@layout/APKTOOL_DUMMYVAL_0x7f0e02e2" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</merge>

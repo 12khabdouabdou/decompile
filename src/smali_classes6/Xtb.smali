@@ -1,0 +1,120 @@
+.class public final LXtb;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements LHL1;
+
+
+# instance fields
+.field public final a:LgGg;
+
+.field public final b:Ljava/util/UUID;
+
+
+# direct methods
+.method public constructor <init>(LgGg;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LXtb;->a:LgGg;
+
+    .line 5
+    .line 6
+    invoke-static {}, LJ0j;->a()Ljava/util/UUID;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p1
+
+    .line 10
+    iput-object p1, p0, LXtb;->b:Ljava/util/UUID;
+
+    .line 11
+    .line 12
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Ljava/util/UUID;JJJ)V
+    .locals 9
+
+    .line 1
+    sget-object v1, LWD7;->a:LWD7;
+
+    .line 2
+    .line 3
+    iget-object v0, p0, LXtb;->a:LgGg;
+
+    .line 4
+    .line 5
+    const/4 v7, 0x0
+
+    .line 6
+    iget-object v2, p0, LXtb;->b:Ljava/util/UUID;
+
+    .line 7
+    .line 8
+    const/16 v8, 0x10
+
+    .line 9
+    .line 10
+    move-wide v3, p4
+
+    .line 11
+    move-wide v5, p6
+
+    .line 12
+    invoke-static/range {v0 .. v8}, LPrk;->j(LgGg;LWD7;Ljava/util/UUID;JJZI)V
+
+    .line 13
+    .line 14
+    .line 15
+    return-void
+.end method
+
+.method public final b(Ljava/util/UUID;)V
+    .locals 9
+
+    .line 1
+    sget-object v1, LWD7;->a:LWD7;
+
+    .line 2
+    .line 3
+    const-wide/16 v5, 0x0
+
+    .line 4
+    .line 5
+    const/4 v7, 0x1
+
+    .line 6
+    iget-object v0, p0, LXtb;->a:LgGg;
+
+    .line 7
+    .line 8
+    iget-object v2, p0, LXtb;->b:Ljava/util/UUID;
+
+    .line 9
+    .line 10
+    const-wide/16 v3, 0x0
+
+    .line 11
+    .line 12
+    const/16 v8, 0xc
+
+    .line 13
+    .line 14
+    invoke-static/range {v0 .. v8}, LPrk;->j(LgGg;LWD7;Ljava/util/UUID;JJZI)V
+
+    .line 15
+    .line 16
+    .line 17
+    return-void
+.end method

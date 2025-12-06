@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.component.cells.SnapUserCellView android:id="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMYVAL_0x7f07126f" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f07126f" android:layout_marginRight="@dimen/APKTOOL_DUMMYVAL_0x7f07126f" style="@style/APKTOOL_DUMMYVAL_0x7f140242"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

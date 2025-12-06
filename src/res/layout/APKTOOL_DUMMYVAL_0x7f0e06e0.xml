@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@null" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f0806e1" android:focusable="false" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeightLarge" android:paddingStart="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:paddingEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070511"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.imageloading.view.SnapImageView android:layout_gravity="center_vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b16af" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f07081b" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07081b" />
+    <FrameLayout android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070511">
+            <com.snap.ui.view.SnapFontTextView android:ellipsize="end" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b16b0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="0.0dip" style="@style/APKTOOL_DUMMYVAL_0x7f14058e" />
+            <com.snap.ui.view.SnapFontTextView android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060219" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b16ad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070516" app:APKTOOL_DUMMYVAL_0x7f04004c="true" style="@style/APKTOOL_DUMMYVAL_0x7f140592" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="end" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b16d5" android:visibility="gone" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f07081d" android:layout_height="fill_parent" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f080c74" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f07081c" />
+    </FrameLayout>
+</LinearLayout>

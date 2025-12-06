@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0faf" style="@style/APKTOOL_DUMMYVAL_0x7f1405dd" />
+    <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e03bd" />
+</LinearLayout>

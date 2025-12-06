@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:orientation="vertical" android:id="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="80.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="?APKTOOL_DUMMYVAL_0x7f0404bd" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="80.0dip">
+        <com.snap.ui.view.SnapFontTextView android:textSize="?APKTOOL_DUMMYVAL_0x7f0406fd" android:textColor="?APKTOOL_DUMMYVAL_0x7f0405b3" android:gravity="center" android:background="@android:color/transparent" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f07050c" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f07050c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lifestyle_categories_description" android:paddingStart="@dimen/APKTOOL_DUMMYVAL_0x7f0712a5" android:paddingEnd="@dimen/APKTOOL_DUMMYVAL_0x7f0712a5" />
+        <ViewFlipper android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0c03" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.snap.ui.view.PausableLoadingSpinnerView android:layout_gravity="center_horizontal" android:id="@null" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f07095b" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07095b" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070509" android:scaleType="fitXY" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0c01" android:background="?APKTOOL_DUMMYVAL_0x7f0404be" android:visibility="gone" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070511" />
+            <com.snap.ui.view.SnapFontTextView android:textSize="?APKTOOL_DUMMYVAL_0x7f0406fd" android:textColor="?APKTOOL_DUMMYVAL_0x7f0405b3" android:gravity="center" android:background="@android:color/transparent" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f07050c" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f07050c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lifestyle_categories_fetch_failed_message" android:paddingStart="@dimen/APKTOOL_DUMMYVAL_0x7f0712a5" android:paddingEnd="@dimen/APKTOOL_DUMMYVAL_0x7f0712a5" />
+        </ViewFlipper>
+        <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e0172" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

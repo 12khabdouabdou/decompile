@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.geofilters.ui.SkipDrawingToEditsFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.snap.imageloading.view.SnapImageView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0b31" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f0708b2" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f0708b2" android:layout_margin="@dimen/APKTOOL_DUMMYVAL_0x7f0708b1" app:APKTOOL_DUMMYVAL_0x7f0402e5="0" app:APKTOOL_DUMMYVAL_0x7f0402e9="0" />
+        <com.snap.ui.view.PausableLoadingSpinnerView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0c36" android:visibility="gone" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f0708bd" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f0708bd" app:APKTOOL_DUMMYVAL_0x7f0402e5="0" app:APKTOOL_DUMMYVAL_0x7f0402e9="0" />
+        <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0b38" android:layout_width="wrap_content" android:layout_height="wrap_content" app:APKTOOL_DUMMYVAL_0x7f0402cd="@id/APKTOOL_DUMMYVAL_0x7f0b0b27" app:APKTOOL_DUMMYVAL_0x7f0402db="0.0" app:APKTOOL_DUMMYVAL_0x7f0402e4="@id/APKTOOL_DUMMYVAL_0x7f0b0b31" app:APKTOOL_DUMMYVAL_0x7f0402e9="0" style="@style/APKTOOL_DUMMYVAL_0x7f140563" />
+        <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0b27" android:layout_width="wrap_content" android:layout_height="wrap_content" app:APKTOOL_DUMMYVAL_0x7f0402cc="@id/APKTOOL_DUMMYVAL_0x7f0b0b31" app:APKTOOL_DUMMYVAL_0x7f0402db="0.0" app:APKTOOL_DUMMYVAL_0x7f0402e4="@id/APKTOOL_DUMMYVAL_0x7f0b0b31" app:APKTOOL_DUMMYVAL_0x7f0402e8="@id/APKTOOL_DUMMYVAL_0x7f0b0b38" style="@style/APKTOOL_DUMMYVAL_0x7f140564" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.snap.geofilters.ui.SkipDrawingToEditsFrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.lenses.explorer.onboarding.DefaultOnboardingView android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textDirection="locale" style="@style/APKTOOL_DUMMYVAL_0x7f140205"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/APKTOOL_DUMMYVAL_0x7f140205">
+        <com.snap.imageloading.view.SnapImageView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0826" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-80.0dip" android:layout_marginBottom="-30.0dip" android:scaleType="centerCrop" />
+        <com.snap.ui.view.LoadingSpinnerView android:layout_gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0828" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f0708b0" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f0708b0" />
+    </FrameLayout>
+    <com.snap.ui.view.SnapFontTextView android:gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0829" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f07062c" android:maxLines="2" style="@style/APKTOOL_DUMMYVAL_0x7f1401f2" />
+    <com.snap.ui.view.SnapFontTextView android:gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0825" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f07051c" style="@style/APKTOOL_DUMMYVAL_0x7f1401f1" />
+</com.snap.lenses.explorer.onboarding.DefaultOnboardingView>

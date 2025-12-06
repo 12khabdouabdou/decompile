@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@null" android:background="@color/APKTOOL_DUMMYVAL_0x7f060314" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.imageloading.view.SnapImageView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b12c8" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.snap.shake2report.ui.screenshotpage.ScreenshotDrawingView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b12c9" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@null" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_gravity="top" android:id="@null" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070509">
+            <ImageButton android:id="@id/APKTOOL_DUMMYVAL_0x7f0b12cc" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f0803a5" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f07050c" style="@style/APKTOOL_DUMMYVAL_0x7f1405ba" />
+            <ImageButton android:id="@id/APKTOOL_DUMMYVAL_0x7f0b12cd" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f080677" android:layout_alignParentTop="true" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f07050c" android:layout_alignParentEnd="true" style="@style/APKTOOL_DUMMYVAL_0x7f1405ba" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="bottom" android:id="@null" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageButton android:id="@id/APKTOOL_DUMMYVAL_0x7f0b12d1" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f0805d8" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f07050c" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f07050c" android:layout_alignParentStart="true" style="@style/APKTOOL_DUMMYVAL_0x7f1405b9" />
+            <ImageButton android:id="@id/APKTOOL_DUMMYVAL_0x7f0b12d0" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f0805d0" android:layout_alignParentBottom="true" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f07050c" android:layout_alignParentEnd="true" style="@style/APKTOOL_DUMMYVAL_0x7f1405b9" />
+        </RelativeLayout>
+    </FrameLayout>
+</FrameLayout>

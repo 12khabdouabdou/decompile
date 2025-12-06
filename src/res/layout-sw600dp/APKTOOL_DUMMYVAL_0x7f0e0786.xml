@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@null" android:background="@color/APKTOOL_DUMMYVAL_0x7f0600d5" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07063b" />
+    <com.cardinalcommerce.a.setAnimationMatrix android:textAppearance="@style/APKTOOL_DUMMYVAL_0x7f140164" android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f0712fd" android:layout_gravity="start" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0469" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f07063a" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070639" android:text="@string/verify_by_phone" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070a2d">
+        <com.cardinalcommerce.a.setY android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1a75" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f07150e" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07150e" android:layout_margin="@dimen/APKTOOL_DUMMYVAL_0x7f070094" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f080ca1" android:contentDescription="TODO" />
+        <com.cardinalcommerce.a.setAnimationMatrix android:textAppearance="@style/APKTOOL_DUMMYVAL_0x7f1405a5" android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f0712fc" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b046b" android:focusable="false" android:scrollbars="vertical" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/textview" />
+    </LinearLayout>
+</LinearLayout>

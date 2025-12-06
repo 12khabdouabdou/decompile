@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@null" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b17c5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f07123f" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f07123e" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f07123e" />
+    <com.snap.component.button.SnapButtonView android:layout_gravity="end" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b17c4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f07123d" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f07123c" app:APKTOOL_DUMMYVAL_0x7f0400b0="11" app:APKTOOL_DUMMYVAL_0x7f0400b1="@string/see_more" />
+</FrameLayout>

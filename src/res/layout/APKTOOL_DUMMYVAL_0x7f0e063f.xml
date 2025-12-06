@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1485" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f08069e" android:padding="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1483" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070fbc" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070fbb" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <com.snap.imageloading.view.SnapImageView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1484" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.snap.ui.view.PausableLoadingSpinnerView android:layout_gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1486" android:visibility="gone" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070f88" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070f88" />
+            <ImageView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0ac9" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f08039f" />
+            <ImageView android:layout_gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b147f" android:visibility="gone" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070f89" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070f89" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f080ab8" />
+        </FrameLayout>
+    </FrameLayout>
+    <com.snap.ui.view.SnapFontEditText android:id="@id/APKTOOL_DUMMYVAL_0x7f0b148a" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/add_a_chat" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:layout_toEndOf="@id/APKTOOL_DUMMYVAL_0x7f0b1483" style="@style/APKTOOL_DUMMYVAL_0x7f140241" />
+</RelativeLayout>

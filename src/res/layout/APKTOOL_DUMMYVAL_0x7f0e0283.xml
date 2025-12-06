@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/signup_set_phone_page" android:background="?APKTOOL_DUMMYVAL_0x7f0404b8" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e04d6" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b066a" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <com.snap.identity.ui.shared.phonenumber.PhonePickerViewV2 android:id="@id/APKTOOL_DUMMYVAL_0x7f0b107a" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070508" />
+            <com.snap.ui.view.SnapLinkFriendlyTextView android:textColor="?APKTOOL_DUMMYVAL_0x7f0405b2" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1469" android:visibility="visible" android:text="@string/signup_we_will_send_notice" android:textAllCaps="false" style="@style/APKTOOL_DUMMYVAL_0x7f1401a8" />
+            <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1070" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/APKTOOL_DUMMYVAL_0x7f1401a9" />
+            <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b15a9" android:visibility="gone" android:text="@string/ngo_signup_with_email" style="@style/APKTOOL_DUMMYVAL_0x7f1401fd" />
+            <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0" />
+        </LinearLayout>
+    </ScrollView>
+    <com.snap.identity.api.sharedui.ProgressButton android:layout_gravity="center_horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0691" style="@style/APKTOOL_DUMMYVAL_0x7f1401d8" />
+</LinearLayout>

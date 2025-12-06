@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.component.button.SnapButtonView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1479" android:layout_width="wrap_content" android:layout_height="wrap_content" app:APKTOOL_DUMMYVAL_0x7f0400ae="@drawable/APKTOOL_DUMMYVAL_0x7f0803bf" app:APKTOOL_DUMMYVAL_0x7f0400b0="8" app:APKTOOL_DUMMYVAL_0x7f0400b1="@string/send_to_new_group"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

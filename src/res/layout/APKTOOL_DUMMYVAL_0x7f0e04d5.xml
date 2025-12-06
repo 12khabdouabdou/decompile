@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.ui.view.SnapFontTextView android:id="@null" android:text="@string/ngo_country" style="@style/APKTOOL_DUMMYVAL_0x7f1401fc" />
+    <FrameLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1937" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070508">
+        <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1939" android:clickable="false" android:layout_width="fill_parent" android:text="@string/select_country_code" style="@style/APKTOOL_DUMMYVAL_0x7f1401fb" />
+        <ImageView android:layout_gravity="end|center" android:id="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f080b14" android:scaleType="fitCenter" android:rotation="90.0" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070511" />
+    </FrameLayout>
+    <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0e74" android:text="@string/ngo_phone_number" style="@style/APKTOOL_DUMMYVAL_0x7f1401fc" />
+    <LinearLayout android:orientation="horizontal" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070508" style="@style/APKTOOL_DUMMYVAL_0x7f1401fb">
+        <com.snap.ui.view.SnapFontEditText android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f071466" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f06038a" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b02c1" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLength="4" android:digits="\ 0123456789" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070508" />
+        <View android:layout_gravity="center_vertical" android:background="@color/APKTOOL_DUMMYVAL_0x7f0603b6" android:layout_width="1.0dip" android:layout_height="21.0dip" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070511" />
+        <com.snap.ui.view.SnapFontEditText android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f071466" android:textColor="?APKTOOL_DUMMYVAL_0x7f0405b2" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b02c2" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:inputType="phone" android:textDirection="ltr" />
+    </LinearLayout>
+    <com.snap.component.formselector.SnapFormSelector android:layout_gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1077" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070508" />
+</LinearLayout>

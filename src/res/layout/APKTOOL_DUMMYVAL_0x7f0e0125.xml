@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.ui.view.SnapFontTextView android:id="@null" android:text="@string/voice_note_feedback_dialog_title" style="@style/APKTOOL_DUMMYVAL_0x7f14050f" />
+    <com.snap.ui.view.SnapFontTextView android:id="@null" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:text="@string/voice_note_feedback_dialog_description" style="@style/APKTOOL_DUMMYVAL_0x7f14050b" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070511">
+        <com.snap.component.button.SnapCheckBox android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f071304" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1a5e" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f080224" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:button="@null" android:text="@string/voice_note_feedback_thumbs_up" android:textAlignment="center" />
+        <com.snap.component.button.SnapCheckBox android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f071304" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1a5c" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f080224" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="@string/voice_note_feedback_thumbs_down" android:textAlignment="center" />
+    </LinearLayout>
+    <HorizontalScrollView android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070511">
+        <LinearLayout android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1a5d" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.snap.component.button.SnapCheckBox android:textColor="@drawable/APKTOOL_DUMMYVAL_0x7f080220" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1a60" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f080221" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:button="@null" android:text="@string/voice_note_feedback_wrong_words_option" android:maxLines="1" android:fontFamily="@font/APKTOOL_DUMMYVAL_0x7f090004" />
+            <com.snap.component.button.SnapCheckBox android:textColor="@drawable/APKTOOL_DUMMYVAL_0x7f080220" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1a5a" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f080221" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="@string/voice_note_feedback_misheard_words_option" android:maxLines="1" android:fontFamily="@font/APKTOOL_DUMMYVAL_0x7f090004" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    <com.snap.component.button.SnapButtonView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1a5b" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/APKTOOL_DUMMYVAL_0x7f070511" app:APKTOOL_DUMMYVAL_0x7f0400b0="1" app:APKTOOL_DUMMYVAL_0x7f0400b1="@string/voice_note_feedback_dialog_send_button" />
+</LinearLayout>

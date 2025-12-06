@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:padding="@dimen/APKTOOL_DUMMYVAL_0x7f070249" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b03e8" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f0707e0" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f0707e0" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f080986" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b03e6" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b03e5" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f080188" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070252" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07024f" android:rotation="8.0" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070251" app:APKTOOL_DUMMYVAL_0x7f0402e5="@id/APKTOOL_DUMMYVAL_0x7f0b03e7" app:APKTOOL_DUMMYVAL_0x7f0402e9="0">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070250" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070250" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f080985" />
+        </FrameLayout>
+        <com.snap.imageloading.view.SnapImageView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b03e4" android:visibility="gone" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070252" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07024f" android:rotation="8.0" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070251" app:APKTOOL_DUMMYVAL_0x7f0402e5="@id/APKTOOL_DUMMYVAL_0x7f0b03e7" app:APKTOOL_DUMMYVAL_0x7f0402e9="0" />
+        <com.snap.imageloading.view.SnapImageView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b03e7" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070252" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07024f" android:rotation="-8.0" app:APKTOOL_DUMMYVAL_0x7f0402e5="0" app:APKTOOL_DUMMYVAL_0x7f0402e9="0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

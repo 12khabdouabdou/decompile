@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.lenses.camera.onboarding.explorerhint.DefaultExplorerHintView android:gravity="center_horizontal" android:orientation="vertical" android:id="@null" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:auto="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b082d" android:layout_width="fill_parent" android:layout_height="58.0dip" android:layout_marginTop="4.0dip">
+        <ImageView android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f080a29" />
+        <ImageView android:layout_gravity="bottom|center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b082b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f080a29" />
+        <ImageView android:layout_gravity="bottom|center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b082c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f080a29" />
+    </FrameLayout>
+    <com.snap.ui.view.SnapFontTextView android:textSize="15.0sp" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060327" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b082f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/explorer_hint_title" android:textAlignment="center" auto:APKTOOL_DUMMYVAL_0x7f04047c="2" />
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f07053b" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060332" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b082e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/explorer_hint_subtitle" android:textAlignment="center" auto:APKTOOL_DUMMYVAL_0x7f04047c="2" />
+</com.snap.lenses.camera.onboarding.explorerhint.DefaultExplorerHintView>

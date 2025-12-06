@@ -1,0 +1,225 @@
+.class public final Lcv3;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/snap/modules/deck/ComposerDeckContainerInterface;
+
+
+# instance fields
+.field public final a:Lmz3;
+
+.field public final b:Lev3;
+
+.field public final c:Llv3;
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;LqZ8;LcSa;LTqc;Lnwf;Lio/reactivex/rxjava3/disposables/CompositeDisposable;)V
+    .locals 21
+
+    .line 1
+    move-object/from16 v0, p0
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    new-instance v1, Lmz3;
+
+    .line 7
+    .line 8
+    sget-object v7, Loz3;->a:LF3j;
+
+    .line 9
+    .line 10
+    const/4 v10, 0x0
+
+    .line 11
+    const/16 v11, 0x300
+
+    .line 12
+    .line 13
+    move-object/from16 v5, p3
+
+    .line 14
+    .line 15
+    move-object/from16 v2, p1
+
+    .line 16
+    .line 17
+    move-object/from16 v3, p2
+
+    .line 18
+    .line 19
+    move-object/from16 v4, p3
+
+    .line 20
+    .line 21
+    move-object/from16 v6, p4
+
+    .line 22
+    .line 23
+    move-object/from16 v8, p5
+
+    .line 24
+    .line 25
+    move-object/from16 v9, p6
+
+    .line 26
+    .line 27
+    invoke-direct/range {v1 .. v11}, Lmz3;-><init>(Landroid/content/Context;LqZ8;LcSa;LcSa;LTqc;Lpz3;Lnwf;Lio/reactivex/rxjava3/disposables/CompositeDisposable;LPm9;I)V
+
+    .line 28
+    .line 29
+    .line 30
+    iput-object v1, v0, Lcv3;->a:Lmz3;
+
+    .line 31
+    .line 32
+    new-instance v12, Lev3;
+
+    .line 33
+    .line 34
+    iget-object v2, v4, LcSa;->a:Lin0;
+
+    .line 35
+    .line 36
+    iget-object v2, v2, Lin0;->a:Lan0;
+
+    .line 37
+    .line 38
+    const/16 v18, 0x0
+
+    .line 39
+    .line 40
+    const/16 v20, 0x0
+
+    .line 41
+    .line 42
+    move-object/from16 v13, p1
+
+    .line 43
+    .line 44
+    move-object/from16 v14, p2
+
+    .line 45
+    .line 46
+    move-object/from16 v15, p4
+
+    .line 47
+    .line 48
+    move-object/from16 v16, p5
+
+    .line 49
+    .line 50
+    move-object/from16 v17, p6
+
+    .line 51
+    .line 52
+    move-object/from16 v19, v2
+
+    .line 53
+    .line 54
+    invoke-direct/range {v12 .. v20}, Lev3;-><init>(Landroid/content/Context;LqZ8;LTqc;Lnwf;Lio/reactivex/rxjava3/disposables/CompositeDisposable;Ljava/util/Map;Lan0;LPm9;)V
+
+    .line 55
+    .line 56
+    .line 57
+    iput-object v12, v0, Lcv3;->b:Lev3;
+
+    .line 58
+    .line 59
+    new-instance v2, Llv3;
+
+    .line 60
+    .line 61
+    invoke-direct {v2, v1}, Llv3;-><init>(Lmz3;)V
+
+    .line 62
+    .line 63
+    .line 64
+    iput-object v2, v0, Lcv3;->c:Llv3;
+
+    .line 65
+    .line 66
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcv3;->a:Lmz3;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lmz3;->e()Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public final getDeckContainerFactory()Lcom/snap/modules/deck/ComposerDeckContainerFactoryInterface;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcv3;->b:Lev3;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final getProps()Lcom/snap/modules/deck/ComposerDeckPagePropsInterface;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcv3;->c:Llv3;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
+    .locals 2
+
+    .line 1
+    sget-object v0, LzB3;->n:LyB3;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    .line 6
+    sget-object v0, LyB3;->b:LzB3;
+
+    .line 7
+    .line 8
+    const-class v1, Lcom/snap/modules/deck/ComposerDeckContainerInterface;
+
+    .line 9
+    .line 10
+    invoke-interface {v0, v1, p1, p0}, LzB3;->marshallObject(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;Ljava/lang/Object;)I
+
+    .line 11
+    .line 12
+    .line 13
+    move-result p1
+
+    .line 14
+    return p1
+.end method

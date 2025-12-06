@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/APKTOOL_DUMMYVAL_0x7f0806c6" />
+    <item android:drawable="@drawable/APKTOOL_DUMMYVAL_0x7f080bcd" android:left="@dimen/APKTOOL_DUMMYVAL_0x7f070f9d" android:top="@dimen/APKTOOL_DUMMYVAL_0x7f070f9e" android:right="@dimen/APKTOOL_DUMMYVAL_0x7f070f9d" android:bottom="@dimen/APKTOOL_DUMMYVAL_0x7f070f9e" />
+</layer-list>

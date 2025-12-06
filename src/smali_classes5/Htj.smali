@@ -1,0 +1,92 @@
+.class public final LHtj;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Consumer;
+
+
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:LItj;
+
+
+# direct methods
+.method public synthetic constructor <init>(LItj;I)V
+    .locals 0
+
+    .line 1
+    iput p2, p0, LHtj;->a:I
+
+    iput-object p1, p0, LHtj;->b:LItj;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final accept(Ljava/lang/Object;)V
+    .locals 1
+
+    .line 1
+    iget v0, p0, LHtj;->a:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    check-cast p1, Ljava/lang/Boolean;
+
+    .line 7
+    .line 8
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 9
+    .line 10
+    .line 11
+    move-result p1
+
+    .line 12
+    iget-object v0, p0, LHtj;->b:LItj;
+
+    .line 13
+    .line 14
+    iput-boolean p1, v0, LItj;->c:Z
+
+    .line 15
+    .line 16
+    return-void
+
+    .line 17
+    :pswitch_0
+    check-cast p1, LBcg;
+
+    .line 18
+    .line 19
+    iget-object v0, p0, LHtj;->b:LItj;
+
+    .line 20
+    .line 21
+    invoke-virtual {v0}, LItj;->b()LBcg;
+
+    .line 22
+    .line 23
+    .line 24
+    iput-object p1, v0, LItj;->b:LBcg;
+
+    .line 25
+    .line 26
+    return-void
+
+    .line 27
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.lenses.bitmoji.BitmojiCreateButton android:textStyle="bold" android:gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0b4a" android:background="@drawable/lenses_bitmoji_popup_button_bg" android:layout_width="wrap_content" android:layout_height="48.0dip" android:minWidth="200.0dip" android:layout_below="@id/APKTOOL_DUMMYVAL_0x7f0b0b4d" android:layout_centerHorizontal="true" />
+    <com.snap.imageloading.view.SnapImageView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0b4d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f07053b" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060217" android:gravity="center_horizontal" android:id="@null" android:paddingBottom="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="3.0dip" android:text="@string/bitmoji_taken_to_bitmoji_app" android:layout_below="@id/APKTOOL_DUMMYVAL_0x7f0b0b4a" android:layout_centerHorizontal="true" />
+</RelativeLayout>

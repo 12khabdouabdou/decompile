@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="bottom" android:layout_gravity="center_horizontal" android:clickable="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="end" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b13fd" android:background="@color/APKTOOL_DUMMYVAL_0x7f060332" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070f5e" android:layout_height="fill_parent" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070f5a" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070f5b" />
+    <com.snap.ui.view.scrollbar.SnapScrollBarIndicator android:id="@id/APKTOOL_DUMMYVAL_0x7f0b13fa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070f54" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070f55" />
+</FrameLayout>

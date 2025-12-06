@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@null" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b11df" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" />
+    <com.snap.component.button.SnapButtonView android:layout_gravity="right" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b17c4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f07123d" android:layout_marginRight="12.0dip" app:APKTOOL_DUMMYVAL_0x7f0400b0="11" />
+</FrameLayout>

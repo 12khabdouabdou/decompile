@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.previewtools.shared.view.CarouselRecyclerView android:layout_gravity="bottom" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f0801a3" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070276"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@null" android:background="?APKTOOL_DUMMYVAL_0x7f0404bd" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.ScHeaderView android:id="@null" android:background="?APKTOOL_DUMMYVAL_0x7f0404b8" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:APKTOOL_DUMMYVAL_0x7f040237="@color/APKTOOL_DUMMYVAL_0x7f060233" custom:APKTOOL_DUMMYVAL_0x7f04023b="@string/settings_custom_emojis_title" custom:APKTOOL_DUMMYVAL_0x7f0404a8="true" custom:APKTOOL_DUMMYVAL_0x7f0404a9="true" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0940" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

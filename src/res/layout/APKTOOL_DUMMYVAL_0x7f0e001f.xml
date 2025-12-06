@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0f8a" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070508" app:APKTOOL_DUMMYVAL_0x7f0402cd="@id/APKTOOL_DUMMYVAL_0x7f0b0691" app:APKTOOL_DUMMYVAL_0x7f0402df="0" app:APKTOOL_DUMMYVAL_0x7f0402e3="0">
+        <com.snap.component.button.SnapCheckBox android:layout_gravity="center_vertical" android:id="@id/one_tap_login_opt_in_checkmark" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f08057d" android:clickable="true" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070d14" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070d14" android:checked="true" android:button="@null" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f07051a" />
+        <com.snap.ui.view.SnapFontTextView android:textSize="?APKTOOL_DUMMYVAL_0x7f0406fd" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060215" android:layout_gravity="center_vertical" android:id="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/one_tap_login_opt_in_explanation" android:layout_weight="1.0" />
+    </LinearLayout>
+</merge>

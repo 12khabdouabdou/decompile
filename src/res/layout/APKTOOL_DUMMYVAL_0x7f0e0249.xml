@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0aa6" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070662"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.ui.view.LoadingSpinnerView android:layout_gravity="center" android:id="@null" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070680" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070680" />
+</FrameLayout>

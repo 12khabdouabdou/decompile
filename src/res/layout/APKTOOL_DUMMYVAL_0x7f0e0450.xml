@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070a9b" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070ab9" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070ab9"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.component.SnapLabelView android:layout_gravity="start" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b05c3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" style="@style/APKTOOL_DUMMYVAL_0x7f14031e" />
+    <com.snap.component.SnapLabelView android:layout_gravity="end" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b05c2" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" style="@style/APKTOOL_DUMMYVAL_0x7f140364" />
+    <com.snap.component.SnapLabelView android:layout_gravity="end" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b05c1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" style="@style/APKTOOL_DUMMYVAL_0x7f14035f" />
+</FrameLayout>

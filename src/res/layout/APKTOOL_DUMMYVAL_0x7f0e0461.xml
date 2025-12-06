@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0d85" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0dbe" android:layout="@layout/APKTOOL_DUMMYVAL_0x7f0e0469" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMYVAL_0x7f070ab9" android:layout_marginRight="@dimen/APKTOOL_DUMMYVAL_0x7f070ab9" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070a9b" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.snap.memories.lib.grid.view.MemoriesGridPageRecyclerView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0db0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" android:splitMotionEvents="false" />
+        <com.snap.ui.view.scrollbar.SnapScrollBar android:gravity="bottom" android:layout_gravity="end" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0d93" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070ab5" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070ab5" android:visibility="invisible" android:clickable="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e045e" />
+        <ViewStub android:layout_gravity="bottom|center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b02bd" android:layout="@layout/APKTOOL_DUMMYVAL_0x7f0e044e" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070a71" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070a70" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070a6f" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ViewStub android:id="@id/APKTOOL_DUMMYVAL_0x7f0b08d0" android:layout="@layout/APKTOOL_DUMMYVAL_0x7f0e0458" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0dbd" android:layout="@layout/APKTOOL_DUMMYVAL_0x7f0e044c" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

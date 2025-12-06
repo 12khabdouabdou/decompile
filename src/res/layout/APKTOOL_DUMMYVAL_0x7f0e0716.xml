@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layoutDirection="ltr" style="@style/APKTOOL_DUMMYVAL_0x7f1400f3"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentBottom="true">
+        <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e0711" />
+        <com.snap.stickers.ui.views.CategorySelector android:layout_gravity="bottom" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1774" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" />
+        <com.snap.ui.view.SafeViewPager android:id="@id/APKTOOL_DUMMYVAL_0x7f0b177b" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f0808ea" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f07120b" />
+    </LinearLayout>
+</RelativeLayout>

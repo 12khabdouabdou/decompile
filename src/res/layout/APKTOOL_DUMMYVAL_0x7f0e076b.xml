@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.spectacles.sharedui.SpectaclesIconView android:layout_gravity="center" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f071106" app:APKTOOL_DUMMYVAL_0x7f040103="?APKTOOL_DUMMYVAL_0x7f040601" app:APKTOOL_DUMMYVAL_0x7f0405ce="@dimen/APKTOOL_DUMMYVAL_0x7f071106" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

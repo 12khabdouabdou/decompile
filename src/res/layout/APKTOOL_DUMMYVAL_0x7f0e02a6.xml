@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?APKTOOL_DUMMYVAL_0x7f0404b8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.component.header.SnapSubscreenHeaderView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b09c0" custom:APKTOOL_DUMMYVAL_0x7f04023c="?APKTOOL_DUMMYVAL_0x7f0404b8" custom:APKTOOL_DUMMYVAL_0x7f04023d="9" custom:APKTOOL_DUMMYVAL_0x7f04069d="@string/settings_tfa_settings_header" style="@style/APKTOOL_DUMMYVAL_0x7f1405f4" />
+    <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070511">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.snap.ui.view.SnapFontTextView android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:text="@string/settings_tfa_setup_otp_explanation" style="@style/APKTOOL_DUMMYVAL_0x7f1401b4" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b18ce" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeightLarge">
+                <com.snap.ui.view.SnapFontTextView android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f07051b" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f07051b" android:text="@string/settings_tfa_setup_otp_automatic_option" style="@style/APKTOOL_DUMMYVAL_0x7f1401b5" />
+                <com.snap.ui.view.SnapFontTextView android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f07051b" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f07051b" android:text="@string/settings_tfa_setup_otp_automatic_explanation" style="@style/APKTOOL_DUMMYVAL_0x7f1401b6" />
+            </LinearLayout>
+            <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e03bd" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b18d0" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.snap.ui.view.SnapFontTextView android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f07051b" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f07051b" android:text="@string/settings_tfa_setup_otp_manual_option" style="@style/APKTOOL_DUMMYVAL_0x7f1401b5" />
+                <com.snap.ui.view.SnapFontTextView android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f07051b" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f07051b" android:text="@string/settings_tfa_setup_otp_manual_explanation" style="@style/APKTOOL_DUMMYVAL_0x7f1401b6" />
+            </LinearLayout>
+            <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e03bd" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b18cf" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeightLarge">
+                <com.snap.ui.view.SnapFontTextView android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f07051b" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f07051b" android:text="@string/settings_tfa_setup_otp_find_app_option" style="@style/APKTOOL_DUMMYVAL_0x7f1401b5" />
+                <com.snap.ui.view.SnapFontTextView android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f07051b" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f07051b" android:text="@string/settings_tfa_setup_otp_find_app_explanation" style="@style/APKTOOL_DUMMYVAL_0x7f1401b6" />
+            </LinearLayout>
+            <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e03bd" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

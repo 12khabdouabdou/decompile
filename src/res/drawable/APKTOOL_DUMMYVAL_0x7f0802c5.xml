@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:layout_width="fill_parent" android:layout_height="fill_parent" android:shape="rectangle">
+            <stroke android:width="@dimen/APKTOOL_DUMMYVAL_0x7f070f42" android:color="@color/APKTOOL_DUMMYVAL_0x7f0600bb" />
+            <corners android:radius="@dimen/APKTOOL_DUMMYVAL_0x7f070f41" />
+            <padding android:left="@dimen/APKTOOL_DUMMYVAL_0x7f070f42" android:top="@dimen/APKTOOL_DUMMYVAL_0x7f070f42" android:right="@dimen/APKTOOL_DUMMYVAL_0x7f070f42" android:bottom="@dimen/APKTOOL_DUMMYVAL_0x7f070f42" />
+        </shape>
+    </item>
+    <item>
+        <shape android:layout_width="fill_parent" android:layout_height="fill_parent" android:shape="rectangle">
+            <solid android:color="@color/APKTOOL_DUMMYVAL_0x7f060327" />
+            <stroke android:width="@dimen/APKTOOL_DUMMYVAL_0x7f070f3e" android:color="@color/APKTOOL_DUMMYVAL_0x7f060327" />
+            <corners android:radius="@dimen/APKTOOL_DUMMYVAL_0x7f070f3d" />
+            <padding android:left="@dimen/APKTOOL_DUMMYVAL_0x7f070f3e" android:top="@dimen/APKTOOL_DUMMYVAL_0x7f070f3e" android:right="@dimen/APKTOOL_DUMMYVAL_0x7f070f3e" android:bottom="@dimen/APKTOOL_DUMMYVAL_0x7f070f3e" />
+        </shape>
+    </item>
+</layer-list>

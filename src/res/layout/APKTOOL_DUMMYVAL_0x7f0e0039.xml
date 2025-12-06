@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/APKTOOL_DUMMYVAL_0x7f070d32" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070d33" android:paddingRight="@dimen/APKTOOL_DUMMYVAL_0x7f070d32" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070d31" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.component.button.SnapButtonView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1981" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070d34" app:APKTOOL_DUMMYVAL_0x7f0400b0="58" app:APKTOOL_DUMMYVAL_0x7f0400b1="@string/sign_up_instead" />
+    <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0e66" android:paddingTop="14.0dip" android:paddingBottom="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/one_tap_login_account_tray_nevermind_button_text" style="@style/APKTOOL_DUMMYVAL_0x7f14059f" />
+</LinearLayout>

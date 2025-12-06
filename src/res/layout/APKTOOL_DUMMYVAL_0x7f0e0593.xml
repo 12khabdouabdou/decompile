@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070f7a"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.preview.carousel.ui.FiltersSelectorCarouselRecyclerView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1454" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070f7a" android:layoutDirection="ltr" />
+    <View android:layout_gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1453" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070f70" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070f7a" />
+</FrameLayout>

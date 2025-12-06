@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:bottom="@dimen/APKTOOL_DUMMYVAL_0x7f071076">
+        <shape>
+            <solid android:color="?APKTOOL_DUMMYVAL_0x7f0404c1" />
+            <corners android:topLeftRadius="@dimen/APKTOOL_DUMMYVAL_0x7f070ebb" android:topRightRadius="@dimen/APKTOOL_DUMMYVAL_0x7f070ebb" android:bottomLeftRadius="0.0dip" android:bottomRightRadius="0.0dip" />
+        </shape>
+    </item>
+    <item android:gravity="bottom">
+        <shape>
+            <size android:height="1.0dip" />
+            <solid android:color="?APKTOOL_DUMMYVAL_0x7f040575" />
+        </shape>
+    </item>
+</layer-list>

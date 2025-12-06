@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="@color/APKTOOL_DUMMYVAL_0x7f06020f" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.ScHeaderView android:id="@null" android:background="?APKTOOL_DUMMYVAL_0x7f0404b8" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:APKTOOL_DUMMYVAL_0x7f040237="@color/APKTOOL_DUMMYVAL_0x7f060233" custom:APKTOOL_DUMMYVAL_0x7f04023b="@string/spectacles_report_issue" custom:APKTOOL_DUMMYVAL_0x7f0402e9="0" custom:APKTOOL_DUMMYVAL_0x7f0404a8="true" custom:APKTOOL_DUMMYVAL_0x7f0404a9="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b16b4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:APKTOOL_DUMMYVAL_0x7f0402e8="@null">
+        <com.snap.spectacles.lib.fragments.SpectaclesReportIssueOptionsView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b16b1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.snap.spectacles.lib.fragments.SpectaclesReportIssueOptionsView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b16b8" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.snap.spectacles.lib.fragments.SpectaclesReportIssueOptionsView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b16b7" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.snap.spectacles.lib.fragments.SpectaclesReportIssueOptionsView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b16b6" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.snap.spectacles.lib.fragments.SpectaclesReportIssueOptionsView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b16b2" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.snap.ui.view.SnapFontTextView android:textSize="?APKTOOL_DUMMYVAL_0x7f0406fd" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f06020e" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b16b3" android:padding="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:textAlignment="center" custom:APKTOOL_DUMMYVAL_0x7f0402cc="0" custom:APKTOOL_DUMMYVAL_0x7f04047c="?APKTOOL_DUMMYVAL_0x7f0406fc" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0d7a" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070a81" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070a73" layout="@layout/APKTOOL_DUMMYVAL_0x7f0e0454" />
+    <com.snap.memories.lib.grid.view.MemoriesEmptyStateGridView android:background="?APKTOOL_DUMMYVAL_0x7f0403a8" android:layout_width="fill_parent" android:layout_height="wrap_content" app:APKTOOL_DUMMYVAL_0x7f040048="1.0" app:APKTOOL_DUMMYVAL_0x7f04014e="3" app:APKTOOL_DUMMYVAL_0x7f040308="?APKTOOL_DUMMYVAL_0x7f0404bd" app:APKTOOL_DUMMYVAL_0x7f04030b="@dimen/APKTOOL_DUMMYVAL_0x7f070aa9" />
+</LinearLayout>

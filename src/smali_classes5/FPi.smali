@@ -1,0 +1,108 @@
+.class public final LFPi;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Action;
+
+
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:LGPi;
+
+
+# direct methods
+.method public synthetic constructor <init>(LGPi;I)V
+    .locals 0
+
+    .line 1
+    iput p2, p0, LFPi;->a:I
+
+    iput-object p1, p0, LFPi;->b:LGPi;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 4
+
+    .line 1
+    iget v0, p0, LFPi;->a:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, LFPi;->b:LGPi;
+
+    .line 7
+    .line 8
+    iget-object v0, v0, LGPi;->i:LQN4;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0}, LQN4;->get()Ljava/lang/Object;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v0
+
+    .line 14
+    check-cast v0, LaA8;
+
+    .line 15
+    .line 16
+    sget-object v1, LGDb;->K0:LGDb;
+
+    .line 17
+    .line 18
+    const-string v2, "event"
+
+    .line 19
+    .line 20
+    const-string v3, "transcode_finish"
+
+    .line 21
+    .line 22
+    invoke-static {v1, v2, v3}, LDq9;->X(LcTb;Ljava/lang/String;Ljava/lang/String;)LqTb;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object v1
+
+    .line 26
+    invoke-static {v0, v1}, LYz8;->e(LaA8;LqTb;)V
+
+    .line 27
+    .line 28
+    .line 29
+    return-void
+
+    .line 30
+    :pswitch_0
+    iget-object v0, p0, LFPi;->b:LGPi;
+
+    .line 31
+    .line 32
+    iget-object v0, v0, LGPi;->u:Lrn0;
+
+    .line 33
+    .line 34
+    return-void
+
+    .line 35
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method

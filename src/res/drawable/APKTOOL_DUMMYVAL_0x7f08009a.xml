@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="1.0dip" android:color="@color/APKTOOL_DUMMYVAL_0x7f06022d" />
+    <solid android:color="@android:color/transparent" />
+    <padding android:left="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:top="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:right="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:bottom="@dimen/APKTOOL_DUMMYVAL_0x7f070508" />
+    <corners android:radius="@dimen/APKTOOL_DUMMYVAL_0x7f070514" />
+</shape>

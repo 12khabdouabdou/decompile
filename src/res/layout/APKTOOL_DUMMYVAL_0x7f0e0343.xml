@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.lenses.arbar.actionbutton.DefaultActionButtonView android:padding="@dimen/APKTOOL_DUMMYVAL_0x7f07010a" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f07010b" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07010b" android:scaleType="centerInside" android:maxWidth="@dimen/APKTOOL_DUMMYVAL_0x7f07010b" android:maxHeight="@dimen/APKTOOL_DUMMYVAL_0x7f07010b" app:APKTOOL_DUMMYVAL_0x7f040719="1:1"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

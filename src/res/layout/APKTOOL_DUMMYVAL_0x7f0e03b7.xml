@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.lenses.voiceml.animation.DefaultVoiceMlAnimationView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.lenses.voiceml.animation.DefaultVoiceMlBorderAnimationView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1a69" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:APKTOOL_DUMMYVAL_0x7f0402cc="0" app:APKTOOL_DUMMYVAL_0x7f0402d2="0" app:APKTOOL_DUMMYVAL_0x7f0402e5="0" app:APKTOOL_DUMMYVAL_0x7f0402e9="0" />
+    <com.snap.lenses.voiceml.animation.DefaultVoiceMlWaveView android:layout_gravity="bottom" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1a73" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f0708a1" app:APKTOOL_DUMMYVAL_0x7f0402cc="0" app:APKTOOL_DUMMYVAL_0x7f0402d2="0" app:APKTOOL_DUMMYVAL_0x7f0402e5="0" app:APKTOOL_DUMMYVAL_0x7f0402e9="0" app:APKTOOL_DUMMYVAL_0x7f0402ea="1.0" />
+</com.snap.lenses.voiceml.animation.DefaultVoiceMlAnimationView>

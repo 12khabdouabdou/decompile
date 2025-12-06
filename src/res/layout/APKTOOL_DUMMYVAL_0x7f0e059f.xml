@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.preview.tools.view.PreviewVerticalToolbarView android:gravity="center_horizontal" android:layout_gravity="right" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1924" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f07051c" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f071391" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

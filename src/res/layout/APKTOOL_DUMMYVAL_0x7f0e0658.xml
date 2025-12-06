@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.ui.view.SnapFontTextView android:id="@null" android:paddingLeft="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:paddingRight="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/spotlight_member_roles_submit_as" style="@style/APKTOOL_DUMMYVAL_0x7f140386" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b14a0" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

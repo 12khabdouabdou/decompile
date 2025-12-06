@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.lenses.camera.onboarding.lensbutton.DefaultLensButtonView android:id="@null" android:visibility="gone" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070891" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070891" custom:APKTOOL_DUMMYVAL_0x7f0400a4="@drawable/APKTOOL_DUMMYVAL_0x7f080a99" custom:APKTOOL_DUMMYVAL_0x7f040303="@dimen/APKTOOL_DUMMYVAL_0x7f07088e" custom:APKTOOL_DUMMYVAL_0x7f040304="@dimen/APKTOOL_DUMMYVAL_0x7f070891" custom:APKTOOL_DUMMYVAL_0x7f0403d9="@dimen/APKTOOL_DUMMYVAL_0x7f070886"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.imageloading.view.SnapImageView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0b56" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f080a99" />
+    <View android:layout_gravity="end|center|top" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0b55" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f080415" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070885" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070885" android:layout_margin="@dimen/APKTOOL_DUMMYVAL_0x7f070883" />
+</com.snap.lenses.camera.onboarding.lensbutton.DefaultLensButtonView>

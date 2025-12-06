@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b183b" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f080915" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="@dimen/APKTOOL_DUMMYVAL_0x7f071231"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f071232">
+        <com.snap.ui.view.PausableLoadingSpinnerView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1836" android:visibility="gone" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f07079a" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07079a" android:scaleType="fitCenter" />
+        <ImageView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1839" android:visibility="gone" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f07079a" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07079a" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f0808f0" android:scaleType="fitCenter" />
+        <ImageView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b183c" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f07079a" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07079a" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f0808f0" android:scaleType="fitCenter" />
+    </FrameLayout>
+    <com.snap.ui.view.SnapFontTextView android:textSize="?APKTOOL_DUMMYVAL_0x7f040700" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f06022d" android:gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1838" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/subscribe_button_subscribe_text" android:includeFontPadding="false" android:layout_toRightOf="@null" android:layout_centerVertical="true" app:APKTOOL_DUMMYVAL_0x7f04047c="1" />
+</RelativeLayout>

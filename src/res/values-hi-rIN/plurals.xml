@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110000">
+        <item quantity="other">%d आइटमें चुनी गईं</item>
+        <item quantity="one">%d आइटम चुनी गई</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110001">
+        <item quantity="other">Snaps (केवल मेरे लिए) छिपाएं</item>
+        <item quantity="one">@string/memories_opera_action_menu_hide</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110002">
+        <item quantity="other">%d घंटों के लिए</item>
+        <item quantity="one">%d घंटे के लिए</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110003">
+        <item quantity="other">%d Snaps चुने गए</item>
+        <item quantity="one">%d Snap चुना गया</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110004">
+        <item quantity="other">Snaps दिखाएं</item>
+        <item quantity="one">@string/memories_opera_action_menu_unhide</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110009">
+        <item quantity="other">%1$s Snap चैटर्स ने आपको जोड़ा!</item>
+        <item quantity="one">%1$s Snap चैटर ने आपको जोड़ा!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11000a">
+        <item quantity="other">%1$s फ़्रेंड सुझाव!</item>
+        <item quantity="one">%1$s फ़्रेंड सुझाव!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11000c">
+        <item quantity="other">%d फ़्रेंड्स जोड़ें</item>
+        <item quantity="one">%d फ़्रेंड जोड़ें</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11000d">
+        <item quantity="other">मल्टी Snap से एक बार में %1$d Snaps तक कैप्चर किए जा सकते हैं!</item>
+        <item quantity="one">मल्टी Snap से एक बार में %1$d Snaps तक कैप्चर किए जा सकते हैं!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11000e">
+        <item quantity="other">क्या आप वाकई मल्टी Snaps को ऑफ़ करना चाहते हैं? आपके सेव न किए गए %1$d Snap मिट जाएंगे।</item>
+        <item quantity="one">क्या आप वाकई मल्टी Snap ऑफ़ करना चाहते हैं? आपके सेव न किए गए Snap मिट जाएंगे।</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11000f">
+        <item quantity="other">%1$s और %2$s ने %4$s में से %3$d फ़ोटो सेव की हैं</item>
+        <item quantity="one">%1$s और %2$s ने %4$s में से एक फ़ोटो सेव की है</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110010">
+        <item quantity="other">%1$s और %2$s ने आपके द्वारा भेजी %3$d फ़ोटो सेव कीं</item>
+        <item quantity="one">%1$s और %2$s ने आपकी फ़ोटो सेव की है</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110011">
+        <item quantity="other">%1$s और %2$s ने %4$s में से %3$d आइटम सेव की हैं</item>
+        <item quantity="one">%1$s और %2$s ने %4$s में से एक आइटम सेव की है</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110012">
+        <item quantity="other">%1$s और %2$s ने आपकी भेजी %3$d आइटम सेव की है</item>
+        <item quantity="one">%1$s और %2$s ने आपकी आइटम सेव की है</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110013">
+        <item quantity="other">%1$s और %2$s ने %4$s में से %3$d वीडियो सेव किए हैं</item>
+        <item quantity="one">%1$s और %2$s ने %4$s में से एक वीडियो सेव किया है</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110014">
+        <item quantity="other">%1$s और %2$s ने आपके भेजे %3$d वीडियो सेव किए हैं</item>
+        <item quantity="one">%1$s और %2$s ने आपका वीडियो सेव किया</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110015">
+        <item quantity="other">आप और %1$s ने %3$s में से %2$d फ़ोटो सेव कीं</item>
+        <item quantity="one">आप और %1$s ने %3$s में से एक फ़ोटो सेव की है</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110016">
+        <item quantity="other">आप और %1$s ने %3$s में से %2$d आइटम सेव की हैं</item>
+        <item quantity="one">आप और %1$s ने %3$s में से एक आइटम सेव किया</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110017">
+        <item quantity="other">आप और %1$s ने %3$s में से %2$d वीडियो सेव किए</item>
+        <item quantity="one">आप और %1$s ने %3$s में से एक वीडियो सेव किया</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110018">
+        <item quantity="other">%1$s और %2$s ने %4$s में से %3$d फ़ोटो सेव की हैं</item>
+        <item quantity="one">%1$s और %2$s ने %4$s में से एक फ़ोटो सेव की है</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110019">
+        <item quantity="other">%1$s और %2$s ने आपके द्वारा भेजी %3$d फ़ोटो सेव की हैं</item>
+        <item quantity="one">%1$s और %2$s ने आपकी फ़ोटो सेव की है</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11001a">
+        <item quantity="other">%1$s और %2$s ने %4$s में से %3$d आइटम सेव किए हैं</item>
+        <item quantity="one">%1$s और %2$s ने %4$s में से एक आइटम सेव किया है</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11001b">
+        <item quantity="other">%1$s और %2$s ने आपके द्वारा भेजे %3$d आइटम सेव किए हैं</item>
+        <item quantity="one">%1$s और %2$s ने आपका आइटम सेव किया है</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11001c">
+        <item quantity="other">%1$s और %2$s ने %4$s में से %3$d वीडियो सेव किए हैं</item>
+        <item quantity="one">%1$s और %2$s ने %4$s में से एक वीडियो सेव किया है</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11001d">
+        <item quantity="other">%1$s और %2$s ने आपके द्वारा भेजे %3$d वीडियो सेव किए हैं</item>
+        <item quantity="one">%1$s और %2$s ने आपका वीडियो सेव किया है</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11001e">
+        <item quantity="other">आपने, %1$s ने, और %2$sने %4$s में से %3$d सेव कीं</item>
+        <item quantity="one">आपने, %1$s ने और %2$s ने %4$s में से एक फ़ोटो सेव की है</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11001f">
+        <item quantity="other">आपने, %1$s ने और %2$s ने %4$s में से %3$d आइटम सेव किए हैं</item>
+        <item quantity="one">आपने, %1$s ने, और %2$s ने %4$s में से एक आइटम सेव किया</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110020">
+        <item quantity="other">आपने, %1$s ने, और %2$s ने %4$s में से %3$d वीडियो सेव किए</item>
+        <item quantity="one">आपने, %1$s ने, और %2$s ने %4$s में से एक वीडियो सेव किया</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110021">
+        <item quantity="other">%1$s ने %3$s में से %2$d फ़ोटो सेव की हैं</item>
+        <item quantity="one">%1$s ने %3$s में से एक फ़ोटो सेव की है</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110022">
+        <item quantity="other">%1$s ने आपके द्वारा भेजी %2$d फ़ोटो सेव की है</item>
+        <item quantity="one">%1$s ने आपकी फ़ोटो सेव की है</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110023">
+        <item quantity="other">%1$s ने %3$s में से %2$d आइटम सेव की हैं</item>
+        <item quantity="one">%1$s ने %3$s में से एक आइटम सेव की है</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110024">
+        <item quantity="other">%1$s ने आपकी भेजी %2$dआइटम सेव की हैं</item>
+        <item quantity="one">%1$s ने आपकी आइटम सेव की है</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110025">
+        <item quantity="other">%1$s ने %3$s में से %2$d वीडियो सेव किए हैं</item>
+        <item quantity="one">%1$s ने %3$s में से एक वीडियो सेव किया है</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110026">
+        <item quantity="other">%1$s ने आपके भेजे %2$dवीडियो सेव किए हैं</item>
+        <item quantity="one">%1$s ने आपका वीडियो सेव किया है</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110027">
+        <item quantity="other">आपने %2$s में से %1$d फ़ोटो सेव कीं</item>
+        <item quantity="one">आपने %2$s में से एक फ़ोटो सेव की है</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110028">
+        <item quantity="other">आपने %2$s में से %1$d आइटम सेव की हैं</item>
+        <item quantity="one">आपने %2$s में से एक आइटम सेव किया</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110029">
+        <item quantity="other">आपने %2$s में से %1$d वीडियो सेव किए</item>
+        <item quantity="one">आपने %2$s में से एक वीडियो सेव किया</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11002a">
+        <item quantity="other">आप एक बार में %1$d कस्टम स्टोरीज़ में ही जोड़ सकते हैं</item>
+        <item quantity="one">आप एक बार में %1$d कस्टम स्टोरी में ही जोड़ सकते हैं</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11002b">
+        <item quantity="other">%1$d फ़ीट</item>
+        <item quantity="one">%1$d फ़ीट</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11002d">
+        <item quantity="other">%1$s का बर्थडे %2$d दिन में है 🎂। उन्हें Snapchat+ गिफ़्ट करें</item>
+        <item quantity="one">%1$s का बर्थडे कल है 🎂। उन्हें Snapchat+ गिफ़्ट करें</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11002e">
+        <item quantity="other">आपके Pixy पर %1$d Snaps हैं। क्या आप डिवाइस को रीसेट और सभी Snaps और यूज़र डेटा को डिलीट भी करना चाहते हैं?</item>
+        <item quantity="one">आपके Pixy पर एक Snap है। क्या आप डिवाइस को रीसेट और सभी Snaps और यूज़र डेटा को डिलीट भी करना चाहते हैं?</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11002f">
+        <item quantity="other">इन Snaps को डिलीट करने से ये आपके Cheerio की डिवाइस से भी हट जाएंगे।</item>
+        <item quantity="one">इस Snap को डिलीट करने से यह आपके Cheerio की डिवाइस से भी हट जाएगा।</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110030">
+        <item quantity="other">%d Snaps डिलीट हुए</item>
+        <item quantity="one">Snap डिलीट हुआ</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110032">
+        <item quantity="other">%d नए Snaps</item>
+        <item quantity="one">1 नया Snap</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110033">
+        <item quantity="other">%d नए Snap। इंपोर्ट करने के लिए टैप करें।</item>
+        <item quantity="one">1 नया Snap। इंपोर्ट करने के लिए टैप करें।</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110034">
+        <item quantity="other">%d Snaps इंपोर्ट हुए!</item>
+        <item quantity="one">%d Snap इंपोर्ट हुआ!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11003a">
+        <item quantity="other">जवाब छिपाएं</item>
+        <item quantity="one">जवाब छिपाएं</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11003b">
+        <item quantity="other">%s जवाब दिखाएं</item>
+        <item quantity="one">1 जवाब दिखाएं</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11003c">
+        <item quantity="other">%1$d नया</item>
+        <item quantity="one">%1$d नया</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11003d">
+        <item quantity="other">इंपोर्ट करने के लिए %1$d</item>
+        <item quantity="one">इंपोर्ट करने के लिए %1$d</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11003e">
+        <item quantity="other">%d दिन</item>
+        <item quantity="one">%d दिन</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11003f">
+        <item quantity="other">%dदि.</item>
+        <item quantity="one">%dदि.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110040">
+        <item quantity="other">%dदि. पहले</item>
+        <item quantity="one">%dदि. पहले</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110047">
+        <item quantity="other">%1$s दिन पहले अपडेट किया गया</item>
+        <item quantity="one">%1$s दिन पहले अपडेट किया गया</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110048">
+        <item quantity="other">क्या आप वाकई यह मल्टी Snap हटाना चाहते हैं? आपके सेव न किए गए %1$d Snaps मिट जाएंगे।</item>
+        <item quantity="one">क्या आप वाकई यह मल्टी Snap हटाना चाहते हैं? आपके सेव न किए गए Snap मिट जाएंगे।</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11004a">
+        <item quantity="other">%1$d Snaps सेव करने में विफल</item>
+        <item quantity="one">%1$d Snap सेव करने में विफल</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11004b">
+        <item quantity="other">%d क्रिएटर्स जोड़ें</item>
+        <item quantity="one">1 क्रिएटर जोड़ें</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11004c">
+        <item quantity="other">%d फ़ीट</item>
+        <item quantity="one">%d फ़ीट</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11004d">
+        <item quantity="other">%d किमी</item>
+        <item quantity="one">%d किमी</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11004e">
+        <item quantity="other">%d मीटर</item>
+        <item quantity="one">%d मीटर</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11004f">
+        <item quantity="other">%d मील</item>
+        <item quantity="one">%d मील</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110050">
+        <item quantity="other">%1$s और फ़्रेंड रिक्वेस्ट भेजें!</item>
+        <item quantity="one">%1$s और फ़्रेंड रिक्वेस्ट भेजें!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110051">
+        <item quantity="other">"आपकी आइटमें 'केवल मेरे लिए' में सफलतापूर्वक जोड़ दी गई थीं। क्या आप ओरिजिनल आइटमों को कैमरा रोल से डिलीट करना चाहते हैं?"</item>
+        <item quantity="one">"आपकी आइटम 'केवल मेरे लिए' में सफलतापूर्वक जोड़ दी गई थी। क्या आप ओरिजिनल आइटम को कैमरा रोल से डिलीट करना चाहते हैं?"</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110052">
+        <item quantity="other">"आपकी फ़ोटोज़ 'केवल मेरे लिए' में सफलतापूर्वक जोड़ दी गई थीं। क्या आप ओरिजिनल फ़ोटोज़ को कैमरा रोल से डिलीट करना चाहते हैं?"</item>
+        <item quantity="one">"आपकी फ़ोटो 'केवल मेरे लिए' में सफलतापूर्वक जोड़ दी गई थी। क्या आप ओरिजिनल फ़ोटो को कैमरा रोल से डिलीट करना चाहते हैं?"</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110053">
+        <item quantity="other">"आपके वीडियोज़ 'केवल मेरे लिए' में सफलतापूर्वक जोड़ दिए गए थे। क्या आप ओरिजिनल वीडियोज़ को कैमरा रोल से डिलीट करना चाहते हैं?"</item>
+        <item quantity="one">"आपका वीडियो 'केवल मेरे लिए' में सफलतापूर्वक जोड़ दिया गया था। क्या आप ओरिजिनल वीडियो को कैमरा रोल से डिलीट करना चाहते हैं?"</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110054">
+        <item quantity="other">ओरिजिनल्स डिलीट करें</item>
+        <item quantity="one">ओरिजिनल डिलीट करें</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110055">
+        <item quantity="other">"
+%1$d मिनट में फिर से कोशिश करें।"</item>
+        <item quantity="one">"
+%1$d मिनट में फिर से कोशिश करें।"</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110056">
+        <item quantity="other">%d फ़ीट</item>
+        <item quantity="one">%d फ़ीट</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110057">
+        <item quantity="other">%d मीटर</item>
+        <item quantity="one">%d मीटर</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110058">
+        <item quantity="other">%d घंटे</item>
+        <item quantity="one">%d घंटा</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110059">
+        <item quantity="other">%dघं.</item>
+        <item quantity="one">%dघं.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11005a">
+        <item quantity="other">%dघं.</item>
+        <item quantity="one">%dघं.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11005b">
+        <item quantity="other">%dघं. पहले</item>
+        <item quantity="one">%dघं. पहले</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110062">
+        <item quantity="other">%1$s घंटे पहले अपडेट किया गया</item>
+        <item quantity="one">%1$s घंटा पहले अपडेट किया गया</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110065">
+        <item quantity="other">%d घंटे</item>
+        <item quantity="one">%d घंटा</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110066">
+        <item quantity="other">आप इस ग्रुप में फ़िलहाल मौजूद फ़्रेंड्स के साथ अपनी रियल-टाइम लोकेशन शेयर करेंगे। %d फ़्रेंड्स पहले ही आपकी लाइव लोकेशन देख सकते हैं।</item>
+        <item quantity="one">आप इस ग्रुप में फ़िलहाल मौजूद फ़्रेंड्स के साथ अपनी रियल-टाइम लोकेशन शेयर करेंगे। %d फ़्रेंड पहले ही आपकी लाइव लोकेशन देख सकते हैं।</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110067">
+        <item quantity="other">%d घंटे</item>
+        <item quantity="one">%d घंटा</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110069">
+        <item quantity="other">आप इस ग्रुप में फ़िलहाल मौजूद फ़्रेंड्स के साथ अपनी लाइव लोकेशन शेयर करेंगे। %d सदस्यों को आपकी लोकेशन नहीं दिखेगी क्योंकि आप उनके फ़्रेंड नहीं हैं।</item>
+        <item quantity="one">आप इस ग्रुप में फ़िलहाल मौजूद फ़्रेंड्स के साथ अपनी लाइव लोकेशन शेयर करेंगे। %d सदस्य को आपकी लोकेशन नहीं दिखेगी क्योंकि आप उनके फ़्रेंड नहीं हैं।</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11006b">
+        <item quantity="other">आपके फ़्रेंड्स में से %1$s, %2$s, %3$s और %4$d मैप पर हैं!</item>
+        <item quantity="one">आपके फ़्रेंड्स में से %1$s, %2$s, %3$s और %4$d मैप पर हैं!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11006f">
+        <item quantity="other">%1$d फ़्रेंड्स शेयर कर रहे हैं</item>
+        <item quantity="one">%1$d फ़्रेंड शेयर कर रहे हैं</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110075">
+        <item quantity="other">%2$d में से %1$d Snaps एक्सपोर्ट किए गए। %3$d Snaps विफल हुए।</item>
+        <item quantity="one">%2$d में से %1$d Snaps एक्सपोर्ट किए गए। %3$d Snap विफल हुआ।</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110076">
+        <item quantity="other">%2$d में से %1$d Snaps एक्सपोर्ट किए जा रहे…</item>
+        <item quantity="one">Snap एक्सपोर्ट किया जा रहा है…</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110077">
+        <item quantity="other">आपके Snaps एक्सपोर्ट किए गए!</item>
+        <item quantity="one">आपका Snap एक्सपोर्ट किया गया!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110078">
+        <item quantity="other">क्षमा करें, एक बार में केवल %d आइटमें ही चुनी जा सकती हैं।</item>
+        <item quantity="one">क्षमा करें, एक बार में केवल एक %dही आइटम चुनी जा सकती है।</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110079">
+        <item quantity="other">ये तस्वीरें आपकी डिवाइस से डिलीट हो जाएंगी</item>
+        <item quantity="one">यह इमेज आपकी डिवाइस से डिलीट हो जाएगी</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11007a">
+        <item quantity="other">ये आइटमें आपकी डिवाइस से डिलीट हो जाएंगी</item>
+        <item quantity="one">ये आइटमें आपकी डिवाइस से डिलीट हो जाएंगी</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11007b">
+        <item quantity="other">ये वीडियोज़ आपकी डिवाइस से डिलीट हो जाएंगे</item>
+        <item quantity="one">यह वीडियो आपकी डिवाइस से डिलीट हो जाएगा</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11007c">
+        <item quantity="other">मेमोरीज़ डिलीट करें?</item>
+        <item quantity="one">मेमोरी डिलीट करें?</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11007d">
+        <item quantity="other">Snaps हटाएं?</item>
+        <item quantity="one">Snap हटाएं?</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11007e">
+        <item quantity="other">स्टोरीज़ डिलीट करें?</item>
+        <item quantity="one">स्टोरी डिलीट करें?</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11007f">
+        <item quantity="other">Snaps एक्सपोर्ट नहीं कर पा रहे!</item>
+        <item quantity="one">Snap एक्सपोर्ट नहीं कर पा रहे!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110080">
+        <item quantity="other">आपकी पसंदीदा स्टोरी में %d Snaps जोड़े गए</item>
+        <item quantity="one">आपकी पसंदीदा स्टोरी में Snap जोड़ा गया</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110081">
+        <item quantity="other">आपकी पसंदीदा स्टोरी से %d Snaps हटाए गए</item>
+        <item quantity="one">आपकी पसंदीदा स्टोरी से Snap हटाया गया</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110082">
+        <item quantity="other">%1$d साल पहले</item>
+        <item quantity="one">%1$d साल पहले</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110083">
+        <item quantity="other">%1$d साल पहले, आज के दिन</item>
+        <item quantity="one">%1$d साल पहले, आज के दिन</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110084">
+        <item quantity="other">%1$s, %2$d साल पहले</item>
+        <item quantity="one">%1$s, %2$d साल पहले</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110085">
+        <item quantity="other">%1$d साल पहले से</item>
+        <item quantity="one">%1$d साल पहले से</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110086">
+        <item quantity="other">"इन स्टोरीज़ के Snaps आपके नए 'मेरी स्टोरी' पेज पर तब भी उपलब्ध रहेंगे। आपके द्वारा बनाई या एडिट की गई स्टोरीज़ प्रभावित नहीं होंगी।"</item>
+        <item quantity="one">"इस स्टोरी के Snaps आपके नए 'मेरी स्टोरी' पेज पर तब भी उपलब्ध रहेंगे। आपके द्वारा बनाई या एडिट की गई स्टोरीज़ प्रभावित नहीं होंगी।"</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110087">
+        <item quantity="other">%d पुरानी ऑटो-सेव की गई स्टोरीज़ हटाएं?</item>
+        <item quantity="one">%d पुरानी ऑटो-सेव की गई स्टोरी हटाएं?</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11008a">
+        <item quantity="other">ऐसा करने से %d पुरानी ऑटो-सेव की गई स्टोरीज़ हट जाएंगी।</item>
+        <item quantity="one">ऐसा करने से %d पुरानी ऑटो-सेव की गई स्टोरी हट जाएगी।</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11008b">
+        <item quantity="other">क्षमा करें, एक बार में केवल %d Snaps ही चुने जा सकते हैं।</item>
+        <item quantity="one">क्षमा करें, एक बार में केवल एक %d Snap ही चुना जा सकता है।</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11008c">
+        <item quantity="other">%1$d में से %2$s Snaps इंपोर्ट हुए</item>
+        <item quantity="one">%2$s में से %1$d Snap इंपोर्ट हुआ</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11008d">
+        <item quantity="other">%d Snaps इंपोर्ट हुए!</item>
+        <item quantity="one">%d Snap इंपोर्ट हुए!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11008e">
+        <item quantity="other">से नए Snaps%s</item>
+        <item quantity="one">%s से नया Snap</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11008f">
+        <item quantity="other">%2$d में से %1$d Snaps इंपोर्ट हो रहे हैं…</item>
+        <item quantity="one">%2$d में से %1$d Snap इंपोर्ट हो रहा है...</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110090">
+        <item quantity="other">%d चयनित</item>
+        <item quantity="one">%d चयनित</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110091">
+        <item quantity="other">%dमि.</item>
+        <item quantity="one">%dमि.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110092">
+        <item quantity="other">%dमि.</item>
+        <item quantity="one">%dमि.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110093">
+        <item quantity="other">%dमि. पहले</item>
+        <item quantity="one">%dमि. पहले</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11009a">
+        <item quantity="other">%1$s मिनट पहले अपडेट किया गया</item>
+        <item quantity="one">%1$s मिनट पहले अपडेट किया गया</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11009b">
+        <item quantity="other">%dमाह</item>
+        <item quantity="one">%dमाह</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11009c">
+        <item quantity="other">%dमाह पहले</item>
+        <item quantity="one">%dमाह पहले</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100a3">
+        <item quantity="other">%1$s महीने पहले अपडेट किया गया</item>
+        <item quantity="one">%1$s महीना पहले अपडेट किया गया</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100a7">
+        <item quantity="other">%1$d Snaps का बैकअप अभी तक मेमोरीज़ में नहीं हुआ है। यदि आप अभी लॉग आउट करते हैं, तो ये Snaps खो जाएंगे।</item>
+        <item quantity="one">एक Snap का बैकअप अभी तक मेमोरीज़ में नहीं हुआ है। यदि आप अभी लॉग आउट करते हैं, तो यह Snap खो जाएगा।</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100a8">
+        <item quantity="other">%d फ़्रेंड्स जोड़ें</item>
+        <item quantity="one">1 फ़्रेंड जोड़ें</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100a9">
+        <item quantity="other">%dघं.</item>
+        <item quantity="one">%dघं.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100aa">
+        <item quantity="other">%dमि.</item>
+        <item quantity="one">%dमि.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ab">
+        <item quantity="other">%1$s+%2$d अन्य</item>
+        <item quantity="one">%1$s+%2$d अन्य</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100b3">
+        <item quantity="other">आपके Pixy पर पिछले यूज़र के %d Snaps हैं। इस डिवाइस के साथ पेयर करने पर डिवाइस रीसेट हो जाएगी और सभी Snaps और यूज़र डेटा डिलीट हो जाएंगे।</item>
+        <item quantity="one">आपके Pixy पर पिछले यूज़र का 1 Snap है। इस डिवाइस के साथ पेयर करने पर डिवाइस रीसेट हो जाएगी और सभी Snaps और यूज़र डेटा डिलीट हो जाएंगे।</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100b4">
+        <item quantity="other">%d आइटम</item>
+        <item quantity="one">1 आइटम</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100b9">
+        <item quantity="other">%d नए Snaps</item>
+        <item quantity="one">%d नया Snap</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ba">
+        <item quantity="other">+ %d फ़्रेंड्स जोड़ें</item>
+        <item quantity="one">+ 1 फ़्रेंड जोड़ें…</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100bb">
+        <item quantity="other">%1$d Snaps सेव हुए!</item>
+        <item quantity="one">%1$d Snap सेव हुआ!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100bc">
+        <item quantity="other">%s Snaps</item>
+        <item quantity="one">%s Snap</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100bd">
+        <item quantity="other">%dसे.</item>
+        <item quantity="one">%dसे.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100bf">
+        <item quantity="other">%dसे. पहले</item>
+        <item quantity="one">%dसे. पहले</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100c6">
+        <item quantity="other">%1$s सेकंड पहले अपडेट किया गया</item>
+        <item quantity="one">%1$s सेकंड पहले अपडेट किया गया</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100c7">
+        <item quantity="other">%1$d फ़्रेंड्स</item>
+        <item quantity="one">1 फ़्रेंड</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100c8">
+        <item quantity="other">%1$s और %2$d अन्य</item>
+        <item quantity="one">%1$s और 1 अन्य</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100c9">
+        <item quantity="other">मेरी उम्र %d वर्ष है।</item>
+        <item quantity="one">मेरी उम्र %d वर्ष है।</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ca">
+        <item quantity="other">सेकंड</item>
+        <item quantity="one">सेकंड</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100cb">
+        <item quantity="other">%1$d Snaps</item>
+        <item quantity="one">%1$d Snap</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100cc">
+        <item quantity="other">आप अपने Snaps कैसे एक्सपोर्ट करना चाहेंगे?</item>
+        <item quantity="one">आप अपना Snap कैसे एक्सपोर्ट करना चाहेंगे?</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100cd">
+        <item quantity="other">\"स्पॉटलाइट पर %d पेंडिंग कमेंट्स!</item>
+        <item quantity="one">स्पॉटलाइट पर 1 पेंडिंग कमेंट!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100cf">
+        <item quantity="other">"आपकी लाइव लोकेशन छिपी हुई है लेकिन %1$s फ़्रेंड्स को अभी भी आपकी आखिरी ऐक्टिव लोकेशन दिख सकती है।
+
+ आप इसे मैप सेटिंग में बदल सकते हैं।"</item>
+        <item quantity="one">"आपकी लाइव लोकेशन छिपी हुई है लेकिन %1$s फ़्रेंड को अभी भी आपकी आखिरी ऐक्टिव लोकेशन दिख सकती है।
+
+ आप इसे मैप सेटिंग में बदल सकते हैं।"</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d0">
+        <item quantity="other">आपने अपनी लोकेशन सेटिंग सेव की है लेकिन %1$s फ़्रेंड्स को अभी भी आपकी लाइव लोकेशन दिख सकती है। शेयरिंग रोकने के लिए, उनके नाम के आगे \"रोकें\" पर टैप करें।</item>
+        <item quantity="one">आपने अपनी लोकेशन सेटिंग सेव की है लेकिन %1$s फ़्रेंड को अभी भी आपकी लाइव लोकेशन दिख सकती है। शेयरिंग रोकने के लिए, उनके नाम के आगे \"रोकें\" पर टैप करें।</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d3">
+        <item quantity="other">आप घोस्ट मोड में हैं लेकिन %1$s फ़्रेंड्स को अभी भी आपकी लाइव लोकेशन दिख सकती है। शेयरिंग पॉज़ करने के लिए, नीचे \"मेरी लाइव लोकेशन छिपाएं\" पर टैप करें।</item>
+        <item quantity="one">आप घोस्ट मोड में हैं लेकिन %1$s फ़्रेंड को अभी भी आपकी लाइव लोकेशन दिख सकती है। शेयरिंग पॉज़ करने के लिए, नीचे \"मेरी लाइव लोकेशन छिपाएं\" पर टैप करें।</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d4">
+        <item quantity="other">%d व्यू</item>
+        <item quantity="one">%d व्यू</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d5">
+        <item quantity="other">+ %1$d अतिरिक्त</item>
+        <item quantity="one">+ %1$d अतिरिक्त</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d6">
+        <item quantity="other">%1$s और %2$d अन्य…</item>
+        <item quantity="one">%1$s और %2$d अन्य…</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d7">
+        <item quantity="other">सत्यापित • %d सदस्य</item>
+        <item quantity="one">सत्यापित • %d सदस्य</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d8">
+        <item quantity="other">%d सदस्य</item>
+        <item quantity="one">%d सदस्य</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d9">
+        <item quantity="other">%d Snaps जोड़ रहे…</item>
+        <item quantity="one">%d Snap जोड़ रहे…</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100da">
+        <item quantity="other">%d Snaps जोड़ना विफल रहा</item>
+        <item quantity="one">%d Snap जोड़ना विफल रहा</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100db">
+        <item quantity="other">%d Snaps जोड़े जाने की प्रतीक्षा में…</item>
+        <item quantity="one">%d Snap जोड़े जाने की प्रतीक्षा में…</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100df">
+        <item quantity="other">%d फ़्रेंड्स के साथ</item>
+        <item quantity="one">%d फ़्रेंड के साथ</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100e0">
+        <item quantity="other">%2$d में से %1$d नए फ़्रेंड जोड़ना</item>
+        <item quantity="one">%2$d में से %1$d नए फ़्रेंड जोड़ना</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100e1">
+        <item quantity="other">इवेंट्स</item>
+        <item quantity="one">इवेंट</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100e3">
+        <item quantity="other">%d सप्ताह</item>
+        <item quantity="one">%d सप्ताह</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100e4">
+        <item quantity="other">%dस.</item>
+        <item quantity="one">%dस.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100e5">
+        <item quantity="other">%dस. पहले</item>
+        <item quantity="one">%dस. पहले</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ec">
+        <item quantity="other">%1$s सप्ताह पहले अपडेट किया गया</item>
+        <item quantity="one">%1$s सप्ताह पहले अपडेट किया गया</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ed">
+        <item quantity="other">%dवर्ष</item>
+        <item quantity="one">%dवर्ष</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ee">
+        <item quantity="other">%dवर्ष पहले</item>
+        <item quantity="one">%dवर्ष पहले</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100f5">
+        <item quantity="other">%1$s साल पहले अपडेट किया गया</item>
+        <item quantity="one">%1$s साल पहले अपडेट किया गया</item>
+    </plurals>
+</resources>

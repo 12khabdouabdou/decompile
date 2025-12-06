@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.ui.view.LoadingSpinnerView android:layout_gravity="center" android:id="@null" android:visibility="gone" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070948" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070947" android:scaleType="fitCenter" app:APKTOOL_DUMMYVAL_0x7f04031f="@color/APKTOOL_DUMMYVAL_0x7f0600d6"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

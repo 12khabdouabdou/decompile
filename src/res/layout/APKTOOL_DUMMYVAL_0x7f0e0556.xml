@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:paddingEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070508"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f071300" android:textColor="?APKTOOL_DUMMYVAL_0x7f0405b2" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:text="@string/permissions_info" android:lineSpacingMultiplier="1.2" app:APKTOOL_DUMMYVAL_0x7f04047c="-2" />
+    <View android:id="@null" android:background="@color/APKTOOL_DUMMYVAL_0x7f060233" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b106b" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

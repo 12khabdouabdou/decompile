@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@null" android:background="@color/APKTOOL_DUMMYVAL_0x7f0600d5" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070639" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070639" />
+    <com.cardinalcommerce.a.setAnimationMatrix android:textAppearance="@style/APKTOOL_DUMMYVAL_0x7f140164" android:textSize="22.0sp" android:layout_gravity="start" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0469" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070639" android:text="@string/verify_by_phone" android:paddingStart="@dimen/APKTOOL_DUMMYVAL_0x7f070639" android:paddingEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070639" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070a2d">
+        <com.cardinalcommerce.a.setY android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1a75" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f07150e" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07150e" android:layout_margin="@dimen/APKTOOL_DUMMYVAL_0x7f070094" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f080ca1" android:contentDescription="TODO" />
+        <com.cardinalcommerce.a.setAnimationMatrix android:textAppearance="@style/APKTOOL_DUMMYVAL_0x7f1405a5" android:textSize="16.0sp" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b046b" android:focusable="false" android:scrollbars="vertical" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMYVAL_0x7f070639" android:layout_marginRight="@dimen/APKTOOL_DUMMYVAL_0x7f070639" android:text="@string/textview" />
+    </LinearLayout>
+</LinearLayout>

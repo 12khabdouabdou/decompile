@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.identity.loginsignup.ui.shared.BasicLoginSignupLayout android:orientation="vertical" android:id="@null" android:background="?APKTOOL_DUMMYVAL_0x7f0404b8" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:APKTOOL_DUMMYVAL_0x7f0400aa="@string/login_verify_email_send_code"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.SnapFontTextView android:id="@null" android:paddingTop="60.0dip" android:paddingBottom="60.0dip" android:text="@string/login_verify_email_title" style="@style/APKTOOL_DUMMYVAL_0x7f1401dd" />
+    <com.snap.ui.view.SnapFontEditText android:textColor="?APKTOOL_DUMMYVAL_0x7f0405b2" android:id="@id/email_field" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f0713c2" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:hint="you@email.com" android:maxLines="1" android:inputType="textEmailAddress" style="@style/APKTOOL_DUMMYVAL_0x7f1401fb" />
+    <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b07dd" android:paddingTop="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/APKTOOL_DUMMYVAL_0x7f1401a6" />
+</com.snap.identity.loginsignup.ui.shared.BasicLoginSignupLayout>

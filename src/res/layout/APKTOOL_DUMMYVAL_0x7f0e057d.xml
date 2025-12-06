@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070e1a"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_gravity="center|top" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b114d" android:background="?APKTOOL_DUMMYVAL_0x7f0404b8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070e1e" app:APKTOOL_DUMMYVAL_0x7f0400b5="@dimen/APKTOOL_DUMMYVAL_0x7f070e1b" app:APKTOOL_DUMMYVAL_0x7f0400b6="@dimen/APKTOOL_DUMMYVAL_0x7f070e1c" app:APKTOOL_DUMMYVAL_0x7f0400b9="false">
+        <com.snap.ui.view.SnapFontTextView android:textSize="?APKTOOL_DUMMYVAL_0x7f0406f4" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f06020e" android:gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b114e" android:layout_width="wrap_content" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070e1d" android:text="@string/preview_3d_effects_enabled_toast" android:drawablePadding="@dimen/APKTOOL_DUMMYVAL_0x7f070e20" android:drawableStart="@drawable/APKTOOL_DUMMYVAL_0x7f080b43" android:paddingStart="@dimen/APKTOOL_DUMMYVAL_0x7f070e21" android:paddingEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070e1f" app:APKTOOL_DUMMYVAL_0x7f04047c="?APKTOOL_DUMMYVAL_0x7f0406f3" />
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

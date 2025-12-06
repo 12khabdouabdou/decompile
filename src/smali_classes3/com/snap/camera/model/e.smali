@@ -1,0 +1,169 @@
+.class public final Lcom/snap/camera/model/e;
+.super Lcom/snap/camera/model/MediaTypeConfig;
+.source "SourceFile"
+
+
+# static fields
+.field public static final CREATOR:Landroid/os/Parcelable$Creator;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/os/Parcelable$Creator<",
+            "Lcom/snap/camera/model/e;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# instance fields
+.field public final a:LLtb;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    new-instance v0, Lqsb;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x7
+
+    .line 4
+    invoke-direct {v0, v1}, Lqsb;-><init>(I)V
+
+    .line 5
+    .line 6
+    .line 7
+    sput-object v0, Lcom/snap/camera/model/e;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method public constructor <init>(LLtb;)V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-direct {p0, v0}, Lcom/snap/camera/model/MediaTypeConfig;-><init>(LHr5;)V
+
+    .line 3
+    .line 4
+    .line 5
+    iput-object p1, p0, Lcom/snap/camera/model/e;->a:LLtb;
+
+    .line 6
+    .line 7
+    return-void
+.end method
+
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
+
+    const/4 v0, 0x1
+
+    if-ne p0, p1, :cond_0
+
+    return v0
+
+    :cond_0
+    instance-of v1, p1, Lcom/snap/camera/model/e;
+
+    const/4 v2, 0x0
+
+    if-nez v1, :cond_1
+
+    return v2
+
+    :cond_1
+    check-cast p1, Lcom/snap/camera/model/e;
+
+    iget-object v1, p0, Lcom/snap/camera/model/e;->a:LLtb;
+
+    iget-object p1, p1, Lcom/snap/camera/model/e;->a:LLtb;
+
+    if-eq v1, p1, :cond_2
+
+    return v2
+
+    :cond_2
+    return v0
+.end method
+
+.method public final getMediaType()LLtb;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/camera/model/e;->a:LLtb;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    iget-object v0, p0, Lcom/snap/camera/model/e;->a:LLtb;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "VideoCheeriosStartUpConfiguration(mediaType="
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    iget-object v1, p0, Lcom/snap/camera/model/e;->a:LLtb;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ")"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final writeToParcel(Landroid/os/Parcel;I)V
+    .locals 0
+
+    .line 1
+    iget-object p2, p0, Lcom/snap/camera/model/e;->a:LLtb;
+
+    .line 2
+    .line 3
+    invoke-virtual {p2}, Ljava/lang/Enum;->ordinal()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p2
+
+    .line 7
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
+.end method

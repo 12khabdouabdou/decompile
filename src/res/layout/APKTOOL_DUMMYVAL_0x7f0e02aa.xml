@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?APKTOOL_DUMMYVAL_0x7f0404b8" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.component.header.SnapSubscreenHeaderView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b09c0" custom:APKTOOL_DUMMYVAL_0x7f04023c="?APKTOOL_DUMMYVAL_0x7f0404b8" custom:APKTOOL_DUMMYVAL_0x7f04023d="9" custom:APKTOOL_DUMMYVAL_0x7f04069d="@string/settings_tfa_settings_header" style="@style/APKTOOL_DUMMYVAL_0x7f1405f4" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070511">
+            <com.snap.ui.view.SnapFontTextView android:gravity="center_horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1a29" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070511" style="@style/APKTOOL_DUMMYVAL_0x7f1401b4" />
+            <com.snap.identity.api.sharedui.VerificationCodeEditTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1a27" style="@style/APKTOOL_DUMMYVAL_0x7f1401b1" />
+            <com.snap.ui.view.SnapFontTextView android:textSize="?APKTOOL_DUMMYVAL_0x7f0406fd" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060232" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1a28" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:minLines="1" android:paddingStart="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:paddingEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070508" />
+            <com.snap.ui.view.SnapLinkFriendlyTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1a2b" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/locked_help_unlock" android:paddingStart="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:paddingEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070508" style="@style/APKTOOL_DUMMYVAL_0x7f1401aa" />
+        </LinearLayout>
+    </ScrollView>
+    <com.snap.identity.ui.settings.shared.SettingsPhoneButton android:layout_gravity="bottom|center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0691" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070f10" />
+</LinearLayout>

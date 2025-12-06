@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.identity.loginsignup.content.lib.DefaultFollowCreatorItemView android:background="?APKTOOL_DUMMYVAL_0x7f0404b8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textDirection="locale" android:layoutDirection="locale"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.component.cells.SnapUserCellView android:id="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.snap.identity.loginsignup.content.lib.DefaultFollowCreatorItemView>

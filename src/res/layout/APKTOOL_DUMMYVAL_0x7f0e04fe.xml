@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070517" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070517"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.bitmoji.view.BitmojiSilhouetteView android:layout_gravity="center_horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b01b0" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f080579" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f07050d" android:layout_width="110.0dip" android:layout_height="110.0dip" />
+    <com.snap.identity.api.sharedui.ProgressButton android:id="@null" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f07050f" app:APKTOOL_DUMMYVAL_0x7f0403fc="@string/splash_page_logging_in" style="@style/APKTOOL_DUMMYVAL_0x7f1401d8" />
+    <com.snap.ui.view.SnapFontTextView android:enabled="false" android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f071303" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060208" android:gravity="center|top" android:layout_gravity="center_horizontal" android:id="@null" android:layout_width="wrap_content" android:layout_height="48.0dip" android:text="@string/remove_one_tap_login_account" app:APKTOOL_DUMMYVAL_0x7f04047c="2" />
+</LinearLayout>

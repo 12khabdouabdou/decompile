@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@null" android:background="?APKTOOL_DUMMYVAL_0x7f0404b8" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@null" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:visibility="gone" layout="@layout/APKTOOL_DUMMYVAL_0x7f0e043b" />
+        <include android:visibility="gone" layout="@layout/APKTOOL_DUMMYVAL_0x7f0e051c" />
+    </FrameLayout>
+    <ScrollView android:id="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@null" android:layout_below="@null" android:paddingStart="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:paddingEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070508">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/APKTOOL_DUMMYVAL_0x7f080443" android:showDividers="middle">
+            <com.snap.payments.lib.views.AddressView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b154e" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f071306" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060232" android:gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1047" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f07051a" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f07051a" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:text="@string/marco_polo_checkout_remove_shipping_address" />
+            <FrameLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0b20" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e033f" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout android:id="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ViewStub android:id="@id/APKTOOL_DUMMYVAL_0x7f0b07c3" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e0519" />
+</RelativeLayout>

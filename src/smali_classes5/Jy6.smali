@@ -1,0 +1,200 @@
+.class public final LJy6;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field public final a:LnR4;
+
+.field public final b:LnR4;
+
+.field public final c:LnR4;
+
+.field public final d:LBre;
+
+.field public final e:Ljava/util/concurrent/ConcurrentHashMap;
+
+.field public final f:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+.field public final g:Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
+
+
+# direct methods
+.method public constructor <init>(LnR4;LnR4;LnR4;Lnwf;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LJy6;->a:LnR4;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, LJy6;->b:LnR4;
+
+    .line 7
+    .line 8
+    iput-object p3, p0, LJy6;->c:LnR4;
+
+    .line 9
+    .line 10
+    sget-object p1, LpYa;->Z:LpYa;
+
+    .line 11
+    .line 12
+    check-cast p4, LIP5;
+
+    .line 13
+    .line 14
+    invoke-virtual {p4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 15
+    .line 16
+    .line 17
+    const-string p2, "DropsPersistedPinCacheImpl"
+
+    .line 18
+    .line 19
+    invoke-static {p1, p2}, LIP5;->b(Lan0;Ljava/lang/String;)LBre;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object p1
+
+    .line 23
+    iput-object p1, p0, LJy6;->d:LBre;
+
+    .line 24
+    .line 25
+    new-instance p1, Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 26
+    .line 27
+    invoke-direct {p1}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
+
+    .line 28
+    .line 29
+    .line 30
+    iput-object p1, p0, LJy6;->e:Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 31
+    .line 32
+    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->c1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object p1
+
+    .line 36
+    iput-object p1, p0, LJy6;->f:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 37
+    .line 38
+    new-instance p2, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
+
+    .line 39
+    .line 40
+    invoke-direct {p2, p1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;)V
+
+    .line 41
+    .line 42
+    .line 43
+    iput-object p2, p0, LJy6;->g:Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
+
+    .line 44
+    .line 45
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Ljava/util/HashMap;
+    .locals 4
+
+    .line 1
+    new-instance v0, Ljava/util/HashMap;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v1, p0, LJy6;->e:Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 7
+    .line 8
+    invoke-virtual {v1}, Ljava/util/concurrent/ConcurrentHashMap;->entrySet()Ljava/util/Set;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v1
+
+    .line 12
+    invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v1
+
+    .line 16
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 17
+    .line 18
+    .line 19
+    move-result v2
+
+    .line 20
+    if-eqz v2, :cond_0
+
+    .line 21
+    .line 22
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object v2
+
+    .line 26
+    check-cast v2, Ljava/util/Map$Entry;
+
+    .line 27
+    .line 28
+    invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object v3
+
+    .line 32
+    invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object v2
+
+    .line 36
+    invoke-virtual {v0, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 37
+    .line 38
+    .line 39
+    goto :goto_0
+
+    .line 40
+    :cond_0
+    return-object v0
+.end method

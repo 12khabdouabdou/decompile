@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pathInterpolator android:controlX1="@integer/APKTOOL_DUMMYVAL_0x7f0c0045" android:controlY1="@integer/APKTOOL_DUMMYVAL_0x7f0c0047" android:controlX2="@integer/APKTOOL_DUMMYVAL_0x7f0c0046" android:controlY2="@integer/APKTOOL_DUMMYVAL_0x7f0c0048"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

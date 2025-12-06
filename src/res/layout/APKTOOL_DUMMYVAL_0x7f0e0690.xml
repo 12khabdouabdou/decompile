@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@null" android:background="?APKTOOL_DUMMYVAL_0x7f0404b8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:padding="@dimen/APKTOOL_DUMMYVAL_0x7f07051b" android:layout_margin="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:text="@string/my_story_posts_settings_description" style="@style/APKTOOL_DUMMYVAL_0x7f140592" />
+    <RadioGroup android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0fe6" android:background="?APKTOOL_DUMMYVAL_0x7f0404b8" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/APKTOOL_DUMMYVAL_0x7f1405e0">
+        <RadioButton android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0e3e" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070ab6" android:button="@null" android:text="@string/my_story_posts_settings_off" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070511" style="@style/APKTOOL_DUMMYVAL_0x7f1405df" />
+        <RadioButton android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1305" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070ab6" android:button="@null" android:text="@string/my_story_posts_settings_memories" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070511" style="@style/APKTOOL_DUMMYVAL_0x7f1405df" />
+    </RadioGroup>
+</LinearLayout>

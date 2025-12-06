@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b06f9" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.component.cards.SnapCardView android:layout_width="fill_parent" android:layout_height="fill_parent" android:backgroundTint="@color/APKTOOL_DUMMYVAL_0x7f060314" custom:APKTOOL_DUMMYVAL_0x7f0400b5="@dimen/APKTOOL_DUMMYVAL_0x7f070511">
+        <com.snap.imageloading.view.SnapImageView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b06f7" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f0802c9" android:padding="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/APKTOOL_DUMMYVAL_0x7f070511">
+            <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f0700ed" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060327" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/permission_tray_title" custom:APKTOOL_DUMMYVAL_0x7f04047c="1" />
+            <TextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f0700e3" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f0604ca" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/permission_tray_description" />
+            <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e0553" />
+            <include android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0797" layout="@layout/APKTOOL_DUMMYVAL_0x7f0e0322" />
+            <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e0552" />
+            <include android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0794" layout="@layout/APKTOOL_DUMMYVAL_0x7f0e0322" />
+            <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e0554" />
+            <com.snap.component.button.SnapButtonView android:gravity="center" android:id="@null" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:APKTOOL_DUMMYVAL_0x7f0400b0="41" custom:APKTOOL_DUMMYVAL_0x7f0400b1="@string/button_continue" />
+        </LinearLayout>
+    </com.snap.component.cards.SnapCardView>
+</FrameLayout>

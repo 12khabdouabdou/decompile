@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@null" android:background="?APKTOOL_DUMMYVAL_0x7f0404b8" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.ScHeaderView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1312" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:APKTOOL_DUMMYVAL_0x7f040237="@color/APKTOOL_DUMMYVAL_0x7f060233" custom:APKTOOL_DUMMYVAL_0x7f04023b="@string/settings_birthday" custom:APKTOOL_DUMMYVAL_0x7f0404a8="true" custom:APKTOOL_DUMMYVAL_0x7f0404a9="true" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070511">
+            <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f071300" android:gravity="center_horizontal" android:id="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:text="@string/settings_birthday_note" />
+            <FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b14ce" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f080389" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:hint="@string/settings_birthday_field_hint" android:maxLength="60" style="@style/APKTOOL_DUMMYVAL_0x7f1401b5" />
+                <ImageView android:layout_gravity="end|bottom|center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b14cd" style="@style/APKTOOL_DUMMYVAL_0x7f1401a4" />
+            </FrameLayout>
+            <com.snap.ui.view.SnapFontTextView android:textSize="?APKTOOL_DUMMYVAL_0x7f0406fd" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060232" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b14cc" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-4.0dip" android:text="@string/settings_birthday_fail_info" android:minLines="1" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070508">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.snap.ui.view.SnapFontTextView android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:text="@string/settings_birthday_party_text" style="@style/APKTOOL_DUMMYVAL_0x7f1401b5" />
+                    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f071303" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b14d3" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_height="wrap_content" style="@style/APKTOOL_DUMMYVAL_0x7f1401b7" />
+                </LinearLayout>
+                <CheckBox android:id="@id/APKTOOL_DUMMYVAL_0x7f0b14d2" style="@style/APKTOOL_DUMMYVAL_0x7f1401b2" />
+            </LinearLayout>
+            <ViewStub android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0195" android:layout="@layout/APKTOOL_DUMMYVAL_0x7f0e066d" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+    <com.snap.identity.ui.settings.shared.SettingsStatefulButton android:layout_gravity="bottom|center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b14cb" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070f10" custom:APKTOOL_DUMMYVAL_0x7f0400aa="@string/settings_birthday_continue" />
+    <DatePicker android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/birthday_date_picker" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minDate="01/01/1900" android:maxDate="12/31/2100" android:calendarViewShown="false" android:datePickerMode="spinner" />
+</LinearLayout>

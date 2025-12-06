@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.camera.subcomponents.capture.view.HandsFreeRecordingLockView android:visibility="invisible" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.LazyIconView android:layout_gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b03cf" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f07020b" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07020b" android:alpha="0.0" custom:APKTOOL_DUMMYVAL_0x7f040231="false" custom:APKTOOL_DUMMYVAL_0x7f0405df="@drawable/APKTOOL_DUMMYVAL_0x7f080171" />
+    <com.snap.ui.view.LazyIconView android:layout_gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b03d0" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f07020c" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07020c" android:alpha="0.0" custom:APKTOOL_DUMMYVAL_0x7f040231="false" custom:APKTOOL_DUMMYVAL_0x7f0405df="@drawable/APKTOOL_DUMMYVAL_0x7f080172" />
+</com.snap.camera.subcomponents.capture.view.HandsFreeRecordingLockView>

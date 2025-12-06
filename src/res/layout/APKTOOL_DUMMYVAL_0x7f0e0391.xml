@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@null" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f071347" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f071347" style="@style/APKTOOL_DUMMYVAL_0x7f140205"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.lenses.common.RoundedImageView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0b31" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f0804ed" android:elevation="@dimen/APKTOOL_DUMMYVAL_0x7f070afc" app:APKTOOL_DUMMYVAL_0x7f0401ad="@integer/APKTOOL_DUMMYVAL_0x7f0c004e" app:APKTOOL_DUMMYVAL_0x7f04049f="1" app:APKTOOL_DUMMYVAL_0x7f0404a0="@color/APKTOOL_DUMMYVAL_0x7f0600b6" app:APKTOOL_DUMMYVAL_0x7f0404a1="@dimen/APKTOOL_DUMMYVAL_0x7f071343" style="@style/APKTOOL_DUMMYVAL_0x7f1401ba" />
+    <com.snap.imageloading.view.SnapImageView android:layout_gravity="end|bottom|center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0b22" android:visibility="gone" android:elevation="@dimen/APKTOOL_DUMMYVAL_0x7f070afc" style="@style/APKTOOL_DUMMYVAL_0x7f1401b9" />
+</FrameLayout>

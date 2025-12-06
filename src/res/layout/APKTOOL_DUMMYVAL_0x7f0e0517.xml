@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@null" android:background="?APKTOOL_DUMMYVAL_0x7f0404b8" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@null" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:visibility="gone" layout="@layout/APKTOOL_DUMMYVAL_0x7f0e043b" />
+        <include android:visibility="gone" layout="@layout/APKTOOL_DUMMYVAL_0x7f0e051c" />
+    </FrameLayout>
+    <ScrollView android:id="@null" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@null" android:layout_below="@null" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070511">
+        <LinearLayout android:orientation="vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1048" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@null" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.snap.ui.view.SnapFontTextView android:textColor="@color/APKTOOL_DUMMYVAL_0x7f06021d" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1044" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/payments_payment_method" style="@style/APKTOOL_DUMMYVAL_0x7f1405dd" />
+                <include android:id="@id/APKTOOL_DUMMYVAL_0x7f0b101d" layout="@layout/APKTOOL_DUMMYVAL_0x7f0e068b" />
+                <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1038" android:layout_width="fill_parent" android:layout_height="0.0dip" android:divider="@null" android:layout_weight="1.0" />
+                <TextView android:textColor="?APKTOOL_DUMMYVAL_0x7f0405aa" android:gravity="center" android:id="@null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1043" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1966" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.snap.ui.view.SnapFontTextView android:textColor="@color/APKTOOL_DUMMYVAL_0x7f06021d" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/payments_transaction_history" style="@style/APKTOOL_DUMMYVAL_0x7f1405dd" />
+                    <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e068b" />
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1227" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f071300" android:textColor="?APKTOOL_DUMMYVAL_0x7f0405b2" android:ellipsize="end" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1042" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f080590" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f07050c" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f07050c" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/payments_other_purchases" android:maxLines="1" android:includeFontPadding="false" android:paddingStart="@dimen/APKTOOL_DUMMYVAL_0x7f07050c" android:paddingEnd="0.0dip" />
+                </LinearLayout>
+                <com.snap.ui.view.SnapFontTextView android:textColor="@color/APKTOOL_DUMMYVAL_0x7f06021d" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/payments_order_information" style="@style/APKTOOL_DUMMYVAL_0x7f1405dd" />
+                <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e068b" />
+                <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f071300" android:textColor="?APKTOOL_DUMMYVAL_0x7f0405b2" android:ellipsize="end" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b104a" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f080590" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/payments_shipping_address" android:maxLines="1" android:includeFontPadding="false" android:paddingStart="@dimen/APKTOOL_DUMMYVAL_0x7f07050c" android:paddingEnd="@dimen/APKTOOL_DUMMYVAL_0x7f07050c" />
+                <ImageView android:background="?APKTOOL_DUMMYVAL_0x7f040575" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f071076" />
+                <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f071300" android:textColor="?APKTOOL_DUMMYVAL_0x7f0405b2" android:ellipsize="end" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b102b" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f080590" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/payments_contact_information" android:maxLines="1" android:includeFontPadding="false" android:paddingStart="@dimen/APKTOOL_DUMMYVAL_0x7f07050c" android:paddingEnd="@dimen/APKTOOL_DUMMYVAL_0x7f07050c" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e0519" />
+    <ViewStub android:id="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

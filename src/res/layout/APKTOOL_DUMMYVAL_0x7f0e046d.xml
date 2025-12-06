@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@null" android:background="?APKTOOL_DUMMYVAL_0x7f0404b8" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.framework.ui.views.statusbar.StatusBarCustomFrameLayout android:id="@null" custom:APKTOOL_DUMMYVAL_0x7f0406ad="true" style="@style/APKTOOL_DUMMYVAL_0x7f1401eb">
+        <ImageView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b193e" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f080361" style="@style/APKTOOL_DUMMYVAL_0x7f14018d" />
+        <TextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b193f" android:text="@string/gallery_create_passcode" style="@style/APKTOOL_DUMMYVAL_0x7f140190" />
+    </com.snap.framework.ui.views.statusbar.StatusBarCustomFrameLayout>
+    <TextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f071303" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060217" android:gravity="center" android:id="@null" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f07051c" android:text="@string/gallery_private_passcode_help" android:layout_below="@null" style="@style/APKTOOL_DUMMYVAL_0x7f140195" />
+    <LinearLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0972" android:visibility="invisible" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070516" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/APKTOOL_DUMMYVAL_0x7f140197">
+        <ImageView style="@style/APKTOOL_DUMMYVAL_0x7f140199" />
+        <TextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0973" style="@style/APKTOOL_DUMMYVAL_0x7f14019a" />
+    </LinearLayout>
+    <com.snap.memories.lib.grid.view.MemoriesMyEyesOnlyKeypad android:id="@id/APKTOOL_DUMMYVAL_0x7f0b095d" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/APKTOOL_DUMMYVAL_0x7f0b0972" android:layout_below="@null" />
+</RelativeLayout>

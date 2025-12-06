@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@null" android:background="?APKTOOL_DUMMYVAL_0x7f0404bd" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@null" android:background="?APKTOOL_DUMMYVAL_0x7f0404b8" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07121d" android:layout_alignParentTop="true">
+        <FrameLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1198" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f0703a2" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f0703a2" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070ff0" android:layout_centerInParent="true" android:layout_alignParentStart="true">
+            <ImageView android:layout_gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1197" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f071214" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f071214" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f0804b7" android:tint="?APKTOOL_DUMMYVAL_0x7f04056d" />
+        </FrameLayout>
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f071308" android:ellipsize="end" android:gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b17b6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_centerInParent="true" android:layout_toStartOf="@id/APKTOOL_DUMMYVAL_0x7f0b17b7" android:layout_toEndOf="@id/APKTOOL_DUMMYVAL_0x7f0b1198" />
+        <com.snap.commerce.lib.views.CartButton android:id="@id/APKTOOL_DUMMYVAL_0x7f0b17b7" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f0703a2" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f0703a2" android:layout_centerInParent="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <com.snap.commerce.lib.views.StoreMainTabView android:orientation="vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0d2e" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@null" />
+    <com.snap.component.button.SnapButtonView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b158c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f071026" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" custom:APKTOOL_DUMMYVAL_0x7f0400b0="10" custom:APKTOOL_DUMMYVAL_0x7f0400b1="@string/showcase_product_set_bottom_button_text" />
+    <com.snap.commerce.lib.views.CartCheckoutReview android:id="@id/APKTOOL_DUMMYVAL_0x7f0b17ab" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@null" />
+    <FrameLayout android:id="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ViewStub android:id="@id/APKTOOL_DUMMYVAL_0x7f0b07c3" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+</RelativeLayout>

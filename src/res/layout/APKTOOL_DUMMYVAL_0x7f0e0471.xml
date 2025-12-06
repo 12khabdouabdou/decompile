@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@null" android:background="?APKTOOL_DUMMYVAL_0x7f0404b8" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.framework.ui.views.statusbar.StatusBarCustomFrameLayout android:id="@null" custom:APKTOOL_DUMMYVAL_0x7f0406ad="true" style="@style/APKTOOL_DUMMYVAL_0x7f1401eb">
+        <ImageView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b193e" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f080361" style="@style/APKTOOL_DUMMYVAL_0x7f14018d" />
+        <TextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b193f" android:text="@string/gallery_confirm_passcode" style="@style/APKTOOL_DUMMYVAL_0x7f140190" />
+        <ImageView android:layout_gravity="center|right" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0963" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070712" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070712" android:layout_marginRight="@dimen/APKTOOL_DUMMYVAL_0x7f07050c" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f0805f2" />
+    </com.snap.framework.ui.views.statusbar.StatusBarCustomFrameLayout>
+    <TextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f071303" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060217" android:gravity="center" android:text="@string/gallery_private_passcode_confirm_header" style="@style/APKTOOL_DUMMYVAL_0x7f140195" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:gravity="center" android:id="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gallery_passcode" style="@style/APKTOOL_DUMMYVAL_0x7f140194" />
+        <TextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f070716" android:textStyle="bold" android:gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0965" style="@style/APKTOOL_DUMMYVAL_0x7f140195" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0644" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f07070c" style="@style/APKTOOL_DUMMYVAL_0x7f140198">
+        <ImageView style="@style/APKTOOL_DUMMYVAL_0x7f140199" />
+        <TextView android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060232" android:text="@string/gallery_private_passcode_confirm_text" style="@style/APKTOOL_DUMMYVAL_0x7f14019a" />
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f07071a">
+        <Button android:enabled="false" android:layout_gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b095a" android:layout_marginTop="0.0dip" android:text="@string/memories_button_continue_text" style="@style/APKTOOL_DUMMYVAL_0x7f14019b" />
+        <ProgressBar android:layout_gravity="center" android:id="@null" android:visibility="gone" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f0700d9" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f0700d9" />
+    </FrameLayout>
+</LinearLayout>

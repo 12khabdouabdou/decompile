@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070511"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0101" android:layout="@layout/APKTOOL_DUMMYVAL_0x7f0e05b7" android:layout_width="0.0dip" android:layout_height="wrap_content" app:APKTOOL_DUMMYVAL_0x7f0402d3="@id/APKTOOL_DUMMYVAL_0x7f0b0a9c" app:APKTOOL_DUMMYVAL_0x7f0402e5="0" app:APKTOOL_DUMMYVAL_0x7f0402e9="0" app:APKTOOL_DUMMYVAL_0x7f0402f0="0.48" />
+    <ViewStub android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0a9c" android:layout="@layout/APKTOOL_DUMMYVAL_0x7f0e05b7" android:layout_width="0.0dip" android:layout_height="wrap_content" app:APKTOOL_DUMMYVAL_0x7f0402d2="0" app:APKTOOL_DUMMYVAL_0x7f0402e4="@id/APKTOOL_DUMMYVAL_0x7f0b0101" app:APKTOOL_DUMMYVAL_0x7f0402e9="0" app:APKTOOL_DUMMYVAL_0x7f0402f0="0.48" />
+</androidx.constraintlayout.widget.ConstraintLayout>

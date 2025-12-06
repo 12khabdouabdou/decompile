@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.identity.loginsignup.ui.shared.BasicLoginSignupLayout android:orientation="vertical" android:id="@null" android:background="?APKTOOL_DUMMYVAL_0x7f0404b8" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.snap.ui.view.SnapFontTextView android:textColor="@color/APKTOOL_DUMMYVAL_0x7f0604ae" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/ngo_username_suggestion_v2_title" style="@style/APKTOOL_DUMMYVAL_0x7f140387" />
+        <include android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1a00" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/APKTOOL_DUMMYVAL_0x7f0e02ac" />
+        <include android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1a01" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/APKTOOL_DUMMYVAL_0x7f0e02ac" />
+        <include android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1a02" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/APKTOOL_DUMMYVAL_0x7f0e02ac" />
+        <com.snap.ui.view.SnapFontTextView android:textColor="@color/APKTOOL_DUMMYVAL_0x7f0604bc" android:gravity="center_horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0471" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:text="@string/username_suggestion_change_v2_username" android:layout_marginVertical="@dimen/APKTOOL_DUMMYVAL_0x7f070508" style="@style/APKTOOL_DUMMYVAL_0x7f140384" />
+        <com.snap.ui.view.SnapFontTextView android:textColor="@color/APKTOOL_DUMMYVAL_0x7f0604ca" android:gravity="center_horizontal" android:id="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ngo_username_description" style="@style/APKTOOL_DUMMYVAL_0x7f140384" />
+    </LinearLayout>
+</com.snap.identity.loginsignup.ui.shared.BasicLoginSignupLayout>

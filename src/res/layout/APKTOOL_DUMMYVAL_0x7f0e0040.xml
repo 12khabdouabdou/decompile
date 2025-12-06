@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f080590" android:padding="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1548" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f080377" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070508" />
+    <TextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f071300" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/payments_new_shipping_address" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.lenses.actionbar.DefaultCameraLensActionBarView android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0b84" android:inflatedId="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0b9a" android:inflatedId="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0b92" android:inflatedId="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.snap.lenses.actionbar.DefaultCameraLensActionBarView>

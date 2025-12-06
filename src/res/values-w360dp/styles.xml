@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="APKTOOL_DUMMYVAL_0x7f1400f5" parent="@style/APKTOOL_DUMMYVAL_0x7f1400f4" />
+    <style name="APKTOOL_DUMMYVAL_0x7f1400fd" parent="@style/APKTOOL_DUMMYVAL_0x7f1400e8">
+        <item name="android:textSize">?APKTOOL_DUMMYVAL_0x7f0406e3</item>
+    </style>
+</resources>

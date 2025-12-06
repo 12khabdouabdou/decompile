@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.contextcards.lib.viewbinding.spotlight.v2.view.description.ExpandableTextView android:layout_width="fill_parent" android:layout_height="wrap_content" app:APKTOOL_DUMMYVAL_0x7f0403a3="@integer/APKTOOL_DUMMYVAL_0x7f0c0020" app:APKTOOL_DUMMYVAL_0x7f0404ac="@string/truncated_description_less" app:APKTOOL_DUMMYVAL_0x7f0404ad="@string/truncated_description_more"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/camera_page" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.camera.view.CameraGestureDetectionView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0990" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0bc8" android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr" />
+    <FrameLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b12af" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@null" android:layout="@layout/APKTOOL_DUMMYVAL_0x7f0e06af" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/APKTOOL_DUMMYVAL_0x7f0b01af" android:layout="@layout/APKTOOL_DUMMYVAL_0x7f0e0057" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070139" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070139" />
+    <ViewStub android:id="@id/APKTOOL_DUMMYVAL_0x7f0b083c" android:layout="@layout/APKTOOL_DUMMYVAL_0x7f0e0227" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070638" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070637" />
+    <ViewStub android:id="@id/APKTOOL_DUMMYVAL_0x7f0b083f" android:layout="@layout/APKTOOL_DUMMYVAL_0x7f0e0228" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070630" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070630" />
+    <ViewStub android:layout_gravity="bottom|center" android:id="@null" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f071530" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07152f" />
+    <ViewStub android:layout_gravity="bottom|center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b167c" android:layout="@layout/APKTOOL_DUMMYVAL_0x7f0e06d9" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f0710ef" />
+    <ViewStub android:layout_gravity="bottom|center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b06b9" android:layout="@layout/APKTOOL_DUMMYVAL_0x7f0e01b7" android:inflatedId="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f0704bd" />
+    <FrameLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b041f" style="@style/APKTOOL_DUMMYVAL_0x7f14051d" />
+    <ViewStub android:layout_gravity="center|top" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0763" android:layout="@layout/APKTOOL_DUMMYVAL_0x7f0e0200" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b03c9" android:visibility="gone" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f080c0b" android:tint="@color/APKTOOL_DUMMYVAL_0x7f060327" style="@style/APKTOOL_DUMMYVAL_0x7f140614" />
+    <FrameLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1a31" style="@style/APKTOOL_DUMMYVAL_0x7f140623" />
+    <FrameLayout android:layout_gravity="start|bottom|center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b19a4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f0713c3" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f0713c3" />
+    <FrameLayout android:layout_gravity="end|bottom|center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1140" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f0713c3" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f0713c3" />
+    <ViewStub android:layout_gravity="center|top" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b171e" android:layout="@layout/APKTOOL_DUMMYVAL_0x7f0e06b0" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@id/APKTOOL_DUMMYVAL_0x7f0b03cc" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

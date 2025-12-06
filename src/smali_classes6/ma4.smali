@@ -1,0 +1,194 @@
+.class public final Lma4;
+.super Lcom/snap/composer/utils/b;
+.source "SourceFile"
+
+
+# annotations
+.annotation runtime LDu3;
+    propertyReplacements = ""
+    schema = "\'usersObservable\':g?<c>:\'[0]\'<a<r:\'[1]\'>>,\'enableInviteActions\':g?<c>:\'[0]\'<b@>,\'isConversationCommunity\':g?<c>:\'[0]\'<b@>,\'onTapInviteLink\':f(),\'onTapAddMember\':f(),\'onTapOpenGroupProfile\':f?()"
+    typeReferences = {
+        Lcom/snap/composer/bridge_observables/BridgeObservable;,
+        Lcom/snap/composer/people/User;
+    }
+.end annotation
+
+
+# instance fields
+.field private _enableInviteActions:Lcom/snap/composer/bridge_observables/BridgeObservable;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private _isConversationCommunity:Lcom/snap/composer/bridge_observables/BridgeObservable;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private _onTapAddMember:Lkotlin/jvm/functions/Function0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function0;"
+        }
+    .end annotation
+.end field
+
+.field private _onTapInviteLink:Lkotlin/jvm/functions/Function0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function0;"
+        }
+    .end annotation
+.end field
+
+.field private _onTapOpenGroupProfile:Lkotlin/jvm/functions/Function0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function0;"
+        }
+    .end annotation
+.end field
+
+.field private _usersObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Ljava/util/List<",
+            "Lcom/snap/composer/people/User;",
+            ">;>;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Lcom/snap/composer/bridge_observables/BridgeObservable;Lcom/snap/composer/bridge_observables/BridgeObservable;Lcom/snap/composer/bridge_observables/BridgeObservable;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Ljava/util/List<",
+            "Lcom/snap/composer/people/User;",
+            ">;>;",
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Ljava/lang/Boolean;",
+            ">;",
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Ljava/lang/Boolean;",
+            ">;",
+            "Lkotlin/jvm/functions/Function0;",
+            "Lkotlin/jvm/functions/Function0;",
+            "Lkotlin/jvm/functions/Function0;",
+            ")V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lma4;->_usersObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
+
+    .line 3
+    iput-object p2, p0, Lma4;->_enableInviteActions:Lcom/snap/composer/bridge_observables/BridgeObservable;
+
+    .line 4
+    iput-object p3, p0, Lma4;->_isConversationCommunity:Lcom/snap/composer/bridge_observables/BridgeObservable;
+
+    .line 5
+    iput-object p4, p0, Lma4;->_onTapInviteLink:Lkotlin/jvm/functions/Function0;
+
+    .line 6
+    iput-object p5, p0, Lma4;->_onTapAddMember:Lkotlin/jvm/functions/Function0;
+
+    .line 7
+    iput-object p6, p0, Lma4;->_onTapOpenGroupProfile:Lkotlin/jvm/functions/Function0;
+
+    return-void
+.end method
+
+.method public constructor <init>(Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
+    .locals 1
+
+    .line 8
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x0
+
+    .line 9
+    iput-object v0, p0, Lma4;->_usersObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
+
+    .line 10
+    iput-object v0, p0, Lma4;->_enableInviteActions:Lcom/snap/composer/bridge_observables/BridgeObservable;
+
+    .line 11
+    iput-object v0, p0, Lma4;->_isConversationCommunity:Lcom/snap/composer/bridge_observables/BridgeObservable;
+
+    .line 12
+    iput-object p1, p0, Lma4;->_onTapInviteLink:Lkotlin/jvm/functions/Function0;
+
+    .line 13
+    iput-object p2, p0, Lma4;->_onTapAddMember:Lkotlin/jvm/functions/Function0;
+
+    .line 14
+    iput-object v0, p0, Lma4;->_onTapOpenGroupProfile:Lkotlin/jvm/functions/Function0;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Lcom/snap/composer/bridge_observables/BridgeObservable;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lma4;->_isConversationCommunity:Lcom/snap/composer/bridge_observables/BridgeObservable;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final b(Lcom/snap/composer/bridge_observables/BridgeObservable;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lma4;->_enableInviteActions:Lcom/snap/composer/bridge_observables/BridgeObservable;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final c(Lkotlin/jvm/functions/Function0;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lma4;->_onTapOpenGroupProfile:Lkotlin/jvm/functions/Function0;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final d(Lcom/snap/composer/bridge_observables/BridgeObservable;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lma4;->_usersObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
+
+    .line 2
+    .line 3
+    return-void
+.end method

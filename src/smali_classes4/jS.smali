@@ -1,0 +1,242 @@
+.class public final synthetic LjS;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lobi;
+
+
+# instance fields
+.field public final synthetic X:LfY4;
+
+.field public final synthetic a:LqS;
+
+.field public final synthetic b:Lcom/snap/mushroom/app/MushroomApplication;
+
+.field public final synthetic c:LrH9;
+
+.field public final synthetic t:LBre;
+
+
+# direct methods
+.method public synthetic constructor <init>(LqS;Lcom/snap/mushroom/app/MushroomApplication;LrH9;LBre;LfY4;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, LjS;->a:LqS;
+
+    iput-object p2, p0, LjS;->b:Lcom/snap/mushroom/app/MushroomApplication;
+
+    iput-object p3, p0, LjS;->c:LrH9;
+
+    iput-object p4, p0, LjS;->t:LBre;
+
+    iput-object p5, p0, LjS;->X:LfY4;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final get()Ljava/lang/Object;
+    .locals 12
+
+    .line 1
+    iget-object v1, p0, LjS;->a:LqS;
+
+    .line 2
+    .line 3
+    iget-object v2, p0, LjS;->b:Lcom/snap/mushroom/app/MushroomApplication;
+
+    .line 4
+    .line 5
+    iget-object v0, p0, LjS;->c:LrH9;
+
+    .line 6
+    .line 7
+    iget-object v6, p0, LjS;->t:LBre;
+
+    .line 8
+    .line 9
+    iget-object v7, p0, LjS;->X:LfY4;
+
+    .line 10
+    .line 11
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 12
+    .line 13
+    .line 14
+    invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v3
+
+    .line 18
+    invoke-virtual {v3}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v3
+
+    .line 22
+    iget v4, v3, Landroid/util/DisplayMetrics;->heightPixels:I
+
+    .line 23
+    .line 24
+    iget v3, v3, Landroid/util/DisplayMetrics;->widthPixels:I
+
+    .line 25
+    .line 26
+    mul-int v4, v4, v3
+
+    .line 27
+    .line 28
+    sget-object v3, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
+
+    .line 29
+    .line 30
+    invoke-static {}, Lsc5;->p0()I
+
+    .line 31
+    .line 32
+    .line 33
+    move-result v3
+
+    .line 34
+    mul-int v3, v3, v4
+
+    .line 35
+    .line 36
+    invoke-virtual {v6}, LBre;->d()LF06;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object v4
+
+    .line 40
+    invoke-interface {v0}, LrH9;->get()Ljava/lang/Object;
+
+    .line 41
+    .line 42
+    .line 43
+    move-result-object v0
+
+    .line 44
+    check-cast v0, LVY0;
+
+    .line 45
+    .line 46
+    sget-object v5, LV39;->Z:LV39;
+
+    .line 47
+    .line 48
+    check-cast v0, Lol5;
+
+    .line 49
+    .line 50
+    invoke-virtual {v0, v5}, Lol5;->a(Lan0;)LhJe;
+
+    .line 51
+    .line 52
+    .line 53
+    move-result-object v0
+
+    .line 54
+    move v5, v3
+
+    .line 55
+    new-instance v3, LmS;
+
+    .line 56
+    .line 57
+    invoke-direct {v3, v0, v4}, LmS;-><init>(LhJe;LF06;)V
+
+    .line 58
+    .line 59
+    .line 60
+    new-instance v4, LnS;
+
+    .line 61
+    .line 62
+    invoke-direct {v4, v6}, LnS;-><init>(LBre;)V
+
+    .line 63
+    .line 64
+    .line 65
+    new-instance v0, LdQ1;
+
+    .line 66
+    .line 67
+    const/16 v8, 0xc
+
+    .line 68
+    .line 69
+    invoke-direct {v0, v8}, LdQ1;-><init>(I)V
+
+    .line 70
+    .line 71
+    .line 72
+    const-wide/high16 v8, 0x3fe8000000000000L    # 0.75
+
+    .line 73
+    .line 74
+    int-to-double v10, v5
+
+    .line 75
+    mul-double v10, v10, v8
+
+    .line 76
+    .line 77
+    double-to-int v5, v10
+
+    .line 78
+    mul-int/lit8 v5, v5, 0x18
+
+    .line 79
+    .line 80
+    move v8, v5
+
+    .line 81
+    new-instance v5, Lz64;
+
+    .line 82
+    .line 83
+    new-instance v9, LkS;
+
+    .line 84
+    .line 85
+    const/4 v10, 0x0
+
+    .line 86
+    invoke-direct {v9, v8, v10}, LkS;-><init>(II)V
+
+    .line 87
+    .line 88
+    .line 89
+    invoke-direct {v5, v0, v9, v3}, Lz64;-><init>(LdQ1;LkS;LmS;)V
+
+    .line 90
+    .line 91
+    .line 92
+    iput-object v5, v1, LqS;->c:Lz64;
+
+    .line 93
+    .line 94
+    new-instance v0, LlS;
+
+    .line 95
+    .line 96
+    invoke-direct/range {v0 .. v7}, LlS;-><init>(LqS;Lcom/snap/mushroom/app/MushroomApplication;LmS;LnS;Lz64;LBre;LfY4;)V
+
+    .line 97
+    .line 98
+    .line 99
+    return-object v0
+.end method

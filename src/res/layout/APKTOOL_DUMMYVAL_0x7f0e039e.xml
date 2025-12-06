@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.lenses.explorer.DefaultLensExplorerView android:theme="@style/APKTOOL_DUMMYVAL_0x7f1401d4" android:id="@null" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.lenses.explorer.categories.DefaultCategoriesView android:orientation="vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0bac" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ViewStub android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0bc0" android:inflatedId="@id/APKTOOL_DUMMYVAL_0x7f0b0bbf" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.snap.lenses.explorer.common.NestedRecyclerView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0bc4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:nestedScrollingEnabled="false" />
+        <ViewStub android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0baa" android:layout="@layout/APKTOOL_DUMMYVAL_0x7f0e0383" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.snap.lenses.explorer.categories.DefaultCategoriesView>
+    <com.snap.ui.view.LoadingSpinnerView android:layout_gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0bc2" android:visibility="gone" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f0708b0" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f0708b0" />
+    <ViewStub android:layout_gravity="bottom|center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0baf" android:inflatedId="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.snap.lenses.explorer.DefaultLensExplorerView>

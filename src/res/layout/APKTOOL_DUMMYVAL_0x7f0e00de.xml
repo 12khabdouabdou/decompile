@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="start" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0493" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.imageloading.view.SnapImageView android:layout_gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1599" android:visibility="gone" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f07079a" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07079a" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:src="@drawable/sigicons_person_plus_sign_fill" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070508" />
+    <com.snap.messaging.chat.ui.viewbinding.SnapLabelNameView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b00f1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f07051a" style="@style/APKTOOL_DUMMYVAL_0x7f14051f" />
+</LinearLayout>

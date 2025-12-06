@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f07082f" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f07082f" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07082e"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.component.button.SnapButtonView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0af2" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070829" android:elevation="@dimen/APKTOOL_DUMMYVAL_0x7f070824" app:APKTOOL_DUMMYVAL_0x7f0402cc="0" app:APKTOOL_DUMMYVAL_0x7f0402d2="0" app:APKTOOL_DUMMYVAL_0x7f0402e9="0" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070828" app:APKTOOL_DUMMYVAL_0x7f0402cc="0" app:APKTOOL_DUMMYVAL_0x7f0402d2="0" app:APKTOOL_DUMMYVAL_0x7f0402e9="0">
+        <ImageView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0af1" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070827" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070827" android:tint="?APKTOOL_DUMMYVAL_0x7f0405b2" android:elevation="2.0dip" android:stateListAnimator="@animator/APKTOOL_DUMMYVAL_0x7f02001a" />
+        <ImageView android:layout_gravity="bottom|center|right" android:id="@null" android:padding="@dimen/APKTOOL_DUMMYVAL_0x7f070825" android:visibility="gone" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070826" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070826" android:elevation="@dimen/APKTOOL_DUMMYVAL_0x7f070824" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

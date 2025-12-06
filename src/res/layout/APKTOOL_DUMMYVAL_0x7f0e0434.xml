@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0d15" android:paddingTop="100.0dip" android:visibility="invisible" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f0713b0" android:layout_height="fill_parent" android:layout_alignParentRight="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="center_horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1962" android:background="@color/APKTOOL_DUMMYVAL_0x7f060330" android:clickable="false" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f0713b1" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:layout_alignParentRight="true" />
+    <FrameLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1961" android:layout_width="48.0dip" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <com.snap.maps.components.lib.zoomslider.ScalingZoomSliderIndicatorView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b07e7" android:clickable="false" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f07060f" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07060d" />
+</RelativeLayout>

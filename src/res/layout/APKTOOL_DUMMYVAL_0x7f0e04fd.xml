@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/APKTOOL_DUMMYVAL_0x7f070d25" android:paddingRight="@dimen/APKTOOL_DUMMYVAL_0x7f070d25" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.SnapFontTextView android:id="@null" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070d25" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/one_tap_login_account_manage_tray_title" style="@style/APKTOOL_DUMMYVAL_0x7f14059c" />
+    <com.snap.ui.view.SnapFontTextView android:id="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070d23" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070d23" android:text="@string/one_tap_login_account_manage_tray_description" style="@style/APKTOOL_DUMMYVAL_0x7f14059b" />
+    <LinearLayout android:background="@drawable/APKTOOL_DUMMYVAL_0x7f08057c" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070d23">
+        <com.snap.identity.loginsignup.ui.pages.onetaplogin.v2.AccountListView android:orientation="vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b003c" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.snap.component.button.SnapButtonView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b003d" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070d22" app:APKTOOL_DUMMYVAL_0x7f0400b0="60" app:APKTOOL_DUMMYVAL_0x7f0400b1="@string/action_menu_back" />
+</LinearLayout>

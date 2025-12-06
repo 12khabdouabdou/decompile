@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f0711b2" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070508"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.imageloading.view.SnapImageView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b172e" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f0711b3" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f0711b3" android:scaleType="fitCenter" />
+    <View android:background="@drawable/APKTOOL_DUMMYVAL_0x7f0808d1" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f0711b3" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f0711b3" />
+    <ImageView android:layout_gravity="center" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f0711b1" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f0711b1" android:src="@drawable/sigicons_music_note_stroke" android:tint="@color/APKTOOL_DUMMYVAL_0x7f060327" />
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@null" style="@style/APKTOOL_DUMMYVAL_0x7f1405f3"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.component.header.SnapSubscreenHeaderView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0dc7" android:layout_width="0.0dip" android:layout_height="wrap_content" app:APKTOOL_DUMMYVAL_0x7f0401bc="false" app:APKTOOL_DUMMYVAL_0x7f04023c="@android:color/transparent" app:APKTOOL_DUMMYVAL_0x7f040288="@string/input_field_search_hint" app:APKTOOL_DUMMYVAL_0x7f0402d2="0" app:APKTOOL_DUMMYVAL_0x7f0402e5="0" app:APKTOOL_DUMMYVAL_0x7f0402e9="0" app:APKTOOL_DUMMYVAL_0x7f04069d="" style="@style/APKTOOL_DUMMYVAL_0x7f1405fc" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" app:APKTOOL_DUMMYVAL_0x7f0402cc="0" app:APKTOOL_DUMMYVAL_0x7f0402e8="@id/APKTOOL_DUMMYVAL_0x7f0b0dc7">
+        <com.snap.memories.lib.grid.view.MemoriesGridPageRecyclerView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b17d9" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" android:splitMotionEvents="false" />
+        <com.snap.ui.view.scrollbar.SnapScrollBar android:gravity="bottom" android:layout_gravity="end" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b064f" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070ab5" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070ab5" android:visibility="invisible" android:clickable="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <ViewStub android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0dc6" android:visibility="gone" android:layout="@layout/APKTOOL_DUMMYVAL_0x7f0e047f" android:layout_width="fill_parent" android:layout_height="0.0dip" app:APKTOOL_DUMMYVAL_0x7f0402cc="0" app:APKTOOL_DUMMYVAL_0x7f0402e8="@id/APKTOOL_DUMMYVAL_0x7f0b0dc7" />
+</androidx.constraintlayout.widget.ConstraintLayout>

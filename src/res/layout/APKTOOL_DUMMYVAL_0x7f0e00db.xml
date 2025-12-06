@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b048c" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageButton android:id="@id/APKTOOL_DUMMYVAL_0x7f0b07cf" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f0801c9" android:focusable="true" android:clickable="true" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f080c34" android:tint="@color/APKTOOL_DUMMYVAL_0x7f060219" style="@style/APKTOOL_DUMMYVAL_0x7f14052b" />
+    <androidx.appcompat.widget.AppCompatImageButton android:id="@id/APKTOOL_DUMMYVAL_0x7f0b07d0" android:focusable="true" android:clickable="true" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f08013f" style="@style/APKTOOL_DUMMYVAL_0x7f14052b" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@null" android:background="?APKTOOL_DUMMYVAL_0x7f0404b8" style="@style/APKTOOL_DUMMYVAL_0x7f1405f3"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b124a" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070511" style="@style/APKTOOL_DUMMYVAL_0x7f14060e" />
+    <com.snap.component.header.SnapSubscreenHeaderView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b13ec" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070bf1" custom:APKTOOL_DUMMYVAL_0x7f040288="@string/input_field_search_hint" custom:APKTOOL_DUMMYVAL_0x7f04069d="@string/country_code_filter_hint" style="@style/APKTOOL_DUMMYVAL_0x7f1405fe" />
+    <com.snap.component.scrollbar.SnapIndexScrollbar android:layout_gravity="end|center|top" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0a58" style="@style/APKTOOL_DUMMYVAL_0x7f140562" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

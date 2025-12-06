@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:focusable="true" android:clickable="true" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.commerce.lib.views.ProductInfoImagesView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b119b" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1197" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070519" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070519" android:layout_alignParentStart="true">
+        <ImageView android:layout_gravity="center" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f0703a1" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f0703a1" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070513" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f0804b2" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f07050f" />
+    </RelativeLayout>
+    <com.snap.commerce.lib.views.CartButton android:id="@id/APKTOOL_DUMMYVAL_0x7f0b04f9" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f0703a2" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f0703a2" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" />
+    <com.snap.commerce.lib.views.ProductCardLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1185" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <com.snap.commerce.lib.views.CartCheckoutReview android:id="@id/APKTOOL_DUMMYVAL_0x7f0b04fd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <FrameLayout android:id="@null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" />
+</RelativeLayout>

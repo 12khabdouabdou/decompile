@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110000">
+        <item quantity="other">已选中 %d 项</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110001">
+        <item quantity="other">隐藏 Snap（只许我看）</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110002">
+        <item quantity="other">%d 小时</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110003">
+        <item quantity="other">已选中 %d 条 Snap</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110004">
+        <item quantity="other">取消隐藏 Snap</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110009">
+        <item quantity="other">%1$s 个 Snapchatter 已加你好友！</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11000a">
+        <item quantity="other">%1$s 个好友推荐！</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11000c">
+        <item quantity="other">添加 %d 位好友</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11000d">
+        <item quantity="other">启用拼接 Snap 后一次最多可拍摄 %1$d 条 Snap！</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11000e">
+        <item quantity="other">确定要关闭拼接 Snap 吗？你有 %1$d 条未保存的 Snap 将丢失。</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11000f">
+        <item quantity="other">%1$s 和 %2$s 保存了来自 %4$s 的 %3$d 张照片</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110010">
+        <item quantity="other">%1$s 和 %2$s 保存了你发送的 %3$d 张照片</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110011">
+        <item quantity="other">%1$s 和 %2$s 保存了来自 %4$s 的 %3$d 项内容</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110012">
+        <item quantity="other">%1$s 和 %2$s 保存了你发送的 %3$d 项内容</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110013">
+        <item quantity="other">%1$s 和 %2$s 保存了来自 %4$s 的 %3$d 条视频</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110014">
+        <item quantity="other">%1$s 和 %2$s 保存了你发送的 %3$d 个视频</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110015">
+        <item quantity="other">你和 %1$s 保存了来自 %3$s 的 %2$d 张照片</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110016">
+        <item quantity="other">你和 %1$s 保存了来自 %3$s 的 %2$d 项内容</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110017">
+        <item quantity="other">你和 %1$s 保存了来自 %3$s 的 %2$d 条视频</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110018">
+        <item quantity="other">%1$s、%2$s 保存了来自 %4$s 的 %3$d 张照片</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110019">
+        <item quantity="other">%1$s 和 %2$s 保存了你发送的 %3$d 张照片</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11001a">
+        <item quantity="other">%1$s、%2$s 保存了来自 %4$s 的 %3$d 项内容</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11001b">
+        <item quantity="other">%1$s、%2$s 保存了你发送的 %3$d 项内容</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11001c">
+        <item quantity="other">%1$s、%2$s 保存了来自 %4$s 的 %3$d 条视频</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11001d">
+        <item quantity="other">%1$s、%2$s 保存了你发送的 %3$d 条视频</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11001e">
+        <item quantity="other">你、%1$s 和 %2$s 保存了来自 %4$s 的 %3$d 张照片</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11001f">
+        <item quantity="other">你、%1$s 和 %2$s 保存了来自 %4$s 的 %3$d 项内容</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110020">
+        <item quantity="other">你、%1$s 和 %2$s 保存了来自 %4$s 的 %3$d 条视频</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110021">
+        <item quantity="other">%1$s 保存了来自 %3$s 的 %2$d 张照片</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110022">
+        <item quantity="other">%1$s 保存了你发送的 %2$d 张照片</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110023">
+        <item quantity="other">%1$s 保存了来自 %3$s 的 %2$d 项内容</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110024">
+        <item quantity="other">%1$s 保存了你发送的 %2$d 项内容</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110025">
+        <item quantity="other">%1$s 保存了来自 %3$s 的 %2$d 条视频</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110026">
+        <item quantity="other">%1$s 保存了你发送的 %2$d 条视频</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110027">
+        <item quantity="other">你保存了来自 %2$s 的 %1$d 张照片</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110028">
+        <item quantity="other">你保存了来自 %2$s 的 %1$d 项内容</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110029">
+        <item quantity="other">你保存了来自 %2$s 的 %1$d 条视频</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11002a">
+        <item quantity="other">你只可同时添加到 %1$d 个自定义故事</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11002b">
+        <item quantity="other">%1$d 英尺</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11002d">
+        <item quantity="other">%2$d 天后就是 %1$s 的生日了 🎂。送他 Snapchat+ 当作生日礼物</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11002e">
+        <item quantity="other">你的 Pixy 上有 %1$d 条 Snap。你希望重置设备并删除所有 Snap 和用户数据吗？</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11002f">
+        <item quantity="other">删除这些 Snap 会将它们从 Cheerio 的设备中删除。</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110030">
+        <item quantity="other">%d 条 Snap 已删除</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110032">
+        <item quantity="other">%d 条新 Snap</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110033">
+        <item quantity="other">%d 条新的 Snap。点击可导入。</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110034">
+        <item quantity="other">已导入 %d 条 Snap！</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11003a">
+        <item quantity="other">隐藏回复</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11003b">
+        <item quantity="other">显示 %s 条回复</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11003c">
+        <item quantity="other">%1$d 新</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11003d">
+        <item quantity="other">%1$d 待导入</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11003e">
+        <item quantity="other">%d 天</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11003f">
+        <item quantity="other">%d 天</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110040">
+        <item quantity="other">%d 天前</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110047">
+        <item quantity="other">更新于 %1$s 天前</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110048">
+        <item quantity="other">确定要放弃拼接 Snap 吗？你有 %1$d 条未保存的 Snap 将丢失。</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11004a">
+        <item quantity="other">保存 %1$d 条 snap 失败</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11004b">
+        <item quantity="other">添加 %d 位创作者</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11004c">
+        <item quantity="other">%d 英尺</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11004d">
+        <item quantity="other">%d 公里</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11004e">
+        <item quantity="other">%d 米</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11004f">
+        <item quantity="other">%d 英里</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110050">
+        <item quantity="other">发送 %1$s 条以上好友邀请！</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110051">
+        <item quantity="other">你的内容已成功添加至私密空间。是否从照片库中删除原始数据？</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110052">
+        <item quantity="other">你的照片已成功添加至私密空间。是否从照片库中删除原始照片？</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110053">
+        <item quantity="other">你的视频已成功添加至私密空间。是否从照片库中删除原始视频？</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110054">
+        <item quantity="other">删除原始档案</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110055">
+        <item quantity="other">"
+在 %1$d 分钟后重试。"</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110056">
+        <item quantity="other">%d 英尺</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110057">
+        <item quantity="other">%d 米</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110058">
+        <item quantity="other">%d 小时</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110059">
+        <item quantity="other">%d 小时</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11005a">
+        <item quantity="other">%d 小时</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11005b">
+        <item quantity="other">%d小时前</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110062">
+        <item quantity="other">更新于 %1$s 小时前</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110065">
+        <item quantity="other">%d 小时</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110066">
+        <item quantity="other">你将与当前在此群组中的好友共享实时位置。%d 位好友已经可以看到你的实时位置。</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110067">
+        <item quantity="other">%d 小时</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110069">
+        <item quantity="other">你将与当前在此群组中的好友共享实时位置。%d 位成员无法获得你的位置，因为你和他们不是好友。</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11006b">
+        <item quantity="other">%1$s、%2$s、%3$s 以及 %4$d 位好友在地图上！</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11006f">
+        <item quantity="other">%1$d 个好友正在共享</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110075">
+        <item quantity="other">%1$d 张 Snap（共 %2$d 张）已导出。%3$d 张 Snap 导出失败。</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110076">
+        <item quantity="other">正在导出 %1$d 张 Snap（共 %2$d 张）…</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110077">
+        <item quantity="other">你的 Snap 已导出！</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110078">
+        <item quantity="other">抱歉，一次只能选择 %d 项内容。</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110079">
+        <item quantity="other">将从你的设备中删除这些图片</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11007a">
+        <item quantity="other">将从你的设备中删除这些条目</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11007b">
+        <item quantity="other">将从你的设备中删除这些视频</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11007c">
+        <item quantity="other">删除回忆？</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11007d">
+        <item quantity="other">移除 Snap？</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11007e">
+        <item quantity="other">删除故事？</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11007f">
+        <item quantity="other">无法导出 Snap！</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110080">
+        <item quantity="other">%d 条 Snap 已添加到“故事收藏”！</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110081">
+        <item quantity="other">%d 条 Snap 已从“故事收藏”移除</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110082">
+        <item quantity="other">%1$d 年前</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110083">
+        <item quantity="other">%1$d 年前的今天</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110084">
+        <item quantity="other">%1$s，%2$d 年前</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110085">
+        <item quantity="other">%1$d 年前</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110086">
+        <item quantity="other">这些故事中的多条 Snap 仍将显示在新的“我的故事”页面里。你已创建或编辑的故事不会受到影响。</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110087">
+        <item quantity="other">移除 %d 个较早自动保存的故事？</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11008a">
+        <item quantity="other">这将移除 %d 个较早自动保存的故事。</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11008b">
+        <item quantity="other">抱歉，一次只能选择 %d 条 Snap。</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11008c">
+        <item quantity="other">%1$d 已从 %2$s 导入 Snap</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11008d">
+        <item quantity="other">已导入 %d 条 Snap！</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11008e">
+        <item quantity="other">来自 %s 的新 Snap</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11008f">
+        <item quantity="other">正在导入 %1$d 张 Snap（共 %2$d 张）…</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110090">
+        <item quantity="other">%d 已选中</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110091">
+        <item quantity="other">%d 分钟</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110092">
+        <item quantity="other">%d 分</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110093">
+        <item quantity="other">%d 分钟前</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11009a">
+        <item quantity="other">更新于 %1$s 分钟前</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11009b">
+        <item quantity="other">%d 个月</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11009c">
+        <item quantity="other">%d 个月前</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100a3">
+        <item quantity="other">更新于 %1$s 月前</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100a7">
+        <item quantity="other">%1$d 条 Snap 尚未备份到回忆。如果现在退出，这些 Snap 将会丢失。</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100a8">
+        <item quantity="other">添加 %d 位好友</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100a9">
+        <item quantity="other">%d 小时</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100aa">
+        <item quantity="other">%d 分</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ab">
+        <item quantity="other">%1$s+ 另外 %2$d 人</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100b3">
+        <item quantity="other">你的 Pixy 上有 %d 条前一用户的 Snap。与此设备配对将重置设备并删除所有 Snap 和用户数据。</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100b4">
+        <item quantity="other">%d 项</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100b9">
+        <item quantity="other">%d 条新 Snap</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ba">
+        <item quantity="other">+ 添加 %d 位好友</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100bb">
+        <item quantity="other">已保存 %1$d 条 Snap！</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100bc">
+        <item quantity="other">%s 条 Snap</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100bd">
+        <item quantity="other">%d 秒</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100bf">
+        <item quantity="other">%d 秒前</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100c6">
+        <item quantity="other">更新于 %1$s 秒前</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100c7">
+        <item quantity="other">%1$d 个好友</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100c8">
+        <item quantity="other">%1$s 和另外 %2$d 人</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100c9">
+        <item quantity="other">我 %d 岁了。</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ca">
+        <item quantity="other">秒</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100cb">
+        <item quantity="other">%1$d 条 Snap</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100cc">
+        <item quantity="other">你想如何导出 Snap？</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100cd">
+        <item quantity="other">\"%d 条待处理的聚光灯评论！</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100cf">
+        <item quantity="other">"你已隐藏实时位置，但仍有 %1$s 位好友可以看到你的最后活动位置。
+
+你可以在地图设置中修改此设置。"</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d0">
+        <item quantity="other">你保存了位置设置，但仍有 %1$s 位好友可以看到你的实时位置。要停止共享，请点击他们名字旁边的“停止”。</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d3">
+        <item quantity="other">你现在处于隐身模式，但仍有 %1$s 位好友可以看到你的实时位置。要暂停共享，请点击下面的“隐藏我的实时位置”。</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d4">
+        <item quantity="other">%d 次浏览</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d5">
+        <item quantity="other">+ 另外 %1$d 人</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d6">
+        <item quantity="other">%1$s 和另外 %2$d 人…</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d7">
+        <item quantity="other">已验证 • %d 个成员</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d8">
+        <item quantity="other">%d 个成员</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d9">
+        <item quantity="other">%d 条 Snap 添加中 ...</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100da">
+        <item quantity="other">%d 条 Snap 添加失败</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100db">
+        <item quantity="other">%d 条 Snap 等待添加中...</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100df">
+        <item quantity="other">和 %d 位好友</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100e0">
+        <item quantity="other">%2$d 中的 %1$d 个新好友添加请求</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100e1">
+        <item quantity="other">场活动</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100e3">
+        <item quantity="other">%d 周</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100e4">
+        <item quantity="other">%d 周</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100e5">
+        <item quantity="other">%d 周前</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ec">
+        <item quantity="other">更新于 %1$s 周前</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ed">
+        <item quantity="other">%d 年</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ee">
+        <item quantity="other">%d 年前</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100f5">
+        <item quantity="other">更新于 %1$s 年前</item>
+    </plurals>
+</resources>

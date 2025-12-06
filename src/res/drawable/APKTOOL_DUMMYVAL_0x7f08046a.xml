@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="ring" android:thicknessRatio="@dimen/APKTOOL_DUMMYVAL_0x7f070999" android:useLevel="false" android:innerRadius="@dimen/APKTOOL_DUMMYVAL_0x7f070996"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/APKTOOL_DUMMYVAL_0x7f060327" />
+    <size android:height="@dimen/APKTOOL_DUMMYVAL_0x7f070998" android:width="@dimen/APKTOOL_DUMMYVAL_0x7f070998" />
+    <stroke android:width="@dimen/APKTOOL_DUMMYVAL_0x7f070997" android:color="@android:color/transparent" />
+</shape>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@null" android:layout_centerInParent="true" android:elevation="@dimen/APKTOOL_DUMMYVAL_0x7f071073" style="@style/APKTOOL_DUMMYVAL_0x7f140510">
+        <com.snap.component.button.SnapButtonView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f071300" android:gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b08e8" android:layout_width="wrap_content" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f0700d9" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070511" custom:APKTOOL_DUMMYVAL_0x7f0400b0="0" custom:APKTOOL_DUMMYVAL_0x7f0400b1="Force Set Primary" custom:APKTOOL_DUMMYVAL_0x7f04047c="1" custom:APKTOOL_DUMMYVAL_0x7f0406cb="true" />
+    </LinearLayout>
+</RelativeLayout>

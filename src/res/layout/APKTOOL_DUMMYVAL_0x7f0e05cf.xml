@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.ui.view.RoundedCornerAspectRatioFrameLayout android:id="@id/grid_frameable_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:APKTOOL_DUMMYVAL_0x7f040049="match_display"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.imageloading.view.SnapImageView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1608" android:background="?APKTOOL_DUMMYVAL_0x7f0404b7" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <ViewStub android:layout_gravity="end|center|top" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1637" android:layout="@layout/APKTOOL_DUMMYVAL_0x7f0e05cc" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070eb0" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070eb0" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070eaf" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070ead" />
+    <LinearLayout android:layout_gravity="start|bottom|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070ea9" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070eaa">
+        <ViewStub android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1636" android:layout="@layout/APKTOOL_DUMMYVAL_0x7f0e05c9" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070eab" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070eab" />
+        <ViewStub android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0190" android:layout="@layout/APKTOOL_DUMMYVAL_0x7f0e05ca" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ViewStub android:layout_gravity="start|center|top" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b19dd" android:visibility="gone" android:layout="@layout/APKTOOL_DUMMYVAL_0x7f0e05cb" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070eaf" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070eae" />
+</com.snap.ui.view.RoundedCornerAspectRatioFrameLayout>

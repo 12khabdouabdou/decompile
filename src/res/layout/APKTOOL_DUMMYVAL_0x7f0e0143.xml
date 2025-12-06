@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="start" android:orientation="horizontal" android:id="@null" android:paddingLeft="@dimen/APKTOOL_DUMMYVAL_0x7f0703e7" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f0703ee" android:paddingRight="@dimen/APKTOOL_DUMMYVAL_0x7f070063" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f0703e2" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b058f" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:id="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f080508" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f07014d" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f07014e" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="start|center" android:id="@null" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f07051a" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070518">
+            <com.snap.ui.view.SnapFontTextView android:textSize="?APKTOOL_DUMMYVAL_0x7f040706" android:ellipsize="end" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0598" android:maxLines="1" android:paddingStart="@dimen/APKTOOL_DUMMYVAL_0x7f07051a" android:paddingEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070508" style="@style/APKTOOL_DUMMYVAL_0x7f140536" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0594" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f07130a" android:ellipsize="end" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b059b" android:paddingLeft="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:paddingRight="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f0703ec" android:maxLines="1" android:includeFontPadding="false" style="@style/APKTOOL_DUMMYVAL_0x7f140535" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0678" android:paddingLeft="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:paddingRight="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f0703ec">
+            <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f07130a" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b059c" android:includeFontPadding="false" android:drawablePadding="@dimen/APKTOOL_DUMMYVAL_0x7f07051a" style="@style/APKTOOL_DUMMYVAL_0x7f140535" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.component.cards.SnapCardView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0e93" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/send_to_no_groups" android:paddingStart="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:paddingEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070511" style="@style/APKTOOL_DUMMYVAL_0x7f140374" />
+</com.snap.component.cards.SnapCardView>

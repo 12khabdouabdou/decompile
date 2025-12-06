@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.SnapLinkFriendlyTextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f071312" android:textColor="?APKTOOL_DUMMYVAL_0x7f0405b2" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b15a6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:textAlignment="textStart" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070514" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070514" />
+    <com.snap.identity.loginsignup.ui.view.NgoInputSubtextView android:gravity="center_vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b15a7" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070514" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070514" custom:APKTOOL_DUMMYVAL_0x7f040264="@drawable/APKTOOL_DUMMYVAL_0x7f080084" custom:APKTOOL_DUMMYVAL_0x7f04066d="@string/signup_tos_pp_info_button_text" />
+</LinearLayout>

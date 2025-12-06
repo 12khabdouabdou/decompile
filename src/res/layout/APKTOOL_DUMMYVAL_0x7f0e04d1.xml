@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.ui.view.SnapFontTextView android:gravity="center_vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0e64" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070c13" android:textDirection="locale" android:paddingStart="@dimen/APKTOOL_DUMMYVAL_0x7f070081" style="@style/APKTOOL_DUMMYVAL_0x7f140340"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

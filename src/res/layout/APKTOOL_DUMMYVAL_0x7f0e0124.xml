@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b04e3" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.component.input.SnapSearchInputView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b178a" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/APKTOOL_DUMMYVAL_0x7f070373" android:layout_weight="1.0" />
+    <com.snap.component.button.SnapButtonView android:textStyle="bold" android:gravity="center" android:layout_gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1789" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="0.0" app:APKTOOL_DUMMYVAL_0x7f0400b0="24" app:APKTOOL_DUMMYVAL_0x7f0400b1="@string/chat_sticker_search_input_bar" />
+</LinearLayout>

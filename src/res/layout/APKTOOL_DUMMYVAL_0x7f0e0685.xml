@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0729" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070511"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@null" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f07051b" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f07051b" android:text="@string/settings_data_saver_header" app:APKTOOL_DUMMYVAL_0x7f0402e5="0" app:APKTOOL_DUMMYVAL_0x7f0402e9="0" style="@style/APKTOOL_DUMMYVAL_0x7f14058e" />
+    <TextView android:id="@null" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f07051b" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f07051b" android:layout_width="0.0dip" android:text="@string/settings_data_saver_sub_header" android:paddingEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070508" app:APKTOOL_DUMMYVAL_0x7f0402d3="@id/APKTOOL_DUMMYVAL_0x7f0b0726" app:APKTOOL_DUMMYVAL_0x7f0402e5="0" app:APKTOOL_DUMMYVAL_0x7f0402e8="@null" style="@style/APKTOOL_DUMMYVAL_0x7f140592" />
+    <CheckBox android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0726" app:APKTOOL_DUMMYVAL_0x7f0402cc="0" app:APKTOOL_DUMMYVAL_0x7f0402d2="0" app:APKTOOL_DUMMYVAL_0x7f0402e4="@null" app:APKTOOL_DUMMYVAL_0x7f0402e9="0" style="@style/APKTOOL_DUMMYVAL_0x7f14058b" />
+</androidx.constraintlayout.widget.ConstraintLayout>

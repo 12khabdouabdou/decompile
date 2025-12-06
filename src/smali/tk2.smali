@@ -1,0 +1,125 @@
+.class public final Ltk2;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lobi;
+
+
+# instance fields
+.field public final a:LR32;
+
+.field public final b:LaA8;
+
+.field public c:Z
+
+
+# direct methods
+.method public constructor <init>(LR32;LaA8;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Ltk2;->a:LR32;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, Ltk2;->b:LaA8;
+
+    .line 7
+    .line 8
+    const/4 p1, 0x0
+
+    .line 9
+    iput-boolean p1, p0, Ltk2;->c:Z
+
+    .line 10
+    .line 11
+    return-void
+.end method
+
+
+# virtual methods
+.method public final get()Ljava/lang/Object;
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Ltk2;->a:LR32;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LR32;->get()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Ljava/lang/Boolean;
+
+    .line 8
+    .line 9
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 10
+    .line 11
+    .line 12
+    move-result v0
+
+    .line 13
+    if-eqz v0, :cond_0
+
+    .line 14
+    .line 15
+    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    .line 16
+    .line 17
+    return-object v0
+
+    .line 18
+    :cond_0
+    iget-boolean v0, p0, Ltk2;->c:Z
+
+    .line 19
+    .line 20
+    if-nez v0, :cond_1
+
+    .line 21
+    .line 22
+    sget-object v0, LA02;->O0:LA02;
+
+    .line 23
+    .line 24
+    const-wide/16 v1, 0x1
+
+    .line 25
+    .line 26
+    iget-object v3, p0, Ltk2;->b:LaA8;
+
+    .line 27
+    .line 28
+    invoke-interface {v3, v0, v1, v2}, LaA8;->h(LcTb;J)V
+
+    .line 29
+    .line 30
+    .line 31
+    const/4 v0, 0x1
+
+    .line 32
+    iput-boolean v0, p0, Ltk2;->c:Z
+
+    .line 33
+    .line 34
+    :cond_1
+    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    .line 35
+    .line 36
+    return-object v0
+.end method

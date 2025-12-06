@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1a81" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layoutDirection="locale"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1a78" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.snap.imageloading.view.SnapImageView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1a7f" android:layout_width="wrap_content" android:layout_height="20.0dip" android:scaleType="centerInside" android:tint="?APKTOOL_DUMMYVAL_0x7f0405b2" />
+        <com.snap.ui.view.SnapFontTextView android:textColor="?APKTOOL_DUMMYVAL_0x7f0405b2" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1a80" android:paddingLeft="3.0dip" android:paddingTop="1.0dip" android:paddingRight="3.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:APKTOOL_DUMMYVAL_0x7f04047c="1" style="@style/APKTOOL_DUMMYVAL_0x7f140574" />
+    </LinearLayout>
+    <com.snap.ui.view.SnapFontTextView android:textColor="?APKTOOL_DUMMYVAL_0x7f0405b2" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0795" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="| " style="@style/APKTOOL_DUMMYVAL_0x7f140573" />
+    <com.snap.ui.view.SnapFontTextView android:textColor="?APKTOOL_DUMMYVAL_0x7f0405b2" android:layout_gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1901" android:paddingTop="1.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="3.0dip" android:paddingEnd="2.0dip" custom:APKTOOL_DUMMYVAL_0x7f04047c="1" style="@style/APKTOOL_DUMMYVAL_0x7f140574" />
+</LinearLayout>

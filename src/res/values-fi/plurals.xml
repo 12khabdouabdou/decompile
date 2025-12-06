@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110000">
+        <item quantity="other">%d kohdetta valittu</item>
+        <item quantity="one">%d kohde valittu</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110001">
+        <item quantity="other">Piilota Snapit (Vain minun silmilleni)</item>
+        <item quantity="one">@string/memories_opera_action_menu_hide</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110002">
+        <item quantity="other">%d tunniksi</item>
+        <item quantity="one">%d tunniksi</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110003">
+        <item quantity="other">%d Snappia valittu</item>
+        <item quantity="one">%d Snap valittu</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110004">
+        <item quantity="other">Kumoa Snappien piilotus</item>
+        <item quantity="one">@string/memories_opera_action_menu_unhide</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110009">
+        <item quantity="other">%1$s Snapchattaajaa lisäsi sinut</item>
+        <item quantity="one">%1$s Snapchattaaja lisäsi sinut</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11000a">
+        <item quantity="other">%1$s kaveriehdotusta!</item>
+        <item quantity="one">%1$s kaveriehdotus!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11000c">
+        <item quantity="other">Lisää %d kaveria</item>
+        <item quantity="one">Lisää %d kaveri</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11000d">
+        <item quantity="other">Multi-Snapilla voi tallentaa jopa %1$d Snappia kerrallaan!</item>
+        <item quantity="one">Multi-Snapilla voi tallentaa jopa %1$d Snapin kerrallaan!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11000e">
+        <item quantity="other">Haluatko varmasti hylätä Multi-Snapin? Tallentamattomat %1$d Snappia menetetään.</item>
+        <item quantity="one">Haluatko varmasti hylätä Multi-Snapin? Tallentamaton Snap menetetään.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11000f">
+        <item quantity="other">%1$s JA %2$s TALLENSIVAT %3$d KUVAA KÄYTTÄJÄLTÄ %4$s</item>
+        <item quantity="one">%1$s JA %2$s TALLENSIVAT KÄYTTÄJÄN %4$s KUVAN</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110010">
+        <item quantity="other">%1$s JA %2$s TALLENSIVAT %3$d LÄHETTÄMÄÄSI KUVAA</item>
+        <item quantity="one">%1$s JA %2$s TALLENSIVAT KUVASI</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110011">
+        <item quantity="other">%1$s JA %2$s TALLENSIVAT %3$d KOHDETTA KÄYTTÄJÄLTÄ %4$s</item>
+        <item quantity="one">%1$s JA %2$s TALLENSIVAT KOHTEEN KÄYTTÄJÄLTÄ %4$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110012">
+        <item quantity="other">%1$s JA %2$s TALLENSIVAT %3$d LÄHETTÄMÄÄSI KOHDETTA</item>
+        <item quantity="one">%1$s JA %2$s TALLENSIVAT KOHTEESI</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110013">
+        <item quantity="other">%1$s JA %2$s TALLENSIVAT %3$d VIDEOTA KÄYTTÄJÄLTÄ %4$s</item>
+        <item quantity="one">%1$s JA %2$s TALLENSIVAT KÄYTTÄJÄN %4$s VIDEON</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110014">
+        <item quantity="other">%1$s JA %2$s TALLENSIVAT %3$d LÄHETTÄMÄÄSI VIDEOTA</item>
+        <item quantity="one">%1$s JA %2$s TALLENSIVAT VIDEOSI</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110015">
+        <item quantity="other">SINÄ JA %1$s TALLENSITTE %2$d KUVAA LÄHTEESTÄ %3$s</item>
+        <item quantity="one">SINÄ JA %1$s TALLENSITTE KÄYTTÄJÄN %3$s KUVAN</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110016">
+        <item quantity="other">SINÄ JA %1$s TALLENSITTE %2$d KOHDETTA KÄYTTÄJÄLTÄ %3$s</item>
+        <item quantity="one">SINÄ JA %1$s TALLENSITTE KOHTEEN LÄHTEESTÄ %3$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110017">
+        <item quantity="other">SINÄ JA %1$s TALLENSITTE %2$d VIDEOTA LÄHTEESTÄ %3$s</item>
+        <item quantity="one">SINÄ JA %1$s TALLENSITTE VIDEON LÄHTEESTÄ %3$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110018">
+        <item quantity="other">%1$s JA %2$s TALLENSIVAT %3$d KUVAA KÄYTTÄJÄLTÄ %4$s</item>
+        <item quantity="one">%1$s JA %2$s TALLENSIVAT KÄYTTÄJÄN %4$s KUVAN</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110019">
+        <item quantity="other">%1$s JA %2$s TALLENSIVAT %3$d LÄHETTÄMÄÄSI KUVAA</item>
+        <item quantity="one">%1$s JA %2$s TALLENSIVAT KUVASI</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11001a">
+        <item quantity="other">%1$s JA %2$s TALLENSIVAT %3$d KOHDETTA KÄYTTÄJÄLTÄ %4$s</item>
+        <item quantity="one">%1$s JA %2$s TALLENSIVAT KOHTEEN KÄYTTÄJÄLTÄ %4$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11001b">
+        <item quantity="other">%1$s JA %2$s TALLENSIVAT %3$d LÄHETTÄMÄÄSI KOHDETTA</item>
+        <item quantity="one">%1$s JA %2$s TALLENSIVAT KOHTEESI</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11001c">
+        <item quantity="other">%1$s JA %2$s TALLENSIVAT %3$d VIDEOTA KÄYTTÄJÄLTÄ %4$s</item>
+        <item quantity="one">%1$s JA %2$s TALLENSIVAT KÄYTTÄJÄN %4$s VIDEON</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11001d">
+        <item quantity="other">%1$s JA %2$s TALLENSIVAT %3$d LÄHETTÄMÄÄSI VIDEOTA</item>
+        <item quantity="one">%1$s JA %2$s TALLENSIVAT VIDEOSI</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11001e">
+        <item quantity="other">SINÄ, %1$s JA %2$s TALLENSITTE %3$d KUVAA LÄHTEESTÄ %4$s</item>
+        <item quantity="one">SINÄ, %1$s JA %2$s TALLENSITTE KÄYTTÄJÄN %4$s KUVAN</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11001f">
+        <item quantity="other">SINÄ, %1$s JA %2$s TALLENSITTE %3$d KOHDETTA KÄYTTÄJÄLTÄ %4$s</item>
+        <item quantity="one">SINÄ, %1$s JA %2$s TALLENSITTE KOHTEEN LÄHTEESTÄ %4$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110020">
+        <item quantity="other">SINÄ, %1$s JA %2$s TALLENSITTE %3$d VIDEOTA LÄHTEESTÄ %4$s</item>
+        <item quantity="one">SINÄ, %1$s JA %2$s TALLENSITTE VIDEON LÄHTEESTÄ %4$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110021">
+        <item quantity="other">%1$s TALLENSI %2$d KUVAA KÄYTTÄJÄLTÄ %3$s</item>
+        <item quantity="one">%1$s TALLENSI KÄYTTÄJÄN %3$s KUVAN</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110022">
+        <item quantity="other">%1$s TALLENSI %2$d LÄHETTÄMÄÄSI KUVAA</item>
+        <item quantity="one">%1$s TALLENSI KUVASI</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110023">
+        <item quantity="other">%1$s TALLENSI %2$d KOHDETTA KÄYTTÄJÄLTÄ %3$s</item>
+        <item quantity="one">%1$s TALLENSI KÄYTTÄJÄN %3$s KOHTEEN</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110024">
+        <item quantity="other">%1$s TALLENSI %2$d LÄHETTÄMÄÄSI KOHDETTA</item>
+        <item quantity="one">%1$s TALLENSI KOHTEESI</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110025">
+        <item quantity="other">%1$s TALLENSI %2$d VIDEOTA KÄYTTÄJÄLTÄ %3$s</item>
+        <item quantity="one">%1$s TALLENSI KÄYTTÄJÄN %3$s VIDEON</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110026">
+        <item quantity="other">%1$s TALLENSI %2$d LÄHETTÄMÄÄSI VIDEOTA</item>
+        <item quantity="one">%1$s TALLENSI VIDEOSI</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110027">
+        <item quantity="other">TALLENSIT %1$d KUVAA LÄHTEESTÄ %2$s</item>
+        <item quantity="one">TALLENSIT KÄYTTÄJÄN %2$s KUVAN</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110028">
+        <item quantity="other">TALLENSIT %1$d KOHDETTA KÄYTTÄJÄLTÄ %2$s</item>
+        <item quantity="one">TALLENSIT KOHTEEN LÄHTEESTÄ %2$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110029">
+        <item quantity="other">TALLENSIT %1$d VIDEOTA LÄHTEESTÄ %2$s</item>
+        <item quantity="one">TALLENSIT VIDEON LÄHTEESTÄ %2$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11002a">
+        <item quantity="other">Voit lisätä sisältöä vain %1$d muokattuun tarinaan kerrallaan</item>
+        <item quantity="one">Voit lisätä sisältöä vain %1$d muokattuun tarinaan kerrallaan</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11002b">
+        <item quantity="other">%1$d ft.</item>
+        <item quantity="one">%1$d ft.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11002d">
+        <item quantity="other">Käyttäjän %1$s syntymäpäivä on %2$d päivän päästä 🎂 Lahjoita hänelle Snapchat+</item>
+        <item quantity="one">Käyttäjän %1$s syntymäpäivä on huomenna 🎂 Lahjoita hänelle Snapchat+</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11002e">
+        <item quantity="other">Pixyssä on %1$d Snappia. Haluatko myös nollata laitteen ja poistaa kaikki Snapit ja käyttäjätiedot?</item>
+        <item quantity="one">Pixyssä on Snap. Haluatko myös nollata laitteen ja poistaa kaikki Snapit ja käyttäjätiedot?</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11002f">
+        <item quantity="other">Kun poistat Snapit, ne poistetaan myös Cheerios-laitteeltasi.</item>
+        <item quantity="one">Kun poistat Snapin, se poistetaan myös Cheerios-laitteeltasi.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110030">
+        <item quantity="other">%d Snappia poistettu</item>
+        <item quantity="one">Snap poistettu</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110032">
+        <item quantity="other">%d uutta Snappia</item>
+        <item quantity="one">1 uusi Snap</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110033">
+        <item quantity="other">%d uutta Snappia. Tuo ne napauttamalla.</item>
+        <item quantity="one">1 uusi Snap. Tuo se napauttamalla.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110034">
+        <item quantity="other">%d Snappia tuotu</item>
+        <item quantity="one">%d Snap tuotu</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11003a">
+        <item quantity="other">Piilota vastaukset</item>
+        <item quantity="one">Piilota vastaus</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11003b">
+        <item quantity="other">Näytä %s vastausta</item>
+        <item quantity="one">Näytä yksi vastaus</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11003c">
+        <item quantity="other">%1$d uutta</item>
+        <item quantity="one">%1$d uusi</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11003d">
+        <item quantity="other">%1$d tuotavana</item>
+        <item quantity="one">%1$d tuotavana</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11003e">
+        <item quantity="other">%d päivää</item>
+        <item quantity="one">%d päivä</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11003f">
+        <item quantity="other">%d pv</item>
+        <item quantity="one">%d pv</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110040">
+        <item quantity="other">%d pv sitten</item>
+        <item quantity="one">%d pv sitten</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110047">
+        <item quantity="other">Päivitetty %1$s päivää sitten</item>
+        <item quantity="one">Päivitetty %1$s päivä sitten</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110048">
+        <item quantity="other">Haluatko varmasti hylätä Multi-Snapin? Tallentamattomat %1$d Snappia menetetään.</item>
+        <item quantity="one">Haluatko varmasti hylätä Multi-Snapin? Tallentamaton Snap menetetään.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11004a">
+        <item quantity="other">%1$d Snapin tallennus epäonnistui</item>
+        <item quantity="one">%1$d Snapin tallennus epäonnistui</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11004b">
+        <item quantity="other">Lisää %d sisällöntuottajaa</item>
+        <item quantity="one">Lisää 1 sisällöntuottaja</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11004c">
+        <item quantity="other">%d ft.</item>
+        <item quantity="one">%d ft.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11004d">
+        <item quantity="other">%d km</item>
+        <item quantity="one">%d km</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11004e">
+        <item quantity="other">%d m</item>
+        <item quantity="one">%d m</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11004f">
+        <item quantity="other">%d mailia</item>
+        <item quantity="one">%d maili</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110050">
+        <item quantity="other">Lähetä vielä %1$s kaveripyyntöä!</item>
+        <item quantity="one">Lähetä vielä %1$s kaveripyyntö!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110051">
+        <item quantity="other">Sisällöt lisättiin Vain minun silmilleni -toimintoon. Haluatko poistaa alkuperäiset kamerasi rullasta?</item>
+        <item quantity="one">Sisällöt lisättiin Vain minun silmilleni -toimintoon. Haluatko poistaa alkuperäisen kamerasi rullasta?</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110052">
+        <item quantity="other">Kuvasi lisättiin Vain minun silmilleni -toimintoon. Haluatko poistaa alkuperäiset kamerasi rullasta?</item>
+        <item quantity="one">Kuvasi lisättiin Vain minun silmilleni -toimintoon. Haluatko poistaa alkuperäisen kamerasi rullasta?</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110053">
+        <item quantity="other">Videosi lisättiin Vain minun silmilleni -toimintoon. Haluatko poistaa alkuperäiset kamerasi rullasta?</item>
+        <item quantity="one">Videosi lisättiin Vain minun silmilleni -toimintoon. Haluatko poistaa alkuperäisen kamerasi rullasta?</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110054">
+        <item quantity="other">Poista alkuperäiset</item>
+        <item quantity="one">Poista alkuperäinen</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110055">
+        <item quantity="other">"
+Yritä uudelleen %1$d minuutin kuluttua."</item>
+        <item quantity="one">"
+Yritä uudelleen %1$d minuutin kuluttua."</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110056">
+        <item quantity="other">%d ft.</item>
+        <item quantity="one">%d ft.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110057">
+        <item quantity="other">%d m</item>
+        <item quantity="one">%d m</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110058">
+        <item quantity="other">%d tuntia</item>
+        <item quantity="one">%d tunti</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110059">
+        <item quantity="other">%d h</item>
+        <item quantity="one">%d h</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11005a">
+        <item quantity="other">%d h</item>
+        <item quantity="one">%d h</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11005b">
+        <item quantity="other">%d h sitten</item>
+        <item quantity="one">%d h sitten</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110062">
+        <item quantity="other">Päivitetty %1$s tuntia sitten</item>
+        <item quantity="one">Päivitetty %1$s tunti sitten</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110065">
+        <item quantity="other">%d tuntia</item>
+        <item quantity="one">%d tunti</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110066">
+        <item quantity="other">Jaat reaaliaikaisen sijaintisi tässä ryhmässä tällä hetkellä olevien kavereiden kanssa. %d kaveria näkee jo reaaliaikaisen sijaintisi.</item>
+        <item quantity="one">Jaat reaaliaikaisen sijaintisi tässä ryhmässä tällä hetkellä olevien kavereiden kanssa. %d kaveri näkee jo reaaliaikaisen sijaintisi.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110067">
+        <item quantity="other">%d tuntia</item>
+        <item quantity="one">%d tunti</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110069">
+        <item quantity="other">Jaat reaaliaikaisen sijaintisi tässä ryhmässä tällä hetkellä olevien kavereiden kanssa. %d jäsentä ei näe sijaintiasi, koska ette ole kavereita.</item>
+        <item quantity="one">Jaat reaaliaikaisen sijaintisi tässä ryhmässä tällä hetkellä olevien kavereiden kanssa. %d jäsen ei näe sijaintiasi, koska ette ole kavereita.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11006b">
+        <item quantity="other">%1$s, %2$s, %3$s ja %4$d muuta kaveriasi ovat kartalla!</item>
+        <item quantity="one">%1$s, %2$s, %3$s ja %4$d muu kaverisi ovat kartalla!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11006f">
+        <item quantity="other">%1$d kaveria jakaa</item>
+        <item quantity="one">%1$d kaveri jakaa</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110075">
+        <item quantity="other">Vienti onnistui %1$d/%2$d Snapin kohdalla. %3$d Snapin vienti epäonnistui.</item>
+        <item quantity="one">Vienti onnistui %1$d/%2$d Snapin kohdalla. %3$d Snapin vienti epäonnistui.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110076">
+        <item quantity="other">Viedään Snappia %1$d/%2$d…</item>
+        <item quantity="one">Viedään Snappia…</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110077">
+        <item quantity="other">Snappien vienti onnistui!</item>
+        <item quantity="one">Snapin vienti onnistui!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110078">
+        <item quantity="other">Vain %d kohdetta voidaan valita kerralla.</item>
+        <item quantity="one">Vain %d kohde voidaan valita kerralla.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110079">
+        <item quantity="other">Nämä kuvat poistetaan laitteestasi</item>
+        <item quantity="one">Tämä kuva poistetaan laitteestasi</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11007a">
+        <item quantity="other">Nämä kohteet poistetaan laitteestasi</item>
+        <item quantity="one">Tämä kohde poistetaan laitteestasi</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11007b">
+        <item quantity="other">Nämä videot poistetaan laitteestasi</item>
+        <item quantity="one">Tämä video poistetaan laitteestasi</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11007c">
+        <item quantity="other">Poistetaanko muistot?</item>
+        <item quantity="one">Poistetaanko muisto?</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11007d">
+        <item quantity="other">Poistetaanko Snapit?</item>
+        <item quantity="one">Poistetaanko Snap?</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11007e">
+        <item quantity="other">Poistetaanko tarinat?</item>
+        <item quantity="one">Poistetaanko tarina?</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11007f">
+        <item quantity="other">Snappien vienti epäonnistui.</item>
+        <item quantity="one">Snapin vienti epäonnistui.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110080">
+        <item quantity="other">%d Snappia lisätty Suosikit-tarinaan</item>
+        <item quantity="one">Snap lisätty Suosikit-tarinaan</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110081">
+        <item quantity="other">%d Snappia poistettu Suosikit-tarinasta</item>
+        <item quantity="one">Snap poistettu Suosikit-tarinasta</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110082">
+        <item quantity="other">%1$d vuotta sitten</item>
+        <item quantity="one">%1$d vuosi sitten</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110083">
+        <item quantity="other">%1$d vuotta sitten tänä päivänä</item>
+        <item quantity="one">%1$d vuosi sitten tänä päivänä</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110084">
+        <item quantity="other">%1$s, %2$d vuotta sitten</item>
+        <item quantity="one">%1$s, %2$d vuosi sitten</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110085">
+        <item quantity="other">Tapahtui %1$d vuotta sitten</item>
+        <item quantity="one">Tapahtui %1$d vuosi sitten</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110086">
+        <item quantity="other">Näiden tarinoiden Snapit säilyvät uudella Oma tarina -sivulla. Toiminto ei vaikuta luomiisi tai muokkaamiisi tarinoihin.</item>
+        <item quantity="one">Tämän tarinan Snapit säilyvät uudella Oma tarina -sivulla. Toiminto ei vaikuta luomiisi tai muokkaamiisi tarinoihin.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110087">
+        <item quantity="other">Poistetaanko %d vanhempaa automaattisesti tallennettua tarinaa?</item>
+        <item quantity="one">Poistetaanko %d vanhempi automaattisesti tallennettu tarina?</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11008a">
+        <item quantity="other">Tämä poistaa %d vanhempaa automaattisesti tallennettua tarinaa.</item>
+        <item quantity="one">Tämä poistaa %d vanhemman automaattisesti tallennetun tarinan.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11008b">
+        <item quantity="other">Vain %d Snappia voidaan valita kerralla.</item>
+        <item quantity="one">Vain %d Snap voidaan valita kerralla.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11008c">
+        <item quantity="other">%1$d Snappia tuotu käyttäjältä %2$s</item>
+        <item quantity="one">%1$d Snap tuotu käyttäjältä %2$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11008d">
+        <item quantity="other">%d Snappia tuotu!</item>
+        <item quantity="one">%d Snap tuotu!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11008e">
+        <item quantity="other">Uusia Snappeja käyttäjältä %s</item>
+        <item quantity="one">Uusi Snap käyttäjältä %s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11008f">
+        <item quantity="other">Tuodaan %1$d/%2$d Snappia…</item>
+        <item quantity="one">Tuodaan %1$d/%2$d Snappia…</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110090">
+        <item quantity="other">%d valittu</item>
+        <item quantity="one">%d valittu</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110091">
+        <item quantity="other">%d min</item>
+        <item quantity="one">%d min</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110092">
+        <item quantity="other">%d min</item>
+        <item quantity="one">%d min</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110093">
+        <item quantity="other">%d min sitten</item>
+        <item quantity="one">%d min sitten</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11009a">
+        <item quantity="other">Päivitetty %1$s minuuttia sitten</item>
+        <item quantity="one">Päivitetty %1$s minuutti sitten</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11009b">
+        <item quantity="other">%d kk</item>
+        <item quantity="one">%d kk</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11009c">
+        <item quantity="other">%d kk sitten</item>
+        <item quantity="one">%d kk sitten</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100a3">
+        <item quantity="other">Päivitetty %1$s kuukautta sitten</item>
+        <item quantity="one">Päivitetty %1$s kuukausi sitten</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100a7">
+        <item quantity="other">%1$d Snappia odottaa vielä varmuuskopiointia muistoihin. Jos kirjaudut ulos nyt, ne katoavat.</item>
+        <item quantity="one">Yksi Snap odottaa vielä varmuuskopiointia muistoihin. Jos kirjaudut ulos nyt, se katoaa.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100a8">
+        <item quantity="other">Lisää %d kaveria</item>
+        <item quantity="one">Lisää 1 kaveri</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100a9">
+        <item quantity="other">%d h</item>
+        <item quantity="one">%d h</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100aa">
+        <item quantity="other">%d min</item>
+        <item quantity="one">%d min</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ab">
+        <item quantity="other">%1$s ja %2$d muuta</item>
+        <item quantity="one">%1$s ja %2$d muu</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100b3">
+        <item quantity="other">Pixyssä on %d Snappia edelliseltä käyttäjältä. Parin muodostaminen tähän laitteeseen nollaa sen ja poistaa kaikki Snapit ja käyttäjätiedot.</item>
+        <item quantity="one">Pixyssä on 1 Snap edelliseltä käyttäjältä. Parin muodostaminen tähän laitteeseen nollaa sen ja poistaa kaikki Snapit ja käyttäjätiedot.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100b4">
+        <item quantity="other">%d tuotetta</item>
+        <item quantity="one">1 tuote</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100b9">
+        <item quantity="other">%d uutta Snappia</item>
+        <item quantity="one">%d uusi Snap</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ba">
+        <item quantity="other">+ Lisää %d kaveria</item>
+        <item quantity="one">+ Lisää 1 kaveri</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100bb">
+        <item quantity="other">%1$d Snappia tallennettu!</item>
+        <item quantity="one">%1$d Snap tallennettu!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100bc">
+        <item quantity="other">%s Snappia</item>
+        <item quantity="one">%s Snap</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100bd">
+        <item quantity="other">%d s</item>
+        <item quantity="one">%d s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100bf">
+        <item quantity="other">%d s sitten</item>
+        <item quantity="one">%d s sitten</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100c6">
+        <item quantity="other">Päivitetty %1$s sekuntia sitten</item>
+        <item quantity="one">Päivitetty %1$s sekunti sitten</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100c7">
+        <item quantity="other">%1$d kaveria</item>
+        <item quantity="one">1 kaveri</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100c8">
+        <item quantity="other">%1$s ja %2$d muuta</item>
+        <item quantity="one">%1$s ja 1 muu</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100c9">
+        <item quantity="other">Olen %d-vuotias.</item>
+        <item quantity="one">Olen %d-vuotias.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ca">
+        <item quantity="other">sekuntia</item>
+        <item quantity="one">sekunti</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100cb">
+        <item quantity="other">%1$d Snappia</item>
+        <item quantity="one">%1$d Snap</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100cc">
+        <item quantity="other">Miten haluat viedä Snapit?</item>
+        <item quantity="one">Miten haluat viedä Snapin?</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100cd">
+        <item quantity="other">\"%d odottavaa valokeilakommenttia!</item>
+        <item quantity="one">1 odottava valokeilakommentti</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100cf">
+        <item quantity="other">"Reaaliaikainen sijaintisi on piilotettu, mutta %1$s kaveria voi silti nähdä viimeisimmän aktiivisen sijaintisi.
+
+ Voit muuttaa tätä Snap-kartan asetuksissa."</item>
+        <item quantity="one">"Reaaliaikainen sijaintisi on piilotettu, mutta %1$s kaveri voi silti nähdä viimeisimmän aktiivisen sijaintisi.
+
+ Voit muuttaa tätä Snap-kartan asetuksissa."</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d0">
+        <item quantity="other">%1$s kaveria näkee edelleen reaaliaikaisen sijaintisi, vaikka sijaintiasetuksesi onkin tallennettu. Lopeta jakaminen napauttamalla kaverin kohdalla Lopeta.</item>
+        <item quantity="one">%1$s kaveri näkee edelleen reaaliaikaisen sijaintisi, vaikka sijaintiasetuksesi onkin tallennettu. Lopeta jakaminen napauttamalla kaverin kohdalla Lopeta.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d3">
+        <item quantity="other">%1$s kaveria näkee edelleen reaaliaikaisen sijaintisi, vaikka oletkin haamutilassa. Lopeta jakaminen napauttamalla Piilota reaaliaikainen sijaintini alla.</item>
+        <item quantity="one">%1$s kaveri näkee edelleen reaaliaikaisen sijaintisi, vaikka oletkin haamutilassa. Lopeta jakaminen napauttamalla Piilota reaaliaikainen sijaintini alla.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d4">
+        <item quantity="other">%d katselukertaa</item>
+        <item quantity="one">%d katselukerta</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d5">
+        <item quantity="other">+ %1$d muuta</item>
+        <item quantity="one">+ %1$d muu</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d6">
+        <item quantity="other">%1$s ja %2$d muuta…</item>
+        <item quantity="one">%1$s ja %2$d muu…</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d7">
+        <item quantity="other">Vahvistettu • %d jäsentä</item>
+        <item quantity="one">Vahvistettu • %d jäsen</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d8">
+        <item quantity="other">%d jäsentä</item>
+        <item quantity="one">%d jäsen</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d9">
+        <item quantity="other">Lisätään %d Snappia…</item>
+        <item quantity="one">Lisätään %d Snap…</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100da">
+        <item quantity="other">%d Snapin lisääminen epäonnistui</item>
+        <item quantity="one">%d Snapin lisääminen epäonnistui</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100db">
+        <item quantity="other">%d Snappia odottaa lisäämistä...</item>
+        <item quantity="one">%d Snap odottaa lisäämistä...</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100df">
+        <item quantity="other">%d kaverin kanssa</item>
+        <item quantity="one">%d kaverin kanssa</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100e0">
+        <item quantity="other">%1$d/%2$d uusista kaveriehdotuksista</item>
+        <item quantity="one">%1$d/%2$d uusista kaveriehdotuksista</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100e1">
+        <item quantity="other">tapahtumaa</item>
+        <item quantity="one">tapahtuma</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100e3">
+        <item quantity="other">%d viikkoa</item>
+        <item quantity="one">%d viikko</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100e4">
+        <item quantity="other">%d vk</item>
+        <item quantity="one">%d vk</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100e5">
+        <item quantity="other">%d vk sitten</item>
+        <item quantity="one">%d vk sitten</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ec">
+        <item quantity="other">Päivitetty %1$s viikkoa sitten</item>
+        <item quantity="one">Päivitetty %1$s viikko sitten</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ed">
+        <item quantity="other">%d v</item>
+        <item quantity="one">%d v</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ee">
+        <item quantity="other">%d v sitten</item>
+        <item quantity="one">%d v sitten</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100f5">
+        <item quantity="other">Päivitetty %1$s vuotta sitten</item>
+        <item quantity="one">Päivitetty %1$s vuosi sitten</item>
+    </plurals>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@null" style="@style/APKTOOL_DUMMYVAL_0x7f1405f3"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.component.header.SnapSubscreenHeaderView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b13ec" android:layout_width="0.0dip" custom:APKTOOL_DUMMYVAL_0x7f0402d2="0" custom:APKTOOL_DUMMYVAL_0x7f0402e5="0" custom:APKTOOL_DUMMYVAL_0x7f0402e9="0" custom:APKTOOL_DUMMYVAL_0x7f0406af="@layout/APKTOOL_DUMMYVAL_0x7f0e0765" style="@style/APKTOOL_DUMMYVAL_0x7f1405f4" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b124a" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f0700a6" android:layout_width="0.0dip" android:layout_height="0.0dip" custom:APKTOOL_DUMMYVAL_0x7f0402cc="0" custom:APKTOOL_DUMMYVAL_0x7f0402d2="0" custom:APKTOOL_DUMMYVAL_0x7f0402e5="0" custom:APKTOOL_DUMMYVAL_0x7f0402e8="@id/APKTOOL_DUMMYVAL_0x7f0b13ec" style="@style/APKTOOL_DUMMYVAL_0x7f140506" />
+</androidx.constraintlayout.widget.ConstraintLayout>

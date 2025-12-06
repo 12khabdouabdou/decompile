@@ -1,0 +1,226 @@
+.class public final Ltge;
+.super LrE9;
+.source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function1;
+
+
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:LJce;
+
+.field public final synthetic c:Lle7;
+
+
+# direct methods
+.method public synthetic constructor <init>(LJce;Lle7;I)V
+    .locals 0
+
+    .line 1
+    iput p3, p0, Ltge;->a:I
+
+    iput-object p1, p0, Ltge;->b:LJce;
+
+    iput-object p2, p0, Ltge;->c:Lle7;
+
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, LrE9;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 8
+
+    .line 1
+    iget v0, p0, Ltge;->a:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    check-cast p1, Ljava/util/List;
+
+    .line 7
+    .line 8
+    iget-object v0, p0, Ltge;->b:LJce;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0}, LJce;->a()Li4d;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v1
+
+    .line 14
+    iget-object v3, v1, Li4d;->k:LFyd;
+
+    .line 15
+    .line 16
+    move-object v4, p1
+
+    .line 17
+    check-cast v4, Ljava/util/Collection;
+
+    .line 18
+    .line 19
+    iget-object p1, p0, Ltge;->c:Lle7;
+
+    .line 20
+    .line 21
+    invoke-static {p1}, LEBg;->c(Lle7;)Lme7;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v5
+
+    .line 25
+    new-instance v2, LXge;
+
+    .line 26
+    .line 27
+    new-instance v6, LXbd;
+
+    .line 28
+    .line 29
+    const/4 p1, 0x1
+
+    .line 30
+    const/16 v1, 0xf
+
+    .line 31
+    .line 32
+    invoke-direct {v6, p1, v1}, LXbd;-><init>(II)V
+
+    .line 33
+    .line 34
+    .line 35
+    const/4 v7, 0x1
+
+    .line 36
+    invoke-direct/range {v2 .. v7}, LXge;-><init>(LFyd;Ljava/util/Collection;Lme7;LrE9;I)V
+
+    .line 37
+    .line 38
+    .line 39
+    iget-object p1, v0, LJce;->c:Ljava/lang/Object;
+
+    .line 40
+    .line 41
+    check-cast p1, LUAg;
+
+    .line 42
+    .line 43
+    invoke-virtual {p1, v2}, LUAg;->f(LGre;)Ljava/util/List;
+
+    .line 44
+    .line 45
+    .line 46
+    move-result-object p1
+
+    .line 47
+    return-object p1
+
+    .line 48
+    :pswitch_0
+    check-cast p1, Ljava/util/List;
+
+    .line 49
+    .line 50
+    iget-object v0, p0, Ltge;->b:LJce;
+
+    .line 51
+    .line 52
+    invoke-virtual {v0}, LJce;->a()Li4d;
+
+    .line 53
+    .line 54
+    .line 55
+    move-result-object v1
+
+    .line 56
+    iget-object v3, v1, Li4d;->k:LFyd;
+
+    .line 57
+    .line 58
+    move-object v4, p1
+
+    .line 59
+    check-cast v4, Ljava/util/Collection;
+
+    .line 60
+    .line 61
+    iget-object p1, p0, Ltge;->c:Lle7;
+
+    .line 62
+    .line 63
+    invoke-static {p1}, LEBg;->c(Lle7;)Lme7;
+
+    .line 64
+    .line 65
+    .line 66
+    move-result-object v5
+
+    .line 67
+    new-instance v2, LXge;
+
+    .line 68
+    .line 69
+    new-instance v6, LZge;
+
+    .line 70
+    .line 71
+    const/4 p1, 0x0
+
+    .line 72
+    invoke-direct {v6, v3, p1}, LZge;-><init>(LFyd;I)V
+
+    .line 73
+    .line 74
+    .line 75
+    const/4 v7, 0x0
+
+    .line 76
+    invoke-direct/range {v2 .. v7}, LXge;-><init>(LFyd;Ljava/util/Collection;Lme7;LrE9;I)V
+
+    .line 77
+    .line 78
+    .line 79
+    iget-object p1, v0, LJce;->c:Ljava/lang/Object;
+
+    .line 80
+    .line 81
+    check-cast p1, LUAg;
+
+    .line 82
+    .line 83
+    invoke-virtual {p1, v2}, LUAg;->f(LGre;)Ljava/util/List;
+
+    .line 84
+    .line 85
+    .line 86
+    move-result-object p1
+
+    .line 87
+    return-object p1
+
+    .line 88
+    nop
+
+    .line 89
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method

@@ -1,0 +1,13 @@
+.class public final LMdi;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field public a:Ljava/lang/String;
+
+.field public b:LK79;
+
+.field public c:Ljava/util/LinkedHashMap;
+
+.field public d:Ljava/lang/ref/WeakReference;

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.messaging.chat.ui.view.SwipeableMessageLinearLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b04bf" android:clipChildren="false" android:clipToPadding="false" android:descendantFocusability="blocksDescendants" style="@style/APKTOOL_DUMMYVAL_0x7f14052d">
+        <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e0112" />
+        <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e0111" />
+        <LinearLayout android:orientation="vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b173f" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0a51" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@null" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f0804c3" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070331" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070329" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070329" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070332" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070333">
+                    <com.snap.ui.avatar.AvatarView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b11c4" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070363" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070363" app:APKTOOL_DUMMYVAL_0x7f0402cc="0" app:APKTOOL_DUMMYVAL_0x7f0402e5="0" app:APKTOOL_DUMMYVAL_0x7f0402e9="0" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b18a6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070362" app:APKTOOL_DUMMYVAL_0x7f0402cc="0" app:APKTOOL_DUMMYVAL_0x7f0402d2="@id/APKTOOL_DUMMYVAL_0x7f0b00f3" app:APKTOOL_DUMMYVAL_0x7f0402db="0.0" app:APKTOOL_DUMMYVAL_0x7f0402e4="@id/APKTOOL_DUMMYVAL_0x7f0b11c4" app:APKTOOL_DUMMYVAL_0x7f0402e9="0">
+                        <com.snap.ui.view.SnapFontTextView android:textSize="?APKTOOL_DUMMYVAL_0x7f040706" android:textColor="?APKTOOL_DUMMYVAL_0x7f0405b2" android:ellipsize="end" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0785" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
+                        <com.snap.ui.view.SnapFontTextView android:textSize="?APKTOOL_DUMMYVAL_0x7f0406fd" android:textColor="?APKTOOL_DUMMYVAL_0x7f0405b5" android:ellipsize="end" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b19ea" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:maxLines="1" android:includeFontPadding="false" />
+                    </LinearLayout>
+                    <com.snap.ui.view.LoadingSpinnerButtonView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b00f3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070508" app:APKTOOL_DUMMYVAL_0x7f0400d4="@color/APKTOOL_DUMMYVAL_0x7f060208" app:APKTOOL_DUMMYVAL_0x7f0400d5="@color/APKTOOL_DUMMYVAL_0x7f060208" app:APKTOOL_DUMMYVAL_0x7f0400da="@color/APKTOOL_DUMMYVAL_0x7f060327" app:APKTOOL_DUMMYVAL_0x7f0402cc="0" app:APKTOOL_DUMMYVAL_0x7f0402d2="0" app:APKTOOL_DUMMYVAL_0x7f0402db="1.0" app:APKTOOL_DUMMYVAL_0x7f0402e4="@id/APKTOOL_DUMMYVAL_0x7f0b18a6" app:APKTOOL_DUMMYVAL_0x7f0402e9="0" app:APKTOOL_DUMMYVAL_0x7f0406cd="@color/APKTOOL_DUMMYVAL_0x7f060327" app:APKTOOL_DUMMYVAL_0x7f0406ce="@color/APKTOOL_DUMMYVAL_0x7f06020a" app:APKTOOL_DUMMYVAL_0x7f0406d3="@color/APKTOOL_DUMMYVAL_0x7f060208" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </com.snap.messaging.chat.ui.view.SwipeableMessageLinearLayout>
+    <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e011b" />
+    <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e00d4" />
+</LinearLayout>

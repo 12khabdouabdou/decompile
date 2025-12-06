@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@null" android:background="?APKTOOL_DUMMYVAL_0x7f0404b8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e04d6" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:APKTOOL_DUMMYVAL_0x7f0402df="0" custom:APKTOOL_DUMMYVAL_0x7f0402e3="0" custom:APKTOOL_DUMMYVAL_0x7f0402e8="@id/APKTOOL_DUMMYVAL_0x7f0b1932">
+        <com.snap.identity.ui.view.ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+            <LinearLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b066a" style="@style/APKTOOL_DUMMYVAL_0x7f1401dc">
+                <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <com.snap.ui.view.SnapFontTextView android:id="@null" android:text="@string/signup_birthday_hint" style="@style/APKTOOL_DUMMYVAL_0x7f1401fc" />
+                <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0225" android:focusable="false" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070508" style="@style/APKTOOL_DUMMYVAL_0x7f1401fb" />
+                <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0228" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070508" style="@style/APKTOOL_DUMMYVAL_0x7f1401ff" />
+                <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0224" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/APKTOOL_DUMMYVAL_0x7f1401a6" />
+                <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e06bf" />
+                <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0" />
+                <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e06c0" />
+            </LinearLayout>
+        </com.snap.identity.ui.view.ScrollView>
+        <com.snap.identity.api.sharedui.ProgressButton android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0691" style="@style/APKTOOL_DUMMYVAL_0x7f1401d8" />
+        <DatePicker android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/birthday_date_picker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minDate="01/01/1900" android:maxDate="12/31/2100" android:calendarViewShown="false" android:datePickerMode="spinner" />
+        <RelativeLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b071f" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <NumberPicker android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0720" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:datePickerMode="spinner" />
+            <NumberPicker android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0721" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/APKTOOL_DUMMYVAL_0x7f070508" />
+            <NumberPicker android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0722" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/APKTOOL_DUMMYVAL_0x7f070508" />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

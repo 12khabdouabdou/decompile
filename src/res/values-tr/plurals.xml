@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110000">
+        <item quantity="other">%d Öge Seçildi</item>
+        <item quantity="one">%d Öge Seçildi</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110001">
+        <item quantity="other">"Snap'leri Gizle (Bana Özel)"</item>
+        <item quantity="one">@string/memories_opera_action_menu_hide</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110002">
+        <item quantity="other">%d saat boyunca</item>
+        <item quantity="one">%d saat boyunca</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110003">
+        <item quantity="other">%d Snap Seçildi</item>
+        <item quantity="one">%d Snap Seçildi</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110004">
+        <item quantity="other">"Snap'leri Göster"</item>
+        <item quantity="one">@string/memories_opera_action_menu_unhide</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110009">
+        <item quantity="other">%1$s Snapchat kullanıcısı seni ekledi!</item>
+        <item quantity="one">%1$s Snapchat kullanıcısı seni ekledi!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11000a">
+        <item quantity="other">%1$s arkadaş önerisi!</item>
+        <item quantity="one">%1$s arkadaş önerisi!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11000c">
+        <item quantity="other">%d Arkadaş Ekle</item>
+        <item quantity="one">%d Arkadaş Ekle</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11000d">
+        <item quantity="other">Çoklu Snap tek seferde en fazla %1$d Snap yakalayabilir!</item>
+        <item quantity="one">Çoklu Snap tek seferde en fazla %1$d Snap yakalayabilir!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11000e">
+        <item quantity="other">"Çoklu Snap'i kapatmak istediğinden emin misin? Kaydedilmemiş %1$d Snap'in silinecek."</item>
+        <item quantity="one">"Çoklu Snap'i kapatmak istediğinden emin misin? Kaydedilmemiş tüm Snap'lerin silinecek."</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11000f">
+        <item quantity="other">%1$s VE %2$s, %4$s ADLI KULLANICIDAN %3$d FOTOĞRAF KAYDETTİ</item>
+        <item quantity="one">%1$s VE %2$s, %4$s ADLI KULLANICIDAN BİR FOTOĞRAF KAYDETTİ</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110010">
+        <item quantity="other">%1$s VE %2$s GÖNDERDİĞİN %3$d FOTOĞRAFI KAYDETTİ</item>
+        <item quantity="one">%1$s VE %2$s SENİN FOTOĞRAFINI KAYDETTİ</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110011">
+        <item quantity="other">%1$s VE %2$s, %3$d ADLI KULLANICIDAN %4$s İÇERİK KAYDETTİ</item>
+        <item quantity="one">%1$s VE %2$s, %4$s ADLI KULLANICIDAN BİR İÇERİK KAYDETTİ</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110012">
+        <item quantity="other">%1$s VE %2$s GÖNDERDİĞİN %3$d İÇERİĞİ KAYDETTİ</item>
+        <item quantity="one">%1$s VE %2$s SENİN İÇERİĞİNİ KAYDETTİ</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110013">
+        <item quantity="other">%1$s VE %2$s, %4$s ADLI KULLANICIDAN %3$d VİDEO KAYDETTİ</item>
+        <item quantity="one">%1$s VE %2$s, %4$s ADLI KULLANICIDAN BİR VİDEO KAYDETTİ</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110014">
+        <item quantity="other">%1$s VE %2$s GÖNDERDİĞİN %3$d VİDEOYU KAYDETTİ</item>
+        <item quantity="one">%1$s VE %2$s VİDEONU KAYDETTİ</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110015">
+        <item quantity="other">SEN VE %1$s, %3$s ADLI KULLANICIDAN %2$d FOTOĞRAF KAYDETTİNİZ</item>
+        <item quantity="one">SEN VE %1$s, %3$s ADLI KULLANICIDAN BİR FOTOĞRAF KAYDETTİNİZ</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110016">
+        <item quantity="other">SEN VE %1$s, %2$d ADLI KULLANICIDAN %3$s İÇERİK KAYDETTİNİZ</item>
+        <item quantity="one">SEN VE %1$s, %3$s ADLI KULLANICIDAN BİR İÇERİK KAYDETTİNİZ</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110017">
+        <item quantity="other">SEN VE %1$s, %3$s ADLI KULLANICIDAN %2$d VİDEO KAYDETTİNİZ</item>
+        <item quantity="one">SEN VE %1$s, %3$s ADLI KULLANICIDAN BİR VİDEO KAYDETTİNİZ</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110018">
+        <item quantity="other">%1$s VE %2$s, %4$s ADLI KULLANICIDAN %3$d FOTOĞRAF KAYDETTİ</item>
+        <item quantity="one">%1$s VE %2$s, %4$s ADLI KULLANICIDAN BİR FOTOĞRAF KAYDETTİ</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110019">
+        <item quantity="other">%1$s VE %2$s GÖNDERDİĞİN %3$d FOTOĞRAFI KAYDETTİ</item>
+        <item quantity="one">%1$s VE %2$s SENİN FOTOĞRAFINI KAYDETTİ</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11001a">
+        <item quantity="other">%1$s VE %2$s, %4$s ADLI KULLANICIDAN %3$d ÖGE KAYDETTİ</item>
+        <item quantity="one">%1$s VE %2$s, %4$s ADLI KULLANICIDAN BİR ÖGE KAYDETTİ</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11001b">
+        <item quantity="other">%1$s VE %2$s GÖNDERDİĞİN %3$d ÖGEYİ KAYDETTİ</item>
+        <item quantity="one">%1$s VE %2$s SENİN ÖGENİ KAYDETTİ</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11001c">
+        <item quantity="other">%1$s VE %2$s, %4$s ADLI KULLANICIDAN %3$d VİDEO KAYDETTİ</item>
+        <item quantity="one">%1$s VE %2$s, %4$s ADLI KULLANICIDAN BİR VİDEO KAYDETTİ</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11001d">
+        <item quantity="other">%1$s VE %2$s GÖNDERDİĞİN %3$d VİDEOYU KAYDETTİ</item>
+        <item quantity="one">%1$s VE %2$s SENİN VİDEONU KAYDETTİ</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11001e">
+        <item quantity="other">SEN, %1$s VE %2$s, %4$s ADLI KULLANICIDAN %3$d FOTOĞRAF KAYDETTİNİZ</item>
+        <item quantity="one">SEN, %1$s VE %2$s, %4$s ADLI KULLANICIDAN BİR FOTOĞRAF KAYDETTİNİZ</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11001f">
+        <item quantity="other">SEN, %1$s VE %2$s, %4$s ADLI KULLANICIDAN %3$d ÖGE KAYDETTİNİZ</item>
+        <item quantity="one">SEN, %1$s VE %2$s, %4$s ADLI KULLANICIDAN BİR ÖGE KAYDETTİNİZ</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110020">
+        <item quantity="other">SEN, %1$s VE %2$s, %4$s ADLI KULLANICIDAN %3$d VİDEO KAYDETTİNİZ</item>
+        <item quantity="one">SEN, %1$s VE %2$s, %4$s ADLI KULLANICIDAN BİR VİDEO KAYDETTİNİZ</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110021">
+        <item quantity="other">%1$s, %3$s ADLI KULLANICIDAN %2$d FOTOĞRAF KAYDETTİ</item>
+        <item quantity="one">%1$s, %3$s ADLI KULLANICIDAN BİR FOTOĞRAF KAYDETTİ</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110022">
+        <item quantity="other">%1$s, GÖNDERDİĞİN %2$d FOTOĞRAFI KAYDETTİ</item>
+        <item quantity="one">%1$s SENİN FOTOĞRAFINI KAYDETTİ</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110023">
+        <item quantity="other">%1$s, %2$d ADLI KULLANICIDAN %3$s İÇERİK KAYDETTİ</item>
+        <item quantity="one">%1$s, ADLI KULLANICIDAN BİR İÇERİK KAYDETTİ%3$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110024">
+        <item quantity="other">%1$s, GÖNDERDİĞİN %2$d İÇERİĞİ KAYDETTİ</item>
+        <item quantity="one">%1$s SENİN İÇERİĞİNİ KAYDETTİ</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110025">
+        <item quantity="other">%1$s, %3$s ADLI KULLANICIDAN %2$d VİDEO KAYDETTİ</item>
+        <item quantity="one">%1$s, %3$s ADLI KULLANICIDAN BİR VİDEO KAYDETTİ</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110026">
+        <item quantity="other">%1$s, GÖNDERDİĞİN %2$d VİDEOYU KAYDETTİ</item>
+        <item quantity="one">%1$s SENİN VİDEONU KAYDETTİ</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110027">
+        <item quantity="other">%2$s ADLI KULLANICIDAN %1$d FOTOĞRAF KAYDETTİN</item>
+        <item quantity="one">%2$s ADLI KULLANICIDAN BİR FOTOĞRAF KAYDETTİN</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110028">
+        <item quantity="other">%1$d ADLI KULLANICIDAN %2$s İÇERİK KAYDETTİN</item>
+        <item quantity="one">%2$s ADLI KULLANICIDAN BİR İÇERİK KAYDETTİN</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110029">
+        <item quantity="other">%2$s ADLI KULLANICIDAN %1$d VİDEO KAYDETTİN</item>
+        <item quantity="one">%2$s ADLI KULLANICIDAN BİR VİDEO KAYDETTİN</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11002a">
+        <item quantity="other">Aynı anda en fazla %1$d Özel Hikayeye ekleme yapabilirsin</item>
+        <item quantity="one">Aynı anda en fazla %1$d Özel Hikayeye ekleme yapabilirsin</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11002b">
+        <item quantity="other">%1$d fit</item>
+        <item quantity="one">%1$d fit</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11002d">
+        <item quantity="other">%1$s adlı kullanıcının Doğum Günü %2$d gün sonra 🎂. Ona Snapchat+ hediye et</item>
+        <item quantity="one">%1$s adlı kullanıcının Doğum Günü yarın 🎂. Ona Snapchat+ hediye et</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11002e">
+        <item quantity="other">"Pixy cihazında %1$d Snap var. Ayrıca cihazı sıfırlamak ve tüm Snap'ler ile kullanıcı verilerini silmek istiyor musun?"</item>
+        <item quantity="one">"Pixy cihazında bir Snap var. Ayrıca cihazı sıfırlamak ve tüm Snap'ler ile kullanıcı verilerini silmek istiyor musun?"</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11002f">
+        <item quantity="other">"Bu Snap'leri silersen Snap'ler Cheerios cihazından kaldırılır."</item>
+        <item quantity="one">"Bu Snap'i silersen Snap Cheerios cihazından kaldırılır."</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110030">
+        <item quantity="other">%d Snap silindi</item>
+        <item quantity="one">Snap silindi</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110032">
+        <item quantity="other">%d Yeni Snap</item>
+        <item quantity="one">1 Yeni Snap</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110033">
+        <item quantity="other">%d Yeni Snap. İçeri Aktarmak için dokun.</item>
+        <item quantity="one">1 Yeni Snap. İçeri Aktarmak için dokun.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110034">
+        <item quantity="other">%d Snap içeri aktarıldı!</item>
+        <item quantity="one">%d Snap içeri aktarıldı!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11003a">
+        <item quantity="other">Yanıtları gizle</item>
+        <item quantity="one">Yanıtı gizle</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11003b">
+        <item quantity="other">%s yanıtı göster</item>
+        <item quantity="one">1 yanıtı göster</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11003c">
+        <item quantity="other">%1$d yeni</item>
+        <item quantity="one">%1$d yeni</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11003d">
+        <item quantity="other">%1$d tane İçeri Aktarılacak</item>
+        <item quantity="one">%1$d tane İçeri Aktarılacak</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11003e">
+        <item quantity="other">%d gün</item>
+        <item quantity="one">%d gün</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11003f">
+        <item quantity="other">%d gün</item>
+        <item quantity="one">%d gün</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110040">
+        <item quantity="other">%d gün önce</item>
+        <item quantity="one">%d gün önce</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110047">
+        <item quantity="other">%1$s gün önce güncellendi</item>
+        <item quantity="one">%1$s gün önce güncellendi</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110048">
+        <item quantity="other">"Çoklu Snap'ini silmek istediğinden emin misin? Kaydedilmemiş %1$d Snap'in silinecek."</item>
+        <item quantity="one">"Çoklu Snap'ini silmek istediğinden emin misin? Kaydedilmemiş tüm Snap'lerin silinecek."</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11004a">
+        <item quantity="other">%1$d Snap kaydedilemedi</item>
+        <item quantity="one">%1$d Snap kaydedilemedi</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11004b">
+        <item quantity="other">%d Oluşturucu Ekle</item>
+        <item quantity="one">1 Oluşturucu Ekle</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11004c">
+        <item quantity="other">%d fit</item>
+        <item quantity="one">%d fit</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11004d">
+        <item quantity="other">%d km</item>
+        <item quantity="one">%d km</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11004e">
+        <item quantity="other">%d m</item>
+        <item quantity="one">%d m</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11004f">
+        <item quantity="other">%d mil</item>
+        <item quantity="one">%d mil</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110050">
+        <item quantity="other">%1$s arkadaşlık isteği daha gönder!</item>
+        <item quantity="one">%1$s arkadaşlık isteği daha gönder!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110051">
+        <item quantity="other">"Ögelerin Bana Özel'e başarıyla eklendi. Film Rulosu'ndan orijinallerini silmek ister misin?"</item>
+        <item quantity="one">"Ögen Bana Özel'e başarıyla eklendi. Film Rulosu'ndan orijinalini silmek ister misin?"</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110052">
+        <item quantity="other">"Fotoğrafların Bana Özel'e başarıyla eklendi. Film Rulosu'ndan orijinallerini silmek ister misin?"</item>
+        <item quantity="one">"Fotoğrafın Bana Özel'e başarıyla eklendi. Film Rulosu'ndan orijinalini silmek ister misin?"</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110053">
+        <item quantity="other">"Videoların Bana Özel'e başarıyla eklendi. Film Rulosu'ndan orijinallerini silmek ister misin?"</item>
+        <item quantity="one">"Videon Bana Özel'e başarıyla eklendi. Film Rulosu'ndan orijinalini silmek ister misin?"</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110054">
+        <item quantity="other">Orijinali Sil</item>
+        <item quantity="one">Orijinali Sil</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110055">
+        <item quantity="other">"
+%1$d dakika sonra tekrar dene."</item>
+        <item quantity="one">"
+%1$d dakika sonra tekrar dene."</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110056">
+        <item quantity="other">%d fit</item>
+        <item quantity="one">%d fit</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110057">
+        <item quantity="other">%d m</item>
+        <item quantity="one">%d m</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110058">
+        <item quantity="other">%d saat</item>
+        <item quantity="one">%d saat</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110059">
+        <item quantity="other">%d sa</item>
+        <item quantity="one">%d sa</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11005a">
+        <item quantity="other">%d sa</item>
+        <item quantity="one">%d sa</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11005b">
+        <item quantity="other">%d sa önce</item>
+        <item quantity="one">%d sa önce</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110062">
+        <item quantity="other">%1$s saat önce güncellendi</item>
+        <item quantity="one">%1$s saat önce güncellendi</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110065">
+        <item quantity="other">%d saat</item>
+        <item quantity="one">%d saat</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110066">
+        <item quantity="other">Gerçek zamanlı konumunu şu anda bu grupta bulunan arkadaşlarınla paylaşacaksın. Canlı Konumunu %d arkadaşın zaten görebiliyor.</item>
+        <item quantity="one">Gerçek zamanlı konumunu şu anda bu grupta bulunan arkadaşlarınla paylaşacaksın. Canlı Konumunu %d arkadaşın zaten görebiliyor.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110067">
+        <item quantity="other">%d Saat</item>
+        <item quantity="one">%d Saat</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110069">
+        <item quantity="other">Canlı Konumunu şu anda bu grupta bulunan arkadaşlarınla paylaşacaksın. %d üye, onlarla arkadaş olmadığın için konumunu göremeyecek.</item>
+        <item quantity="one">Canlı Konumunu şu anda bu grupta bulunan arkadaşlarınla paylaşacaksın. %d üye, onunla arkadaş olmadığın için konumunu göremeyecek.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11006b">
+        <item quantity="other">%1$s, %2$s, %3$s ve %4$d arkadaşın Haritada!</item>
+        <item quantity="one">%1$s, %2$s, %3$s ve %4$d arkadaşın Haritada!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11006f">
+        <item quantity="other">%1$d arkadaşın paylaşıyor</item>
+        <item quantity="one">%1$d arkadaşın paylaşıyor</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110075">
+        <item quantity="other">%2$d Snap içinden %1$d tanesi dışarı aktarıldı. %3$d Snap dışarı aktarılamadı.</item>
+        <item quantity="one">%2$d Snap içinden %1$d tanesi dışarı aktarıldı. %3$d Snap dışarı aktarılamadı.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110076">
+        <item quantity="other">%2$d Snap içinden %1$d tanesi dışarı aktarılıyor…</item>
+        <item quantity="one">Snap Dışarı Aktarılıyor…</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110077">
+        <item quantity="other">"Snap'lerin dışarı aktarıldı!"</item>
+        <item quantity="one">"Snap'in dışarı aktarıldı!"</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110078">
+        <item quantity="other">Üzgünüz, aynı anda sadece %d öge seçilebilir.</item>
+        <item quantity="one">Üzgünüz, aynı anda sadece %d öge seçilebilir.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110079">
+        <item quantity="other">Bu resimler cihazından silinecek</item>
+        <item quantity="one">Bu resim cihazından silinecek</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11007a">
+        <item quantity="other">Bu ögeler cihazından silinecek</item>
+        <item quantity="one">Bu öge cihazından silinecek</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11007b">
+        <item quantity="other">Bu videolar cihazından silinecek</item>
+        <item quantity="one">Bu video cihazından silinecek</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11007c">
+        <item quantity="other">Anılar silinsin mi?</item>
+        <item quantity="one">Anı silinsin mi?</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11007d">
+        <item quantity="other">"Snap'ler kaldırılsın mı?"</item>
+        <item quantity="one">Snap kaldırılsın mı?</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11007e">
+        <item quantity="other">Hikayeler silinsin mi?</item>
+        <item quantity="one">Hikaye silinsin mi?</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11007f">
+        <item quantity="other">"Snap'ler Dışarı Aktarılamıyor!"</item>
+        <item quantity="one">Snap Dışarı Aktarılamıyor!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110080">
+        <item quantity="other">%d Snap En Sevilenler Hikayene eklendi</item>
+        <item quantity="one">Snap En Sevilenler Hikayene eklendi</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110081">
+        <item quantity="other">%d Snap En Sevilenler Hikayenden kaldırıldı</item>
+        <item quantity="one">Snap En Sevilenler Hikayenden kaldırıldı</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110082">
+        <item quantity="other">%1$d Yıl Önce</item>
+        <item quantity="one">%1$d Yıl Önce</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110083">
+        <item quantity="other">%1$d Yıl Önce, Bugün</item>
+        <item quantity="one">%1$d Yıl Önce, Bugün</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110084">
+        <item quantity="other">%1$s, %2$d Yıl Önce</item>
+        <item quantity="one">%1$s, %2$d Yıl Önce</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110085">
+        <item quantity="other">%1$d Yıl Öncesinden</item>
+        <item quantity="one">%1$d Yıl Öncesinden</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110086">
+        <item quantity="other">"Bu Hikayelerdeki Snap'leri yeni Hikayem Sayfanda görebileceksin. Oluşturduğun veya düzenlediğin Hikayeler bu işlemden etkilenmeyecek."</item>
+        <item quantity="one">"Bu Hikaye'deki Snap'leri yeni Hikayem Sayfanda görebileceksin. Oluşturduğun veya düzenlediğin Hikayeler bu işlemden etkilenmeyecek."</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110087">
+        <item quantity="other">Eskiden otomatik kaydedilmiş %d Hikaye kaldırılsın mı?</item>
+        <item quantity="one">Eskiden otomatik kaydedilmiş %d Hikaye kaldırılsın mı?</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11008a">
+        <item quantity="other">"Bu işlem eskiden otomatik kaydedilmiş %d Hikaye'yi kaldıracak."</item>
+        <item quantity="one">"Bu işlem eskiden otomatik kaydedilmiş %d Hikaye'yi kaldıracak."</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11008b">
+        <item quantity="other">Üzgünüz, aynı anda sadece %d Snap seçilebilir.</item>
+        <item quantity="one">Üzgünüz, aynı anda sadece %d Snap seçilebilir.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11008c">
+        <item quantity="other">%2$s adlı cihazdan %1$d Snap içeri aktarıldı</item>
+        <item quantity="one">%2$s adlı cihazdan %1$d Snap içeri aktarıldı</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11008d">
+        <item quantity="other">%d Snap İçeri Aktarıldı!</item>
+        <item quantity="one">%d Snap İçeri Aktarıldı!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11008e">
+        <item quantity="other">"%s adlı cihazdan Yeni Snap'ler"</item>
+        <item quantity="one">%s adlı cihazdan yeni Snap</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11008f">
+        <item quantity="other">"%2$d Snap'in %1$d tanesi içeri aktarılıyor..."</item>
+        <item quantity="one">"%2$d Snap'in %1$d tanesi içeri aktarılıyor..."</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110090">
+        <item quantity="other">Seçilen: %d</item>
+        <item quantity="one">Seçilen: %d</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110091">
+        <item quantity="other">%d dk</item>
+        <item quantity="one">%d dk</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110092">
+        <item quantity="other">%d dk</item>
+        <item quantity="one">%d dk</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110093">
+        <item quantity="other">%d dk önce</item>
+        <item quantity="one">%d dk önce</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11009a">
+        <item quantity="other">%1$s dakika önce güncellendi</item>
+        <item quantity="one">%1$s dakika önce güncellendi</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11009b">
+        <item quantity="other">%d ay</item>
+        <item quantity="one">%d ay</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11009c">
+        <item quantity="other">%d ay önce</item>
+        <item quantity="one">%d ay önce</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100a3">
+        <item quantity="other">%1$s ay önce güncellendi</item>
+        <item quantity="one">%1$s ay önce güncellendi</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100a7">
+        <item quantity="other">"Anılar'a yedeklenmesi tamamlanmayan %1$d Snap var. Eğer şimdi oturumu kapatırsan bu Snap'ler kaybolacak."</item>
+        <item quantity="one">"Anılar'a yedeklenmesi tamamlanmayan bir Snap var. Eğer şimdi oturumu kapatırsan bu Snap kaybolacak."</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100a8">
+        <item quantity="other">%d Arkadaşı Ekle</item>
+        <item quantity="one">1 Arkadaşı Ekle</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100a9">
+        <item quantity="other">%d sa</item>
+        <item quantity="one">%d sa</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100aa">
+        <item quantity="other">%d dk</item>
+        <item quantity="one">%d dk</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ab">
+        <item quantity="other">%1$s+%2$d kişi daha</item>
+        <item quantity="one">%1$s+%2$d kişi daha</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100b3">
+        <item quantity="other">"Pixy cihazında son kullanıcıdan kalmış %d Snap var. Bu cihazla eşleştirme yaptığında cihaz sıfırlanacak ve tüm Snap'ler ile kullanıcı verileri silinecek."</item>
+        <item quantity="one">"Pixy cihazında son kullanıcıdan kalmış 1 Snap var. Bu cihazla eşleştirme yaptığında cihaz sıfırlanacak ve tüm Snap'ler ile kullanıcı verileri silinecek."</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100b4">
+        <item quantity="other">%d adet</item>
+        <item quantity="one">1 adet</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100b9">
+        <item quantity="other">%d Yeni Snap</item>
+        <item quantity="one">%d Yeni Snap</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ba">
+        <item quantity="other">+ %d Arkadaş Ekle</item>
+        <item quantity="one">+ 1 Arkadaş Ekle</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100bb">
+        <item quantity="other">%1$d Snap kaydedildi!</item>
+        <item quantity="one">%1$d Snap kaydedildi!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100bc">
+        <item quantity="other">%s Snap</item>
+        <item quantity="one">%s Snap</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100bd">
+        <item quantity="other">%d sn</item>
+        <item quantity="one">%d sn</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100bf">
+        <item quantity="other">%d sn önce</item>
+        <item quantity="one">%d sn önce</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100c6">
+        <item quantity="other">%1$s saniye önce güncellendi</item>
+        <item quantity="one">%1$s saniye önce güncellendi</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100c7">
+        <item quantity="other">%1$d arkadaş</item>
+        <item quantity="one">1 arkadaş</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100c8">
+        <item quantity="other">%1$s ve %2$d kişi daha</item>
+        <item quantity="one">%1$s ve 1 kişi daha</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100c9">
+        <item quantity="other">%d yaşındayım.</item>
+        <item quantity="one">%d yaşındayım.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ca">
+        <item quantity="other">saniye</item>
+        <item quantity="one">saniye</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100cb">
+        <item quantity="other">%1$d Snap</item>
+        <item quantity="one">%1$d Snap</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100cc">
+        <item quantity="other">"Snap'lerinin dışarı nasıl aktarılmasını istersin?"</item>
+        <item quantity="one">"Snap'inin dışarı nasıl aktarılmasını istersin?"</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100cd">
+        <item quantity="other">\"Bekleyen %d Sahne Işığı yorumu!</item>
+        <item quantity="one">Bekleyen 1 Sahne Işığı yorumu!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100cf">
+        <item quantity="other">"Canlı Konumun gizli ama %1$s arkadaşın yine de Son Aktif Konumunu görebilir.
+
+ Bunu Harita Ayarları'ndan değiştirebilirsin."</item>
+        <item quantity="one">"Canlı Konumun gizli ama %1$s arkadaşın yine de Son Aktif Konumunu görebilir.
+
+ Bunu Harita Ayarları'ndan değiştirebilirsin."</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d0">
+        <item quantity="other">Konum ayarlarını kaydettin ama %1$s arkadaşın yine de Canlı Konumunu görebilir. Paylaşımı sonlandırmak için bu arkadaşlarının adlarının yanında görünen \"Durdur\" seçeneğine dokun.</item>
+        <item quantity="one">Konum ayarlarını kaydettin ama %1$s arkadaşın yine de Canlı Konumunu görebilir. Paylaşımı sonlandırmak için bu arkadaşının adının yanında görünen \"Durdur\" seçeneğine dokun.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d3">
+        <item quantity="other">"Hayalet Modu'ndasın ama %1$s arkadaşın yine de Canlı Konumunu görebilir. Paylaşımı sonlandırmak için aşağıdaki \"Canlı Konumumu Gizle\" seçeneğine dokun."</item>
+        <item quantity="one">"Hayalet Modu'ndasın ama %1$s arkadaşın yine de Canlı Konumunu görebilir. Paylaşımı sonlandırmak için aşağıdaki \"Canlı Konumumu Gizle\" seçeneğine dokun."</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d4">
+        <item quantity="other">%d Görüntüleme</item>
+        <item quantity="one">%d Görüntüleme</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d5">
+        <item quantity="other">+ %1$d kişi daha</item>
+        <item quantity="one">+ %1$d kişi daha</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d6">
+        <item quantity="other">%1$s ve %2$d kişi daha…</item>
+        <item quantity="one">%1$s ve %2$d kişi daha…</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d7">
+        <item quantity="other">Doğrulandı • %d Üye</item>
+        <item quantity="one">Doğrulandı • %d Üye</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d8">
+        <item quantity="other">%d Üye</item>
+        <item quantity="one">%d Üye</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d9">
+        <item quantity="other">%d Snap ekleniyor...</item>
+        <item quantity="one">%d Snap ekleniyor...</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100da">
+        <item quantity="other">%d Snap eklenemedi</item>
+        <item quantity="one">%d Snap eklenemedi</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100db">
+        <item quantity="other">"%d Snap'i eklemek için bekleniyor..."</item>
+        <item quantity="one">"%d Snap'i eklemek için bekleniyor..."</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100df">
+        <item quantity="other">%d Arkadaşımla</item>
+        <item quantity="one">%d Arkadaşımla</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100e0">
+        <item quantity="other">%1$d / %2$d Yeni Arkadaş Eklendi</item>
+        <item quantity="one">%1$d / %2$d Yeni Arkadaş Eklendi</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100e1">
+        <item quantity="other">etkinlik</item>
+        <item quantity="one">etkinlik</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100e3">
+        <item quantity="other">%d hafta</item>
+        <item quantity="one">%d hafta</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100e4">
+        <item quantity="other">%d hf</item>
+        <item quantity="one">%d hf</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100e5">
+        <item quantity="other">%d hf önce</item>
+        <item quantity="one">%d hf önce</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ec">
+        <item quantity="other">%1$s hafta önce güncellendi</item>
+        <item quantity="one">%1$s hafta önce güncellendi</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ed">
+        <item quantity="other">%d yıl</item>
+        <item quantity="one">%d yıl</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ee">
+        <item quantity="other">%d yıl önce</item>
+        <item quantity="one">%d yıl önce</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100f5">
+        <item quantity="other">%1$s yıl önce güncellendi</item>
+        <item quantity="one">%1$s yıl önce güncellendi</item>
+    </plurals>
+</resources>

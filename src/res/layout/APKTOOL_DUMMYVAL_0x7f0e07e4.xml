@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.component.button.SnapButtonView android:textColor="?APKTOOL_DUMMYVAL_0x7f0405b2" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1459" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" app:APKTOOL_DUMMYVAL_0x7f0400b0="6" app:APKTOOL_DUMMYVAL_0x7f040479="13.0sp" app:APKTOOL_DUMMYVAL_0x7f04047c="1" />
+    <com.snap.ui.view.SnapFontTextView android:textSize="?APKTOOL_DUMMYVAL_0x7f040700" android:textColor="?APKTOOL_DUMMYVAL_0x7f0405b2" android:textColorLink="@color/APKTOOL_DUMMYVAL_0x7f060208" android:gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b145a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+</merge>

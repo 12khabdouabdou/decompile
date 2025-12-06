@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?APKTOOL_DUMMYVAL_0x7f0404b8" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.component.header.SnapSubscreenHeaderView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b09c0" android:maxLines="2" custom:APKTOOL_DUMMYVAL_0x7f0401a0="@string/phone_verification_skip" custom:APKTOOL_DUMMYVAL_0x7f04023c="?APKTOOL_DUMMYVAL_0x7f0404b8" custom:APKTOOL_DUMMYVAL_0x7f04069d="@string/two_fa_settings_recovery_code_title" custom:APKTOOL_DUMMYVAL_0x7f0406af="@layout/APKTOOL_DUMMYVAL_0x7f0e0767" style="@style/APKTOOL_DUMMYVAL_0x7f140604" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070511">
+            <com.snap.ui.view.SnapFontTextView android:gravity="center_horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1517" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:text="@string/two_fa_enabled_settings_v2_recovery_code_sms_and_otp_explanation" style="@style/APKTOOL_DUMMYVAL_0x7f1401b4" />
+            <com.snap.imageloading.view.SnapImageView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1436" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+        </LinearLayout>
+    </ScrollView>
+    <com.snap.identity.ui.settings.shared.SettingsStatefulButton android:layout_gravity="bottom|center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0987" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070f10" custom:APKTOOL_DUMMYVAL_0x7f0400aa="@string/two_fa_settings_recovery_code_generate_button_text" />
+</LinearLayout>

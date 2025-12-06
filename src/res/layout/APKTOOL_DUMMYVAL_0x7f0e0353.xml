@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.lenses.carousel.DefaultCarouselItemView android:id="@null" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070855" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070855"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0aab" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f07084e" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07084e">
+        <View android:layout_gravity="center" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f0805ce" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f07084e" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07084e" />
+    </FrameLayout>
+    <com.snap.lenses.common.RoundedImageView android:layout_gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0aa9" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f08041f" android:scaleType="fitCenter" android:contentDescription="@null" />
+</com.snap.lenses.carousel.DefaultCarouselItemView>

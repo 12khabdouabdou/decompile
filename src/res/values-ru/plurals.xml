@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110000">
+        <item quantity="other">Выбрано %d объекта</item>
+        <item quantity="one">Выбран %d объект</item>
+        <item quantity="few">Выбрано %d объекта</item>
+        <item quantity="many">Выбрано %d объектов</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110001">
+        <item quantity="other">Скрыть Snap (Личное)</item>
+        <item quantity="one">@string/memories_opera_action_menu_hide</item>
+        <item quantity="few">Скрыть Snap (Личное)</item>
+        <item quantity="many">Скрыть Snap (Личное)</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110002">
+        <item quantity="other">На %d часа</item>
+        <item quantity="one">На %d час</item>
+        <item quantity="few">На %d часа</item>
+        <item quantity="many">На %d часов</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110003">
+        <item quantity="other">Выбрано %d Snap</item>
+        <item quantity="one">Выбран %d Snap</item>
+        <item quantity="few">Выбрано %d Snap</item>
+        <item quantity="many">Выбрано %d Snap</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110004">
+        <item quantity="other">Вернуть Snap</item>
+        <item quantity="one">@string/memories_opera_action_menu_unhide</item>
+        <item quantity="few">Вернуть Snap</item>
+        <item quantity="many">Вернуть Snap</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110009">
+        <item quantity="other">Вас добавили %1$s снапчаттеров!</item>
+        <item quantity="one">Вас добавил %1$s снапчаттер!</item>
+        <item quantity="few">Вас добавили %1$s снапчаттера!</item>
+        <item quantity="many">Вас добавили %1$s снапчаттеров!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11000a">
+        <item quantity="other">%1$s предложений дружбы!</item>
+        <item quantity="one">%1$s предложение дружбы!</item>
+        <item quantity="few">%1$s предложения дружбы!</item>
+        <item quantity="many">%1$s предложений дружбы!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11000c">
+        <item quantity="other">Добавить %d друга</item>
+        <item quantity="one">Добавить %d друга</item>
+        <item quantity="few">Добавить %d друзей</item>
+        <item quantity="many">Добавить %d друзей</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11000d">
+        <item quantity="other">В мульти-Snap может быть не больше %1$d Snap!</item>
+        <item quantity="one">В мульти-Snap может быть не больше %1$d Snap!</item>
+        <item quantity="few">В мульти-Snap может быть не больше %1$d Snap!</item>
+        <item quantity="many">В мульти-Snap может быть не больше %1$d Snap!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11000e">
+        <item quantity="other">Вы уверены, что хотите отключить мульти-Snap? %1$d несохранённых Snap будут потеряны.</item>
+        <item quantity="one">Вы уверены, что хотите отключить мульти-Snap? Несохранённый Snap будет потерян.</item>
+        <item quantity="few">Вы уверены, что хотите отключить мульти-Snap? %1$d несохранённый Snap будет потерян.</item>
+        <item quantity="many">Вы уверены, что хотите отключить мульти-Snap? %1$d несохранённых Snap будут потеряны.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11000f">
+        <item quantity="other">%1$s И %2$s СОХРАНИЛИ %3$d ФОТО ОТ %4$s</item>
+        <item quantity="one">%1$s И %2$s СОХРАНИЛИ ФОТО ОТ %4$s</item>
+        <item quantity="few">%1$s И %2$s СОХРАНИЛИ %3$d ФОТО ОТ %4$s</item>
+        <item quantity="many">%1$s И %2$s СОХРАНИЛИ %3$d ФОТО ОТ %4$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110010">
+        <item quantity="other">%1$s И %2$s СОХРАНИЛИ %3$d ВАШИХ ФОТО</item>
+        <item quantity="one">%1$s И %2$s СОХРАНИЛИ ВАШЕ ФОТО</item>
+        <item quantity="few">%1$s И %2$s СОХРАНИЛИ %3$d ВАШИХ ФОТО</item>
+        <item quantity="many">%1$s И %2$s СОХРАНИЛИ %3$d ВАШИХ ФОТО</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110011">
+        <item quantity="other">%1$s И %2$s СОХРАНИЛИ ОБЪЕКТЫ (%3$d) ОТ %4$s</item>
+        <item quantity="one">%1$s И %2$s СОХРАНИЛИ ОБЪЕКТ ОТ %4$s</item>
+        <item quantity="few">%1$s И %2$s СОХРАНИЛИ %3$d ОБЪЕКТА ОТ %4$s</item>
+        <item quantity="many">%1$s И %2$s СОХРАНИЛИ %3$d ОБЪЕКТОВ ОТ %4$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110012">
+        <item quantity="other">%1$s И %2$s СОХРАНИЛИ ВАШИ ОБЪЕКТЫ (%3$d)</item>
+        <item quantity="one">%1$s И %2$s СОХРАНИЛИ ВАШ ОБЪЕКТ</item>
+        <item quantity="few">%1$s И %2$s СОХРАНИЛИ ВАШИ ОБЪЕКТЫ (%3$d)</item>
+        <item quantity="many">%1$s И %2$s СОХРАНИЛИ ВАШИ ОБЪЕКТЫ (%3$d)</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110013">
+        <item quantity="other">%1$s И %2$s СОХРАНИЛИ %3$d ВИДЕО ОТ %4$s</item>
+        <item quantity="one">%1$s И %2$s СОХРАНИЛИ ВИДЕО ОТ %4$s</item>
+        <item quantity="few">%1$s И %2$s СОХРАНИЛИ %3$d ВИДЕО ОТ %4$s</item>
+        <item quantity="many">%1$s И %2$s СОХРАНИЛИ %3$d ВИДЕО ОТ %4$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110014">
+        <item quantity="other">%1$s И %2$s СОХРАНИЛИ %3$d ВАШИХ ВИДЕО</item>
+        <item quantity="one">%1$s И %2$s СОХРАНИЛИ ВАШЕ ВИДЕО</item>
+        <item quantity="few">%1$s И %2$s СОХРАНИЛИ %3$d ВАШИХ ВИДЕО</item>
+        <item quantity="many">%1$s И %2$s СОХРАНИЛИ %3$d ВАШИХ ВИДЕО</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110015">
+        <item quantity="other">ВЫ И %1$s СОХРАНИЛИ %2$d ФОТО ОТ %3$s</item>
+        <item quantity="one">ВЫ И %1$s СОХРАНИЛИ ФОТО ОТ %3$s</item>
+        <item quantity="few">ВЫ И %1$s СОХРАНИЛИ %2$d ФОТО ОТ %3$s</item>
+        <item quantity="many">ВЫ И %1$s СОХРАНИЛИ %2$d ФОТО ОТ %3$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110016">
+        <item quantity="other">ВЫ И %1$s СОХРАНИЛИ ОБЪЕКТЫ (%2$d) ОТ %3$s</item>
+        <item quantity="one">ВЫ И %1$s СОХРАНИЛИ ОБЪЕКТ ОТ %3$s</item>
+        <item quantity="few">ВЫ И %1$s СОХРАНИЛИ ОБЪЕКТЫ (%2$d) ОТ %3$s</item>
+        <item quantity="many">ВЫ И %1$s СОХРАНИЛИ ОБЪЕКТЫ (%2$d) ОТ %3$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110017">
+        <item quantity="other">ВЫ И %1$s СОХРАНИЛИ %2$d ВИДЕО ОТ %3$s</item>
+        <item quantity="one">ВЫ И %1$s СОХРАНИЛИ ВИДЕО ОТ %3$s</item>
+        <item quantity="few">ВЫ И %1$s СОХРАНИЛИ %2$d ВИДЕО ОТ %3$s</item>
+        <item quantity="many">ВЫ И %1$s СОХРАНИЛИ %2$d ВИДЕО ОТ %3$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110018">
+        <item quantity="other">%1$s И %2$s СОХРАНИЛИ %3$d ФОТО ОТ %4$s</item>
+        <item quantity="one">%1$s И %2$s СОХРАНИЛИ ФОТО ОТ %4$s</item>
+        <item quantity="few">%1$s И %2$s СОХРАНИЛИ %3$d ФОТО ОТ %4$s</item>
+        <item quantity="many">%1$s И %2$s СОХРАНИЛИ %3$d ФОТО ОТ %4$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110019">
+        <item quantity="other">%1$s И %2$s СОХРАНИЛИ %3$d ВАШИХ ФОТО</item>
+        <item quantity="one">%1$s И %2$s СОХРАНИЛИ ВАШЕ ФОТО</item>
+        <item quantity="few">%1$s И %2$s СОХРАНИЛИ %3$d ВАШИХ ФОТО</item>
+        <item quantity="many">%1$s И %2$s СОХРАНИЛИ %3$d ВАШИХ ФОТО</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11001a">
+        <item quantity="other">%1$s И %2$s СОХРАНИЛИ ОБЪЕКТЫ (%3$d) ОТ %4$s</item>
+        <item quantity="one">%1$s И %2$s СОХРАНИЛИ ОБЪЕКТ ОТ %4$s</item>
+        <item quantity="few">%1$s И %2$s СОХРАНИЛИ ОБЪЕКТЫ (%3$d) ОТ %4$s</item>
+        <item quantity="many">%1$s И %2$s СОХРАНИЛИ ОБЪЕКТЫ (%3$d) ОТ %4$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11001b">
+        <item quantity="other">%1$s И %2$s СОХРАНИЛИ ВАШИ ОБЪЕКТЫ (%3$d)</item>
+        <item quantity="one">%1$s И %2$s СОХРАНИЛИ ВАШ ОБЪЕКТ</item>
+        <item quantity="few">%1$s И %2$s СОХРАНИЛИ ВАШИ ОБЪЕКТЫ (%3$d)</item>
+        <item quantity="many">%1$s И %2$s СОХРАНИЛИ ВАШИ ОБЪЕКТЫ (%3$d)</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11001c">
+        <item quantity="other">%1$s И %2$s СОХРАНИЛИ %3$d ВИДЕО ОТ %4$s</item>
+        <item quantity="one">%1$s И %2$s СОХРАНИЛИ ВИДЕО ОТ %4$s</item>
+        <item quantity="few">%1$s И %2$s СОХРАНИЛИ %3$d ВИДЕО ОТ %4$s</item>
+        <item quantity="many">%1$s И %2$s СОХРАНИЛИ %3$d ВИДЕО ОТ %4$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11001d">
+        <item quantity="other">%1$s И %2$s СОХРАНИЛИ %3$d ВАШИХ ВИДЕО</item>
+        <item quantity="one">%1$s И %2$s СОХРАНИЛИ ВАШЕ ВИДЕО</item>
+        <item quantity="few">%1$s И %2$s СОХРАНИЛИ %3$d ВАШИХ ВИДЕО</item>
+        <item quantity="many">%1$s И %2$s СОХРАНИЛИ %3$d ВАШИХ ВИДЕО</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11001e">
+        <item quantity="other">ВЫ, %1$s И %2$s СОХРАНИЛИ %3$d ФОТО ОТ %4$s</item>
+        <item quantity="one">ВЫ, %1$s И %2$s СОХРАНИЛИ ФОТО ОТ %4$s</item>
+        <item quantity="few">ВЫ, %1$s И %2$s СОХРАНИЛИ %3$d ФОТО ОТ %4$s</item>
+        <item quantity="many">ВЫ, %1$s И %2$s СОХРАНИЛИ %3$d ФОТО ОТ %4$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11001f">
+        <item quantity="other">ВЫ, %1$s И %2$s СОХРАНИЛИ ОБЪЕКТЫ (%3$d) ОТ %4$s</item>
+        <item quantity="one">ВЫ, %1$s И %2$s СОХРАНИЛИ ОБЪЕКТ ОТ %4$s</item>
+        <item quantity="few">ВЫ, %1$s И %2$s СОХРАНИЛИ ОБЪЕКТЫ (%3$d) ОТ %4$s</item>
+        <item quantity="many">ВЫ, %1$s И %2$s СОХРАНИЛИ ОБЪЕКТЫ (%3$d) ОТ %4$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110020">
+        <item quantity="other">ВЫ, %1$s И %2$s СОХРАНИЛИ %3$d ВИДЕО ОТ %4$s</item>
+        <item quantity="one">ВЫ, %1$s И %2$s СОХРАНИЛИ ВИДЕО ОТ %4$s</item>
+        <item quantity="few">ВЫ, %1$s И %2$s СОХРАНИЛИ %3$d ВИДЕО ОТ %4$s</item>
+        <item quantity="many">ВЫ, %1$s И %2$s СОХРАНИЛИ %3$d ВИДЕО ОТ %4$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110021">
+        <item quantity="other">%1$s СОХРАНИЛ(А) %2$d ФОТО ОТ %3$s</item>
+        <item quantity="one">%1$s СОХРАНИЛИ ФОТО ОТ %3$s</item>
+        <item quantity="few">%1$s СОХРАНИЛ(А) %2$d ФОТО ОТ %3$s</item>
+        <item quantity="many">%1$s СОХРАНИЛ(А) %2$d ФОТО ОТ %3$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110022">
+        <item quantity="other">%1$s СОХРАНИЛИ ВАШИ ФОТО (%2$d)</item>
+        <item quantity="one">%1$s СОХРАНИЛ(А) ВАШЕ ФОТО</item>
+        <item quantity="few">%1$s СОХРАНИЛИ ВАШИ ФОТО (%2$d)</item>
+        <item quantity="many">%1$s СОХРАНИЛИ ВАШИ ФОТО (%2$d)</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110023">
+        <item quantity="other">%1$s СОХРАНИЛ(А) ОБЪЕКТЫ (%2$d) ОТ %3$s</item>
+        <item quantity="one">%1$s СОХРАНИЛИ ОБЪЕКТ ОТ %3$s</item>
+        <item quantity="few">%1$s СОХРАНИЛ(А) ОБЪЕКТЫ (%2$d) ОТ %3$s</item>
+        <item quantity="many">%1$s СОХРАНИЛ(А) ОБЪЕКТЫ (%2$d) ОТ %3$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110024">
+        <item quantity="other">%1$s СОХРАНИЛИ ВАШИ ОБЪЕКТЫ (%2$d)</item>
+        <item quantity="one">%1$s СОХРАНИЛ(А) ВАШ ОБЪЕКТ</item>
+        <item quantity="few">%1$s СОХРАНИЛИ ВАШИ ОБЪЕКТЫ (%2$d)</item>
+        <item quantity="many">%1$s СОХРАНИЛИ ВАШИ ОБЪЕКТЫ (%2$d)</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110025">
+        <item quantity="other">%1$s СОХРАНИЛ(А) %2$d ВИДЕО ОТ %3$s</item>
+        <item quantity="one">%1$s СОХРАНИЛИ ВИДЕО ОТ %3$s</item>
+        <item quantity="few">%1$s СОХРАНИЛ(А) %2$d ВИДЕО ОТ %3$s</item>
+        <item quantity="many">%1$s СОХРАНИЛ(А) %2$d ВИДЕО ОТ %3$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110026">
+        <item quantity="other">%1$s СОХРАНИЛИ ВАШИ ВИДЕО (%2$d)</item>
+        <item quantity="one">%1$s СОХРАНИЛ(А) ВАШЕ ВИДЕО</item>
+        <item quantity="few">%1$s СОХРАНИЛИ ВАШИ ВИДЕО (%2$d)</item>
+        <item quantity="many">%1$s СОХРАНИЛИ ВАШИ ВИДЕО (%2$d)</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110027">
+        <item quantity="other">ВЫ СОХРАНИЛИ %1$d ФОТО ОТ %2$s</item>
+        <item quantity="one">ВЫ СОХРАНИЛИ ФОТО ОТ %2$s</item>
+        <item quantity="few">ВЫ СОХРАНИЛИ %1$d ФОТО ОТ %2$s</item>
+        <item quantity="many">ВЫ СОХРАНИЛИ %1$d ФОТО ОТ %2$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110028">
+        <item quantity="other">ВЫ СОХРАНИЛИ %1$d ОБЪЕКТА ОТ %2$s</item>
+        <item quantity="one">ВЫ СОХРАНИЛИ ОБЪЕКТ ОТ %2$s</item>
+        <item quantity="few">ВЫ СОХРАНИЛИ %1$d ОБЪЕКТОВ ОТ %2$s</item>
+        <item quantity="many">ВЫ СОХРАНИЛИ %1$d ОБЪЕКТОВ ОТ %2$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110029">
+        <item quantity="other">ВЫ СОХРАНИЛИ %1$d ВИДЕО ОТ %2$s</item>
+        <item quantity="one">ВЫ СОХРАНИЛИ ВИДЕО ОТ %2$s</item>
+        <item quantity="few">ВЫ СОХРАНИЛИ %1$d ВИДЕО ОТ %2$s</item>
+        <item quantity="many">ВЫ СОХРАНИЛИ %1$d ВИДЕО ОТ %2$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11002a">
+        <item quantity="other">Вы можете публиковать только в %1$d авторских историях одновременно.</item>
+        <item quantity="one">Вы можете публиковать только в %1$d авторской истории одновременно.</item>
+        <item quantity="few">Вы можете публиковать только в %1$d авторских историях одновременно.</item>
+        <item quantity="many">Вы можете публиковать только в %1$d авторских историях одновременно.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11002b">
+        <item quantity="other">%1$d фута</item>
+        <item quantity="one">%1$d фут</item>
+        <item quantity="few">%1$d фута</item>
+        <item quantity="many">%1$d футов</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11002d">
+        <item quantity="other">День рождения %1$s через %2$d дня 🎂. Подарите Snapchat+</item>
+        <item quantity="one">Завтра день рождения %1$s 🎂. Подарите Snapchat+</item>
+        <item quantity="few">День рождения %1$s через %2$d дня 🎂. Подарите Snapchat+</item>
+        <item quantity="many">День рождения %1$s через %2$d дней 🎂. Подарите Snapchat+</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11002e">
+        <item quantity="other">В Pixy есть %1$d Snap. Хотите также сбросить настройки устройства и удалить все Snap и данные пользователя?</item>
+        <item quantity="one">В Pixy есть 1 Snap. Хотите также сбросить настройки устройства и удалить все Snap и данные пользователя?</item>
+        <item quantity="few">В Pixy есть %1$d Snap. Хотите также сбросить настройки устройства и удалить все Snap и данные пользователя?</item>
+        <item quantity="many">В Pixy есть %1$d Snap. Хотите также сбросить настройки устройства и удалить все Snap и данные пользователя?</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11002f">
+        <item quantity="other">Если вы удалите эти Snap, они будут удалены и с устройства Cheerio.</item>
+        <item quantity="one">Если вы удалите этот Snap, он будет удалён и с устройства Cheerio.</item>
+        <item quantity="few">Если вы удалите эти Snap, они будут удалены и с устройства Cheerio.</item>
+        <item quantity="many">Если вы удалите эти Snap, они будут удалены и с устройства Cheerio.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110030">
+        <item quantity="other">Удалено %d Snap</item>
+        <item quantity="one">Snap удалён</item>
+        <item quantity="few">Удалено %d Snap</item>
+        <item quantity="many">Удалено %d Snap</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110032">
+        <item quantity="other">%d новых Snap</item>
+        <item quantity="one">1 новый Snap</item>
+        <item quantity="few">%d новых Snap</item>
+        <item quantity="many">%d новых Snap</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110033">
+        <item quantity="other">%d новых Snap. Нажмите, чтобы импортировать.</item>
+        <item quantity="one">1 новый Snap. Нажмите, чтобы импортировать.</item>
+        <item quantity="few">%d новых Snap. Нажмите, чтобы импортировать.</item>
+        <item quantity="many">%d новых Snap. Нажмите, чтобы импортировать.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110034">
+        <item quantity="other">Импортировано %d Snap!</item>
+        <item quantity="one">Импортирован %d Snap!</item>
+        <item quantity="few">Импортировано %d Snap!</item>
+        <item quantity="many">Импортировано %d Snap!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11003a">
+        <item quantity="other">Скрыть ответы</item>
+        <item quantity="one">Скрыть ответ</item>
+        <item quantity="few">Скрыть ответы</item>
+        <item quantity="many">Скрыть ответы</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11003b">
+        <item quantity="other">Показать %s ответа</item>
+        <item quantity="one">Показать 1 ответ</item>
+        <item quantity="few">Показать %s ответа</item>
+        <item quantity="many">Показать %s ответов</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11003c">
+        <item quantity="other">Новых: %1$d</item>
+        <item quantity="one">Новых: %1$d</item>
+        <item quantity="few">Новых: %1$d</item>
+        <item quantity="many">Новых: %1$d</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11003d">
+        <item quantity="other">%1$d для импорта</item>
+        <item quantity="one">%1$d для импорта</item>
+        <item quantity="few">%1$d для импорта</item>
+        <item quantity="many">%1$d для импорта</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11003e">
+        <item quantity="other">%d дня</item>
+        <item quantity="one">%d день</item>
+        <item quantity="few">%d дня</item>
+        <item quantity="many">%d дней</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11003f">
+        <item quantity="other">%d д.</item>
+        <item quantity="one">%d день</item>
+        <item quantity="few">%d дня</item>
+        <item quantity="many">%d дней</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110040">
+        <item quantity="other">%d д. назад</item>
+        <item quantity="one">%d день назад</item>
+        <item quantity="few">%d дня назад</item>
+        <item quantity="many">%d дней назад</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110047">
+        <item quantity="other">Изменено %1$s дней назад</item>
+        <item quantity="one">Изменено %1$s день назад</item>
+        <item quantity="few">Изменено %1$s дня назад</item>
+        <item quantity="many">Изменено %1$s дней назад</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110048">
+        <item quantity="other">Вы уверены, что хотите отменить съёмку мульти-Snap? %1$d несохранённых Snap будут потеряны.</item>
+        <item quantity="one">Вы уверены, что хотите отменить съёмку мульти-Snap? Несохранённый Snap будет потерян.</item>
+        <item quantity="few">Вы уверены, что хотите отменить съёмку мульти-Snap? %1$d несохранённый Snap будет потерян.</item>
+        <item quantity="many">Вы уверены, что хотите отменить съёмку мульти-Snap? %1$d несохранённых Snap будет потеряно.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11004a">
+        <item quantity="other">Не удалось сохранить %1$d Snap</item>
+        <item quantity="one">Не удалось сохранить %1$d Snap</item>
+        <item quantity="few">Не удалось сохранить %1$d Snap</item>
+        <item quantity="many">Не удалось сохранить %1$d Snap</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11004b">
+        <item quantity="other">Добавить авторов (%d)</item>
+        <item quantity="one">Добавить 1 автора</item>
+        <item quantity="few">Добавить %d авторов</item>
+        <item quantity="many">Добавить %d авторов</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11004c">
+        <item quantity="other">%d фута</item>
+        <item quantity="one">%d фут</item>
+        <item quantity="few">%d фута</item>
+        <item quantity="many">%d фута</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11004d">
+        <item quantity="other">%d км</item>
+        <item quantity="one">%d км</item>
+        <item quantity="few">%d км</item>
+        <item quantity="many">%d км</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11004e">
+        <item quantity="other">%d минуты</item>
+        <item quantity="one">%d минута</item>
+        <item quantity="few">%d минуты</item>
+        <item quantity="many">%d минут</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11004f">
+        <item quantity="other">%d мили</item>
+        <item quantity="one">%d миля</item>
+        <item quantity="few">%d мили</item>
+        <item quantity="many">%d миль</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110050">
+        <item quantity="other">Отправьте ещё %1$s запросов в друзья!</item>
+        <item quantity="one">Отправьте ещё %1$s запрос в друзья!</item>
+        <item quantity="few">Отправьте ещё %1$s запроса в друзья!</item>
+        <item quantity="many">Отправьте ещё %1$s запросов в друзья!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110051">
+        <item quantity="other">Все объекты добавлены в Личное. Удалить оригиналы из Фотоплёнки?</item>
+        <item quantity="one">Объект добавлен в Личное. Удалить оригинал из Фотоплёнки?</item>
+        <item quantity="few">Объекты добавлены в Личное. Удалить оригиналы из Фотоплёнки?</item>
+        <item quantity="many">Объекты добавлены в Личное. Удалить оригиналы из Фотоплёнки?</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110052">
+        <item quantity="other">Ваши фото были добавлены в Личное. Удалить оригиналы из Фотоплёнки?</item>
+        <item quantity="one">Ваше фото было добавлено в Личное. Удалить оригинал из Фотоплёнки?</item>
+        <item quantity="few">Ваши фото были добавлены в Личное. Удалить оригиналы из Фотоплёнки?</item>
+        <item quantity="many">Ваши фото были добавлены в Личное. Удалить оригиналы из Фотоплёнки?</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110053">
+        <item quantity="other">Ваши видео добавлены в Личное. Удалить оригиналы из Фотоплёнки?</item>
+        <item quantity="one">Ваше видео было добавлено в Личное. Удалить оригинал из Фотоплёнки?</item>
+        <item quantity="few">Ваши видео добавлены в Личное. Удалить оригиналы из Фотоплёнки?</item>
+        <item quantity="many">Ваши видео добавлены в Личное. Удалить оригиналы из Фотоплёнки?</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110054">
+        <item quantity="other">Удалить оригиналы</item>
+        <item quantity="one">Удалить оригинал</item>
+        <item quantity="few">Удалить оригиналы</item>
+        <item quantity="many">Удалить оригиналы</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110055">
+        <item quantity="other">"
+Повторите попытку через %1$d минуты."</item>
+        <item quantity="one">"
+Повторите попытку через %1$d минуту."</item>
+        <item quantity="few">"
+Повторите попытку через %1$d минуты."</item>
+        <item quantity="many">"
+Повторите попытку через %1$d минут."</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110056">
+        <item quantity="other">%d фута</item>
+        <item quantity="one">%d фут</item>
+        <item quantity="few">%d фута</item>
+        <item quantity="many">%d фута</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110057">
+        <item quantity="other">%d минут</item>
+        <item quantity="one">%d минута</item>
+        <item quantity="few">%d минут</item>
+        <item quantity="many">%d минут</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110058">
+        <item quantity="other">%d часа</item>
+        <item quantity="one">%d час</item>
+        <item quantity="few">%d часа</item>
+        <item quantity="many">%d часов</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110059">
+        <item quantity="other">%d ч.</item>
+        <item quantity="one">%d час</item>
+        <item quantity="few">%d часа</item>
+        <item quantity="many">%d часов</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11005a">
+        <item quantity="other">%d ч.</item>
+        <item quantity="one">%d ч.</item>
+        <item quantity="few">%d ч.</item>
+        <item quantity="many">%d ч.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11005b">
+        <item quantity="other">%d часа назад</item>
+        <item quantity="one">%d час назад</item>
+        <item quantity="few">%d часа назад</item>
+        <item quantity="many">%d часов назад</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110062">
+        <item quantity="other">Изменено %1$s часов назад</item>
+        <item quantity="one">Изменено %1$s час назад</item>
+        <item quantity="few">Изменено %1$s часа назад</item>
+        <item quantity="many">Изменено %1$s часов назад</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110065">
+        <item quantity="other">%d ч.</item>
+        <item quantity="one">%d ч.</item>
+        <item quantity="few">%d ч.</item>
+        <item quantity="many">%d ч.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110066">
+        <item quantity="other">Вы будете делиться текущим местоположением с друзьями в этой группе. %d друга уже могут видеть ваше местоположение.</item>
+        <item quantity="one">Вы будете делиться текущим местоположением с друзьями в этой группе. %d друг уже может видеть ваше местоположение.</item>
+        <item quantity="few">Вы будете делиться текущим местоположением с друзьями в этой группе. %d друга уже могут видеть ваше местоположение.</item>
+        <item quantity="many">Вы будете делиться текущим местоположением с друзьями в этой группе. %d друзей уже могут видеть ваше местоположение.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110067">
+        <item quantity="other">%d ч.</item>
+        <item quantity="one">%d час</item>
+        <item quantity="few">%d часа</item>
+        <item quantity="many">%d часов</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110069">
+        <item quantity="other">Вы будете делиться местоположением с друзьями в этой группе. %d участника не будут видеть его, так как не являются вашими друзьями.</item>
+        <item quantity="one">Вы будете делиться местоположением с друзьями в этой группе. %d участник не будет видеть его, так как не является вашим другом.</item>
+        <item quantity="few">Вы будете делиться местоположением с друзьями в этой группе. %d участника не будут видеть его, так как не являются вашими друзьями.</item>
+        <item quantity="many">Вы будете делиться местоположением с друзьями в этой группе. %d участников не будут видеть его, так как не являются вашими друзьями.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11006b">
+        <item quantity="other">%1$s, %2$s, %3$s и ещё %4$d ваших друга на карте!</item>
+        <item quantity="one">%1$s, %2$s, %3$s и ещё %4$d ваш друг на карте!</item>
+        <item quantity="few">%1$s, %2$s, %3$s и ещё %4$d ваших друга на карте!</item>
+        <item quantity="many">%1$s, %2$s, %3$s и ещё %4$d ваших друзей на карте!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11006f">
+        <item quantity="other">%1$d друг делится своим местоположением</item>
+        <item quantity="one">%1$d друг делится своим местоположением</item>
+        <item quantity="few">%1$d друг делится своим местоположением</item>
+        <item quantity="many">%1$d друзей делятся своим местоположением</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110075">
+        <item quantity="other">Экспортировано %1$d из %2$d Snap. Не удалось экспортировать %3$d Snap.</item>
+        <item quantity="one">Экспортировано %1$d из %2$d Snap. Не удалось экспортировать %3$d Snap.</item>
+        <item quantity="few">Экспортировано %1$d из %2$d Snap. Не удалось экспортировать %3$d Snap.</item>
+        <item quantity="many">Экспортировано %1$d из %2$d Snap. Не удалось экспортировать %3$d Snap.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110076">
+        <item quantity="other">Экспортирую %1$d из %2$d Snap…</item>
+        <item quantity="one">Экспортирую Snap...</item>
+        <item quantity="few">Экспортирую %1$d из %2$d Snap…</item>
+        <item quantity="many">Экспортирую %1$d из %2$d Snap…</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110077">
+        <item quantity="other">Ваши Snap экспортированы!</item>
+        <item quantity="one">Ваш Snap экспортирован!</item>
+        <item quantity="few">Ваши Snap экспортированы!</item>
+        <item quantity="many">Ваши Snap экспортированы!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110078">
+        <item quantity="other">К сожалению, можно выбрать только %d элемента за раз.</item>
+        <item quantity="one">К сожалению, можно выбрать только %d элемент за раз.</item>
+        <item quantity="few">К сожалению, можно выбрать только %d элемента за раз.</item>
+        <item quantity="many">К сожалению, можно выбрать только %d элементов за раз.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110079">
+        <item quantity="other">Эти изображения будут удалены с вашего устройства</item>
+        <item quantity="one">Это изображение будет удалено с вашего устройства</item>
+        <item quantity="few">Эти изображения будут удалены с вашего устройства</item>
+        <item quantity="many">Эти изображения будут удалены с вашего устройства</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11007a">
+        <item quantity="other">Эти объекты будут удалены с вашего устройства</item>
+        <item quantity="one">Этот объект будет удалён с вашего устройства</item>
+        <item quantity="few">Эти объекты будут удалены с вашего устройства</item>
+        <item quantity="many">Эти объекты будут удалены с вашего устройства</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11007b">
+        <item quantity="other">Эти видео будут удалены с вашего устройства</item>
+        <item quantity="one">Это видео будет удалено с вашего устройства</item>
+        <item quantity="few">Эти видео будут удалены с вашего устройства</item>
+        <item quantity="many">Эти видео будут удалены с вашего устройства</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11007c">
+        <item quantity="other">Удалить воспоминания?</item>
+        <item quantity="one">Удалить воспоминание?</item>
+        <item quantity="few">Удалить воспоминания?</item>
+        <item quantity="many">Удалить воспоминания?</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11007d">
+        <item quantity="other">Удалить Snap?</item>
+        <item quantity="one">Удалить Snap?</item>
+        <item quantity="few">Удалить Snap?</item>
+        <item quantity="many">Удалить Snap?</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11007e">
+        <item quantity="other">Удалить истории?</item>
+        <item quantity="one">Удалить историю?</item>
+        <item quantity="few">Удалить истории?</item>
+        <item quantity="many">Удалить истории?</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11007f">
+        <item quantity="other">Не удалось экспортировать Snap!</item>
+        <item quantity="one">Не удалось экспортировать Snap!</item>
+        <item quantity="few">Не удалось экспортировать Snap!</item>
+        <item quantity="many">Не удалось экспортировать Snap!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110080">
+        <item quantity="other">%d Snap добавлено в избранную историю</item>
+        <item quantity="one">Snap добавлен в избранную историю</item>
+        <item quantity="few">%d Snap добавлены в избранную историю</item>
+        <item quantity="many">%d Snap добавлено в избранную историю</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110081">
+        <item quantity="other">%d Snap удалено из избранной истории</item>
+        <item quantity="one">Snap удалён из избранной истории</item>
+        <item quantity="few">%d Snap удалены из избранной истории</item>
+        <item quantity="many">%d Snap удалены из избранной истории</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110082">
+        <item quantity="other">%1$d лет назад</item>
+        <item quantity="one">%1$d год назад</item>
+        <item quantity="few">%1$d года назад</item>
+        <item quantity="many">%1$d лет назад</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110083">
+        <item quantity="other">В этот день %1$d лет назад</item>
+        <item quantity="one">В этот день %1$d год назад</item>
+        <item quantity="few">В этот день %1$d года назад</item>
+        <item quantity="many">В этот день %1$d лет назад</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110084">
+        <item quantity="other">%1$s, %2$d лет назад</item>
+        <item quantity="one">%1$s, %2$d год назад</item>
+        <item quantity="few">%1$s, %2$d года назад</item>
+        <item quantity="many">%1$s, %2$d лет назад</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110085">
+        <item quantity="other">%1$d лет назад</item>
+        <item quantity="one">%1$d год назад</item>
+        <item quantity="few">%1$d года назад</item>
+        <item quantity="many">%1$d лет назад</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110086">
+        <item quantity="other">Snap из этих историй будут доступны на вашей новой странице «Моя история». На истории, которые вы создали или изменили, это не повлияет.</item>
+        <item quantity="one">Snap из этой истории будут доступны на вашей новой странице «Моя история». На истории, которые вы создали или изменили, это не повлияет.</item>
+        <item quantity="few">Snap из этих историй будут доступны на вашей новой странице «Моя история». На истории, которые вы создали или изменили, это не повлияет.</item>
+        <item quantity="many">Snap из этих историй будут доступны на вашей новой странице «Моя история». На истории, которые вы создали или изменили, это не повлияет.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110087">
+        <item quantity="other">Удалить %d старой автоматически сохранённой истории?</item>
+        <item quantity="one">Удалить %d старую автоматически сохранённую историю?</item>
+        <item quantity="few">Удалить %d старые автоматически сохранённые истории?</item>
+        <item quantity="many">Удалить %d старых автоматически сохранённых историй?</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11008a">
+        <item quantity="other">Это приведёт к удалению %d старой автоматически сохранённой истории.</item>
+        <item quantity="one">Это приведёт к удалению %d старой автоматически сохранённой истории.</item>
+        <item quantity="few">Это приведёт к удалению %d старых автоматически сохранённых историй.</item>
+        <item quantity="many">Это приведёт к удалению %d старых автоматически сохранённых историй.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11008b">
+        <item quantity="other">К сожалению, можно выбрать только %d Snap за раз.</item>
+        <item quantity="one">К сожалению, можно выбрать только %d Snap за раз.</item>
+        <item quantity="few">К сожалению, можно выбрать только %d Snap за раз.</item>
+        <item quantity="many">К сожалению, можно выбрать только %d Snap за раз.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11008c">
+        <item quantity="other">Импортированы Snap от %1$d: %2$s</item>
+        <item quantity="one">Импортированы Snap из %1$d: %2$s</item>
+        <item quantity="few">Импортировано %1$d Snap из %2$s</item>
+        <item quantity="many">Импортировано %1$d Snap из %2$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11008d">
+        <item quantity="other">Импортировано %d Snap</item>
+        <item quantity="one">Импортирован %d Snap!</item>
+        <item quantity="few">Импортировано %d Snap</item>
+        <item quantity="many">Импортировано %d Snap</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11008e">
+        <item quantity="other">Новые Snap из %s</item>
+        <item quantity="one">Новый Snap от %s</item>
+        <item quantity="few">Новые Snap из %s</item>
+        <item quantity="many">Новые Snap из %s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11008f">
+        <item quantity="other">Импортирую Snap: %1$d из %2$d...</item>
+        <item quantity="one">Импортирую Snap: %1$d из %2$d...</item>
+        <item quantity="few">Импортирую Snap: %1$d из %2$d...</item>
+        <item quantity="many">Импортирую Snap: %1$d из %2$d...</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110090">
+        <item quantity="other">Выбрано %d</item>
+        <item quantity="one">Выбран %d</item>
+        <item quantity="few">Выбрано %d</item>
+        <item quantity="many">Выбрано %d</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110091">
+        <item quantity="other">%d мин.</item>
+        <item quantity="one">%d минута</item>
+        <item quantity="few">%d минуты</item>
+        <item quantity="many">%d минут</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110092">
+        <item quantity="other">%d мин.</item>
+        <item quantity="one">%d мин.</item>
+        <item quantity="few">%d мин.</item>
+        <item quantity="many">%d мин.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110093">
+        <item quantity="other">%d минуты назад</item>
+        <item quantity="one">%d минуту назад</item>
+        <item quantity="few">%d минуты назад</item>
+        <item quantity="many">%d минут назад</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11009a">
+        <item quantity="other">Изменено %1$s минут назад</item>
+        <item quantity="one">Изменено %1$s минуту назад</item>
+        <item quantity="few">Изменено %1$s минуты назад</item>
+        <item quantity="many">Изменено %1$s минут назад</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11009b">
+        <item quantity="other">%d мес.</item>
+        <item quantity="one">%d месяц</item>
+        <item quantity="few">%d месяца</item>
+        <item quantity="many">%d месяцев</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11009c">
+        <item quantity="other">%d мес. назад</item>
+        <item quantity="one">%d месяц назад</item>
+        <item quantity="few">%d месяца назад</item>
+        <item quantity="many">%d месяцев назад</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100a3">
+        <item quantity="other">Изменено %1$s месяцев назад</item>
+        <item quantity="one">Изменено %1$s месяц назад</item>
+        <item quantity="few">Изменено %1$s месяца назад</item>
+        <item quantity="many">Изменено %1$s месяцев назад</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100a7">
+        <item quantity="other">%1$d Snap ещё не сохранились в Воспоминаниях. Если вы выйдете сейчас, то потеряете их.</item>
+        <item quantity="one">1 Snap ещё не сохранился в Воспоминаниях. Если вы выйдете сейчас, то потеряете его.</item>
+        <item quantity="few">%1$d Snap ещё не сохранились в Воспоминаниях. Если вы выйдете сейчас, то потеряете их.</item>
+        <item quantity="many">%1$d Snap ещё не сохранились в Воспоминаниях. Если вы выйдете сейчас, то потеряете их.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100a8">
+        <item quantity="other">Добавить %d друга</item>
+        <item quantity="one">Добавить 1 друга</item>
+        <item quantity="few">Добавить %d друзей</item>
+        <item quantity="many">Добавить %d друзей</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100a9">
+        <item quantity="other">%d часа</item>
+        <item quantity="one">%d час</item>
+        <item quantity="few">%d часа</item>
+        <item quantity="many">%d часов</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100aa">
+        <item quantity="other">%d минуты</item>
+        <item quantity="one">%d минута</item>
+        <item quantity="few">%d минуты</item>
+        <item quantity="many">%d минут</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ab">
+        <item quantity="other">%1$s+%2$d ещё</item>
+        <item quantity="one">%1$s+%2$d ещё</item>
+        <item quantity="few">%1$s+%2$d ещё</item>
+        <item quantity="many">%1$s+%2$d ещё</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100b3">
+        <item quantity="other">На ваших Pixy хранится %d Snap предыдущего пользователя. Подключение этого устройства приведёт к сбросу настроек и удалению всех Snap и данных пользователя.</item>
+        <item quantity="one">На ваших Pixy хранится 1 Snap предыдущего пользователя. Подключение этого устройства приведёт к сбросу настроек и удалению всех Snap и данных пользователя.</item>
+        <item quantity="few">На ваших Pixy хранится %d Snap предыдущего пользователя. Подключение этого устройства приведёт к сбросу настроек и удалению всех Snap и данных пользователя.</item>
+        <item quantity="many">На ваших Pixy хранится %d Snap предыдущего пользователя. Подключение этого устройства приведёт к сбросу настроек и удалению всех Snap и данных пользователя.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100b4">
+        <item quantity="other">%d объектов</item>
+        <item quantity="one">1 объект</item>
+        <item quantity="few">%d объектов</item>
+        <item quantity="many">%d объектов</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100b9">
+        <item quantity="other">%d новых Snap</item>
+        <item quantity="one">%d новый Snap</item>
+        <item quantity="few">%d новых Snap</item>
+        <item quantity="many">%d новых Snap</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ba">
+        <item quantity="other">+Добавить %d друга</item>
+        <item quantity="one">+Добавить 1 друга</item>
+        <item quantity="few">+Добавить %d друзей</item>
+        <item quantity="many">+Добавить %d друзей</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100bb">
+        <item quantity="other">Snap (%1$d) сохранены!</item>
+        <item quantity="one">%1$d Snap сохранён!</item>
+        <item quantity="few">Snap (%1$d) сохранены!</item>
+        <item quantity="many">Snap (%1$d) сохранены!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100bc">
+        <item quantity="other">Snap: %s</item>
+        <item quantity="one">%s Snap</item>
+        <item quantity="few">Snap: %s</item>
+        <item quantity="many">Snap: %s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100bd">
+        <item quantity="other">%d с.</item>
+        <item quantity="one">%d секунда</item>
+        <item quantity="few">%d секунды</item>
+        <item quantity="many">%d секунд</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100bf">
+        <item quantity="other">%d секунды назад</item>
+        <item quantity="one">%d секунду назад</item>
+        <item quantity="few">%d секунды назад</item>
+        <item quantity="many">%d секунд назад</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100c6">
+        <item quantity="other">Изменено %1$s секунд назад</item>
+        <item quantity="one">Изменено %1$s секунду назад</item>
+        <item quantity="few">Изменено %1$s секунды назад</item>
+        <item quantity="many">Изменено %1$s секунд назад</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100c7">
+        <item quantity="other">друзья (%1$d)</item>
+        <item quantity="one">1 друг</item>
+        <item quantity="few">друзья (%1$d)</item>
+        <item quantity="many">друзья (%1$d)</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100c8">
+        <item quantity="other">%1$s и ещё %2$d</item>
+        <item quantity="one">%1$s и ещё 1</item>
+        <item quantity="few">%1$s и ещё %2$d</item>
+        <item quantity="many">%1$s и ещё %2$d</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100c9">
+        <item quantity="other">Сейчас мне %d.</item>
+        <item quantity="one">Сейчас мне %d.</item>
+        <item quantity="few">Сейчас мне %d.</item>
+        <item quantity="many">Сейчас мне %d.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ca">
+        <item quantity="other">сек.</item>
+        <item quantity="one">секунда</item>
+        <item quantity="few">сек.</item>
+        <item quantity="many">сек.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100cb">
+        <item quantity="other">%1$d Snap</item>
+        <item quantity="one">%1$d Snap</item>
+        <item quantity="few">%1$d Snap</item>
+        <item quantity="many">%1$d Snap</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100cc">
+        <item quantity="other">Как экспортировать Snap?</item>
+        <item quantity="one">Как экспортировать Snap?</item>
+        <item quantity="few">Как экспортировать Snap?</item>
+        <item quantity="many">Как экспортировать Snap?</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100cd">
+        <item quantity="other">\"%d комментария в Spotlight в ожидании!</item>
+        <item quantity="one">1 комментарий в Spotlight в ожидании!</item>
+        <item quantity="few">\"%d комментария в Spotlight в ожидании!</item>
+        <item quantity="many">\"%d комментариев в Spotlight в ожидании!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100cf">
+        <item quantity="other">"Ваше местоположение скрыто, однако несколько друзей (%1$s) по-прежнему могут видеть ваше последнее местоположение.
+
+ Вы можете изменить это в настройках карты."</item>
+        <item quantity="one">"Ваше местоположение скрыто, однако %1$s друг по-прежнему может видеть ваше последнее местоположение.
+
+ Вы можете изменить это в настройках карты."</item>
+        <item quantity="few">"Ваше местоположение скрыто, однако несколько друзей (%1$s) по-прежнему могут видеть ваше последнее местоположение.
+
+ Вы можете изменить это в настройках карты."</item>
+        <item quantity="many">"Ваше местоположение скрыто, однако несколько друзей (%1$s) по-прежнему могут видеть ваше последнее местоположение.
+
+ Вы можете изменить это в настройках карты."</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d0">
+        <item quantity="other">Вы сохранили настройки местоположения, однако несколько (%1$s) друзей всё равно могут видеть ваше местоположение. Чтобы скрыть его, нажмите «Остановить» рядом с именем человека</item>
+        <item quantity="one">Вы сохранили настройки местоположения, однако некоторые друзья (%1$s) всё равно могут видеть ваше местоположение. Чтобы скрыть его, нажмите «Остановить» рядом с именем человека</item>
+        <item quantity="few">Вы сохранили настройки местоположения, однако несколько (%1$s) друзей всё равно могут видеть ваше местоположение. Чтобы скрыть его, нажмите «Остановить» рядом с именем человека</item>
+        <item quantity="many">Вы сохранили настройки местоположения, однако несколько (%1$s) друзей всё равно могут видеть ваше местоположение. Чтобы скрыть его, нажмите «Остановить» рядом с именем человека</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d3">
+        <item quantity="other">Вы находитесь в режиме невидимки, однако несколько друзей (%1$s) всё равно могут видеть ваше местоположение. Чтобы приостановить трансляцию местоположения, нажмите «Скрыть моё местоположение» ниже.</item>
+        <item quantity="one">Вы находитесь в режиме невидимки, однако %1$s друг всё равно может видеть ваше местоположение. Чтобы приостановить трансляцию местоположения, нажмите «Скрыть моё местоположение» ниже.</item>
+        <item quantity="few">Вы находитесь в режиме невидимки, однако несколько друзей (%1$s) всё равно могут видеть ваше местоположение. Чтобы приостановить трансляцию местоположения, нажмите «Скрыть моё местоположение» ниже.</item>
+        <item quantity="many">Вы находитесь в режиме невидимки, однако несколько друзей (%1$s) всё равно могут видеть ваше местоположение. Чтобы приостановить трансляцию местоположения, нажмите «Скрыть моё местоположение» ниже.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d4">
+        <item quantity="other">Посмотрели: %d</item>
+        <item quantity="one">%d просмотр</item>
+        <item quantity="few">%d просмотра</item>
+        <item quantity="many">%d просмотров</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d5">
+        <item quantity="other">+ ещё %1$d</item>
+        <item quantity="one">+ ещё %1$d</item>
+        <item quantity="few">+ ещё %1$d</item>
+        <item quantity="many">+ ещё %1$d</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d6">
+        <item quantity="other">%1$s и ещё %2$d…</item>
+        <item quantity="one">%1$s и ещё %2$d…</item>
+        <item quantity="few">%1$s и ещё %2$d…</item>
+        <item quantity="many">%1$s и ещё %2$d…</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d7">
+        <item quantity="other">Подтверждено • %d участника</item>
+        <item quantity="one">Подтверждено • %d участник</item>
+        <item quantity="few">Подтверждено • %d участника</item>
+        <item quantity="many">Подтверждено • %d участников</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d8">
+        <item quantity="other">%d участника</item>
+        <item quantity="one">%d участник</item>
+        <item quantity="few">%d участника</item>
+        <item quantity="many">%d участников</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d9">
+        <item quantity="other">Добавляю %d Snap...</item>
+        <item quantity="one">Добавляю %d Snap…</item>
+        <item quantity="few">Добавляю %d Snap...</item>
+        <item quantity="many">Добавляю %d Snap...</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100da">
+        <item quantity="other">Не удалось добавить %d Snap</item>
+        <item quantity="one">Не удалось добавить %d Snap</item>
+        <item quantity="few">Не удалось добавить %d Snap</item>
+        <item quantity="many">Не удалось добавить %d Snap</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100db">
+        <item quantity="other">Жду добавления %d Snap...</item>
+        <item quantity="one">Жду добавления %d Snap...</item>
+        <item quantity="few">Жду добавления %d Snap...</item>
+        <item quantity="many">Жду добавления %d Snap...</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100df">
+        <item quantity="other">с %d друзьями</item>
+        <item quantity="one">с %d другом</item>
+        <item quantity="few">с %d друзьями</item>
+        <item quantity="many">с %d друзьями</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100e0">
+        <item quantity="other">%1$d из %2$d добавлений в друзья</item>
+        <item quantity="one">%1$d из %2$d добавлений в друзья</item>
+        <item quantity="few">%1$d из %2$d добавлений в друзья</item>
+        <item quantity="many">%1$d из %2$d добавлений в друзья</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100e1">
+        <item quantity="other">события</item>
+        <item quantity="one">событие</item>
+        <item quantity="few">события</item>
+        <item quantity="many">событий</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100e3">
+        <item quantity="other">%d недели</item>
+        <item quantity="one">%d неделя</item>
+        <item quantity="few">%d недели</item>
+        <item quantity="many">%d недель</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100e4">
+        <item quantity="other">%d нед.</item>
+        <item quantity="one">%d неделя</item>
+        <item quantity="few">%d нед.</item>
+        <item quantity="many">%d недель</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100e5">
+        <item quantity="other">%d нед. назад</item>
+        <item quantity="one">%d неделю назад</item>
+        <item quantity="few">%d недели назад</item>
+        <item quantity="many">%d недель назад</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ec">
+        <item quantity="other">Изменено %1$s недель назад</item>
+        <item quantity="one">Изменено %1$s неделю назад</item>
+        <item quantity="few">Изменено %1$s недели назад</item>
+        <item quantity="many">Изменено %1$s недель назад</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ed">
+        <item quantity="other">%d г.</item>
+        <item quantity="one">%d год</item>
+        <item quantity="few">%d года</item>
+        <item quantity="many">%d лет</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ee">
+        <item quantity="other">%d г. назад</item>
+        <item quantity="one">%d год назад</item>
+        <item quantity="few">%d года назад</item>
+        <item quantity="many">%d лет назад</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100f5">
+        <item quantity="other">Изменено %1$s лет назад</item>
+        <item quantity="one">Изменено %1$s год назад</item>
+        <item quantity="few">Изменено %1$s года назад</item>
+        <item quantity="many">Изменено %1$s лет назад</item>
+    </plurals>
+</resources>

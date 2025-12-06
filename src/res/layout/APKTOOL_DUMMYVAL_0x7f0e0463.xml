@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0d8c" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0d8d" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ViewStub android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0da8" android:layout="@layout/APKTOOL_DUMMYVAL_0x7f0e0464" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0da9" android:layout="@layout/APKTOOL_DUMMYVAL_0x7f0e0465" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.snap.ui.view.button.SnapFontButton android:textSize="?APKTOOL_DUMMYVAL_0x7f0406f6" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060217" android:layout_gravity="end|bottom|center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0d8f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="12.0dip" android:text="@string/memories_meo_unlock_options" />
+    </FrameLayout>
+</FrameLayout>

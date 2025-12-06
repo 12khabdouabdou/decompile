@@ -1,0 +1,87 @@
+.class public final LNP1;
+.super Lcom/snap/composer/utils/b;
+.source "SourceFile"
+
+
+# annotations
+.annotation runtime LDu3;
+    propertyReplacements = ""
+    schema = "\'params\':r:\'[0]\',\'delegate\':r?:\'[1]\',\'entrypoint\':r?:\'[2]\'"
+    typeReferences = {
+        Lcom/snap/bloops/inappreporting/api/CameosReportParams;,
+        Lcom/snap/bloops/inappreporting/api/CameosReportDelegate;,
+        Lcom/snap/safety/customreporting/ReportEntrypoint;
+    }
+.end annotation
+
+
+# instance fields
+.field private _delegate:Lcom/snap/bloops/inappreporting/api/CameosReportDelegate;
+
+.field private _entrypoint:Lcom/snap/safety/customreporting/ReportEntrypoint;
+
+.field private _params:Lcom/snap/bloops/inappreporting/api/CameosReportParams;
+
+
+# direct methods
+.method public constructor <init>(Lcom/snap/bloops/inappreporting/api/CameosReportParams;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, LNP1;->_params:Lcom/snap/bloops/inappreporting/api/CameosReportParams;
+
+    const/4 p1, 0x0
+
+    .line 3
+    iput-object p1, p0, LNP1;->_delegate:Lcom/snap/bloops/inappreporting/api/CameosReportDelegate;
+
+    .line 4
+    iput-object p1, p0, LNP1;->_entrypoint:Lcom/snap/safety/customreporting/ReportEntrypoint;
+
+    return-void
+.end method
+
+.method public constructor <init>(Lcom/snap/bloops/inappreporting/api/CameosReportParams;Lcom/snap/bloops/inappreporting/api/CameosReportDelegate;Lcom/snap/safety/customreporting/ReportEntrypoint;)V
+    .locals 0
+
+    .line 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 6
+    iput-object p1, p0, LNP1;->_params:Lcom/snap/bloops/inappreporting/api/CameosReportParams;
+
+    .line 7
+    iput-object p2, p0, LNP1;->_delegate:Lcom/snap/bloops/inappreporting/api/CameosReportDelegate;
+
+    .line 8
+    iput-object p3, p0, LNP1;->_entrypoint:Lcom/snap/safety/customreporting/ReportEntrypoint;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Lot1;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, LNP1;->_delegate:Lcom/snap/bloops/inappreporting/api/CameosReportDelegate;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final b(Lcom/snap/safety/customreporting/ReportEntrypoint;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, LNP1;->_entrypoint:Lcom/snap/safety/customreporting/ReportEntrypoint;
+
+    .line 2
+    .line 3
+    return-void
+.end method

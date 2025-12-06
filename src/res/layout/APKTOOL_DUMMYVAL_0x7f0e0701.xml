@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b175c" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.imageloading.view.SnapImageView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b175d" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e01c9" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070953" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070953"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.component.SnapLabelView android:textSize="?APKTOOL_DUMMYVAL_0x7f0406f7" android:textStyle="bold" android:textColor="?APKTOOL_DUMMYVAL_0x7f040148" android:gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0c2b" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bloops_error_retry" />
+    <com.snap.component.SnapLabelView android:textSize="?APKTOOL_DUMMYVAL_0x7f040706" android:textColor="?APKTOOL_DUMMYVAL_0x7f040148" android:gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0c2a" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070508" />
+    <TextView android:layout_gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0c28" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070514" android:text="@string/retry" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070511" style="@style/APKTOOL_DUMMYVAL_0x7f140569" />
+</LinearLayout>

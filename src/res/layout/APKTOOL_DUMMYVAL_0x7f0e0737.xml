@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?APKTOOL_DUMMYVAL_0x7f0404bd" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:scrollbarStyle="outsideOverlay" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0d2d" android:background="?APKTOOL_DUMMYVAL_0x7f0404bd" android:padding="@dimen/APKTOOL_DUMMYVAL_0x7f07051a" android:visibility="visible" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f071300" android:textColor="?APKTOOL_DUMMYVAL_0x7f0405b5" android:gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0d2c" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070509" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/marco_polo_empty_store" android:layout_centerInParent="true" />
+</RelativeLayout>

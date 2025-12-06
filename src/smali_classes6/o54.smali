@@ -1,0 +1,33 @@
+.class public final Lo54;
+.super Lcom/snap/composer/utils/b;
+.source "SourceFile"
+
+
+# annotations
+.annotation runtime LDu3;
+    propertyReplacements = ""
+    schema = "\'friendStore\':r:\'[0]\',\'userProvider\':r:\'[1]\',\'grpcServiceFactory\':r:\'[2]\',\'cofStore\':r:\'[3]\',\'alertPresenter\':r:\'[4]\',\'analyticsDependencies\':r?:\'[5]\',\'pageDismissHandler\':f(),\'countdownEditHandler\':f(s),\'adReminderCardOnTap\':f(t),\'urlPreviewProvider\':r?:\'[6]\'"
+    typeReferences = {
+        Lcom/snap/composer/people/FriendStoring;,
+        Lcom/snap/composer/people/UserProviding;,
+        Lcom/snap/composer/networking/IGrpcServiceFactory;,
+        Lcom/snap/composer/cof/ICOFRxStore;,
+        Lcom/snap/composer/foundation/IAlertPresenter;,
+        Lcom/snap/modules/SCCCountdownShared/ICountdownsAnalyticsNativeContext;,
+        Lcom/snap/modules/url_preview/UrlPreviewProviding;
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method

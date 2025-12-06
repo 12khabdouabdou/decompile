@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.identity.loginsignup.ui.shared.BasicLoginSignupLayout android:orientation="vertical" android:id="@null" android:background="?APKTOOL_DUMMYVAL_0x7f0404b8" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.ui.view.SnapFontTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/signup_permissions_title" style="@style/APKTOOL_DUMMYVAL_0x7f1401dd" />
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f071308" android:textColor="?APKTOOL_DUMMYVAL_0x7f040120" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/signup_permissions_description" style="@style/APKTOOL_DUMMYVAL_0x7f1401af" />
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="185.0dip" android:layout_marginTop="90.0dip" android:layout_marginBottom="30.0dip" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f080381" />
+    <com.snap.ui.view.SnapFontTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/signup_permissions_subtext" style="@style/APKTOOL_DUMMYVAL_0x7f1401af" />
+</com.snap.identity.loginsignup.ui.shared.BasicLoginSignupLayout>

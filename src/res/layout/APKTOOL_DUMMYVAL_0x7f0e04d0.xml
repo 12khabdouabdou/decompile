@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.PullToRefreshLayout android:id="@id/ptr_container" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:APKTOOL_DUMMYVAL_0x7f04043b="@id/APKTOOL_DUMMYVAL_0x7f0b124a" custom:APKTOOL_DUMMYVAL_0x7f04043c="@dimen/APKTOOL_DUMMYVAL_0x7f070c0a">
+        <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e04bd" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b124a" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.snap.ui.view.PullToRefreshLayout>
+    <View android:id="@id/APKTOOL_DUMMYVAL_0x7f0b05e3" android:background="?APKTOOL_DUMMYVAL_0x7f04011c" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:layout_gravity="bottom|center" android:id="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070c30" />
+    <View android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1a09" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07143a" />
+    <com.snap.ui.view.progressbar.YellowHorizontalIndeterminateProgressBar android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1a9b" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f0714b7" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f07143a" />
+    <View android:layout_gravity="bottom" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0e4e" android:background="?APKTOOL_DUMMYVAL_0x7f04013b" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+    <ViewStub android:layout_gravity="bottom" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b02bf" android:layout="@layout/APKTOOL_DUMMYVAL_0x7f0e009f" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070bfd" />
+</merge>

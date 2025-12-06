@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.framework.ui.views.RoundedFrameLayout android:background="?APKTOOL_DUMMYVAL_0x7f0404be" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/APKTOOL_DUMMYVAL_0x7f07051c" app:APKTOOL_DUMMYVAL_0x7f040177="@dimen/APKTOOL_DUMMYVAL_0x7f07050c"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b17b1" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07121a">
+            <com.snap.ui.view.PausableLoadingSpinnerView android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070514" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070514" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <include android:id="@id/APKTOOL_DUMMYVAL_0x7f0b17af" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f071216" android:layout_alignParentTop="true" layout="@layout/APKTOOL_DUMMYVAL_0x7f0e0734" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/APKTOOL_DUMMYVAL_0x7f07050c" android:paddingRight="@dimen/APKTOOL_DUMMYVAL_0x7f07050c" android:paddingBottom="@dimen/APKTOOL_DUMMYVAL_0x7f07051a" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/APKTOOL_DUMMYVAL_0x7f0b17af" android:layout_alignParentBottom="true">
+            <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f071300" android:textColor="?APKTOOL_DUMMYVAL_0x7f0405b2" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b17b4" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f071306" android:textColor="?APKTOOL_DUMMYVAL_0x7f0405b5" android:ellipsize="end" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b17b0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f071306" android:textColor="?APKTOOL_DUMMYVAL_0x7f0405b2" android:ellipsize="end" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b17b2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_below="@id/APKTOOL_DUMMYVAL_0x7f0b17b0" />
+                <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f071306" android:textColor="?APKTOOL_DUMMYVAL_0x7f0405aa" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b17b3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/marco_polo_out_of_stock" />
+            </RelativeLayout>
+            <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f071306" android:textColor="?APKTOOL_DUMMYVAL_0x7f0405b5" android:ellipsize="end" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0de5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.snap.framework.ui.views.RoundedFrameLayout>

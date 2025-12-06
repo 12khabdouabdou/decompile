@@ -1,0 +1,211 @@
+.class public final enum LCkh;
+.super Ljava/lang/Enum;
+.source "SourceFile"
+
+
+# static fields
+.field public static final enum a:LCkh;
+
+.field public static final enum b:LCkh;
+
+.field public static final enum c:LCkh;
+
+.field public static final synthetic t:[LCkh;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 13
+
+    .line 1
+    const/4 v0, 0x5
+
+    .line 2
+    const/4 v1, 0x4
+
+    .line 3
+    const/4 v2, 0x3
+
+    .line 4
+    const/4 v3, 0x2
+
+    .line 5
+    const/4 v4, 0x1
+
+    .line 6
+    const/4 v5, 0x0
+
+    .line 7
+    new-instance v6, LCkh;
+
+    .line 8
+    .line 9
+    const-string v7, "SPOTLIGHT_SHARE_CTA"
+
+    .line 10
+    .line 11
+    invoke-direct {v6, v7, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 12
+    .line 13
+    .line 14
+    new-instance v7, LCkh;
+
+    .line 15
+    .line 16
+    const-string v8, "PROFILE_SPOTLIGHT_MANAGEMENT_CTA"
+
+    .line 17
+    .line 18
+    invoke-direct {v7, v8, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 19
+    .line 20
+    .line 21
+    new-instance v8, LCkh;
+
+    .line 22
+    .line 23
+    const-string v9, "SPOTLIGHT_MANAGEMENT_GRID_VIEW_CTA"
+
+    .line 24
+    .line 25
+    invoke-direct {v8, v9, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 26
+    .line 27
+    .line 28
+    new-instance v9, LCkh;
+
+    .line 29
+    .line 30
+    const-string v10, "SPOTLIGHT_PUSH_NOTIFICATION"
+
+    .line 31
+    .line 32
+    invoke-direct {v9, v10, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 33
+    .line 34
+    .line 35
+    sput-object v9, LCkh;->a:LCkh;
+
+    .line 36
+    .line 37
+    new-instance v10, LCkh;
+
+    .line 38
+    .line 39
+    const-string v11, "SPOTLIGHT_TAB_ICON"
+
+    .line 40
+    .line 41
+    invoke-direct {v10, v11, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 42
+    .line 43
+    .line 44
+    sput-object v10, LCkh;->b:LCkh;
+
+    .line 45
+    .line 46
+    new-instance v11, LCkh;
+
+    .line 47
+    .line 48
+    const-string v12, "SPOTLIGHT_DEEPLINK"
+
+    .line 49
+    .line 50
+    invoke-direct {v11, v12, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 51
+    .line 52
+    .line 53
+    sput-object v11, LCkh;->c:LCkh;
+
+    .line 54
+    .line 55
+    const/4 v12, 0x6
+
+    .line 56
+    new-array v12, v12, [LCkh;
+
+    .line 57
+    .line 58
+    aput-object v6, v12, v5
+
+    .line 59
+    .line 60
+    aput-object v7, v12, v4
+
+    .line 61
+    .line 62
+    aput-object v8, v12, v3
+
+    .line 63
+    .line 64
+    aput-object v9, v12, v2
+
+    .line 65
+    .line 66
+    aput-object v10, v12, v1
+
+    .line 67
+    .line 68
+    aput-object v11, v12, v0
+
+    .line 69
+    .line 70
+    sput-object v12, LCkh;->t:[LCkh;
+
+    .line 71
+    .line 72
+    return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)LCkh;
+    .locals 1
+
+    .line 1
+    const-class v0, LCkh;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, LCkh;
+
+    .line 8
+    .line 9
+    return-object p0
+.end method
+
+.method public static values()[LCkh;
+    .locals 1
+
+    .line 1
+    sget-object v0, LCkh;->t:[LCkh;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, [LCkh;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method

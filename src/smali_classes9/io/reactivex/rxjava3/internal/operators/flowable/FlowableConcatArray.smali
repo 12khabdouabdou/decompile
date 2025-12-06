@@ -1,0 +1,75 @@
+.class public final Lio/reactivex/rxjava3/internal/operators/flowable/FlowableConcatArray;
+.super Lio/reactivex/rxjava3/core/Flowable;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lio/reactivex/rxjava3/internal/operators/flowable/FlowableConcatArray$ConcatArraySubscriber;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Lio/reactivex/rxjava3/core/Flowable<",
+        "TT;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final b:[LZne;
+
+
+# direct methods
+.method public constructor <init>([LZne;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lio/reactivex/rxjava3/core/Flowable;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableConcatArray;->b:[LZne;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final C(LV6i;)V
+    .locals 2
+
+    .line 1
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableConcatArray$ConcatArraySubscriber;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableConcatArray;->b:[LZne;
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1, p1}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableConcatArray$ConcatArraySubscriber;-><init>([LZne;LV6i;)V
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-interface {p1, v0}, LV6i;->onSubscribe(Lc7i;)V
+
+    .line 9
+    .line 10
+    .line 11
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableConcatArray$ConcatArraySubscriber;->onComplete()V
+
+    .line 12
+    .line 13
+    .line 14
+    return-void
+.end method

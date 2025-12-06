@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@null" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f0800d4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.component.header.SnapSubscreenHeaderView app:APKTOOL_DUMMYVAL_0x7f04023c="?APKTOOL_DUMMYVAL_0x7f0404bd" app:APKTOOL_DUMMYVAL_0x7f04023d="9" app:APKTOOL_DUMMYVAL_0x7f04069d="@string/settings_language_title" style="@style/APKTOOL_DUMMYVAL_0x7f1405f4" />
+    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0ade" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:layout_marginRight="@dimen/APKTOOL_DUMMYVAL_0x7f070511" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f070511" />
+</LinearLayout>

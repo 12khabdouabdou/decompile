@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@null" android:background="@android:color/transparent" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.web.core.lib.webview.URLBar android:layout_gravity="top" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1a83" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07151b" />
+    <com.snap.openview.viewgroup.OpenLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1a86" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:background="?APKTOOL_DUMMYVAL_0x7f0404b8" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.snap.openview.viewgroup.OpenLayout>
+    <ImageButton android:layout_gravity="bottom|center|right" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1a88" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f080587" android:visibility="gone" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f0707ba" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f0707ba" android:layout_margin="@dimen/APKTOOL_DUMMYVAL_0x7f0707b9" android:scaleType="fitXY" android:contentDescription="@string/share_web_url" />
+    <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e05fe" />
+</FrameLayout>

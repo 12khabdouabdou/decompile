@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.snap.identity.ui.view.ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b066a" style="@style/APKTOOL_DUMMYVAL_0x7f1401dc" />
+        </com.snap.identity.ui.view.ScrollView>
+        <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e001f" />
+        <com.snap.identity.api.sharedui.ProgressButton android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0691" style="@style/APKTOOL_DUMMYVAL_0x7f1401d8" />
+        <com.snap.identity.api.sharedui.SubmitResendButton android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1291" android:visibility="gone" style="@style/APKTOOL_DUMMYVAL_0x7f1401d8" />
+    </LinearLayout>
+    <RelativeLayout android:layout_gravity="start|center|top" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1932" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.snap.imageloading.view.SnapImageView android:layout_gravity="start|center|top" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b01c6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f0804cb" android:tint="@color/APKTOOL_DUMMYVAL_0x7f060214" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:layout_alignParentStart="true" android:elevation="1.0dip" />
+        <com.snap.ui.view.SnapFontTextView android:textColor="?APKTOOL_DUMMYVAL_0x7f0405b2" android:gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0e76" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ngo_signup_create_account" style="@style/APKTOOL_DUMMYVAL_0x7f14038c" />
+        <com.snap.ui.view.SnapFontTextView android:textColor="@color/APKTOOL_DUMMYVAL_0x7f0604ae" android:gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0e75" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ngo_signup_step" android:layout_below="@id/APKTOOL_DUMMYVAL_0x7f0b0e76" style="@style/APKTOOL_DUMMYVAL_0x7f140387" />
+    </RelativeLayout>
+</FrameLayout>

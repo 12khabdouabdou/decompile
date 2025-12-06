@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/APKTOOL_DUMMYVAL_0x7f0808d3" android:paddingLeft="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:paddingRight="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/APKTOOL_DUMMYVAL_0x7f0706ca"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.ui.view.SnapFontTextView android:textSize="?APKTOOL_DUMMYVAL_0x7f0406f4" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060204" android:ellipsize="end" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b111e" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="220.0dip" android:maxLines="1" />
+    <com.snap.ui.view.SnapFontTextView android:textSize="?APKTOOL_DUMMYVAL_0x7f0406f4" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060327" android:ellipsize="end" android:layout_gravity="start" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b111d" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="220.0dip" android:maxLines="4" />
+</LinearLayout>

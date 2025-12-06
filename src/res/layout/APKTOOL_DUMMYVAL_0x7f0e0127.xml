@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b04fb" android:visibility="visible" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f07039c" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f07039c" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f0804b1" android:layout_centerInParent="true" />
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f071303" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f0604a0" android:gravity="center" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b04fa" android:paddingTop="@dimen/APKTOOL_DUMMYVAL_0x7f071076" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:paddingStart="@dimen/APKTOOL_DUMMYVAL_0x7f07039d" />
+</merge>

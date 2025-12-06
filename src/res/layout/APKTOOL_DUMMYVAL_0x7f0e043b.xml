@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.payments.lib.views.CommerceTitleBar android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0d26" android:background="?APKTOOL_DUMMYVAL_0x7f0404b8" android:visibility="gone" android:layout_height="wrap_content" style="@style/APKTOOL_DUMMYVAL_0x7f140207"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

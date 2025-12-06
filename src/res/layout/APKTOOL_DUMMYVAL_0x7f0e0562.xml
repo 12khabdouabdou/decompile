@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e0565" />
+    <FrameLayout android:id="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f07051a" app:APKTOOL_DUMMYVAL_0x7f0402d3="@null" app:APKTOOL_DUMMYVAL_0x7f0402db="0.5" app:APKTOOL_DUMMYVAL_0x7f0402dc="2" app:APKTOOL_DUMMYVAL_0x7f0402e5="0" app:APKTOOL_DUMMYVAL_0x7f0402e8="@id/APKTOOL_DUMMYVAL_0x7f0b110b">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f0805ba" />
+        <com.snap.ui.view.emoji.SnapEmojiTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b08c2" style="@style/APKTOOL_DUMMYVAL_0x7f140217" />
+        <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b08c1" style="@style/APKTOOL_DUMMYVAL_0x7f140218" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center" android:id="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070508" app:APKTOOL_DUMMYVAL_0x7f0402cc="@null" app:APKTOOL_DUMMYVAL_0x7f0402d2="0" app:APKTOOL_DUMMYVAL_0x7f0402db="0.5" app:APKTOOL_DUMMYVAL_0x7f0402e4="@null" app:APKTOOL_DUMMYVAL_0x7f0402e9="@null">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f0805ba" />
+        <com.snap.ui.view.emoji.SnapEmojiTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1428" style="@style/APKTOOL_DUMMYVAL_0x7f140217" />
+        <com.snap.ui.view.SnapFontTextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1427" style="@style/APKTOOL_DUMMYVAL_0x7f140218" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.component.cells.SnapUserCellView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b14aa" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f07051a" app:APKTOOL_DUMMYVAL_0x7f0402d3="@id/APKTOOL_DUMMYVAL_0x7f0b14a9" app:APKTOOL_DUMMYVAL_0x7f0402e5="0" app:APKTOOL_DUMMYVAL_0x7f0402e9="0" style="@style/APKTOOL_DUMMYVAL_0x7f140243" />
+    <com.snap.component.cells.SnapUserCellView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b14a9" android:layout_width="0.0dip" android:layout_height="wrap_content" app:APKTOOL_DUMMYVAL_0x7f0402d2="0" app:APKTOOL_DUMMYVAL_0x7f0402e4="@id/APKTOOL_DUMMYVAL_0x7f0b14aa" app:APKTOOL_DUMMYVAL_0x7f0402e9="0" style="@style/APKTOOL_DUMMYVAL_0x7f140243" />
+</androidx.constraintlayout.widget.ConstraintLayout>

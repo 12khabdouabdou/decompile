@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewSwitcher android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070435" android:inAnimation="@android:anim/fade_in" android:outAnimation="@android:anim/fade_out"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b05f2" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/APKTOOL_DUMMYVAL_0x7f0b05ee" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/APKTOOL_DUMMYVAL_0x7f070443" android:layout_marginRight="@dimen/APKTOOL_DUMMYVAL_0x7f070443" android:layout_marginHorizontal="@dimen/APKTOOL_DUMMYVAL_0x7f070443" />
+</ViewSwitcher>

@@ -1,0 +1,284 @@
+.class public final LLr8;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field public final a:[B
+
+.field public final b:J
+
+.field public final c:[B
+
+
+# direct methods
+.method public constructor <init>([BJ[B)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LLr8;->a:[B
+
+    .line 5
+    .line 6
+    iput-wide p2, p0, LLr8;->b:J
+
+    .line 7
+    .line 8
+    iput-object p4, p0, LLr8;->c:[B
+
+    .line 9
+    .line 10
+    return-void
+.end method
+
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 7
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, LLr8;
+
+    .line 6
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    if-nez v1, :cond_1
+
+    .line 9
+    .line 10
+    return v2
+
+    .line 11
+    :cond_1
+    check-cast p1, LLr8;
+
+    .line 12
+    .line 13
+    iget-object v1, p1, LLr8;->a:[B
+
+    .line 14
+    .line 15
+    iget-object v3, p0, LLr8;->a:[B
+
+    .line 16
+    .line 17
+    invoke-static {v3, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v1
+
+    .line 21
+    if-nez v1, :cond_2
+
+    .line 22
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    iget-wide v3, p0, LLr8;->b:J
+
+    .line 25
+    .line 26
+    iget-wide v5, p1, LLr8;->b:J
+
+    .line 27
+    .line 28
+    cmp-long v1, v3, v5
+
+    .line 29
+    .line 30
+    if-eqz v1, :cond_3
+
+    .line 31
+    .line 32
+    return v2
+
+    .line 33
+    :cond_3
+    iget-object v1, p0, LLr8;->c:[B
+
+    .line 34
+    .line 35
+    iget-object p1, p1, LLr8;->c:[B
+
+    .line 36
+    .line 37
+    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 38
+    .line 39
+    .line 40
+    move-result p1
+
+    .line 41
+    if-nez p1, :cond_4
+
+    .line 42
+    .line 43
+    return v2
+
+    .line 44
+    :cond_4
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 6
+
+    .line 1
+    iget-object v0, p0, LLr8;->a:[B
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Ljava/util/Arrays;->hashCode([B)I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 8
+    .line 9
+    const/16 v1, 0x20
+
+    .line 10
+    .line 11
+    iget-wide v2, p0, LLr8;->b:J
+
+    .line 12
+    .line 13
+    ushr-long v4, v2, v1
+
+    .line 14
+    .line 15
+    xor-long/2addr v2, v4
+
+    .line 16
+    long-to-int v1, v2
+
+    .line 17
+    add-int/2addr v0, v1
+
+    .line 18
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 19
+    .line 20
+    iget-object v1, p0, LLr8;->c:[B
+
+    .line 21
+    .line 22
+    invoke-static {v1}, Ljava/util/Arrays;->hashCode([B)I
+
+    .line 23
+    .line 24
+    .line 25
+    move-result v1
+
+    .line 26
+    add-int/2addr v1, v0
+
+    .line 27
+    return v1
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 5
+
+    .line 1
+    iget-object v0, p0, LLr8;->a:[B
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Ljava/util/Arrays;->toString([B)Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    iget-object v1, p0, LLr8;->c:[B
+
+    .line 8
+    .line 9
+    invoke-static {v1}, Ljava/util/Arrays;->toString([B)Ljava/lang/String;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v1
+
+    .line 13
+    const-string v2, "GetSyncMetadataForOwner(syncToken="
+
+    .line 14
+    .line 15
+    const-string v3, ", nextSyncEpochSec="
+
+    .line 16
+    .line 17
+    invoke-static {v2, v0, v3}, Ln9f;->s(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v0
+
+    .line 21
+    iget-wide v2, p0, LLr8;->b:J
+
+    .line 22
+    .line 23
+    const-string v4, ", lastSyncReqParamsHash="
+
+    .line 24
+    .line 25
+    invoke-static {v2, v3, v4, v1, v0}, Lq27;->i(JLjava/lang/String;Ljava/lang/String;Ljava/lang/StringBuilder;)V
+
+    .line 26
+    .line 27
+    .line 28
+    const-string v1, ")"
+
+    .line 29
+    .line 30
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 31
+    .line 32
+    .line 33
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-object v0
+
+    .line 37
+    return-object v0
+.end method

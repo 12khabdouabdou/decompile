@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f070513" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070513"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/APKTOOL_DUMMYVAL_0x7f071306" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060219" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/autofill_consent_prompt_enable_title" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f07050c">
+        <com.snap.ui.view.SnapFontTextView android:textSize="?APKTOOL_DUMMYVAL_0x7f0406eb" android:textColor="@color/APKTOOL_DUMMYVAL_0x7f060219" android:layout_gravity="center_vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0e9e" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/autofill_consent_prompt_not_now_button" custom:APKTOOL_DUMMYVAL_0x7f04047c="?APKTOOL_DUMMYVAL_0x7f0406ea" />
+        <com.snap.component.button.SnapButtonView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b01a7" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070132" android:layout_height="wrap_content" android:layout_marginStart="@dimen/APKTOOL_DUMMYVAL_0x7f07050c" custom:APKTOOL_DUMMYVAL_0x7f0400b0="0" custom:APKTOOL_DUMMYVAL_0x7f0400b1="@string/autofill_consent_prompt_enable_button" />
+    </LinearLayout>
+</LinearLayout>

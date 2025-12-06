@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@null" android:background="?APKTOOL_DUMMYVAL_0x7f0404b8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e04d6" />
+    <LinearLayout android:orientation="vertical" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b066a" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:APKTOOL_DUMMYVAL_0x7f0402cd="@id/APKTOOL_DUMMYVAL_0x7f0b0f8a" custom:APKTOOL_DUMMYVAL_0x7f0402df="0" custom:APKTOOL_DUMMYVAL_0x7f0402e3="0" custom:APKTOOL_DUMMYVAL_0x7f0402e8="@id/APKTOOL_DUMMYVAL_0x7f0b1932">
+        <com.snap.ui.view.SnapFontTextView android:id="@null" android:text="@string/username_label" style="@style/APKTOOL_DUMMYVAL_0x7f1401fc" />
+        <FrameLayout android:id="@null" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.snap.ui.view.SnapFontEditText android:id="@id/username_form_field" android:maxLines="1" android:maxLength="15" android:inputType="textNoSuggestions" android:imeOptions="flagForceAscii" style="@style/APKTOOL_DUMMYVAL_0x7f1401fb" />
+            <ImageView android:layout_gravity="end" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b19fc" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070516" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070516" android:layout_marginTop="4.0dip" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f080647" android:paddingStart="0.0dip" android:paddingEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070508" />
+            <com.snap.ui.view.PausableLoadingSpinnerView android:layout_gravity="end" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b19ee" android:visibility="gone" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070514" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070514" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:layout_marginEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070508" />
+            <com.snap.identity.loginsignup.ui.view.NgoInputSubtextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b19fe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070518" custom:APKTOOL_DUMMYVAL_0x7f040264="@drawable/APKTOOL_DUMMYVAL_0x7f080b82" custom:APKTOOL_DUMMYVAL_0x7f04066d="@string/ngo_username_available" />
+        </FrameLayout>
+        <com.snap.ui.view.SnapFontTextView android:id="@null" android:text="@string/password_label" style="@style/APKTOOL_DUMMYVAL_0x7f1401fc" />
+        <FrameLayout android:id="@null" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.snap.ui.view.SnapFontEditText android:id="@id/password_form_field" android:maxLines="1" android:inputType="textVisiblePassword" android:paddingStart="@dimen/APKTOOL_DUMMYVAL_0x7f070508" android:paddingEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070517" style="@style/APKTOOL_DUMMYVAL_0x7f1401fb" />
+            <ImageView android:layout_gravity="end" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b100c" android:visibility="gone" android:layout_width="@dimen/APKTOOL_DUMMYVAL_0x7f070516" android:layout_height="@dimen/APKTOOL_DUMMYVAL_0x7f070516" android:layout_marginTop="4.0dip" android:src="@drawable/APKTOOL_DUMMYVAL_0x7f080ab2" android:tint="@color/APKTOOL_DUMMYVAL_0x7f06039e" android:paddingStart="0.0dip" android:paddingEnd="@dimen/APKTOOL_DUMMYVAL_0x7f070508" />
+            <com.snap.identity.loginsignup.ui.view.NgoInputSubtextView android:id="@id/APKTOOL_DUMMYVAL_0x7f0b1011" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMYVAL_0x7f070518" custom:APKTOOL_DUMMYVAL_0x7f040264="@drawable/APKTOOL_DUMMYVAL_0x7f080b7f" custom:APKTOOL_DUMMYVAL_0x7f04066d="@string/ngo_password_empty" />
+        </FrameLayout>
+    </LinearLayout>
+    <include layout="@layout/APKTOOL_DUMMYVAL_0x7f0e001f" />
+    <com.snap.identity.api.sharedui.ProgressButton android:layout_gravity="center_horizontal" android:id="@id/APKTOOL_DUMMYVAL_0x7f0b0691" custom:APKTOOL_DUMMYVAL_0x7f0402cc="0" custom:APKTOOL_DUMMYVAL_0x7f0402e0="0" style="@style/APKTOOL_DUMMYVAL_0x7f1401d8" />
+</androidx.constraintlayout.widget.ConstraintLayout>

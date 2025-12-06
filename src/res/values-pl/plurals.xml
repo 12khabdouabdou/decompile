@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110000">
+        <item quantity="other">Wybrano %d elementów</item>
+        <item quantity="one">Wybrano %d element</item>
+        <item quantity="few">Wybrano %d elementy</item>
+        <item quantity="many">Wybrano %d elementów</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110001">
+        <item quantity="other">Ukryj Snapy (Tylko dla mnie)</item>
+        <item quantity="one">@string/memories_opera_action_menu_hide</item>
+        <item quantity="few">Ukryj Snapy (Tylko dla mnie)</item>
+        <item quantity="many">Ukryj Snapy (Tylko dla mnie)</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110002">
+        <item quantity="other">Na %d godziny</item>
+        <item quantity="one">Na %d godzinę</item>
+        <item quantity="few">Na %d godziny</item>
+        <item quantity="many">Na %d godzin</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110003">
+        <item quantity="other">Wybrano %d Snapów</item>
+        <item quantity="one">Wybrano %d Snapa</item>
+        <item quantity="few">Wybrano %d Snapy</item>
+        <item quantity="many">Wybrano %d Snapów</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110004">
+        <item quantity="other">Odsłoń Snapy</item>
+        <item quantity="one">@string/memories_opera_action_menu_unhide</item>
+        <item quantity="few">Odsłoń Snapy</item>
+        <item quantity="many">Odsłoń Snapy</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110009">
+        <item quantity="other">%1$s snapchaterów dodało Cię!</item>
+        <item quantity="one">%1$s snapchater dodał Cię!</item>
+        <item quantity="few">%1$s snapchaterów dodało Cię!</item>
+        <item quantity="many">%1$s snapchaterów dodało Cię!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11000a">
+        <item quantity="other">%1$s propozycji znajomości!</item>
+        <item quantity="one">%1$s propozycja znajomości!</item>
+        <item quantity="few">%1$s propozycje znajomości!</item>
+        <item quantity="many">%1$s propozycji znajomości!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11000c">
+        <item quantity="other">Dodaj %d znajomych</item>
+        <item quantity="one">Dodaj %d znajomego</item>
+        <item quantity="few">Dodaj %d znajomych</item>
+        <item quantity="many">Dodaj %d znajomych</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11000d">
+        <item quantity="other">Z pomocą funkcji Multi Snap zrobisz do %1$d Snapów naraz!</item>
+        <item quantity="one">Z pomocą funkcji Multi Snap zrobisz do %1$d Snapów naraz!</item>
+        <item quantity="few">Z pomocą funkcji Multi Snap zrobisz do %1$d Snapów naraz!</item>
+        <item quantity="many">Z pomocą funkcji Multi Snap zrobisz do %1$d Snapów naraz!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11000e">
+        <item quantity="other">Czy na pewno chcesz wyłączyć Multi Snapy? Twoja niezapisana seria %1$d Snapa zostanie utracona.</item>
+        <item quantity="one">Czy na pewno chcesz wyłączyć Multi Snapy? Twój niezapisany Snap zostanie utracony.</item>
+        <item quantity="few">Czy na pewno chcesz wyłączyć Multi Snapy? Twoja niezapisana seria %1$d Snapów zostanie utracona.</item>
+        <item quantity="many">Czy na pewno chcesz wyłączyć Multi Snapy? Twoja niezapisana seria %1$d Snapów zostanie utracona.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11000f">
+        <item quantity="other">%1$s I %2$s ZAPISALI %3$d ZDJĘCIA OD %4$s</item>
+        <item quantity="one">%1$s I %2$s ZAPISALI ZDJĘCIE OD %4$s</item>
+        <item quantity="few">%1$s I %2$s ZAPISALI %3$d ZDJĘCIA OD %4$s</item>
+        <item quantity="many">%1$s I %2$s ZAPISALI %3$d ZDJĘĆ OD %4$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110010">
+        <item quantity="other">%1$s I %2$s ZAPISALI %3$d WYSŁANEGO PRZEZ CIEBIE ZDJĘCIA</item>
+        <item quantity="one">%1$s I %2$s ZAPISALI TWOJE ZDJĘCIE</item>
+        <item quantity="few">%1$s I %2$s ZAPISALI %3$d WYSŁANE PRZEZ CIEBIE ZDJĘCIA</item>
+        <item quantity="many">%1$s I %2$s ZAPISALI %3$d WYSŁANYCH PRZEZ CIEBIE ZDJĘĆ</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110011">
+        <item quantity="other">%1$s I %2$s ZAPISALI %3$d ELEMENTU OD %4$s</item>
+        <item quantity="one">%1$s I %2$s ZAPISALI ELEMENT OD %4$s</item>
+        <item quantity="few">%1$s I %2$s ZAPISALI %3$d ELEMENTY OD %4$s</item>
+        <item quantity="many">%1$s I %2$s ZAPISALI %3$d ELEMENTÓW OD %4$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110012">
+        <item quantity="other">%1$s I %2$s ZAPISALI %3$d WYSŁANEGO PRZEZ CIEBIE ELEMENTU</item>
+        <item quantity="one">%1$s I %2$s ZAPISALI TWÓJ ELEMENT</item>
+        <item quantity="few">%1$s I %2$s ZAPISALI %3$d WYSŁANE PRZEZ CIEBIE ELEMENTY</item>
+        <item quantity="many">%1$s I %2$s ZAPISALI %3$d WYSŁANYCH PRZEZ CIEBIE ELEMENTÓW</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110013">
+        <item quantity="other">%1$s I %2$s ZAPISALI %3$d FILMU OD %4$s</item>
+        <item quantity="one">%1$s I %2$s ZAPISALI FILM OD %4$s</item>
+        <item quantity="few">%1$s I %2$s ZAPISALI %3$d FILMY OD %4$s</item>
+        <item quantity="many">%1$s I %2$s ZAPISALI %3$d FILMÓW OD %4$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110014">
+        <item quantity="other">%1$s I %2$s ZAPISALI %3$d WYSŁANEGO PRZEZ CIEBIE FILMU</item>
+        <item quantity="one">%1$s I %2$s ZAPISALI TWÓJ FILM</item>
+        <item quantity="few">%1$s I %2$s ZAPISALI %3$d WYSŁANE PRZEZ CIEBIE FILMY</item>
+        <item quantity="many">%1$s I %2$s ZAPISALI %3$d WYSŁANYCH PRZEZ CIEBIE FILMÓW</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110015">
+        <item quantity="other">TY I %1$s ZAPISALIŚCIE %2$d ZDJĘCIA OD %3$s</item>
+        <item quantity="one">TY I %1$s ZAPISALIŚCIE ZDJĘCIE OD %3$s</item>
+        <item quantity="few">TY I %1$s ZAPISALIŚCIE %2$d ZDJĘCIA OD %3$s</item>
+        <item quantity="many">TY I %1$s ZAPISALIŚCIE %2$d ZDJĘĆ OD %3$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110016">
+        <item quantity="other">TY I %1$s ZAPISALIŚCIE %2$d ELEMENTU OD %3$s</item>
+        <item quantity="one">TY I %1$s ZAPISALIŚCIE ELEMENT OD %3$s</item>
+        <item quantity="few">TY I %1$s ZAPISALIŚCIE %2$d ELEMENTY OD %3$s</item>
+        <item quantity="many">TY I %1$s ZAPISALIŚCIE %2$d ELEMENTÓW OD %3$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110017">
+        <item quantity="other">TY I %1$s ZAPISALIŚCIE %2$d FILMU OD %3$s</item>
+        <item quantity="one">TY I %1$s ZAPISALIŚCIE FILM OD %3$s</item>
+        <item quantity="few">TY I %1$s ZAPISALIŚCIE %2$d FILMY OD %3$s</item>
+        <item quantity="many">TY I %1$s ZAPISALIŚCIE %2$d FILMÓW OD %3$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110018">
+        <item quantity="other">%1$s I %2$s ZAPISALI %3$d ZDJĘCIA OD %4$s</item>
+        <item quantity="one">%1$s I %2$s ZAPISALI ZDJĘCIE OD %4$s</item>
+        <item quantity="few">%1$s I %2$s ZAPISALI %3$d ZDJĘCIA OD %4$s</item>
+        <item quantity="many">%1$s I %2$s ZAPISALI %3$d ZDJĘĆ OD %4$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110019">
+        <item quantity="other">%1$s I %2$s ZAPISALI %3$d WYSŁANEGO PRZEZ CIEBIE ZDJĘCIA</item>
+        <item quantity="one">%1$s I %2$s ZAPISALI TWOJE ZDJĘCIE</item>
+        <item quantity="few">%1$s I %2$s ZAPISALI %3$d WYSŁANE PRZEZ CIEBIE ZDJĘCIA</item>
+        <item quantity="many">%1$s I %2$s ZAPISALI %3$d WYSŁANYCH PRZEZ CIEBIE ZDJĘĆ</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11001a">
+        <item quantity="other">%1$s I %2$s ZAPISALI %3$d ELEMENTU OD %4$s</item>
+        <item quantity="one">%1$s I %2$s ZAPISALI ELEMENT OD %4$s</item>
+        <item quantity="few">%1$s I %2$s ZAPISALI %3$d ELEMENTY OD %4$s</item>
+        <item quantity="many">%1$s I %2$s ZAPISALI %3$d ELEMENTÓW OD %4$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11001b">
+        <item quantity="other">%1$s I %2$s ZAPISALI %3$d WYSŁANEGO PRZEZ CIEBIE ELEMENTU</item>
+        <item quantity="one">%1$s I %2$s ZAPISALI TWÓJ ELEMENT</item>
+        <item quantity="few">%1$s I %2$s ZAPISALI %3$d WYSŁANE PRZEZ CIEBIE ELEMENTY</item>
+        <item quantity="many">%1$s I %2$s ZAPISALI %3$d WYSŁANYCH PRZEZ CIEBIE ELEMENTÓW</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11001c">
+        <item quantity="other">%1$s I %2$s ZAPISALI %3$d FILMU OD %4$s</item>
+        <item quantity="one">%1$s I %2$s ZAPISALI FILM OD %4$s</item>
+        <item quantity="few">%1$s I %2$s ZAPISALI %3$d FILMY OD %4$s</item>
+        <item quantity="many">%1$s I %2$s ZAPISALI %3$d FILMÓW OD %4$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11001d">
+        <item quantity="other">%1$s I %2$s ZAPISALI %3$d WYSŁANEGO PRZEZ CIEBIE FILMU</item>
+        <item quantity="one">%1$s I %2$s ZAPISALI TWÓJ FILM</item>
+        <item quantity="few">%1$s I %2$s ZAPISALI %3$d WYSŁANE PRZEZ CIEBIE FILMY</item>
+        <item quantity="many">%1$s I %2$s ZAPISALI %3$d WYSŁANYCH PRZEZ CIEBIE FILMÓW</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11001e">
+        <item quantity="other">TY, %1$s I %2$s ZAPISALIŚCIE %3$d ZDJĘĆ OD %4$s</item>
+        <item quantity="one">TY, %1$s I %2$s ZAPISALIŚCIE ZDJĘCIE OD %4$s</item>
+        <item quantity="few">TY, %1$s I %2$s ZAPISALIŚCIE %3$d ZDJĘCIA OD %4$s</item>
+        <item quantity="many">TY, %1$s I %2$s ZAPISALIŚCIE %3$d ZDJĘĆ OD %4$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11001f">
+        <item quantity="other">TY, %1$s I %2$s ZAPISALIŚCIE %3$d ELEMENTU OD %4$s</item>
+        <item quantity="one">TY, %1$s I %2$s ZAPISALIŚCIE ELEMENT OD %4$s</item>
+        <item quantity="few">TY, %1$s I %2$s ZAPISALIŚCIE %3$d ELEMENTY OD %4$s</item>
+        <item quantity="many">TY, %1$s I %2$s ZAPISALIŚCIE %3$d ELEMENTÓW OD %4$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110020">
+        <item quantity="other">TY, %1$s I %2$s ZAPISALIŚCIE %3$d FILMU OD %4$s</item>
+        <item quantity="one">TY, %1$s I %2$s ZAPISALIŚCIE FILM OD %4$s</item>
+        <item quantity="few">TY, %1$s I %2$s ZAPISALIŚCIE %3$d FILMY OD %4$s</item>
+        <item quantity="many">TY, %1$s I %2$s ZAPISALIŚCIE %3$d FILMÓW OD %4$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110021">
+        <item quantity="other">%1$s ZAPISAŁ(A) %2$d ZDJĘCIA OD %3$s</item>
+        <item quantity="one">%1$s ZAPISAŁ(A) ZDJĘCIE OD %3$s</item>
+        <item quantity="few">%1$s ZAPISAŁ(A) %2$d ZDJĘCIA OD %3$s</item>
+        <item quantity="many">%1$s ZAPISAŁ(A) %2$d ZDJĘĆ OD %3$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110022">
+        <item quantity="other">%1$s ZAPISAŁ(A) %2$d ZDJĘCIA WYSŁANEGO PRZEZ CIEBIE</item>
+        <item quantity="one">%1$s ZAPISAŁ(A) TWOJE ZDJĘCIE</item>
+        <item quantity="few">%1$s ZAPISAŁ(A) %2$d ZDJĘCIA WYSŁANE PRZEZ CIEBIE</item>
+        <item quantity="many">%1$s ZAPISAŁ(A) %2$d ZDJĘĆ WYSŁANYCH PRZEZ CIEBIE</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110023">
+        <item quantity="other">%1$s ZAPISAŁ(A) %2$d ELEMENTU OD %3$s</item>
+        <item quantity="one">%1$s ZAPISAŁ(A) ELEMENT OD %3$s</item>
+        <item quantity="few">%1$s ZAPISAŁ(A) %2$d ELEMENTY OD %3$s</item>
+        <item quantity="many">%1$s ZAPISAŁ(A) %2$d ELEMENTÓW OD %3$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110024">
+        <item quantity="other">%1$s ZAPISALI %2$d ELEMENTU WYSŁANEGO PRZEZ CIEBIE</item>
+        <item quantity="one">%1$s ZAPISAŁ(A) TWÓJ ELEMENT</item>
+        <item quantity="few">%1$s ZAPISALI %2$d ELEMENTY WYSŁANE PRZEZ CIEBIE</item>
+        <item quantity="many">%1$s ZAPISALI %2$d ELEMENTÓW WYSŁANYCH PRZEZ CIEBIE</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110025">
+        <item quantity="other">%1$s ZAPISAŁ(A) %2$d FILMU OD %3$s</item>
+        <item quantity="one">%1$s ZAPISAŁ(A) FILM OD %3$s</item>
+        <item quantity="few">%1$s ZAPISAŁ(A) %2$d FILMY OD %3$s</item>
+        <item quantity="many">%1$s ZAPISAŁ(A) %2$d FILMÓW OD %3$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110026">
+        <item quantity="other">%1$s ZAPISAŁ(A) %2$d WYSŁANEGO PRZEZ CIEBIE FILMU</item>
+        <item quantity="one">%1$s ZAPISAŁ(A) TWÓJ FILM</item>
+        <item quantity="few">%1$s ZAPISAŁ(A) %2$d WYSŁANE PRZEZ CIEBIE FILMY</item>
+        <item quantity="many">%1$s ZAPISAŁ(A) %2$d WYSŁANYCH PRZEZ CIEBIE FILMÓW</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110027">
+        <item quantity="other">ZAPISAŁEŚ(-AŚ) %1$d ZDJĘCIA OD %2$s</item>
+        <item quantity="one">ZAPISAŁEŚ(-AŚ) ZDJĘCIE OD %2$s</item>
+        <item quantity="few">ZAPISAŁEŚ(-AŚ) %1$d ZDJĘCIA OD %2$s</item>
+        <item quantity="many">ZAPISAŁEŚ(-AŚ) %1$d ZDJĘĆ OD %2$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110028">
+        <item quantity="other">ZAPISAŁEŚ(-AŚ) %1$d ELEMENTU OD %2$s</item>
+        <item quantity="one">ZAPISAŁEŚ(-AŚ) ELEMENT OD %2$s</item>
+        <item quantity="few">ZAPISAŁEŚ(-AŚ) %1$d ELEMENTY OD %2$s</item>
+        <item quantity="many">ZAPISAŁEŚ(-AŚ) %1$d ELEMENTÓW OD %2$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110029">
+        <item quantity="other">ZAPISAŁEŚ(-AŚ) %1$d FILMU OD %2$s</item>
+        <item quantity="one">ZAPISAŁEŚ(-AŚ) FILM OD %2$s</item>
+        <item quantity="few">ZAPISAŁEŚ(-AŚ) %1$d FILMY OD %2$s</item>
+        <item quantity="many">ZAPISAŁEŚ(-AŚ) %1$d FILMÓW OD %2$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11002a">
+        <item quantity="other">Możesz dodawać Snapy tylko do %1$d spersonalizowanych Stories jednocześnie</item>
+        <item quantity="one">Możesz dodawać Snapy tylko do %1$d spersonalizowanej Story jednocześnie</item>
+        <item quantity="few">Możesz dodawać Snapy tylko do %1$d spersonalizowanych Stories jednocześnie</item>
+        <item quantity="many">Możesz dodawać Snapy tylko do %1$d spersonalizowanych Stories jednocześnie</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11002b">
+        <item quantity="other">%1$d ft</item>
+        <item quantity="one">%1$d ft</item>
+        <item quantity="few">%1$d ft</item>
+        <item quantity="many">%1$d ft</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11002d">
+        <item quantity="other">Za %2$d dnia %1$s ma urodziny 🎂. Podaruj Snapchata+</item>
+        <item quantity="one">Jutro %1$s ma urodziny 🎂. Podaruj Snapchata+</item>
+        <item quantity="few">Za %2$d dni %1$s ma urodziny 🎂. Podaruj Snapchata+</item>
+        <item quantity="many">Za %2$d dni %1$s ma urodziny 🎂. Podaruj Snapchata+</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11002e">
+        <item quantity="other">Twoje Pixy zawiera następującą liczbę Snapów: %1$d. Czy chcesz również uruchomić ponownie urządzenie i usunąć wszystkie Snapy i dane użytkownika?</item>
+        <item quantity="one">Twoje Pixy zawiera Snapa. Czy chcesz również uruchomić ponownie urządzenie i usunąć wszystkie Snapy i dane użytkownika?</item>
+        <item quantity="few">Twoje Pixy zawiera następującą liczbę Snapów: %1$d. Czy chcesz również uruchomić ponownie urządzenie i usunąć wszystkie Snapy i dane użytkownika?</item>
+        <item quantity="many">Twoje Pixy zawiera następującą liczbę Snapów: %1$d. Czy chcesz również uruchomić ponownie urządzenie i usunąć wszystkie Snapy i dane użytkownika?</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11002f">
+        <item quantity="other">Usunięcie tych Snapów wiąże się też z usunięciem ich z urządzenia Cheerios.</item>
+        <item quantity="one">Usunięcie tego Snapa wiąże się też z usunięciem go z urządzenia Cheerios.</item>
+        <item quantity="few">Usunięcie tych Snapów wiąże się też z usunięciem ich z urządzenia Cheerios.</item>
+        <item quantity="many">Usunięcie tych Snapów wiąże się też z usunięciem ich z urządzenia Cheerios.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110030">
+        <item quantity="other">Usunięto %d Snapa</item>
+        <item quantity="one">Usunięto Snapa</item>
+        <item quantity="few">Usunięto %d Snapy</item>
+        <item quantity="many">Usunięto %d Snapów</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110032">
+        <item quantity="other">%d nowych Snapów</item>
+        <item quantity="one">1 nowy Snap</item>
+        <item quantity="few">%d nowe Snapy</item>
+        <item quantity="many">%d nowych Snapów</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110033">
+        <item quantity="other">Liczba nowych Snapów: %d. Stuknij, aby zaimportować.</item>
+        <item quantity="one">1 nowy Snap. Stuknij, aby zaimportować.</item>
+        <item quantity="few">Liczba nowych Snapów: %d. Stuknij, aby zaimportować.</item>
+        <item quantity="many">Liczba nowych Snapów: %d. Stuknij, aby zaimportować.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110034">
+        <item quantity="other">Zaimportowano %d Snapa</item>
+        <item quantity="one">Zaimportowano %d Snapa</item>
+        <item quantity="few">Zaimportowano %d Snapy</item>
+        <item quantity="many">Zaimportowano %d Snapów</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11003a">
+        <item quantity="other">Ukryj odpowiedzi</item>
+        <item quantity="one">Ukryj odpowiedź</item>
+        <item quantity="few">Ukryj odpowiedzi</item>
+        <item quantity="many">Ukryj odpowiedzi</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11003b">
+        <item quantity="other">Pokaż %s odpowiedzi</item>
+        <item quantity="one">Pokaż 1 odpowiedź</item>
+        <item quantity="few">Pokaż %s odpowiedzi</item>
+        <item quantity="many">Pokaż %s odpowiedzi</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11003c">
+        <item quantity="other">Liczba nowych: %1$d</item>
+        <item quantity="one">Liczba nowych: %1$d</item>
+        <item quantity="few">Liczba nowych: %1$d</item>
+        <item quantity="many">Liczba nowych: %1$d</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11003d">
+        <item quantity="other">%1$d do zaimportowania</item>
+        <item quantity="one">%1$d do zaimportowania</item>
+        <item quantity="few">%1$d do zaimportowania</item>
+        <item quantity="many">%1$d do zaimportowania</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11003e">
+        <item quantity="other">%d dnia</item>
+        <item quantity="one">%d dzień</item>
+        <item quantity="few">%d dni</item>
+        <item quantity="many">%d dni</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11003f">
+        <item quantity="other">%d dnia</item>
+        <item quantity="one">%d dzień</item>
+        <item quantity="few">%d dni</item>
+        <item quantity="many">%d dni</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110040">
+        <item quantity="other">%d dnia temu</item>
+        <item quantity="one">%d dzień temu</item>
+        <item quantity="few">%d dni temu</item>
+        <item quantity="many">%d dni temu</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110047">
+        <item quantity="other">Zaktualizowano %1$s dnia temu</item>
+        <item quantity="one">Zaktualizowano %1$s dzień temu</item>
+        <item quantity="few">Zaktualizowano %1$s dni temu</item>
+        <item quantity="many">Zaktualizowano %1$s dni temu</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110048">
+        <item quantity="other">Czy na pewno chcesz odrzucić swoje Multi Snapy? Twoja niezapisana seria %1$d Snapa zostanie utracona.</item>
+        <item quantity="one">Czy na pewno chcesz odrzucić swoje Multi Snapy? Twoja niezapisana seria Snapów zostanie utracona.</item>
+        <item quantity="few">Czy na pewno chcesz odrzucić swoje Multi Snapy? Twoja niezapisana seria %1$d Snapów zostanie utracona.</item>
+        <item quantity="many">Czy na pewno chcesz odrzucić swoje Multi Snapy? Twoja niezapisana seria %1$d Snapów zostanie utracona.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11004a">
+        <item quantity="other">Nie udało się zapisać %1$d Snapów</item>
+        <item quantity="one">Nie udało się zapisać %1$d Snapa</item>
+        <item quantity="few">Nie udało się zapisać %1$d Snapów</item>
+        <item quantity="many">Nie udało się zapisać %1$d Snapów</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11004b">
+        <item quantity="other">Dodaj %d twórców</item>
+        <item quantity="one">Dodaj 1 twórcę</item>
+        <item quantity="few">Dodaj %d twórców</item>
+        <item quantity="many">Dodaj %d twórców</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11004c">
+        <item quantity="other">%d ft</item>
+        <item quantity="one">%d ft</item>
+        <item quantity="few">%d ft</item>
+        <item quantity="many">%d ft</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11004d">
+        <item quantity="other">%d km</item>
+        <item quantity="one">%d km</item>
+        <item quantity="few">%d km</item>
+        <item quantity="many">%d km</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11004e">
+        <item quantity="other">%d m</item>
+        <item quantity="one">%d m</item>
+        <item quantity="few">%d m</item>
+        <item quantity="many">%d m</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11004f">
+        <item quantity="other">%d mi</item>
+        <item quantity="one">%d mi</item>
+        <item quantity="few">%d mi</item>
+        <item quantity="many">%d mi</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110050">
+        <item quantity="other">Wyślij jeszcze %1$s zaproszeń do znajomych!</item>
+        <item quantity="one">Wyślij jeszcze %1$s zaproszenie do grona znajomych!</item>
+        <item quantity="few">Wyślij jeszcze %1$s zaproszenia do znajomych!</item>
+        <item quantity="many">Wyślij jeszcze %1$s zaproszeń do znajomych!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110051">
+        <item quantity="other">Wybrane elementy zostały pomyślnie dodane do sekcji „Tylko dla mnie\". Czy chcesz usunąć oryginały z Rolki z aparatu?</item>
+        <item quantity="one">Wybrany element został pomyślnie dodany do sekcji „Tylko dla mnie\". Czy chcesz usunąć oryginał z Rolki z aparatu?</item>
+        <item quantity="few">Wybrane elementy zostały pomyślnie dodane do sekcji „Tylko dla mnie\". Czy chcesz usunąć oryginały z Rolki z aparatu?</item>
+        <item quantity="many">Wybrane elementy zostały pomyślnie dodane do sekcji „Tylko dla mnie\". Czy chcesz usunąć oryginały z Rolki z aparatu?</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110052">
+        <item quantity="other">Twoje zdjęcia zostały pomyślnie dodane do sekcji „Tylko dla mnie\". Chcesz usunąć oryginały z Rolki z aparatu?</item>
+        <item quantity="one">Twoje zdjęcie zostało pomyślnie dodane do sekcji „Tylko dla mnie\". Chcesz usunąć oryginał z Rolki z aparatu?</item>
+        <item quantity="few">Twoje zdjęcia zostały pomyślnie dodane do sekcji „Tylko dla mnie\". Chcesz usunąć oryginały z Rolki z aparatu?</item>
+        <item quantity="many">Twoje zdjęcia zostały pomyślnie dodane do sekcji „Tylko dla mnie\". Chcesz usunąć oryginały z Rolki z aparatu?</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110053">
+        <item quantity="other">Twoje filmy zostały pomyślnie dodane do sekcji „Tylko dla mnie\". Czy chcesz usunąć oryginały z Rolki z aparatu?</item>
+        <item quantity="one">Twój film został pomyślnie dodany do sekcji „Tylko dla mnie\". Czy chcesz usunąć oryginał z Rolki z aparatu?</item>
+        <item quantity="few">Twoje filmy zostały pomyślnie dodane do sekcji „Tylko dla mnie\". Czy chcesz usunąć oryginały z Rolki z aparatu?</item>
+        <item quantity="many">Twoje filmy zostały pomyślnie dodane do sekcji „Tylko dla mnie\". Czy chcesz usunąć oryginały z Rolki z aparatu?</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110054">
+        <item quantity="other">Usunąć oryginały</item>
+        <item quantity="one">Usuń oryginał</item>
+        <item quantity="few">Usunąć oryginały</item>
+        <item quantity="many">Usunąć oryginały</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110055">
+        <item quantity="other">"
+Spróbuj ponownie za %1$d min"</item>
+        <item quantity="one">"
+Spróbuj ponownie za %1$d min"</item>
+        <item quantity="few">"
+Spróbuj ponownie za %1$d min"</item>
+        <item quantity="many">"
+Spróbuj ponownie za %1$d min"</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110056">
+        <item quantity="other">%d ft</item>
+        <item quantity="one">%d ft</item>
+        <item quantity="few">%d ft</item>
+        <item quantity="many">%d ft</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110057">
+        <item quantity="other">%d m</item>
+        <item quantity="one">%d m</item>
+        <item quantity="few">%d m</item>
+        <item quantity="many">%d m</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110058">
+        <item quantity="other">%d godz.</item>
+        <item quantity="one">%d godzina</item>
+        <item quantity="few">%d godz.</item>
+        <item quantity="many">%d godz.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110059">
+        <item quantity="other">%d godz.</item>
+        <item quantity="one">%d godz.</item>
+        <item quantity="few">%d godz.</item>
+        <item quantity="many">%d godz.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11005a">
+        <item quantity="other">%d godz.</item>
+        <item quantity="one">%d godz.</item>
+        <item quantity="few">%d godz.</item>
+        <item quantity="many">%d godz.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11005b">
+        <item quantity="other">%d godz. temu</item>
+        <item quantity="one">%d godz. temu</item>
+        <item quantity="few">%d godz. temu</item>
+        <item quantity="many">%d godz. temu</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110062">
+        <item quantity="other">Zaktualizowano %1$s godziny temu</item>
+        <item quantity="one">Zaktualizowano %1$s godzinę temu</item>
+        <item quantity="few">Zaktualizowano %1$s godziny temu</item>
+        <item quantity="many">Zaktualizowano %1$s godzin temu</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110065">
+        <item quantity="other">%d godz.</item>
+        <item quantity="one">%d godz.</item>
+        <item quantity="few">%d godz.</item>
+        <item quantity="many">%d godz.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110066">
+        <item quantity="other">Udostępnisz swoją lokalizację w czasie rzeczywistym znajomym, którzy są obecnie w tej grupie. %d znajomych może już zobaczyć Twoją lokalizację na żywo.</item>
+        <item quantity="one">Udostępnisz swoją lokalizację w czasie rzeczywistym znajomym, którzy są obecnie w tej grupie. %d znajomy może już zobaczyć Twoją lokalizację na żywo.</item>
+        <item quantity="few">Udostępnisz swoją lokalizację w czasie rzeczywistym znajomym, którzy są obecnie w tej grupie. %d znajomych może już zobaczyć Twoją lokalizację na żywo.</item>
+        <item quantity="many">Udostępnisz swoją lokalizację w czasie rzeczywistym znajomym, którzy są obecnie w tej grupie. %d znajomych może już zobaczyć Twoją lokalizację na żywo.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110067">
+        <item quantity="other">%d godzin(y)</item>
+        <item quantity="one">%d godzina</item>
+        <item quantity="few">%d godzin(y)</item>
+        <item quantity="many">%d godzin(y)</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110069">
+        <item quantity="other">Udostępnisz swoją lokalizację na żywo znajomym, którzy są obecnie w tej grupie. %d członków grupy nie zobaczy Twojej lokalizacji, ponieważ nie należy do Twoich znajomych.</item>
+        <item quantity="one">Udostępnisz swoją lokalizację na żywo znajomym, którzy są obecnie w tej grupie. %d członek/członkini grupy nie zobaczy Twojej lokalizacji, ponieważ nie należy do Twoich znajomych.</item>
+        <item quantity="few">Udostępnisz swoją lokalizację na żywo znajomym, którzy są obecnie w tej grupie. %d członków grupy nie zobaczy Twojej lokalizacji, ponieważ nie należy do Twoich znajomych.</item>
+        <item quantity="many">Udostępnisz swoją lokalizację na żywo znajomym, którzy są obecnie w tej grupie. %d członków grupy nie zobaczy Twojej lokalizacji, ponieważ nie należy do Twoich znajomych.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11006b">
+        <item quantity="other">%1$s, %2$s, %3$s i %4$d Twojego znajomego są na mapie!</item>
+        <item quantity="one">%1$s, %2$s, %3$s i Twój %4$d znajomy są na mapie!</item>
+        <item quantity="few">%1$s, %2$s, %3$s i Twoich %4$d znajomych są na mapie!</item>
+        <item quantity="many">%1$s, %2$s, %3$s i Twoich %4$d znajomych są na mapie!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11006f">
+        <item quantity="other">%1$d udostępniających znajomych</item>
+        <item quantity="one">%1$d udostępniający znajomy</item>
+        <item quantity="few">%1$d udostępniających znajomych</item>
+        <item quantity="many">%1$d udostępniających znajomych</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110075">
+        <item quantity="other">Wyeksportowano %1$d z %2$d Snapów. Nieudany eksport %3$d Snapa.</item>
+        <item quantity="one">Wyeksportowano %1$d z %2$d Snapów. Nieudany eksport %3$d Snapa.</item>
+        <item quantity="few">Wyeksportowano %1$d z %2$d Snapów. Nieudany eksport %3$d Snapów.</item>
+        <item quantity="many">Wyeksportowano %1$d z %2$d Snapów. Nieudany eksport %3$d Snapów.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110076">
+        <item quantity="other">Eksportowanie %1$d z %2$d Snapa…</item>
+        <item quantity="one">Eksportowanie Snapów…</item>
+        <item quantity="few">Eksportowanie %1$d z %2$d Snapów…</item>
+        <item quantity="many">Eksportowanie %1$d z %2$d Snapów…</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110077">
+        <item quantity="other">Twoje Snapy zostały wyeksportowane.</item>
+        <item quantity="one">Twój Snap został wyeksportowany.</item>
+        <item quantity="few">Twoje Snapy zostały wyeksportowane.</item>
+        <item quantity="many">Twoje Snapy zostały wyeksportowane.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110078">
+        <item quantity="other">Jednocześnie możesz wybrać tylko %d elementów.</item>
+        <item quantity="one">Jednocześnie możesz wybrać tylko %d element.</item>
+        <item quantity="few">Jednocześnie możesz wybrać tylko %d elementy.</item>
+        <item quantity="many">Jednocześnie możesz wybrać tylko %d elementów.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110079">
+        <item quantity="other">Te obrazy zostaną usunięte z Twojego urządzenia</item>
+        <item quantity="one">Ten obraz zostanie usunięty z Twojego urządzenia</item>
+        <item quantity="few">Te obrazy zostaną usunięte z Twojego urządzenia</item>
+        <item quantity="many">Te obrazy zostaną usunięte z Twojego urządzenia</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11007a">
+        <item quantity="other">Te elementy zostaną usunięte z Twojego urządzenia</item>
+        <item quantity="one">Ten element zostanie usunięty z Twojego urządzenia</item>
+        <item quantity="few">Te elementy zostaną usunięte z Twojego urządzenia</item>
+        <item quantity="many">Te elementy zostaną usunięte z Twojego urządzenia</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11007b">
+        <item quantity="other">Te filmy zostaną usunięte z Twojego urządzenia</item>
+        <item quantity="one">Ten film zostanie usunięty z Twojego urządzenia</item>
+        <item quantity="few">Te filmy zostaną usunięte z Twojego urządzenia</item>
+        <item quantity="many">Te filmy zostaną usunięte z Twojego urządzenia</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11007c">
+        <item quantity="other">Usunąć Wspomnienia?</item>
+        <item quantity="one">Usunąć Wspomnienie?</item>
+        <item quantity="few">Usunąć Wspomnienia?</item>
+        <item quantity="many">Usunąć Wspomnienia?</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11007d">
+        <item quantity="other">Usunąć Snapy?</item>
+        <item quantity="one">Usunąć Snapa?</item>
+        <item quantity="few">Usunąć Snapy?</item>
+        <item quantity="many">Usunąć Snapy?</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11007e">
+        <item quantity="other">Usunąć Stories?</item>
+        <item quantity="one">Usunąć Story?</item>
+        <item quantity="few">Usunąć Stories?</item>
+        <item quantity="many">Usunąć Stories?</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11007f">
+        <item quantity="other">Nie można eksportować Snapów!</item>
+        <item quantity="one">Nie można eksportować Snapa!</item>
+        <item quantity="few">Nie można eksportować Snapów!</item>
+        <item quantity="many">Nie można eksportować Snapów!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110080">
+        <item quantity="other">%d Snapów dodanych do Twojej ulubionej Story</item>
+        <item quantity="one">Snap dodany do Twojej ulubionej Story</item>
+        <item quantity="few">%d Snapy dodane do Twojej ulubionej Story</item>
+        <item quantity="many">%d Snapów dodanych do Twojej ulubionej Story</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110081">
+        <item quantity="other">%d Snapów usuniętych z Twojej ulubionej Story</item>
+        <item quantity="one">Snap usunięty z ulubionej Story</item>
+        <item quantity="few">%d Snapy usunięte z Twojej ulubionej Story</item>
+        <item quantity="many">%d Snapów usuniętych z Twojej ulubionej Story</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110082">
+        <item quantity="other">%1$d roku temu</item>
+        <item quantity="one">%1$d rok temu</item>
+        <item quantity="few">%1$d lata temu</item>
+        <item quantity="many">%1$d lat temu</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110083">
+        <item quantity="other">%1$d roku temu, od dzisiaj</item>
+        <item quantity="one">%1$d rok temu, od dzisiaj</item>
+        <item quantity="few">%1$d lata temu, od dzisiaj</item>
+        <item quantity="many">%1$d lat temu, od dzisiaj</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110084">
+        <item quantity="other">%1$s, %2$d roku temu</item>
+        <item quantity="one">%1$s, %2$d rok temu</item>
+        <item quantity="few">%1$s, %2$d lata temu</item>
+        <item quantity="many">%1$s, %2$d lat temu</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110085">
+        <item quantity="other">Od %1$d roku</item>
+        <item quantity="one">Od %1$d roku</item>
+        <item quantity="few">Od %1$d lat</item>
+        <item quantity="many">Od %1$d lat</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110086">
+        <item quantity="other">Snapy należące do tych Stories nadal będą dostępne na nowej stronie Moja Story. Nie wpłynie to na utworzone lub edytowane Stories.</item>
+        <item quantity="one">Snapy należące do tej Story nadal będą dostępne na nowej stronie Moja Story. Nie wpłynie to na utworzone lub edytowane Stories.</item>
+        <item quantity="few">Snapy należące do tych Stories nadal będą dostępne na nowej stronie Moja Story. Nie wpłynie to na utworzone lub edytowane Stories.</item>
+        <item quantity="many">Snapy należące do tych Stories nadal będą dostępne na nowej stronie Moja Story. Nie wpłynie to na utworzone lub edytowane Stories.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110087">
+        <item quantity="other">Usunąć %d starszych Stories zapisanych automatycznie?</item>
+        <item quantity="one">Usunąć %d starszą Story zapisaną automatycznie?</item>
+        <item quantity="few">Usunąć %d starsze Stories zapisane automatycznie?</item>
+        <item quantity="many">Usunąć %d starszych Stories zapisanych automatycznie?</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11008a">
+        <item quantity="other">%d starszych Stories zapisanych automatycznie zostanie usuniętych.</item>
+        <item quantity="one">%d starsza Story zapisana automatycznie zostanie usunięta.</item>
+        <item quantity="few">%d starsze Stories zapisane automatycznie zostaną usunięte.</item>
+        <item quantity="many">%d starszych Stories zapisanych automatycznie zostanie usuniętych.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11008b">
+        <item quantity="other">Niestety jednocześnie możesz wybrać tylko %d Snapów.</item>
+        <item quantity="one">Jednocześnie możesz wybrać tylko %d Snapa.</item>
+        <item quantity="few">Jednocześnie możesz wybrać tylko %d Snapy.</item>
+        <item quantity="many">Jednocześnie możesz wybrać tylko %d Snapów.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11008c">
+        <item quantity="other">%1$d Snapy zaimportowane od %2$s</item>
+        <item quantity="one">%1$d Zaimportowany Snap od %2$s</item>
+        <item quantity="few">%1$d zaimportowane Snapy od %2$s</item>
+        <item quantity="many">%1$d zaimportowanych Snapów od %2$s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11008d">
+        <item quantity="other">Zaimportowano %d Snapów!</item>
+        <item quantity="one">Liczba zaimportowanych Snapów: %d!</item>
+        <item quantity="few">Zaimportowano %d Snapy!</item>
+        <item quantity="many">Zaimportowano %d Snapów!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11008e">
+        <item quantity="other">Nowe Snapy od %s</item>
+        <item quantity="one">Nowy Snap od %s</item>
+        <item quantity="few">Nowe Snapy od %s</item>
+        <item quantity="many">Nowych Snapów od %s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11008f">
+        <item quantity="other">Importowanie %1$d z %2$d Snapów…</item>
+        <item quantity="one">Importowanie %1$d z %2$d Snapa…</item>
+        <item quantity="few">Importowanie %1$d z %2$d Snapów…</item>
+        <item quantity="many">Importowanie %1$d z %2$d Snapów…</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110090">
+        <item quantity="other">Wybrano %d</item>
+        <item quantity="one">Wybrano %d</item>
+        <item quantity="few">Wybrano %d</item>
+        <item quantity="many">Wybrano %d</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110091">
+        <item quantity="other">%d min</item>
+        <item quantity="one">%d min</item>
+        <item quantity="few">%d min</item>
+        <item quantity="many">%d min</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110092">
+        <item quantity="other">%d min</item>
+        <item quantity="one">%d min</item>
+        <item quantity="few">%d min</item>
+        <item quantity="many">%d min</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f110093">
+        <item quantity="other">%d min temu</item>
+        <item quantity="one">%d min temu</item>
+        <item quantity="few">%d min temu</item>
+        <item quantity="many">%d min temu</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11009a">
+        <item quantity="other">Zaktualizowano %1$s minuty temu</item>
+        <item quantity="one">Zaktualizowano %1$s minutę temu</item>
+        <item quantity="few">Zaktualizowano %1$s minuty temu</item>
+        <item quantity="many">Zaktualizowano %1$s minut temu</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11009b">
+        <item quantity="other">%d mies.</item>
+        <item quantity="one">%d mies.</item>
+        <item quantity="few">%d mies.</item>
+        <item quantity="many">%d mies.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f11009c">
+        <item quantity="other">%d mies. temu</item>
+        <item quantity="one">%d mies. temu</item>
+        <item quantity="few">%d mies. temu</item>
+        <item quantity="many">%d mies. temu</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100a3">
+        <item quantity="other">Zaktualizowano %1$s miesiąca temu</item>
+        <item quantity="one">Zaktualizowano %1$s miesiąc temu</item>
+        <item quantity="few">Zaktualizowano %1$s miesiące temu</item>
+        <item quantity="many">Zaktualizowano %1$s miesięcy temu</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100a7">
+        <item quantity="other">%1$d Snapów nie zostało jeszcze zarchiwizowanych we Wspomnieniach. Jeżeli wylogujesz się teraz, stracisz je.</item>
+        <item quantity="one">Jeden Snap nie został jeszcze zarchiwizowany we Wspomnieniach. Jeżeli wylogujesz się teraz, stracisz go.</item>
+        <item quantity="few">%1$d Snapy nie zostały jeszcze zarchiwizowane we Wspomnieniach. Jeżeli wylogujesz się teraz, stracisz je.</item>
+        <item quantity="many">%1$d Snapów nie zostało jeszcze zarchiwizowanych we Wspomnieniach. Jeżeli wylogujesz się teraz, stracisz je.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100a8">
+        <item quantity="other">Dodaj %d znajomych</item>
+        <item quantity="one">Dodaj 1 znajomego</item>
+        <item quantity="few">Dodaj %d znajomych</item>
+        <item quantity="many">Dodaj %d znajomych</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100a9">
+        <item quantity="other">%d godz.</item>
+        <item quantity="one">%d godz.</item>
+        <item quantity="few">%d godz.</item>
+        <item quantity="many">%d godz.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100aa">
+        <item quantity="other">%d min</item>
+        <item quantity="one">%d min</item>
+        <item quantity="few">%d min</item>
+        <item quantity="many">%d min</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ab">
+        <item quantity="other">%1$s+%2$d innych użytkowników</item>
+        <item quantity="one">%1$s+%2$d inny użytkownik</item>
+        <item quantity="few">%1$s+%2$d innych użytkowników</item>
+        <item quantity="many">%1$s+%2$d innych użytkowników</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100b3">
+        <item quantity="other">Na Twoim Pixy znajduje się następująca liczba Snapów poprzedniego użytkownika: %d. Sparowanie z tym urządzeniem spowoduje zresetowanie urządzenia i usunięcie wszystkich Snapów oraz danych użytkownika.</item>
+        <item quantity="one">Na Twoim Pixy znajduje się 1 Snap poprzedniego użytkownika. Sparowanie z tym urządzeniem spowoduje zresetowanie urządzenia i usunięcie wszystkich Snapów oraz danych użytkownika.</item>
+        <item quantity="few">Na Twoim Pixy znajdują się %d Snapy poprzedniego użytkownika. Sparowanie z tym urządzeniem spowoduje zresetowanie urządzenia i usunięcie wszystkich Snapów oraz danych użytkownika.</item>
+        <item quantity="many">Na Twoim Pixy znajduje się %d Snapów poprzedniego użytkownika. Sparowanie z tym urządzeniem spowoduje zresetowanie urządzenia i usunięcie wszystkich Snapów oraz danych użytkownika.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100b4">
+        <item quantity="other">%d sztuk(i)</item>
+        <item quantity="one">1 sztuka</item>
+        <item quantity="few">%d sztuki</item>
+        <item quantity="many">%d sztuki</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100b9">
+        <item quantity="other">Nowe Snapy: %d</item>
+        <item quantity="one">%d nowy Snap</item>
+        <item quantity="few">Nowe Snapy: %d</item>
+        <item quantity="many">Nowe Snapy: %d</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ba">
+        <item quantity="other">+ Dodaj %d znajomego</item>
+        <item quantity="one">+ Dodaj 1 znajomego</item>
+        <item quantity="few">+ Dodaj %d znajomych</item>
+        <item quantity="many">+ Dodaj %d znajomych</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100bb">
+        <item quantity="other">Zapisanych Snapów: %1$d!</item>
+        <item quantity="one">%1$d Snap zapisany!</item>
+        <item quantity="few">Zapisanych Snapów: %1$d!</item>
+        <item quantity="many">Zapisanych Snapów: %1$d!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100bc">
+        <item quantity="other">%s Snapa</item>
+        <item quantity="one">%s Snap</item>
+        <item quantity="few">%s Snapy</item>
+        <item quantity="many">%s Snapów</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100bd">
+        <item quantity="other">%d sek.</item>
+        <item quantity="one">%d sek.</item>
+        <item quantity="few">%d sek.</item>
+        <item quantity="many">%d sek.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100bf">
+        <item quantity="other">%d sek. temu</item>
+        <item quantity="one">%d sek. temu</item>
+        <item quantity="few">%d sek. temu</item>
+        <item quantity="many">%d sek. temu</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100c6">
+        <item quantity="other">Zaktualizowano %1$s sekundy temu</item>
+        <item quantity="one">Zaktualizowano %1$s sekundę temu</item>
+        <item quantity="few">Zaktualizowano %1$s sekundy temu</item>
+        <item quantity="many">Zaktualizowano %1$s sekund temu</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100c7">
+        <item quantity="other">%1$d znajomych</item>
+        <item quantity="one">1 znajomy</item>
+        <item quantity="few">%1$d znajomych</item>
+        <item quantity="many">%1$d znajomych</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100c8">
+        <item quantity="other">%1$s i %2$d innego</item>
+        <item quantity="one">%1$s i jeszcze 1 osoba</item>
+        <item quantity="few">%1$s i %2$d innych</item>
+        <item quantity="many">%1$s i %2$d innych</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100c9">
+        <item quantity="other">Mój wiek: %d roku.</item>
+        <item quantity="one">Mój wiek: %d rok.</item>
+        <item quantity="few">Mój wiek: %d lata.</item>
+        <item quantity="many">Mój wiek: %d lat.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ca">
+        <item quantity="other">s</item>
+        <item quantity="one">sekunda</item>
+        <item quantity="few">s</item>
+        <item quantity="many">s</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100cb">
+        <item quantity="other">%1$d Snapów</item>
+        <item quantity="one">%1$d Snap</item>
+        <item quantity="few">%1$d Snapy</item>
+        <item quantity="many">%1$d Snapów</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100cc">
+        <item quantity="other">Jak chcesz eksportować swoje Snapy?</item>
+        <item quantity="one">Jak chcesz eksportować swojego Snapa?</item>
+        <item quantity="few">Jak chcesz eksportować swoje Snapy?</item>
+        <item quantity="many">Jak chcesz eksportować swoje Snapy?</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100cd">
+        <item quantity="other">„%d oczekujących komentarzy na Polecane!</item>
+        <item quantity="one">1 oczekujący komentarz na Polecane!</item>
+        <item quantity="few">„%d oczekujące komentarze na Polecane!</item>
+        <item quantity="many">„%d oczekujących komentarzy na Polecane!</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100cf">
+        <item quantity="other">"Twoja lokalizacja na żywo jest ukryta, ale %1$s znajomych nadal widzi Twoją ostatnią aktywną lokalizację.
+
+ Można to zmienić w ustawieniach mapy."</item>
+        <item quantity="one">"Twoja lokalizacja na żywo jest ukryta, ale %1$s znajomy nadal widzi Twoją ostatnią aktywną lokalizację.
+
+ Można to zmienić w ustawieniach mapy."</item>
+        <item quantity="few">"Twoja lokalizacja na żywo jest ukryta, ale %1$s znajomych nadal widzi Twoją ostatnią aktywną lokalizację.
+
+ Można to zmienić w ustawieniach mapy."</item>
+        <item quantity="many">"Twoja lokalizacja na żywo jest ukryta, ale %1$s znajomych nadal widzi Twoją ostatnią aktywną lokalizację.
+
+ Można to zmienić w ustawieniach mapy."</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d0">
+        <item quantity="other">Zapisałeś(-aś) swoje ustawienia lokalizacji, ale %1$s znajomych nadal widzi Twoją lokalizację na żywo. Aby zakończyć udostępnianie, stuknij „Zatrzymaj” obok imienia znajomego.</item>
+        <item quantity="one">Zapisałeś(-aś) swoje ustawienia lokalizacji, ale %1$s znajomy nadal widzi Twoją lokalizację na żywo. Aby zakończyć udostępnianie, stuknij „Zatrzymaj” obok imienia znajomego.</item>
+        <item quantity="few">Zapisałeś(-aś) swoje ustawienia lokalizacji, ale %1$s znajomych nadal widzi Twoją lokalizację na żywo. Aby zakończyć udostępnianie, stuknij „Zatrzymaj” obok imienia znajomego.</item>
+        <item quantity="many">Zapisałeś(-aś) swoje ustawienia lokalizacji, ale %1$s znajomych nadal widzi Twoją lokalizację na żywo. Aby zakończyć udostępnianie, stuknij „Zatrzymaj” obok imienia znajomego.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d3">
+        <item quantity="other">Masz włączony tryb duszka, ale %1$s znajomych nadal widzi Twoją lokalizację na żywo. Aby wstrzymać udostępnianie, stuknij „Ukryj moją lokalizację na żywo” poniżej.</item>
+        <item quantity="one">Masz włączony tryb duszka, ale %1$s znajomy nadal widzi Twoją lokalizację na żywo. Aby wstrzymać udostępnianie, stuknij „Ukryj moją lokalizację na żywo” poniżej.</item>
+        <item quantity="few">Masz włączony tryb duszka, ale %1$s znajomych nadal widzi Twoją lokalizację na żywo. Aby wstrzymać udostępnianie, stuknij „Ukryj moją lokalizację na żywo” poniżej.</item>
+        <item quantity="many">Masz włączony tryb duszka, ale %1$s znajomych nadal widzi Twoją lokalizację na żywo. Aby wstrzymać udostępnianie, stuknij „Ukryj moją lokalizację na żywo” poniżej.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d4">
+        <item quantity="other">Obejrzano %d razy</item>
+        <item quantity="one">Obejrzano %d raz</item>
+        <item quantity="few">Obejrzano %d razy</item>
+        <item quantity="many">Obejrzano %d razy</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d5">
+        <item quantity="other">+ %1$d więcej</item>
+        <item quantity="one">+ %1$d więcej</item>
+        <item quantity="few">+ %1$d więcej</item>
+        <item quantity="many">+ %1$d więcej</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d6">
+        <item quantity="other">%1$s i %2$d więcej…</item>
+        <item quantity="one">%1$s i %2$d więcej…</item>
+        <item quantity="few">%1$s i %2$d więcej…</item>
+        <item quantity="many">%1$s i %2$d więcej…</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d7">
+        <item quantity="other">Zweryfikowano • %d członka</item>
+        <item quantity="one">Zweryfikowano • %d członka</item>
+        <item quantity="few">Zweryfikowano • %d członków</item>
+        <item quantity="many">Zweryfikowano • %d członków</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d8">
+        <item quantity="other">%d członków</item>
+        <item quantity="one">%d członek</item>
+        <item quantity="few">%d członkowie</item>
+        <item quantity="many">%d członków</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100d9">
+        <item quantity="other">Dodawanie %d Snapów…</item>
+        <item quantity="one">Dodawanie %d Snapa…</item>
+        <item quantity="few">Dodawanie %d Snapów…</item>
+        <item quantity="many">Dodawanie %d Snapów…</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100da">
+        <item quantity="other">Nie udało się dodać %d Snapów</item>
+        <item quantity="one">Nie udało się dodać %d Snapa</item>
+        <item quantity="few">Nie udało się dodać %d Snapów</item>
+        <item quantity="many">Nie udało się dodać %d Snapów</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100db">
+        <item quantity="other">Oczekiwanie na dodanie %d Snapów…</item>
+        <item quantity="one">Oczekiwanie na dodanie %d Snapa…</item>
+        <item quantity="few">Oczekiwanie na dodanie %d Snapów…</item>
+        <item quantity="many">Oczekiwanie na dodanie %d Snapów…</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100df">
+        <item quantity="other">%d znajomym</item>
+        <item quantity="one">%d znajomemu</item>
+        <item quantity="few">%d znajomym</item>
+        <item quantity="many">%d znajomym</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100e0">
+        <item quantity="other">Dodano %1$d z %2$d nowego znajomego</item>
+        <item quantity="one">Dodano %1$d z %2$d nowego znajomego</item>
+        <item quantity="few">Dodano %1$d z %2$d nowych znajomych</item>
+        <item quantity="many">Dodano %1$d z %2$d nowych znajomych</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100e1">
+        <item quantity="other">wydarzenia</item>
+        <item quantity="one">wydarzenie</item>
+        <item quantity="few">wydarzenia</item>
+        <item quantity="many">wydarzeń</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100e3">
+        <item quantity="other">%d tygodni</item>
+        <item quantity="one">%d tydzień</item>
+        <item quantity="few">%d tygodnie</item>
+        <item quantity="many">%d tygodni</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100e4">
+        <item quantity="other">%d tyg.</item>
+        <item quantity="one">%d tydz.</item>
+        <item quantity="few">%d tyg.</item>
+        <item quantity="many">%d tyg.</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100e5">
+        <item quantity="other">%d tyg. temu</item>
+        <item quantity="one">%d tydz. temu</item>
+        <item quantity="few">%d tyg. temu</item>
+        <item quantity="many">%d tyg. temu</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ec">
+        <item quantity="other">Zaktualizowano %1$s tygodnia temu</item>
+        <item quantity="one">Zaktualizowano %1$s tydzień temu</item>
+        <item quantity="few">Zaktualizowano %1$s tygodnie temu</item>
+        <item quantity="many">Zaktualizowano %1$s tygodni temu</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ed">
+        <item quantity="other">%d roku</item>
+        <item quantity="one">%d rok</item>
+        <item quantity="few">%d lata</item>
+        <item quantity="many">%d lat</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100ee">
+        <item quantity="other">%d roku temu</item>
+        <item quantity="one">%d rok temu</item>
+        <item quantity="few">%d lata temu</item>
+        <item quantity="many">%d lat temu</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f1100f5">
+        <item quantity="other">Zaktualizowano %1$s roku temu</item>
+        <item quantity="one">Zaktualizowano %1$s rok temu</item>
+        <item quantity="few">Zaktualizowano %1$s lata temu</item>
+        <item quantity="many">Zaktualizowano %1$s lat temu</item>
+    </plurals>
+</resources>

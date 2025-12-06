@@ -1,0 +1,25 @@
+.class public final LUh1;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field public final a:Lbke;
+
+
+# direct methods
+.method public constructor <init>(Lbke;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LUh1;->a:Lbke;
+
+    .line 5
+    .line 6
+    return-void
+.end method
