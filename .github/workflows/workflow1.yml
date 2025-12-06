@@ -18,7 +18,7 @@ jobs:
     - name: Checkout Code
       uses: actions/checkout@v4
       with:
-        fetch-depth: 0 # Fetch full history to avoid shallow clone errors
+        fetch-depth: 0 # Fetch full history
 
     - name: Setup Java
       uses: actions/setup-java@v4
@@ -43,10 +43,12 @@ jobs:
           exit 1
         fi
 
-    - name: Decompile
+    - name: Decompile (Skip Resources)
       run: |
-        # Decompile to 'src' folder, forcing overwrite (-f)
-        java -Xmx4096M -jar apktool.jar d snapchat.apk -o src -f
+        # -r : Do NOT decode resources (Fixes the styles.xml error)
+        # -f : Force overwrite existing folder
+        # -o src : Output to 'src' folder
+        java -Xmx4096M -jar apktool.jar d -r -f snapchat.apk -o src
 
     - name: Push to GitHub
       run: |
@@ -58,10 +60,10 @@ jobs:
         git add src/
         
         # 3. Commit
-        git commit -m "Auto-decompiled Snapchat source" || echo "No changes to commit"
+        git commit -m "Auto-decompiled Snapchat (No Resources)" || echo "No changes to commit"
         
-        # 4. Pull latest changes to avoid "Updates were rejected" error
+        # 4. Pull latest changes to align history
         git pull --rebase origin main
         
-        # 5. Push (using force to resolve any lingering history mismatches)
-        git push origin main
+        # 5. Force Push (Overwrites old bad data)
+        git push -f origin main
