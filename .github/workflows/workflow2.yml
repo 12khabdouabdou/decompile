@@ -1,0 +1,50 @@
+name: 2. Build & Sign
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: Setup Java
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: '17'
+
+    - name: Install Tools
+      run: |
+        # Install Apktool
+        wget https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.11.0.jar -O apktool.jar
+        
+        # Install Signer
+        wget https://github.com/patrickfav/uber-apk-signer/releases/download/v1.3.0/uber-apk-signer-1.3.0.jar -O signer.jar
+
+    - name: Verify Gadget Exists
+      run: |
+        # Safety check to make sure you didn't forget the file
+        if [ ! -f "src/lib/arm64-v8a/libfrida-gadget.so" ]; then
+          echo "ERROR: libfrida-gadget.so was not found in src/lib/arm64-v8a/"
+          echo "Please upload the file manually before running this build."
+          exit 1
+        fi
+        echo "Found Frida gadget. Proceeding..."
+
+    - name: Build APK
+      run: |
+        # Build from the 'src' folder
+        java -Xmx4096M -jar apktool.jar b src -o snap_unsigned.apk
+
+    - name: Sign APK
+      run: |
+        java -jar signer.jar --apks snap_unsigned.apk
+
+    - name: Upload Result
+      uses: actions/upload-artifact@v4
+      with:
+        name: Patched-Snapchat
+        path: snap_unsigned-aligned-debugSigned.apk
