@@ -1,0 +1,136 @@
+name: Auto-Patcher
+
+on:
+  workflow_dispatch:
+    inputs:
+      apk_url:
+        description: 'Direct download URL for the Snapchat APK'
+        required: true
+        type: string
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: Setup Java
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: '17'
+
+    - name: Download Target APK
+      run: |
+        echo "Downloading from URL..."
+        # Downloads the file and saves it as 'snapchat.apk'
+        wget "${{ inputs.apk_url }}" -O snapchat.apk
+        
+        # Verify file size to ensure it's not an empty error page
+        filesize=$(stat -c%s "snapchat.apk")
+        echo "Downloaded file size: $filesize bytes"
+        if [ "$filesize" -lt 1000000 ]; then
+          echo "Error: File is too small (<1MB). The URL might be wrong or not a direct link."
+          exit 1
+        fi
+
+    - name: Install Tools
+      run: |
+        # 1. Install Apktool (Latest)
+        wget https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.11.0.jar -O apktool.jar
+        
+        # 2. Install Uber Apk Signer
+        wget https://github.com/patrickfav/uber-apk-signer/releases/download/v1.3.0/uber-apk-signer-1.3.0.jar -O signer.jar
+        
+        # 3. Download Frida Gadget (Arm64)
+        wget https://github.com/frida/frida/releases/download/16.5.9/frida-gadget-16.5.9-android-arm64.so.xz
+        xz -d frida-gadget-16.5.9-android-arm64.so.xz
+        mv frida-gadget-16.5.9-android-arm64.so libfrida-gadget.so
+
+    - name: Decompile APK
+      run: |
+        java -Xmx4096M -jar apktool.jar d snapchat.apk -o snap_src -f
+
+    - name: Patch Smali & Inject Library
+      shell: python
+      run: |
+        import os
+        import shutil
+
+        # --- STEP 1: Find MushroomApplication.smali ---
+        target_file = None
+        search_dir = "snap_src"
+        print("Searching for MushroomApplication.smali...")
+        
+        for root, dirs, files in os.walk(search_dir):
+            if "MushroomApplication.smali" in files:
+                target_file = os.path.join(root, "MushroomApplication.smali")
+                print(f"Found: {target_file}")
+                break
+        
+        if not target_file:
+            print("ERROR: Could not find MushroomApplication.smali. Ensure this is a valid Snapchat APK.")
+            exit(1)
+
+        # --- STEP 2: Inject Code ---
+        injection_code = """
+            # [INJECTED]
+            const-string v0, "frida-gadget"
+            invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+            # [END]
+        """
+        
+        with open(target_file, 'r') as f:
+            lines = f.readlines()
+
+        new_lines = []
+        in_method = False
+        patched = False
+
+        for line in lines:
+            new_lines.append(line)
+            
+            # Detect start of method
+            if ".method public constructor <init>()V" in line:
+                in_method = True
+            
+            # Detect locals line (only inside the correct method)
+            if in_method and ".locals" in line and not patched:
+                new_lines.append(injection_code)
+                patched = True
+                print("SUCCESS: Injected Frida loader code.")
+
+            # Reset flag at end of method
+            if ".end method" in line:
+                in_method = False
+
+        with open(target_file, 'w') as f:
+            f.writelines(new_lines)
+
+        if not patched:
+            print("ERROR: Could not find the injection point. The method signature might have changed.")
+            exit(1)
+
+        # --- STEP 3: Copy Library ---
+        lib_path = os.path.join("snap_src", "lib", "arm64-v8a")
+        if not os.path.exists(lib_path):
+            os.makedirs(lib_path)
+            
+        shutil.copy("libfrida-gadget.so", os.path.join(lib_path, "libfrida-gadget.so"))
+        print(f"Copied gadget to {lib_path}")
+
+    - name: Rebuild APK
+      run: |
+        java -Xmx4096M -jar apktool.jar b snap_src -o snap_unsigned.apk
+
+    - name: Sign APK
+      run: |
+        java -jar signer.jar --apks snap_unsigned.apk
+
+    - name: Upload Result
+      uses: actions/upload-artifact@v4
+      with:
+        name: Patched-Snapchat
+        path: snap_unsigned-aligned-debugSigned.apk
