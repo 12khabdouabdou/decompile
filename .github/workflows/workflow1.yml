@@ -33,20 +33,21 @@ jobs:
         # Decompile to a folder named 'src'
         java -Xmx4096M -jar apktool.jar d snapchat.apk -o src -f
 
-    - name: Clean & Prepare for Git
+        - name: Clean & Prepare for Git
       run: |
-        # Remove massive assets to prevent GitHub reject (optional but recommended)
-        # Keeps smali, manifest, libraries, and resources configuration
-        # If the build fails later due to missing assets, remove the next line.
-        # rm -rf src/assets/* 
-        
-        # Configure Git
+        # Configure Git Identity
         git config --global user.name "GitHub Action"
         git config --global user.email "action@github.com"
         
-        # Add files
+        # Add the decompiled source
         git add src/
         
-        # Commit and Push
-        git commit -m "Auto-decompiled Snapchat source"
-        git push
+        # Commit the changes locally
+        git commit -m "Auto-decompiled Snapchat source" || echo "No changes to commit"
+        
+        # --- THE FIX IS HERE ---
+        # Pull latest changes from GitHub and rebase (merge) them gently
+        git pull --rebase origin main
+        
+        # Now push
+        git push origin main
