@@ -1,0 +1,52 @@
+name: 1. Decompile & Save
+
+on:
+  workflow_dispatch:
+    inputs:
+      apk_url:
+        description: 'URL to APK'
+        required: true
+
+permissions:
+  contents: write  # Critical: Allows the bot to commit changes to your repo
+
+jobs:
+  decompile:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: Setup Java
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: '17'
+
+    - name: Download Tools
+      run: |
+        wget https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.11.0.jar -O apktool.jar
+        wget "${{ inputs.apk_url }}" -O snapchat.apk
+
+    - name: Decompile
+      run: |
+        # Decompile to a folder named 'src'
+        java -Xmx4096M -jar apktool.jar d snapchat.apk -o src -f
+
+    - name: Clean & Prepare for Git
+      run: |
+        # Remove massive assets to prevent GitHub reject (optional but recommended)
+        # Keeps smali, manifest, libraries, and resources configuration
+        # If the build fails later due to missing assets, remove the next line.
+        # rm -rf src/assets/* 
+        
+        # Configure Git
+        git config --global user.name "GitHub Action"
+        git config --global user.email "action@github.com"
+        
+        # Add files
+        git add src/
+        
+        # Commit and Push
+        git commit -m "Auto-decompiled Snapchat source"
+        git push
