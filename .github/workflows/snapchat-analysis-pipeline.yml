@@ -33,6 +33,7 @@ jobs:
           chmod +x jadx/bin/jadx
       
       - name: Download APK (if URL provided)
+        run: |
         echo "Downloading APK..."
         wget "${{ inputs.apk_url }}" -O snapchat.ap
       
