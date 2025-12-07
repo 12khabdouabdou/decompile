@@ -36,7 +36,18 @@ jobs:
         if: github.event.inputs.apk_url != 'https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=10105129&key=e00937e7ce05de2bb2d042a323ff610f454dbb2f&forcebaseapk=true'
         run: |
           mkdir -p apks
-          wget -O apks/snapchat.apk ${{ github.event.inputs.apk_url }}
+        
+        # Download APK from user input
+        echo "Downloading APK..."
+        wget "${{ inputs.apk_url }}" -O snapchat.apk
+        
+        # Verify file size (Must be > 1MB)
+        filesize=$(stat -c%s "snapchat.apk")
+        echo "File size: $filesize"
+        if [ "$filesize" -lt 1000000 ]; then
+          echo "Error: Downloaded file is too small. Check your URL."
+          exit 1
+        fi
       
       - name: Decompile APK
         run: |
