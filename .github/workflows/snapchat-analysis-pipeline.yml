@@ -33,9 +33,10 @@ jobs:
           chmod +x jadx/bin/jadx
       
       - name: Download APK (if URL provided)
+        if: github.event.inputs.apk_url != 'https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=10105129&key=e00937e7ce05de2bb2d042a323ff610f454dbb2f&forcebaseapk=true'
         run: |
-        echo "Downloading APK..."
-        wget "${{ inputs.apk_url }}" -O snapchat.ap
+          mkdir -p apks
+          wget -O apks/snapchat.apk ${{ github.event.inputs.apk_url }}
       
       - name: Decompile APK
         run: |
