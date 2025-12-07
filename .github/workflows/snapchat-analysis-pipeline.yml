@@ -4,111 +4,128 @@ on:
   workflow_dispatch:
     inputs:
       apk_url:
-        description: 'URL to APK file or version'
+        description: 'Direct URL to Snapchat APK file'
         required: true
         type: string
   push:
     paths:
-      - 'apks/**/*.apk'  # Trigger when new APK is added
+      - 'apks/**/*.apk'
 
 jobs:
   decompile:
     runs-on: ubuntu-latest
-    
+    permissions:
+      contents: write  # Critical: Allows pushing commits/branches
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      
+
       - name: Setup Java
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
           java-version: '17'
-      
+
       - name: Download JADX
         run: |
           JADX_VERSION="1.5.0"
-          wget https://github.com/skylot/jadx/releases/download/v${JADX_VERSION}/jadx-${JADX_VERSION}.zip
-          unzip jadx-${JADX_VERSION}.zip -d jadx
+          wget https://github.com/skylot/jadx/releases/download/v${JADX_VERSION}/jadx-${JADX_VERSION}.zip -q
+          unzip -q jadx-${JADX_VERSION}.zip -d jadx
           chmod +x jadx/bin/jadx
-      
-      - name: Download APK (if URL provided)
-        
-       run: |
+          echo "JADX installed."
+
+      - name: Download APK
+        run: |
           mkdir -p apks
-        
-        # Download APK from user input
-        echo "Downloading APK..."
-        wget "${{ inputs.apk_url }}" -O snapchat.apk
-        
-        # Verify file size (Must be > 1MB)
-        filesize=$(stat -c%s "snapchat.apk")
-        echo "File size: $filesize"
-        if [ "$filesize" -lt 1000000 ]; then
-          echo "Error: Downloaded file is too small. Check your URL."
-          exit 1
-        fi
-      
+          
+          if [ -n "${{ inputs.apk_url }}" ]; then
+            echo "Downloading APK from URL..."
+            # Save specifically to apks/snapchat.apk so the next step finds it
+            wget "${{ inputs.apk_url }}" -O apks/snapchat.apk -q
+          fi
+          
+          # Verify we actually have a file
+          APK_FILE=$(find apks -name "*.apk" | head -n 1)
+          if [ -z "$APK_FILE" ]; then
+            echo "Error: No APK file found in apks/ directory."
+            exit 1
+          fi
+          
+          FILESIZE=$(stat -c%s "$APK_FILE")
+          echo "APK Found: $APK_FILE ($FILESIZE bytes)"
+          
+          if [ "$FILESIZE" -lt 1000000 ]; then
+            echo "Error: File is too small (<1MB). Download likely failed."
+            exit 1
+          fi
+
       - name: Decompile APK
         run: |
           APK_FILE=$(find apks -name "*.apk" | head -n 1)
-          echo "Decompiling: $APK_FILE"
+          echo "Starting decompilation of $APK_FILE..."
           
-          # Decompile to Java code
+          # Snapchat is HUGE. We need to tune JADX.
+          # -Xmx4g: Give JADX 4GB RAM (Max for standard runner is ~7GB total)
+          # --no-res: Skip resources (XMLs) to save time/space
+          # --no-imports: Speeds up processing slightly
+          export JAVA_OPTS="-Xmx6g"
+          
           ./jadx/bin/jadx \
-            --output-dir decompiled \
+            --output-dir decompiled_src \
             --show-bad-code \
             --no-res \
             --threads-count 4 \
             "$APK_FILE"
-      
-      - name: Extract metadata
+            
+          echo "Decompilation complete."
+
+      - name: Extract Metadata & Cleanup
         run: |
-          # Get APK info
-          APK_FILE=$(find apks -name "*.apk" | head -n 1)
+          mkdir -p output
           
-          # Extract version info from decompiled code
-          VERSION=$(grep -r "versionName" decompiled | head -n 1 || echo "unknown")
-          echo "Snapchat Version: $VERSION" > decompiled/VERSION.txt
+          # Count classes (approximate via file count)
+          CLASS_COUNT=$(find decompiled_src -name "*.java" | wc -l)
+          echo "Total Classes: $CLASS_COUNT" > output/stats.txt
           
-          # Count classes
-          CLASS_COUNT=$(find decompiled -name "*.java" | wc -l)
-          echo "Total Classes: $CLASS_COUNT" >> decompiled/VERSION.txt
-      
-      - name: Generate analysis report
+          # Find Package Name (search AndroidManifest if available, or guess)
+          # Since we skipped resources (--no-res), we check directory structure
+          echo "Key Packages:" >> output/stats.txt
+          find decompiled_src/sources/com/snap* -maxdepth 2 -type d 2>/dev/null >> output/stats.txt || echo "No snap packages found" >> output/stats.txt
+
+      - name: Compress Source Code
         run: |
-          cat > decompiled/ANALYSIS_REPORT.md << 'EOF'
-          # Snapchat Decompilation Report
+          echo "Zipping source code (this may take a while)..."
+          # Zip it to avoid "Too many files" upload error
+          zip -r -q snapchat-source.zip decompiled_src/
           
-          **Date:** $(date)
-          **Workflow Run:** ${{ github.run_id }}
-          
-          ## Statistics
-          $(cat decompiled/VERSION.txt)
-          
-          ## Key Packages Identified
-          $(find decompiled -type d -name "com.snapchat.*" | head -n 20)
-          
-          EOF
-      
-      - name: Upload decompiled code as artifact
+          # Delete raw files to free up runner space for artifact upload
+          rm -rf decompiled_src
+
+      - name: Upload Source Code
         uses: actions/upload-artifact@v4
         with:
-          name: snapchat-decompiled-${{ github.run_id }}
-          path: decompiled/
-          retention-days: 30
-      
-      - name: Commit to repository (optional)
-        if: github.event.inputs.apk_url != ''
+          name: snapchat-source-code
+          path: snapchat-source.zip
+          retention-days: 5
+
+      - name: Push to Branch (Optional)
+        if: inputs.apk_url != ''
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          # Generate a unique branch name
+          TIMESTAMP=$(date +%Y%m%d-%H%M)
+          BRANCH_NAME="decompile/snapchat-$TIMESTAMP"
+          
           git config user.name "JADX Bot"
-          git config user.email "jadx-bot@github.com"
+          git config user.email "bot@github.com"
           
-          # Create version-specific branch
-          VERSION=$(cat decompiled/VERSION.txt | grep "versionName" | cut -d'"' -f2 || echo "unknown")
-          BRANCH="decompiled/snapchat-${VERSION}"
+          git checkout -b "$BRANCH_NAME"
           
-          git checkout -b "$BRANCH"
-          git add decompiled/
-          git commit -m "Decompile Snapchat version ${VERSION}"
-          git push origin "$BRANCH"
+          # WARNING: Do NOT push the 500MB+ zip file to git. GitHub will reject it (100MB limit).
+          # Only push the stats/report.
+          git add output/stats.txt
+          
+          git commit -m "Add decompilation stats for run $TIMESTAMP"
+          git push origin "$BRANCH_NAME"
