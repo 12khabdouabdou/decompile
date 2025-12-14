@@ -1,0 +1,3 @@
+Total Classes: 18786
+Key Packages:
+No snap packages found
