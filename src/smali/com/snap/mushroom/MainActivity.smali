@@ -1480,13 +1480,8 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    :try_start_1
-    const-string v2, "frida-gadget"
-    
-    invoke-static {v2}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+  const-string v0, "frida-gadget"
+invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
 
     :catch_0
     .line 22
